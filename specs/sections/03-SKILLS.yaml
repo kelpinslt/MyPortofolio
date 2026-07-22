@@ -1,0 +1,581 @@
+schema_version: '1.0'
+document_role: section_specification
+section:
+  id: skills
+  order: 3
+  name: Skills
+  source_file: PORTFOLIO-MASTER-SOURCE.txt
+  source_line_range:
+    start: 1059
+    end: 1538
+  source_line_count: 480
+  source_sha256: 70ac10cf716a988a8afe3721a46b556c0d19b33f56067bf0e8eeecc1042d8d27
+  preservation_mode: exact_raw_source_embedded
+  needs_confirmation: false
+normalized_context:
+  reference_frame:
+    width: 1440px
+    height: 980px
+  theme: Dark Red Futuristic
+  section_type: Technology Showcase
+  primary_regions:
+  - header
+  - frontend
+  - backend
+  - tools
+  - other_skills
+source_index:
+- source_key: SECTION
+  normalized_key: section
+  source_line: 1066
+- source_key: FRAME
+  normalized_key: frame
+  source_line: 1076
+- source_key: CONTAINER
+  normalized_key: container
+  source_line: 1087
+- source_key: BACKGROUND
+  normalized_key: background
+  source_line: 1117
+- source_key: HEADER
+  normalized_key: header
+  source_line: 1135
+- source_key: TITLE
+  normalized_key: title
+  source_line: 1171
+- source_key: DESCRIPTION
+  normalized_key: description
+  source_line: 1203
+- source_key: GRID
+  normalized_key: grid
+  source_line: 1226
+- source_key: CARD
+  normalized_key: card
+  source_line: 1237
+- source_key: FRONTEND
+  normalized_key: frontend
+  source_line: 1260
+- source_key: BACKEND
+  normalized_key: backend
+  source_line: 1277
+- source_key: TOOLS
+  normalized_key: tools
+  source_line: 1294
+- source_key: OTHER
+  normalized_key: other
+  source_line: 1311
+- source_key: TECH_CARD
+  normalized_key: tech_card
+  source_line: 1328
+- source_key: ICONS
+  normalized_key: icons
+  source_line: 1360
+- source_key: COLORS
+  normalized_key: colors
+  source_line: 1402
+- source_key: DECORATION
+  normalized_key: decoration
+  source_line: 1432
+- source_key: Z_INDEX
+  normalized_key: z_index
+  source_line: 1473
+- source_key: ANIMATION
+  normalized_key: animation
+  source_line: 1487
+- source_key: TABLET
+  normalized_key: tablet
+  source_line: 1517
+- source_key: MOBILE
+  normalized_key: mobile
+  source_line: 1525
+classification:
+  content_data: preserved in raw_specification
+  visual_data: preserved in raw_specification
+  technical_data: preserved in raw_specification
+  responsive_data: preserved in raw_specification
+  interaction_data: preserved in raw_specification
+  accessibility_data: preserved in raw_specification when present
+conflicts: []
+unclassified_notes: []
+raw_specification: |+
+  Skill
+  # ==========================================================
+  # SKILLS SECTION SPECIFICATION
+  # VERSION : HIGH ACCURACY (95-100% SIMILARITY)
+  # THEME : Futuristic Cyberpunk Developer Portfolio
+  # ==========================================================
+
+  SECTION:
+
+    Name: Skills Section
+    Type: Technology Showcase
+    Theme: Dark Red Futuristic
+
+  # ==========================================================
+  # FRAME
+  # ==========================================================
+
+  FRAME:
+
+    Width: 1440px
+    Height: 980px
+
+    Background: "#040404"
+
+  # ==========================================================
+  # MAIN CONTAINER
+  # ==========================================================
+
+  CONTAINER:
+
+    Position:
+      X: 55px
+      Y: 110px
+
+    Size:
+      Width: 1330px
+      Height: 820px
+
+    Radius: 38px
+
+    Background:
+      "#080808"
+
+    Border:
+
+      Width: 1px
+      Color: rgba(255,40,40,0.18)
+
+    Shadow:
+
+      Glow:
+        Blur: 150px
+        Color: rgba(255,0,0,0.06)
+
+  # ==========================================================
+  # BACKGROUND EFFECT
+  # ==========================================================
+
+  BACKGROUND:
+
+    Noise:
+      Opacity: 5%
+
+    Vignette:
+      Opacity: 12%
+
+    Radial_Glow_Left:
+      rgba(255,0,0,0.04)
+
+    Radial_Glow_Right:
+      rgba(255,0,0,0.03)
+
+  # ==========================================================
+  # TITLE AREA
+  # ==========================================================
+
+  HEADER:
+
+    Position:
+      Y: 90px
+
+    Label:
+
+      Text: "MY SKILLS"
+
+      Font:
+        Size: 15px
+        Weight: 500
+        Letter_Spacing: 4px
+
+      Color:
+        "#ff3434"
+
+      Decorative_Line:
+
+        Width: 120px
+        Height: 1px
+
+        Color:
+          rgba(255,0,0,0.5)
+
+      Dot:
+
+        Size: 8px
+
+        Glow:
+          Blur: 20px
+
+  # ==========================================================
+  # MAIN TITLE
+  # ==========================================================
+
+  TITLE:
+
+    Line:
+
+      Content:
+        Technologies I Work With
+
+    Font:
+
+      Size: 74px
+      Weight: 800
+
+    Color:
+
+      White:
+        "#ffffff"
+
+      Accent:
+        "#ff3131"
+
+    Glow:
+
+      Blur:
+        30px
+
+      Opacity:
+        0.12
+
+  # ==========================================================
+  # DESCRIPTION
+  # ==========================================================
+
+  DESCRIPTION:
+
+    Width:
+      720px
+
+    Font:
+
+      Size:
+        24px
+
+      Weight:
+        300
+
+      Line_Height:
+        42px
+
+    Color:
+      "#a0a0a0"
+
+  # ==========================================================
+  # SECTION GRID
+  # ==========================================================
+
+  GRID:
+
+    Columns: 2
+
+    Gap:
+      36px
+
+  # ==========================================================
+  # CARD SYSTEM
+  # ==========================================================
+
+  CARD:
+
+    Radius:
+      28px
+
+    Background:
+      "#090909"
+
+    Border:
+      rgba(255,50,50,0.18)
+
+    Shadow:
+
+      Blur:
+        90px
+
+      Color:
+        rgba(255,0,0,0.05)
+
+  # ==========================================================
+  # FRONTEND CARD
+  # ==========================================================
+
+  FRONTEND:
+
+    Position:
+      Left_Top
+
+    Size:
+
+      Width:
+        760px
+
+      Height:
+        320px
+
+  # ==========================================================
+  # BACKEND CARD
+  # ==========================================================
+
+  BACKEND:
+
+    Position:
+      Right_Top
+
+    Size:
+
+      Width:
+        520px
+
+      Height:
+        320px
+
+  # ==========================================================
+  # TOOLS CARD
+  # ==========================================================
+
+  TOOLS:
+
+    Position:
+      Left_Bottom
+
+    Size:
+
+      Width:
+        520px
+
+      Height:
+        320px
+
+  # ==========================================================
+  # OTHER SKILLS CARD
+  # ==========================================================
+
+  OTHER:
+
+    Position:
+      Right_Bottom
+
+    Size:
+
+      Width:
+        760px
+
+      Height:
+        320px
+
+  # ==========================================================
+  # TECHNOLOGY ITEM
+  # ==========================================================
+
+  TECH_CARD:
+
+    Width:
+      145px
+
+    Height:
+      180px
+
+    Radius:
+      18px
+
+    Background:
+      rgba(255,255,255,0.02)
+
+    Border:
+      rgba(255,255,255,0.05)
+
+    Hover:
+
+      TranslateY:
+        -10px
+
+      Scale:
+        1.04
+
+      Glow:
+        rgba(255,0,0,0.15)
+
+  # ==========================================================
+  # ICON SIZE
+  # ==========================================================
+
+  ICONS:
+
+    HTML:
+      68px
+
+    CSS:
+      68px
+
+    JavaScript:
+      66px
+
+    React:
+      72px
+
+    Next:
+      68px
+
+    Laravel:
+      70px
+
+    PHP:
+      72px
+
+    MySQL:
+      72px
+
+    Figma:
+      62px
+
+    Git:
+      62px
+
+    VSCode:
+      70px
+
+    Pixellab:
+      62px
+
+  # ==========================================================
+  # COLOR SYSTEM
+  # ==========================================================
+
+  COLORS:
+
+    Background:
+      "#040404"
+
+    Surface:
+      "#090909"
+
+    Card:
+      "#111111"
+
+    Primary:
+      "#ff2d2d"
+
+    Secondary:
+      "#b30000"
+
+    Border:
+      rgba(255,50,50,0.18)
+
+    Text:
+      "#ffffff"
+
+    Soft_Text:
+      "#9f9f9f"
+
+  # ==========================================================
+  # DECORATION
+  # ==========================================================
+
+  DECORATION:
+
+    Dot_Grid_Left:
+
+      Grid:
+        10x8
+
+      Opacity:
+        20%
+
+    Dot_Grid_Right:
+
+      Grid:
+        9x8
+
+      Opacity:
+        18%
+
+    Hexagon:
+
+      Small:
+        80px
+
+      Medium:
+        120px
+
+      Stroke:
+        rgba(255,0,0,0.35)
+
+    Ambient_Particles:
+
+      Count:
+        35
+
+      Opacity:
+        25%
+
+  # ==========================================================
+  # LAYER SYSTEM
+  # ==========================================================
+
+  Z_INDEX:
+
+    Background: 0
+    Noise: 1
+    Decoration_Back: 2
+    Glow: 3
+    Cards: 10
+    Icons: 20
+    Hover_Glow: 30
+
+  # ==========================================================
+  # INTERACTION
+  # ==========================================================
+
+  ANIMATION:
+
+    Section:
+
+      FadeUp:
+        1s
+
+    Card:
+
+      Hover:
+        translateY(-8px)
+
+        Scale:
+          1.03
+
+        Duration:
+          0.5s
+
+    Icon:
+
+      Floating:
+        true
+
+        Duration:
+          infinite
+
+  # ==========================================================
+  # RESPONSIVE
+  # ==========================================================
+
+  TABLET:
+
+    Layout:
+      Column
+
+    Card_Width:
+      100%
+
+  MOBILE:
+
+    Layout:
+      Single Column
+
+    Title:
+      48px
+
+    Tech_Card:
+      120px
+
+
+
+
+...

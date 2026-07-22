@@ -1,0 +1,4022 @@
+schema_version: '1.0'
+document_role: section_specification
+section:
+  id: certificates
+  order: 5
+  name: Certificates
+  source_file: PORTFOLIO-MASTER-SOURCE.txt
+  source_line_range:
+    start: 5211
+    end: 9054
+  source_line_count: 3844
+  source_sha256: ca6fbef17e0b677b1fe8fcfa7168506340ee13709f4696f1e05374bba078b598
+  preservation_mode: exact_raw_source_embedded
+  needs_confirmation: false
+normalized_context:
+  reference_frame:
+    width: 1586px
+    height: 992px
+    aspect_ratio: 1.5988
+  document_type:
+  - Compact Figma Inspect
+  - Visual Reverse Engineering
+  - AI Code Generation Specification
+  implementation_stack:
+    framework: Next.js 16
+    language: TypeScript
+    styling: Tailwind CSS
+    motion: Framer Motion
+    icons: Lucide React
+    font: Inter Variable
+    particles: TSParticles or lightweight CSS particles
+  target_similarity:
+    initial_render: 88–94%
+    after_visual_tuning: 95%+
+source_index:
+- source_key: DOCUMENT_META
+  normalized_key: document_meta
+  source_line: 5220
+- source_key: DESIGN_TOKENS
+  normalized_key: design_tokens
+  source_line: 5268
+- source_key: CERTIFICATES_PAGE
+  normalized_key: certificates_page
+  source_line: 5425
+- source_key: CERTIFICATES_OUTER_CONTAINER
+  normalized_key: certificates_outer_container
+  source_line: 5525
+- source_key: CERTIFICATES_BACKGROUND
+  normalized_key: certificates_background
+  source_line: 5665
+- source_key: BACKGROUND_RADIAL_GLOW_LEFT
+  normalized_key: background_radial_glow_left
+  source_line: 5739
+- source_key: BACKGROUND_RADIAL_GLOW_CENTER
+  normalized_key: background_radial_glow_center
+  source_line: 5814
+- source_key: BACKGROUND_RADIAL_GLOW_RIGHT
+  normalized_key: background_radial_glow_right
+  source_line: 5889
+- source_key: BACKGROUND_NOISE
+  normalized_key: background_noise
+  source_line: 5966
+- source_key: BACKGROUND_PARTICLE_FIELD
+  normalized_key: background_particle_field
+  source_line: 6034
+- source_key: CERTIFICATES_HEADER
+  normalized_key: certificates_header
+  source_line: 6137
+- source_key: HEADER_TOP_ORNAMENT
+  normalized_key: header_top_ornament
+  source_line: 6226
+- source_key: HEADER_ORNAMENT_CIRCLE
+  normalized_key: header_ornament_circle
+  source_line: 6288
+- source_key: HEADER_ORNAMENT_LINE
+  normalized_key: header_ornament_line
+  source_line: 6354
+- source_key: HEADER_ORNAMENT_END_DOT
+  normalized_key: header_ornament_end_dot
+  source_line: 6425
+- source_key: CERTIFICATES_TITLE
+  normalized_key: certificates_title
+  source_line: 6495
+- source_key: TITLE_MY
+  normalized_key: title_my
+  source_line: 6574
+- source_key: TITLE_CERTIFICATIONS
+  normalized_key: title_certifications
+  source_line: 6654
+- source_key: CERTIFICATES_DESCRIPTION
+  normalized_key: certificates_description
+  source_line: 6748
+- source_key: CERTIFICATES_GRID
+  normalized_key: certificates_grid
+  source_line: 6835
+- source_key: CERTIFICATE_GRID_SLOTS
+  normalized_key: certificate_grid_slots
+  source_line: 6946
+- source_key: CERTIFICATE_CARD_MASTER
+  normalized_key: certificate_card_master
+  source_line: 7010
+- source_key: CERTIFICATE_IMAGE_FRAME
+  normalized_key: certificate_image_frame
+  source_line: 7137
+- source_key: CERTIFICATE_IMAGE
+  normalized_key: certificate_image
+  source_line: 7229
+- source_key: CERTIFICATE_IMAGE_OVERLAY
+  normalized_key: certificate_image_overlay
+  source_line: 7295
+- source_key: CERTIFICATE_CARD_INFO
+  normalized_key: certificate_card_info
+  source_line: 7370
+- source_key: CERTIFICATE_ORGANIZATION
+  normalized_key: certificate_organization
+  source_line: 7453
+- source_key: CERTIFICATE_CATEGORY_BADGE
+  normalized_key: certificate_category_badge
+  source_line: 7532
+- source_key: CERTIFICATE_DATE_ROW
+  normalized_key: certificate_date_row
+  source_line: 7630
+- source_key: DATE_ICON
+  normalized_key: date_icon
+  source_line: 7695
+- source_key: DATE_TEXT
+  normalized_key: date_text
+  source_line: 7763
+- source_key: CERTIFICATE_CARD_STATES
+  normalized_key: certificate_card_states
+  source_line: 7841
+- source_key: ORNAMENT_DOT_GRID_TOP_RIGHT
+  normalized_key: ornament_dot_grid_top_right
+  source_line: 7913
+- source_key: ORNAMENT_HEXAGON_GROUP_TOP_RIGHT
+  normalized_key: ornament_hexagon_group_top_right
+  source_line: 8004
+- source_key: HEXAGON_TOP_MEDIUM
+  normalized_key: hexagon_top_medium
+  source_line: 8072
+- source_key: HEXAGON_TOP_LARGE
+  normalized_key: hexagon_top_large
+  source_line: 8136
+- source_key: HEXAGON_TOP_SMALL
+  normalized_key: hexagon_top_small
+  source_line: 8200
+- source_key: ORNAMENT_HEXAGON_BOTTOM_LEFT_01
+  normalized_key: ornament_hexagon_bottom_left_01
+  source_line: 8263
+- source_key: ORNAMENT_HEXAGON_BOTTOM_LEFT_02
+  normalized_key: ornament_hexagon_bottom_left_02
+  source_line: 8328
+- source_key: CERTIFICATES_QUOTE
+  normalized_key: certificates_quote
+  source_line: 8395
+- source_key: QUOTE_ICON
+  normalized_key: quote_icon
+  source_line: 8508
+- source_key: QUOTE_TEXT
+  normalized_key: quote_text
+  source_line: 8577
+- source_key: Z_INDEX_MAP
+  normalized_key: z_index_map
+  source_line: 8706
+- source_key: RESPONSIVE_SPECIFICATION
+  normalized_key: responsive_specification
+  source_line: 8750
+- source_key: VISUAL_RULES
+  normalized_key: visual_rules
+  source_line: 8878
+- source_key: AI_CODE_INSTRUCTIONS
+  normalized_key: ai_code_instructions
+  source_line: 8984
+classification:
+  content_data: preserved in raw_specification
+  visual_data: preserved in raw_specification
+  technical_data: preserved in raw_specification
+  responsive_data: preserved in raw_specification
+  interaction_data: preserved in raw_specification
+  accessibility_data: preserved in raw_specification when present
+conflicts: []
+unclassified_notes: []
+raw_specification: |+
+  certificate
+
+  # =====================================================================
+  # KELPINN PORTFOLIO
+  # CERTIFICATES SECTION
+  # COMPACT FIGMA INSPECT PRD
+  # GEOMETRY, POSITION, VISUAL HIERARCHY, AND RESPONSIVE SPECIFICATION
+  # =====================================================================
+
+  DOCUMENT_META:
+
+    Document_Name: "Certificates Section — Figma Inspect Specification"
+
+    Section_ID: "certificates"
+
+    Version: "1.0"
+
+    Document_Type:
+      - "Compact Figma Inspect"
+      - "Visual Reverse Engineering"
+      - "AI Code Generation Specification"
+
+    Reference_Frame:
+      Width: 1586px
+      Height: 992px
+      Aspect_Ratio: 1.5988
+
+    Target_Visual_Similarity:
+      Initial_Render: "88–94%"
+      After_Visual_Tuning: "95%+"
+
+    Measurement_Status:
+      Position: "Visual estimation"
+      Size: "Visual estimation"
+      Typography: "Visual estimation"
+      Effects: "Visual estimation"
+      Responsive: "Designed behavior"
+
+    Coordinate_System:
+      Origin: "Top Left"
+      X_Axis: "Left to Right"
+      Y_Axis: "Top to Bottom"
+      Unit: "px"
+
+    Implementation_Stack:
+      Framework: "Next.js 16"
+      Language: "TypeScript"
+      Styling: "Tailwind CSS"
+      Motion: "Framer Motion"
+      Icons: "Lucide React"
+      Font: "Inter Variable"
+      Particle_System: "TSParticles or lightweight CSS particles"
+
+  # =====================================================================
+  # GLOBAL DESIGN TOKENS
+  # =====================================================================
+
+  DESIGN_TOKENS:
+
+    Colors:
+
+      Page_Background: "#020202"
+
+      Section_Background: "#050303"
+
+      Section_Surface: "rgba(4, 3, 3, 0.82)"
+
+      Card_Background:
+        Start: "#0B0909"
+        End: "#060606"
+
+      Primary_Red: "#EF2027"
+
+      Primary_Red_Bright: "#FF2A31"
+
+      Primary_Red_Dark: "#7F1015"
+
+      Primary_Red_Deep: "#3B070A"
+
+      Text_Primary: "#F5F5F5"
+
+      Text_Secondary: "#B3B3B3"
+
+      Text_Muted: "#8A8A8A"
+
+      Border_Outer: "rgba(239, 32, 39, 0.78)"
+
+      Border_Card: "rgba(239, 32, 39, 0.38)"
+
+      Border_Badge: "rgba(239, 32, 39, 0.60)"
+
+      Border_Quote: "rgba(239, 32, 39, 0.38)"
+
+      Shadow_Black: "rgba(0, 0, 0, 0.72)"
+
+      Ambient_Red: "rgba(239, 32, 39, 0.12)"
+
+      Glow_Red: "rgba(255, 32, 39, 0.22)"
+
+    Typography:
+
+      Font_Family:
+        Primary: "Inter Variable, Inter, sans-serif"
+        Secondary: "Inter, sans-serif"
+
+      Page_Title:
+        Size: 58px
+        Weight: 800
+        Line_Height: 64px
+        Letter_Spacing: -2.4px
+
+      Description:
+        Size: 15px
+        Weight: 400
+        Line_Height: 25px
+        Letter_Spacing: 0px
+
+      Card_Title:
+        Size: 17px
+        Weight: 500
+        Line_Height: 22px
+        Letter_Spacing: -0.2px
+
+      Badge_Text:
+        Size: 11px
+        Weight: 400
+        Line_Height: 16px
+        Letter_Spacing: 0px
+
+      Date_Text:
+        Size: 12px
+        Weight: 400
+        Line_Height: 18px
+        Letter_Spacing: 0px
+
+      Quote_Text:
+        Size: 14px
+        Weight: 400
+        Line_Height: 20px
+        Letter_Spacing: 0px
+
+    Radius:
+
+      Outer_Container: 31px
+
+      Certificate_Card: 14px
+
+      Certificate_Image: 10px
+
+      Badge: 5px
+
+      Quote_Box: 14px
+
+      Circle: 999px
+
+    Spacing:
+
+      Section_Padding_X: 68px
+
+      Section_Padding_Top: 54px
+
+      Header_To_Grid: 29px
+
+      Grid_Column_Gap: 18px
+
+      Grid_Row_Gap: 16px
+
+      Card_Padding_X: 18px
+
+      Card_Padding_Top: 14px
+
+      Card_Padding_Bottom: 14px
+
+    Effects:
+
+      Outer_Glow:
+        X: 0px
+        Y: 0px
+        Blur: 26px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.055)"
+
+      Card_Shadow:
+        X: 0px
+        Y: 8px
+        Blur: 24px
+        Spread: -5px
+        Color: "rgba(0, 0, 0, 0.72)"
+
+      Card_Red_Glow:
+        X: 0px
+        Y: 0px
+        Blur: 15px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.065)"
+
+      Title_White_Glow:
+        X: 0px
+        Y: 3px
+        Blur: 9px
+        Spread: 0px
+        Color: "rgba(255, 255, 255, 0.18)"
+
+      Title_Red_Glow:
+        X: 0px
+        Y: 0px
+        Blur: 16px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.25)"
+
+  # =====================================================================
+  # PAGE ROOT
+  # =====================================================================
+
+  CERTIFICATES_PAGE:
+
+    Component_ID: "CERTIFICATES_PAGE"
+
+    Type: "Frame"
+
+    Parent: "PORTFOLIO_PAGE_ROOT"
+
+    Position:
+      X: 0px
+      Y: 0px
+
+    Size:
+      Width: 1586px
+      Height: 992px
+      Min_Height: 992px
+
+    Padding:
+      Top: 10px
+      Right: 14px
+      Bottom: 42px
+      Left: 14px
+
+    Margin:
+      Top: 0px
+      Right: 0px
+      Bottom: 0px
+      Left: 0px
+
+    Gap: 0px
+
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Style: "None"
+      Color: "transparent"
+
+    Fill:
+      Type: "Solid"
+      Color: "#020202"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow: "None"
+      Glow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Center"
+      Vertical: "Top"
+
+    Constraints:
+      Horizontal: "Stretch"
+      Vertical: "Top"
+
+    Overflow:
+      X: "Hidden"
+      Y: "Visible"
+
+    Layer_Hierarchy:
+      Parent: "PORTFOLIO_PAGE_ROOT"
+      Children:
+        - "CERTIFICATES_BACKGROUND"
+        - "CERTIFICATES_OUTER_CONTAINER"
+
+    Z_Index: 0
+
+    Responsive_Behavior:
+      Desktop:
+        Width: 100%
+        Min_Height: 992px
+
+      Laptop:
+        Width: 100%
+        Height: auto
+        Min_Height: 100vh
+
+      Tablet:
+        Width: 100%
+        Height: auto
+
+      Mobile:
+        Width: 100%
+        Height: auto
+        Padding_X: 10px
+
+  # =====================================================================
+  # OUTER CONTAINER
+  # =====================================================================
+
+  CERTIFICATES_OUTER_CONTAINER:
+
+    Component_ID: "CERTIFICATES_OUTER_CONTAINER"
+
+    Type: "Frame"
+
+    Parent: "CERTIFICATES_PAGE"
+
+    Position:
+      X: 14px
+      Y: 10px
+
+    Size:
+      Width: 1558px
+      Height: 940px
+      Min_Height: 940px
+
+    Padding:
+      Top: 54px
+      Right: 68px
+      Bottom: 43px
+      Left: 68px
+
+    Margin:
+      Top: 0px
+      Right: 0px
+      Bottom: 0px
+      Left: 0px
+
+    Gap: 0px
+
+    Radius:
+      Top_Left: 31px
+      Top_Right: 31px
+      Bottom_Right: 31px
+      Bottom_Left: 31px
+
+    Border:
+      Width: 1px
+      Position: "Inside"
+      Style: "Solid"
+      Color: "rgba(239, 32, 39, 0.78)"
+
+    Fill:
+      Type: "Linear Gradient"
+      Direction: "Top Left to Bottom Right"
+
+      Stops:
+        - Position: 0%
+          Color: "rgba(4, 4, 4, 0.96)"
+
+        - Position: 50%
+          Color: "rgba(5, 3, 3, 0.94)"
+
+        - Position: 100%
+          Color: "rgba(3, 2, 2, 0.98)"
+
+    Opacity: 100%
+
+    Effects:
+
+      Shadow:
+        X: 0px
+        Y: 0px
+        Blur: 26px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.055)"
+
+      Inner_Shadow:
+        X: 0px
+        Y: 0px
+        Blur: 14px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.025)"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 1px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: true
+      Direction: "Vertical"
+      Primary_Axis: "Start"
+      Counter_Axis: "Stretch"
+      Item_Spacing: 0px
+      Wrap: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Top"
+
+    Constraints:
+      Horizontal: "Stretch"
+      Vertical: "Hug contents"
+
+    Clip_Content: true
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATES_PAGE"
+
+      Children:
+        - "BACKGROUND_LAYER_GROUP"
+        - "CERTIFICATES_HEADER"
+        - "CERTIFICATES_GRID"
+        - "CERTIFICATES_QUOTE"
+
+    Z_Index: 10
+
+    Responsive_Behavior:
+
+      Desktop:
+        X: 14px
+        Width: "calc(100% - 28px)"
+        Radius: 31px
+        Padding_X: 68px
+
+      Laptop:
+        X: 14px
+        Width: "calc(100% - 28px)"
+        Padding_X: 48px
+        Radius: 28px
+
+      Tablet:
+        X: 12px
+        Width: "calc(100% - 24px)"
+        Padding_X: 28px
+        Radius: 24px
+
+      Mobile:
+        X: 8px
+        Width: "calc(100% - 16px)"
+        Padding_X: 16px
+        Radius: 20px
+
+  # =====================================================================
+  # BACKGROUND BASE
+  # =====================================================================
+
+  CERTIFICATES_BACKGROUND:
+
+    Component_ID: "CERTIFICATES_BACKGROUND"
+
+    Type: "Frame"
+
+    Parent: "CERTIFICATES_OUTER_CONTAINER"
+
+    Position:
+      X: 0px
+      Y: 0px
+
+    Size:
+      Width: 1558px
+      Height: 940px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 31px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Type: "Solid"
+      Color: "#040303"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Stretch"
+      Vertical: "Stretch"
+
+    Constraints:
+      Horizontal: "Stretch"
+      Vertical: "Stretch"
+
+    Clip_Content: true
+
+    Layer_Hierarchy:
+      Children:
+        - "BACKGROUND_RADIAL_GLOW_LEFT"
+        - "BACKGROUND_RADIAL_GLOW_CENTER"
+        - "BACKGROUND_RADIAL_GLOW_RIGHT"
+        - "BACKGROUND_NOISE"
+        - "BACKGROUND_PARTICLE_FIELD"
+        - "ORNAMENT_GROUP"
+
+    Z_Index: 1
+
+    Responsive_Behavior:
+      All_Breakpoints:
+        Position: "Absolute inset 0"
+        Width: 100%
+        Height: 100%
+
+  # =====================================================================
+  # BACKGROUND GLOWS
+  # =====================================================================
+
+  BACKGROUND_RADIAL_GLOW_LEFT:
+
+    Component_ID: "BACKGROUND_RADIAL_GLOW_LEFT"
+
+    Type: "Ellipse"
+
+    Parent: "CERTIFICATES_BACKGROUND"
+
+    Position:
+      X: 20px
+      Y: 250px
+
+    Size:
+      Width: 570px
+      Height: 440px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 999px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Type: "Radial Gradient"
+
+      Stops:
+        - Position: 0%
+          Color: "rgba(110, 6, 10, 0.12)"
+
+        - Position: 65%
+          Color: "rgba(70, 4, 7, 0.04)"
+
+        - Position: 100%
+          Color: "rgba(0, 0, 0, 0)"
+
+    Opacity: 62%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 82px
+      Background_Blur: 0px
+
+    Rotation: -5deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Center"
+
+    Constraints:
+      Horizontal: "Left"
+      Vertical: "Center"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATES_BACKGROUND"
+
+    Z_Index: 2
+
+    Responsive_Behavior:
+      Tablet:
+        Width: 420px
+        Height: 360px
+
+      Mobile:
+        Opacity: 38%
+        Width: 320px
+        Height: 300px
+
+  BACKGROUND_RADIAL_GLOW_CENTER:
+
+    Component_ID: "BACKGROUND_RADIAL_GLOW_CENTER"
+
+    Type: "Ellipse"
+
+    Parent: "CERTIFICATES_BACKGROUND"
+
+    Position:
+      X: 530px
+      Y: 80px
+
+    Size:
+      Width: 670px
+      Height: 520px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 999px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Type: "Radial Gradient"
+
+      Stops:
+        - Position: 0%
+          Color: "rgba(239, 32, 39, 0.085)"
+
+        - Position: 60%
+          Color: "rgba(100, 8, 12, 0.028)"
+
+        - Position: 100%
+          Color: "rgba(0, 0, 0, 0)"
+
+    Opacity: 68%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 100px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Center"
+      Vertical: "Top"
+
+    Constraints:
+      Horizontal: "Center"
+      Vertical: "Top"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATES_BACKGROUND"
+
+    Z_Index: 2
+
+    Responsive_Behavior:
+      Tablet:
+        Width: 500px
+        Height: 440px
+
+      Mobile:
+        Width: 360px
+        Height: 340px
+        Opacity: 42%
+
+  BACKGROUND_RADIAL_GLOW_RIGHT:
+
+    Component_ID: "BACKGROUND_RADIAL_GLOW_RIGHT"
+
+    Type: "Ellipse"
+
+    Parent: "CERTIFICATES_BACKGROUND"
+
+    Position:
+      X: 1050px
+      Y: 130px
+
+    Size:
+      Width: 470px
+      Height: 510px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 999px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Type: "Radial Gradient"
+
+      Stops:
+        - Position: 0%
+          Color: "rgba(139, 9, 14, 0.11)"
+
+        - Position: 64%
+          Color: "rgba(60, 4, 7, 0.025)"
+
+        - Position: 100%
+          Color: "rgba(0, 0, 0, 0)"
+
+    Opacity: 63%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 94px
+      Background_Blur: 0px
+
+    Rotation: 8deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Right"
+      Vertical: "Top"
+
+    Constraints:
+      Horizontal: "Right"
+      Vertical: "Top"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATES_BACKGROUND"
+
+    Z_Index: 2
+
+    Responsive_Behavior:
+      Tablet:
+        Width: 380px
+        Height: 410px
+
+      Mobile:
+        Opacity: 30%
+
+  # =====================================================================
+  # NOISE LAYER
+  # =====================================================================
+
+  BACKGROUND_NOISE:
+
+    Component_ID: "BACKGROUND_NOISE"
+
+    Type: "Texture Layer"
+
+    Parent: "CERTIFICATES_BACKGROUND"
+
+    Position:
+      X: 0px
+      Y: 0px
+
+    Size:
+      Width: 1558px
+      Height: 940px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 31px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Type: "Monochrome Noise"
+      Grain_Size: 1px
+      Density: 17%
+
+    Opacity: 3.5%
+
+    Effects:
+      Blend_Mode: "Soft Light"
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Stretch"
+      Vertical: "Stretch"
+
+    Constraints:
+      Horizontal: "Stretch"
+      Vertical: "Stretch"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATES_BACKGROUND"
+
+    Z_Index: 3
+
+    Responsive_Behavior:
+      All_Breakpoints:
+        Width: 100%
+        Height: 100%
+        Opacity: "3–4%"
+
+  # =====================================================================
+  # PARTICLE FIELD
+  # =====================================================================
+
+  BACKGROUND_PARTICLE_FIELD:
+
+    Component_ID: "BACKGROUND_PARTICLE_FIELD"
+
+    Type: "Particle Group"
+
+    Parent: "CERTIFICATES_BACKGROUND"
+
+    Position:
+      X: 350px
+      Y: 35px
+
+    Size:
+      Width: 1160px
+      Height: 855px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: "Random"
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Type: "Particle Field"
+
+    Particle_Properties:
+
+      Count:
+        Desktop: 150
+        Laptop: 110
+        Tablet: 75
+        Mobile: 35
+
+      Shape: "Circle"
+
+      Size:
+        Minimum: 1px
+        Maximum: 3px
+
+      Primary_Color: "#EF2027"
+
+      Secondary_Color: "#7F1015"
+
+      Opacity:
+        Minimum: 8%
+        Maximum: 72%
+
+      Glow:
+        Minimum_Blur: 2px
+        Maximum_Blur: 10px
+        Color: "rgba(239, 32, 39, 0.35)"
+
+      Distribution:
+        Top_Right: 32%
+        Center: 38%
+        Bottom_Right: 22%
+        Left: 8%
+
+    Opacity: 82%
+
+    Effects:
+      Blend_Mode: "Screen"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Right"
+      Vertical: "Stretch"
+
+    Constraints:
+      Horizontal: "Right"
+      Vertical: "Stretch"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATES_BACKGROUND"
+
+    Z_Index: 4
+
+    Responsive_Behavior:
+      Desktop:
+        Display: true
+
+      Tablet:
+        Opacity: 58%
+
+      Mobile:
+        Opacity: 40%
+        Particle_Count: 35
+
+  # =====================================================================
+  # HEADER GROUP
+  # =====================================================================
+
+  CERTIFICATES_HEADER:
+
+    Component_ID: "CERTIFICATES_HEADER"
+
+    Type: "Frame"
+
+    Parent: "CERTIFICATES_OUTER_CONTAINER"
+
+    Position:
+      X: 68px
+      Y: 54px
+
+    Size:
+      Width: 565px
+      Height: 158px
+
+    Padding:
+      Top: 0px
+      Right: 0px
+      Bottom: 0px
+      Left: 0px
+
+    Margin:
+      Top: 0px
+      Right: 0px
+      Bottom: 0px
+      Left: 0px
+
+    Gap: 17px
+
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Color: "transparent"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: true
+      Direction: "Vertical"
+      Primary_Axis: "Start"
+      Counter_Axis: "Start"
+      Item_Spacing: 16px
+      Wrap: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Top"
+
+    Constraints:
+      Horizontal: "Left"
+      Vertical: "Top"
+
+    Layer_Hierarchy:
+      Children:
+        - "HEADER_TOP_ORNAMENT"
+        - "CERTIFICATES_TITLE"
+        - "CERTIFICATES_DESCRIPTION"
+
+    Z_Index: 20
+
+    Responsive_Behavior:
+      Desktop:
+        Width: 565px
+
+      Tablet:
+        Width: 520px
+
+      Mobile:
+        Width: 100%
+        Height: auto
+
+  # =====================================================================
+  # HEADER TOP ORNAMENT
+  # =====================================================================
+
+  HEADER_TOP_ORNAMENT:
+
+    Component_ID: "HEADER_TOP_ORNAMENT"
+
+    Type: "Frame"
+
+    Parent: "CERTIFICATES_HEADER"
+
+    Position:
+      X: 0px
+      Y: 0px
+
+    Size:
+      Width: 164px
+      Height: 17px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Color: "transparent"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Center"
+
+    Constraints:
+      Horizontal: "Left"
+      Vertical: "Top"
+
+    Layer_Hierarchy:
+      Children:
+        - "HEADER_ORNAMENT_CIRCLE"
+        - "HEADER_ORNAMENT_LINE"
+        - "HEADER_ORNAMENT_END_DOT"
+
+    Z_Index: 21
+
+    Responsive_Behavior:
+      Mobile:
+        Width: 140px
+
+  HEADER_ORNAMENT_CIRCLE:
+
+    Component_ID: "HEADER_ORNAMENT_CIRCLE"
+
+    Type: "Ellipse"
+
+    Parent: "HEADER_TOP_ORNAMENT"
+
+    Position:
+      X: 0px
+      Y: 1px
+
+    Size:
+      Width: 16px
+      Height: 16px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 999px
+
+    Border:
+      Width: 2px
+      Position: "Inside"
+      Color: "#EF2027"
+
+    Fill:
+      Color: "#050303"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow:
+        X: 0px
+        Y: 0px
+        Blur: 9px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.40)"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Center"
+
+    Constraints:
+      Horizontal: "Left"
+      Vertical: "Center"
+
+    Layer_Hierarchy:
+      Parent: "HEADER_TOP_ORNAMENT"
+
+    Z_Index: 22
+
+    Responsive_Behavior:
+      Mobile:
+        Width: 14px
+        Height: 14px
+
+  HEADER_ORNAMENT_LINE:
+
+    Component_ID: "HEADER_ORNAMENT_LINE"
+
+    Type: "Line"
+
+    Parent: "HEADER_TOP_ORNAMENT"
+
+    Position:
+      X: 16px
+      Y: 8px
+
+    Size:
+      Width: 145px
+      Height: 1px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 0px
+
+    Border:
+      Width: 1px
+      Color: "#EF2027"
+
+    Fill:
+      Type: "Linear Gradient"
+
+      Stops:
+        - Position: 0%
+          Color: "rgba(239, 32, 39, 0.95)"
+
+        - Position: 100%
+          Color: "rgba(239, 32, 39, 0.70)"
+
+    Opacity: 91%
+
+    Effects:
+      Shadow:
+        X: 0px
+        Y: 0px
+        Blur: 6px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.25)"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Center"
+
+    Constraints:
+      Horizontal: "Left"
+      Vertical: "Center"
+
+    Layer_Hierarchy:
+      Parent: "HEADER_TOP_ORNAMENT"
+
+    Z_Index: 21
+
+    Responsive_Behavior:
+      Mobile:
+        Width: 124px
+
+  HEADER_ORNAMENT_END_DOT:
+
+    Component_ID: "HEADER_ORNAMENT_END_DOT"
+
+    Type: "Ellipse"
+
+    Parent: "HEADER_TOP_ORNAMENT"
+
+    Position:
+      X: 158px
+      Y: 5px
+
+    Size:
+      Width: 7px
+      Height: 7px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 999px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Color: "#FF2A31"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow:
+        X: 0px
+        Y: 0px
+        Blur: 10px
+        Spread: 1px
+        Color: "rgba(255, 42, 49, 0.55)"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Right"
+      Vertical: "Center"
+
+    Constraints:
+      Horizontal: "Right"
+      Vertical: "Center"
+
+    Layer_Hierarchy:
+      Parent: "HEADER_TOP_ORNAMENT"
+
+    Z_Index: 22
+
+    Responsive_Behavior:
+      Mobile:
+        X: 136px
+        Width: 6px
+        Height: 6px
+
+  # =====================================================================
+  # MAIN TITLE
+  # =====================================================================
+
+  CERTIFICATES_TITLE:
+
+    Component_ID: "CERTIFICATES_TITLE"
+
+    Type: "Text Group"
+
+    Parent: "CERTIFICATES_HEADER"
+
+    Position:
+      X: 0px
+      Y: 40px
+
+    Size:
+      Width: 490px
+      Height: 66px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 12px
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Color: "transparent"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: true
+      Direction: "Horizontal"
+      Primary_Axis: "Start"
+      Counter_Axis: "Baseline"
+      Item_Spacing: 12px
+      Wrap: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Baseline"
+
+    Constraints:
+      Horizontal: "Left"
+      Vertical: "Top"
+
+    Layer_Hierarchy:
+      Children:
+        - "TITLE_MY"
+        - "TITLE_CERTIFICATIONS"
+
+    Z_Index: 22
+
+    Responsive_Behavior:
+
+      Desktop:
+        Direction: "Horizontal"
+        Width: 490px
+
+      Tablet:
+        Font_Size: 50px
+        Width: 430px
+
+      Mobile:
+        Direction: "Horizontal"
+        Font_Size: "clamp(36px, 11vw, 46px)"
+        Width: 100%
+        Item_Spacing: 8px
+        Wrap: true
+
+  TITLE_MY:
+
+    Component_ID: "TITLE_MY"
+
+    Type: "Text"
+
+    Parent: "CERTIFICATES_TITLE"
+
+    Content: "My"
+
+    Position:
+      X: 0px
+      Y: 0px
+
+    Size:
+      Width: 82px
+      Height: 66px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Type: "Solid"
+      Color: "#F5F5F5"
+
+    Typography:
+      Font_Family: "Inter Variable"
+      Font_Size: 58px
+      Font_Weight: 800
+      Line_Height: 64px
+      Letter_Spacing: -2.4px
+      Text_Align: "Left"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow:
+        X: 0px
+        Y: 3px
+        Blur: 9px
+        Spread: 0px
+        Color: "rgba(255, 255, 255, 0.18)"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Baseline"
+
+    Constraints:
+      Horizontal: "Left"
+      Vertical: "Top"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATES_TITLE"
+
+    Z_Index: 23
+
+    Responsive_Behavior:
+      Tablet:
+        Font_Size: 50px
+        Line_Height: 56px
+
+      Mobile:
+        Font_Size: "clamp(36px, 11vw, 46px)"
+        Line_Height: 1.05
+
+  TITLE_CERTIFICATIONS:
+
+    Component_ID: "TITLE_CERTIFICATIONS"
+
+    Type: "Text"
+
+    Parent: "CERTIFICATES_TITLE"
+
+    Content: "Certifications"
+
+    Position:
+      X: 94px
+      Y: 0px
+
+    Size:
+      Width: 394px
+      Height: 66px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Type: "Linear Gradient"
+      Direction: "Left to Right"
+
+      Stops:
+        - Position: 0%
+          Color: "#FF2A31"
+
+        - Position: 70%
+          Color: "#E51C24"
+
+        - Position: 100%
+          Color: "#BD1118"
+
+    Typography:
+      Font_Family: "Inter Variable"
+      Font_Size: 58px
+      Font_Weight: 800
+      Line_Height: 64px
+      Letter_Spacing: -2.4px
+      Text_Align: "Left"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow:
+        X: 0px
+        Y: 0px
+        Blur: 16px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.25)"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Baseline"
+
+    Constraints:
+      Horizontal: "Left"
+      Vertical: "Top"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATES_TITLE"
+
+    Z_Index: 23
+
+    Responsive_Behavior:
+      Tablet:
+        Font_Size: 50px
+        Line_Height: 56px
+
+      Mobile:
+        Font_Size: "clamp(36px, 11vw, 46px)"
+        Line_Height: 1.05
+
+  # =====================================================================
+  # DESCRIPTION
+  # =====================================================================
+
+  CERTIFICATES_DESCRIPTION:
+
+    Component_ID: "CERTIFICATES_DESCRIPTION"
+
+    Type: "Text"
+
+    Parent: "CERTIFICATES_HEADER"
+
+    Content:
+      Line_1: "Berbagai sertifikasi dan pelatihan yang telah saya selesaikan"
+      Line_2: "untuk meningkatkan kompetensi dan kemampuan profesional."
+
+    Position:
+      X: 0px
+      Y: 119px
+
+    Size:
+      Width: 480px
+      Height: 51px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Type: "Solid"
+      Color: "#B3B3B3"
+
+    Typography:
+      Font_Family: "Inter"
+      Font_Size: 15px
+      Font_Weight: 400
+      Line_Height: 25px
+      Letter_Spacing: 0px
+      Text_Align: "Left"
+
+    Opacity: 91%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Top"
+
+    Constraints:
+      Horizontal: "Left"
+      Vertical: "Top"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATES_HEADER"
+
+    Z_Index: 22
+
+    Responsive_Behavior:
+      Desktop:
+        Max_Width: 480px
+
+      Tablet:
+        Max_Width: 460px
+        Font_Size: 14px
+        Line_Height: 23px
+
+      Mobile:
+        Width: 100%
+        Max_Width: 390px
+        Font_Size: 14px
+        Line_Height: 22px
+
+  # =====================================================================
+  # CERTIFICATE GRID
+  # =====================================================================
+
+  CERTIFICATES_GRID:
+
+    Component_ID: "CERTIFICATES_GRID"
+
+    Type: "Grid Frame"
+
+    Parent: "CERTIFICATES_OUTER_CONTAINER"
+
+    Position:
+      X: 68px
+      Y: 239px
+
+    Size:
+      Width: 1370px
+      Height: 568px
+
+    Padding:
+      Top: 0px
+      Right: 0px
+      Bottom: 0px
+      Left: 0px
+
+    Margin:
+      Top: 27px
+      Right: 0px
+      Bottom: 0px
+      Left: 0px
+
+    Gap:
+      Column: 18px
+      Row: 16px
+
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Color: "transparent"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: true
+      Direction: "Horizontal"
+      Wrap: true
+      Primary_Axis: "Start"
+      Counter_Axis: "Start"
+      Column_Gap: 18px
+      Row_Gap: 16px
+
+    CSS_Grid:
+      Display: "grid"
+      Columns: "repeat(4, minmax(0, 1fr))"
+      Column_Gap: 18px
+      Row_Gap: 16px
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Top"
+
+    Constraints:
+      Horizontal: "Fill container"
+      Vertical: "Hug contents"
+
+    Layer_Hierarchy:
+      Children:
+        - "CERTIFICATE_CARD_MASTER × 8"
+
+    Z_Index: 30
+
+    Responsive_Behavior:
+
+      Wide_Desktop:
+        Columns: 4
+        Width: 1370px
+
+      Desktop:
+        Columns: 4
+        Width: 100%
+        Max_Width: 1370px
+
+      Laptop:
+        Columns: 3
+        Column_Gap: 18px
+        Row_Gap: 18px
+
+      Tablet:
+        Columns: 2
+        Column_Gap: 16px
+        Row_Gap: 16px
+
+      Mobile:
+        Columns: 1
+        Width: 100%
+        Row_Gap: 16px
+
+  # =====================================================================
+  # GRID SLOT POSITION REFERENCE
+  # =====================================================================
+
+  CERTIFICATE_GRID_SLOTS:
+
+    Coordinate_Mode:
+      Type: "Relative to CERTIFICATES_OUTER_CONTAINER"
+      Parent_Origin:
+        X: 0px
+        Y: 0px
+
+    Row_01:
+
+      Card_01:
+        X: 68px
+        Y: 239px
+        Width: 330px
+        Height: 277px
+
+      Card_02:
+        X: 416px
+        Y: 239px
+        Width: 330px
+        Height: 277px
+
+      Card_03:
+        X: 764px
+        Y: 239px
+        Width: 330px
+        Height: 277px
+
+      Card_04:
+        X: 1112px
+        Y: 239px
+        Width: 330px
+        Height: 277px
+
+    Row_02:
+
+      Card_05:
+        X: 68px
+        Y: 532px
+        Width: 330px
+        Height: 277px
+
+      Card_06:
+        X: 416px
+        Y: 532px
+        Width: 330px
+        Height: 277px
+
+      Card_07:
+        X: 764px
+        Y: 532px
+        Width: 330px
+        Height: 277px
+
+      Card_08:
+        X: 1112px
+        Y: 532px
+        Width: 330px
+        Height: 277px
+
+  # =====================================================================
+  # REUSABLE CERTIFICATE CARD
+  # =====================================================================
+
+  CERTIFICATE_CARD_MASTER:
+
+    Component_ID: "CERTIFICATE_CARD_MASTER"
+
+    Type: "Reusable Component"
+
+    Parent: "CERTIFICATES_GRID"
+
+    Position:
+      X: "Generated by grid"
+      Y: "Generated by grid"
+
+    Size:
+      Width: 330px
+      Height: 277px
+      Min_Height: 277px
+
+    Padding:
+      Top: 14px
+      Right: 18px
+      Bottom: 13px
+      Left: 18px
+
+    Margin:
+      Top: 0px
+      Right: 0px
+      Bottom: 0px
+      Left: 0px
+
+    Gap: 8px
+
+    Radius:
+      Top_Left: 14px
+      Top_Right: 14px
+      Bottom_Right: 14px
+      Bottom_Left: 14px
+
+    Border:
+      Width: 1px
+      Position: "Inside"
+      Style: "Solid"
+      Color: "rgba(239, 32, 39, 0.38)"
+
+    Fill:
+      Type: "Linear Gradient"
+      Direction: "Top to Bottom"
+
+      Stops:
+        - Position: 0%
+          Color: "rgba(13, 10, 10, 0.95)"
+
+        - Position: 100%
+          Color: "rgba(6, 6, 6, 0.98)"
+
+    Opacity: 100%
+
+    Effects:
+
+      Shadow_01:
+        X: 0px
+        Y: 8px
+        Blur: 24px
+        Spread: -5px
+        Color: "rgba(0, 0, 0, 0.72)"
+
+      Shadow_02:
+        X: 0px
+        Y: 0px
+        Blur: 15px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.065)"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: true
+      Direction: "Vertical"
+      Primary_Axis: "Start"
+      Counter_Axis: "Stretch"
+      Item_Spacing: 8px
+      Wrap: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Top"
+
+    Constraints:
+      Horizontal: "Fill container"
+      Vertical: "Hug contents"
+
+    Clip_Content: true
+
+    Layer_Hierarchy:
+      Children:
+        - "CERTIFICATE_IMAGE_FRAME"
+        - "CERTIFICATE_CARD_INFO"
+
+    Z_Index: 40
+
+    Responsive_Behavior:
+
+      Desktop:
+        Width: 330px
+        Height: 277px
+
+      Laptop:
+        Width: "100%"
+        Height: auto
+        Min_Height: 277px
+
+      Tablet:
+        Width: "100%"
+        Height: auto
+
+      Mobile:
+        Width: "100%"
+        Height: auto
+        Padding: 13px
+
+  # =====================================================================
+  # CERTIFICATE IMAGE POSITION
+  # =====================================================================
+
+  CERTIFICATE_IMAGE_FRAME:
+
+    Component_ID: "CERTIFICATE_IMAGE_FRAME"
+
+    Type: "Frame"
+
+    Parent: "CERTIFICATE_CARD_MASTER"
+
+    Position:
+      X: 18px
+      Y: 14px
+
+    Size:
+      Width: 294px
+      Height: 162px
+
+    Aspect_Ratio: 1.8148
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+
+    Radius:
+      Top_Left: 10px
+      Top_Right: 10px
+      Bottom_Right: 10px
+      Bottom_Left: 10px
+
+    Border:
+      Width: 1px
+      Position: "Inside"
+      Color: "rgba(255, 255, 255, 0.13)"
+
+    Fill:
+      Color: "#E7E7E7"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow:
+        X: 0px
+        Y: 5px
+        Blur: 12px
+        Spread: -4px
+        Color: "rgba(0, 0, 0, 0.75)"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Stretch"
+      Vertical: "Top"
+
+    Constraints:
+      Horizontal: "Stretch"
+      Vertical: "Top"
+
+    Clip_Content: true
+
+    Layer_Hierarchy:
+      Children:
+        - "CERTIFICATE_IMAGE"
+        - "CERTIFICATE_IMAGE_OVERLAY"
+
+    Z_Index: 41
+
+    Responsive_Behavior:
+
+      Desktop:
+        Width: 294px
+        Height: 162px
+
+      Laptop:
+        Width: 100%
+        Height: auto
+        Aspect_Ratio: "1.815 / 1"
+
+      Tablet:
+        Width: 100%
+        Height: auto
+
+      Mobile:
+        Width: 100%
+        Height: auto
+        Min_Height: 170px
+
+  CERTIFICATE_IMAGE:
+
+    Component_ID: "CERTIFICATE_IMAGE"
+
+    Type: "Image"
+
+    Parent: "CERTIFICATE_IMAGE_FRAME"
+
+    Position:
+      X: 0px
+      Y: 0px
+
+    Size:
+      Width: 294px
+      Height: 162px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 10px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Type: "Image"
+      Image_Fit: "Cover"
+      Object_Position: "50% 50%"
+
+    Opacity: 97%
+
+    Effects:
+      Brightness: 98%
+      Contrast: 102%
+      Saturation: 96%
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Stretch"
+      Vertical: "Stretch"
+
+    Constraints:
+      Horizontal: "Stretch"
+      Vertical: "Stretch"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATE_IMAGE_FRAME"
+
+    Z_Index: 41
+
+    Responsive_Behavior:
+      All_Breakpoints:
+        Width: 100%
+        Height: 100%
+        Object_Fit: "Cover"
+
+  CERTIFICATE_IMAGE_OVERLAY:
+
+    Component_ID: "CERTIFICATE_IMAGE_OVERLAY"
+
+    Type: "Rectangle"
+
+    Parent: "CERTIFICATE_IMAGE_FRAME"
+
+    Position:
+      X: 0px
+      Y: 0px
+
+    Size:
+      Width: 294px
+      Height: 162px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 10px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Type: "Linear Gradient"
+      Direction: "Top to Bottom"
+
+      Stops:
+        - Position: 0%
+          Color: "rgba(0, 0, 0, 0)"
+
+        - Position: 75%
+          Color: "rgba(0, 0, 0, 0.015)"
+
+        - Position: 100%
+          Color: "rgba(0, 0, 0, 0.085)"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Stretch"
+      Vertical: "Stretch"
+
+    Constraints:
+      Horizontal: "Stretch"
+      Vertical: "Stretch"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATE_IMAGE_FRAME"
+
+    Z_Index: 42
+
+    Responsive_Behavior:
+      All_Breakpoints:
+        Width: 100%
+        Height: 100%
+
+  # =====================================================================
+  # CARD INFORMATION GROUP
+  # =====================================================================
+
+  CERTIFICATE_CARD_INFO:
+
+    Component_ID: "CERTIFICATE_CARD_INFO"
+
+    Type: "Frame"
+
+    Parent: "CERTIFICATE_CARD_MASTER"
+
+    Position:
+      X: 18px
+      Y: 184px
+
+    Size:
+      Width: 294px
+      Height: 78px
+
+    Padding:
+      Top: 0px
+      Right: 0px
+      Bottom: 0px
+      Left: 0px
+
+    Margin:
+      Top: 0px
+      Right: 0px
+      Bottom: 0px
+      Left: 0px
+
+    Gap: 6px
+
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Color: "transparent"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: true
+      Direction: "Vertical"
+      Primary_Axis: "Start"
+      Counter_Axis: "Start"
+      Item_Spacing: 6px
+      Wrap: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Top"
+
+    Constraints:
+      Horizontal: "Stretch"
+      Vertical: "Hug contents"
+
+    Layer_Hierarchy:
+      Children:
+        - "CERTIFICATE_ORGANIZATION"
+        - "CERTIFICATE_CATEGORY_BADGE"
+        - "CERTIFICATE_DATE_ROW"
+
+    Z_Index: 42
+
+    Responsive_Behavior:
+      All_Breakpoints:
+        Width: 100%
+        Height: auto
+
+  # =====================================================================
+  # ORGANIZATION NAME
+  # =====================================================================
+
+  CERTIFICATE_ORGANIZATION:
+
+    Component_ID: "CERTIFICATE_ORGANIZATION"
+
+    Type: "Text"
+
+    Parent: "CERTIFICATE_CARD_INFO"
+
+    Content: "{{certificate.organization}}"
+
+    Position:
+      X: 0px
+      Y: 0px
+
+    Size:
+      Width: 294px
+      Height: 22px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Color: "#F1F1F1"
+
+    Typography:
+      Font_Family: "Inter"
+      Font_Size: 17px
+      Font_Weight: 500
+      Line_Height: 22px
+      Letter_Spacing: -0.2px
+      Text_Align: "Left"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Top"
+
+    Constraints:
+      Horizontal: "Stretch"
+      Vertical: "Top"
+
+    Text_Behavior:
+      Max_Lines: 1
+      Overflow: "Ellipsis"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATE_CARD_INFO"
+
+    Z_Index: 43
+
+    Responsive_Behavior:
+      Mobile:
+        Font_Size: 16px
+        Max_Lines: 2
+        Height: auto
+
+  # =====================================================================
+  # CATEGORY BADGE
+  # =====================================================================
+
+  CERTIFICATE_CATEGORY_BADGE:
+
+    Component_ID: "CERTIFICATE_CATEGORY_BADGE"
+
+    Type: "Badge Component"
+
+    Parent: "CERTIFICATE_CARD_INFO"
+
+    Content: "{{certificate.category}}"
+
+    Position:
+      X: 0px
+      Y: 28px
+
+    Size:
+      Width: "Hug contents"
+      Min_Width: 82px
+      Max_Width: 170px
+      Height: 23px
+
+    Padding:
+      Top: 3px
+      Right: 9px
+      Bottom: 3px
+      Left: 9px
+
+    Margin:
+      Top: 0px
+      Right: 0px
+      Bottom: 0px
+      Left: 0px
+
+    Gap: 0px
+
+    Radius: 5px
+
+    Border:
+      Width: 1px
+      Position: "Inside"
+      Color: "rgba(239, 32, 39, 0.60)"
+
+    Fill:
+      Color: "rgba(70, 6, 9, 0.25)"
+
+    Typography:
+      Font_Family: "Inter"
+      Font_Size: 11px
+      Font_Weight: 400
+      Line_Height: 16px
+      Letter_Spacing: 0px
+      Text_Align: "Center"
+
+    Text_Color: "#FF3037"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow:
+        X: 0px
+        Y: 0px
+        Blur: 7px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.07)"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: true
+      Direction: "Horizontal"
+      Primary_Axis: "Center"
+      Counter_Axis: "Center"
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Center"
+
+    Constraints:
+      Horizontal: "Hug contents"
+      Vertical: "Fixed"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATE_CARD_INFO"
+
+    Z_Index: 43
+
+    Responsive_Behavior:
+      All_Breakpoints:
+        Width: "Hug contents"
+        Max_Width: 180px
+
+  # =====================================================================
+  # DATE ROW
+  # =====================================================================
+
+  CERTIFICATE_DATE_ROW:
+
+    Component_ID: "CERTIFICATE_DATE_ROW"
+
+    Type: "Frame"
+
+    Parent: "CERTIFICATE_CARD_INFO"
+
+    Position:
+      X: 0px
+      Y: 57px
+
+    Size:
+      Width: 294px
+      Height: 19px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 8px
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Color: "transparent"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: true
+      Direction: "Horizontal"
+      Primary_Axis: "Start"
+      Counter_Axis: "Center"
+      Item_Spacing: 8px
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Center"
+
+    Constraints:
+      Horizontal: "Stretch"
+      Vertical: "Bottom"
+
+    Layer_Hierarchy:
+      Children:
+        - "DATE_ICON"
+        - "DATE_TEXT"
+
+    Z_Index: 43
+
+    Responsive_Behavior:
+      Mobile:
+        Width: 100%
+
+  DATE_ICON:
+
+    Component_ID: "DATE_ICON"
+
+    Type: "Vector Icon"
+
+    Parent: "CERTIFICATE_DATE_ROW"
+
+    Icon:
+      Library: "Lucide React"
+      Name: "CalendarDays"
+
+    Position:
+      X: 0px
+      Y: 1px
+
+    Size:
+      Width: 15px
+      Height: 15px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Color: "transparent"
+
+    Stroke:
+      Width: 1.7px
+      Color: "#B3B3B3"
+
+    Opacity: 87%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Center"
+
+    Constraints:
+      Horizontal: "Left"
+      Vertical: "Center"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATE_DATE_ROW"
+
+    Z_Index: 44
+
+    Responsive_Behavior:
+      All_Breakpoints:
+        Width: 15px
+        Height: 15px
+
+  DATE_TEXT:
+
+    Component_ID: "DATE_TEXT"
+
+    Type: "Text"
+
+    Parent: "CERTIFICATE_DATE_ROW"
+
+    Content: "{{certificate.date}}"
+
+    Position:
+      X: 23px
+      Y: 0px
+
+    Size:
+      Width: 260px
+      Height: 18px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Color: "#B3B3B3"
+
+    Typography:
+      Font_Family: "Inter"
+      Font_Size: 12px
+      Font_Weight: 400
+      Line_Height: 18px
+      Letter_Spacing: 0px
+      Text_Align: "Left"
+
+    Opacity: 90%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Center"
+
+    Constraints:
+      Horizontal: "Fill container"
+      Vertical: "Center"
+
+    Text_Behavior:
+      Max_Lines: 1
+      Overflow: "Ellipsis"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATE_DATE_ROW"
+
+    Z_Index: 44
+
+    Responsive_Behavior:
+      Mobile:
+        Width: "calc(100% - 23px)"
+        Font_Size: 12px
+
+  # =====================================================================
+  # CARD INTERACTION STATE
+  # =====================================================================
+
+  CERTIFICATE_CARD_STATES:
+
+    Default:
+
+      Position:
+        Translate_X: 0px
+        Translate_Y: 0px
+
+      Scale: 1
+
+      Rotation: 0deg
+
+      Border:
+        Color: "rgba(239, 32, 39, 0.38)"
+
+      Image:
+        Scale: 1
+        Brightness: 98%
+
+      Shadow:
+        X: 0px
+        Y: 8px
+        Blur: 24px
+        Spread: -5px
+        Color: "rgba(0, 0, 0, 0.72)"
+
+    Hover:
+
+      Position:
+        Translate_X: 0px
+        Translate_Y: -6px
+
+      Scale: 1.012
+
+      Rotation: 0deg
+
+      Border:
+        Color: "rgba(255, 42, 49, 0.72)"
+
+      Fill:
+        Start: "rgba(18, 10, 11, 0.98)"
+        End: "rgba(8, 6, 6, 1)"
+
+      Image:
+        Scale: 1.025
+        Brightness: 102%
+        Saturation: 100%
+
+      Shadow:
+        X: 0px
+        Y: 15px
+        Blur: 32px
+        Spread: -7px
+        Color: "rgba(239, 32, 39, 0.16)"
+
+    Active:
+      Scale: 0.992
+      Translate_Y: -2px
+
+    Focus_Visible:
+      Outline_Width: 2px
+      Outline_Color: "#FF2A31"
+      Outline_Offset: 3px
+
+    Transition:
+      Duration: 380ms
+      Easing: "cubic-bezier(0.22, 1, 0.36, 1)"
+
+  # =====================================================================
+  # TOP RIGHT DOT GRID
+  # =====================================================================
+
+  ORNAMENT_DOT_GRID_TOP_RIGHT:
+
+    Component_ID: "ORNAMENT_DOT_GRID_TOP_RIGHT"
+
+    Type: "Decoration Group"
+
+    Parent: "CERTIFICATES_BACKGROUND"
+
+    Position:
+      X: 1038px
+      Y: 44px
+
+    Size:
+      Width: 94px
+      Height: 103px
+
+    Padding: 0px
+    Margin: 0px
+
+    Gap:
+      Column: 17px
+      Row: 17px
+
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Color: "transparent"
+
+    Grid:
+      Columns: 5
+      Rows: 6
+
+    Dot:
+      Width: 2px
+      Height: 2px
+      Radius: 999px
+      Fill: "#EF2027"
+      Opacity: 38%
+
+    Opacity: 72%
+
+    Effects:
+      Shadow:
+        X: 0px
+        Y: 0px
+        Blur: 4px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.30)"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: true
+      Direction: "Horizontal"
+      Wrap: true
+      Column_Gap: 17px
+      Row_Gap: 17px
+
+    Alignment:
+      Horizontal: "Right"
+      Vertical: "Top"
+
+    Constraints:
+      Horizontal: "Right"
+      Vertical: "Top"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATES_BACKGROUND"
+
+    Z_Index: 5
+
+    Responsive_Behavior:
+      Tablet:
+        X: "calc(100% - 190px)"
+        Opacity: 48%
+
+      Mobile:
+        Display: false
+
+  # =====================================================================
+  # TOP RIGHT HEXAGON GROUP
+  # =====================================================================
+
+  ORNAMENT_HEXAGON_GROUP_TOP_RIGHT:
+
+    Component_ID: "ORNAMENT_HEXAGON_GROUP_TOP_RIGHT"
+
+    Type: "Decoration Group"
+
+    Parent: "CERTIFICATES_BACKGROUND"
+
+    Position:
+      X: 1210px
+      Y: 27px
+
+    Size:
+      Width: 230px
+      Height: 154px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Color: "transparent"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Right"
+      Vertical: "Top"
+
+    Constraints:
+      Horizontal: "Right"
+      Vertical: "Top"
+
+    Layer_Hierarchy:
+      Children:
+        - "HEXAGON_TOP_MEDIUM"
+        - "HEXAGON_TOP_LARGE"
+        - "HEXAGON_TOP_SMALL"
+
+    Z_Index: 5
+
+    Responsive_Behavior:
+      Tablet:
+        Scale: 0.8
+        Opacity: 70%
+
+      Mobile:
+        Scale: 0.58
+        Opacity: 45%
+        X: "calc(100% - 150px)"
+
+  HEXAGON_TOP_MEDIUM:
+
+    Component_ID: "HEXAGON_TOP_MEDIUM"
+
+    Type: "Vector Polygon"
+
+    Parent: "ORNAMENT_HEXAGON_GROUP_TOP_RIGHT"
+
+    Position:
+      X: 25px
+      Y: 0px
+
+    Size:
+      Width: 82px
+      Height: 75px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 0px
+
+    Border:
+      Width: 1px
+      Position: "Center"
+      Color: "rgba(239, 32, 39, 0.36)"
+
+    Fill:
+      Color: "transparent"
+
+    Opacity: 58%
+
+    Effects:
+      Shadow:
+        X: 0px
+        Y: 0px
+        Blur: 7px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.05)"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Top"
+
+    Constraints:
+      Horizontal: "Right"
+      Vertical: "Top"
+
+    Layer_Hierarchy:
+      Parent: "ORNAMENT_HEXAGON_GROUP_TOP_RIGHT"
+
+    Z_Index: 5
+
+    Responsive_Behavior:
+      Scale_Mode: "Proportional"
+
+  HEXAGON_TOP_LARGE:
+
+    Component_ID: "HEXAGON_TOP_LARGE"
+
+    Type: "Vector Polygon"
+
+    Parent: "ORNAMENT_HEXAGON_GROUP_TOP_RIGHT"
+
+    Position:
+      X: 100px
+      Y: 62px
+
+    Size:
+      Width: 90px
+      Height: 84px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 0px
+
+    Border:
+      Width: 1px
+      Position: "Center"
+      Color: "rgba(239, 32, 39, 0.54)"
+
+    Fill:
+      Color: "transparent"
+
+    Opacity: 78%
+
+    Effects:
+      Shadow:
+        X: 0px
+        Y: 0px
+        Blur: 9px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.07)"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Right"
+      Vertical: "Bottom"
+
+    Constraints:
+      Horizontal: "Right"
+      Vertical: "Top"
+
+    Layer_Hierarchy:
+      Parent: "ORNAMENT_HEXAGON_GROUP_TOP_RIGHT"
+
+    Z_Index: 5
+
+    Responsive_Behavior:
+      Scale_Mode: "Proportional"
+
+  HEXAGON_TOP_SMALL:
+
+    Component_ID: "HEXAGON_TOP_SMALL"
+
+    Type: "Vector Polygon"
+
+    Parent: "ORNAMENT_HEXAGON_GROUP_TOP_RIGHT"
+
+    Position:
+      X: 3px
+      Y: 91px
+
+    Size:
+      Width: 20px
+      Height: 19px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 0px
+
+    Border:
+      Width: 1px
+      Position: "Center"
+      Color: "rgba(239, 32, 39, 0.47)"
+
+    Fill:
+      Color: "transparent"
+
+    Opacity: 70%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Bottom"
+
+    Constraints:
+      Horizontal: "Right"
+      Vertical: "Top"
+
+    Layer_Hierarchy:
+      Parent: "ORNAMENT_HEXAGON_GROUP_TOP_RIGHT"
+
+    Z_Index: 5
+
+    Responsive_Behavior:
+      Scale_Mode: "Proportional"
+
+  # =====================================================================
+  # BOTTOM LEFT HEXAGONS
+  # =====================================================================
+
+  ORNAMENT_HEXAGON_BOTTOM_LEFT_01:
+
+    Component_ID: "ORNAMENT_HEXAGON_BOTTOM_LEFT_01"
+
+    Type: "Vector Polygon"
+
+    Parent: "CERTIFICATES_BACKGROUND"
+
+    Position:
+      X: 15px
+      Y: 750px
+
+    Size:
+      Width: 43px
+      Height: 39px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 0px
+
+    Border:
+      Width: 1px
+      Position: "Center"
+      Color: "rgba(239, 32, 39, 0.35)"
+
+    Fill:
+      Color: "transparent"
+
+    Opacity: 62%
+
+    Effects:
+      Shadow:
+        X: 0px
+        Y: 0px
+        Blur: 6px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.04)"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Bottom"
+
+    Constraints:
+      Horizontal: "Left"
+      Vertical: "Bottom"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATES_BACKGROUND"
+
+    Z_Index: 5
+
+    Responsive_Behavior:
+      Mobile:
+        Display: false
+
+  ORNAMENT_HEXAGON_BOTTOM_LEFT_02:
+
+    Component_ID: "ORNAMENT_HEXAGON_BOTTOM_LEFT_02"
+
+    Type: "Vector Polygon"
+
+    Parent: "CERTIFICATES_BACKGROUND"
+
+    Position:
+      X: 88px
+      Y: 835px
+
+    Size:
+      Width: 53px
+      Height: 48px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 0px
+
+    Border:
+      Width: 1px
+      Position: "Center"
+      Color: "rgba(239, 32, 39, 0.25)"
+
+    Fill:
+      Color: "transparent"
+
+    Opacity: 45%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Left"
+      Vertical: "Bottom"
+
+    Constraints:
+      Horizontal: "Left"
+      Vertical: "Bottom"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATES_BACKGROUND"
+
+    Z_Index: 5
+
+    Responsive_Behavior:
+      Tablet:
+        Opacity: 30%
+
+      Mobile:
+        Display: false
+
+  # =====================================================================
+  # BOTTOM QUOTE
+  # =====================================================================
+
+  CERTIFICATES_QUOTE:
+
+    Component_ID: "CERTIFICATES_QUOTE"
+
+    Type: "Frame"
+
+    Parent: "CERTIFICATES_OUTER_CONTAINER"
+
+    Position:
+      X: 440px
+      Y: 842px
+
+    Size:
+      Width: 620px
+      Height: 52px
+
+    Padding:
+      Top: 14px
+      Right: 24px
+      Bottom: 14px
+      Left: 24px
+
+    Margin:
+      Top: 36px
+      Right: 0px
+      Bottom: 0px
+      Left: 0px
+
+    Gap: 12px
+
+    Radius: 14px
+
+    Border:
+      Width: 1px
+      Position: "Inside"
+      Color: "rgba(239, 32, 39, 0.38)"
+
+    Fill:
+      Type: "Linear Gradient"
+      Direction: "Left to Right"
+
+      Stops:
+        - Position: 0%
+          Color: "rgba(21, 9, 10, 0.58)"
+
+        - Position: 50%
+          Color: "rgba(12, 8, 8, 0.74)"
+
+        - Position: 100%
+          Color: "rgba(21, 9, 10, 0.58)"
+
+    Opacity: 100%
+
+    Effects:
+
+      Shadow_01:
+        X: 0px
+        Y: 8px
+        Blur: 22px
+        Spread: -8px
+        Color: "rgba(0, 0, 0, 0.72)"
+
+      Shadow_02:
+        X: 0px
+        Y: 0px
+        Blur: 13px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.06)"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 4px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: true
+      Direction: "Horizontal"
+      Primary_Axis: "Center"
+      Counter_Axis: "Center"
+      Item_Spacing: 12px
+
+    Alignment:
+      Horizontal: "Center"
+      Vertical: "Center"
+
+    Constraints:
+      Horizontal: "Center"
+      Vertical: "Bottom"
+
+    Layer_Hierarchy:
+      Children:
+        - "QUOTE_ICON"
+        - "QUOTE_TEXT"
+
+    Z_Index: 31
+
+    Responsive_Behavior:
+
+      Desktop:
+        Width: 620px
+        X_Alignment: "Center"
+
+      Tablet:
+        Width: 80%
+        Max_Width: 620px
+
+      Mobile:
+        Width: 100%
+        Height: auto
+        Padding: "13px 16px"
+        Margin_Top: 26px
+
+  QUOTE_ICON:
+
+    Component_ID: "QUOTE_ICON"
+
+    Type: "Ellipse Icon Container"
+
+    Parent: "CERTIFICATES_QUOTE"
+
+    Position:
+      X: 24px
+      Y: 17px
+
+    Size:
+      Width: 18px
+      Height: 18px
+
+    Padding: 4px
+    Margin: 0px
+    Gap: 0px
+    Radius: 999px
+
+    Border:
+      Width: 1px
+      Position: "Inside"
+      Color: "#EF2027"
+
+    Fill:
+      Color: "rgba(239, 32, 39, 0.08)"
+
+    Opacity: 100%
+
+    Effects:
+      Shadow:
+        X: 0px
+        Y: 0px
+        Blur: 9px
+        Spread: 0px
+        Color: "rgba(239, 32, 39, 0.35)"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: true
+      Direction: "Horizontal"
+      Primary_Axis: "Center"
+      Counter_Axis: "Center"
+
+    Alignment:
+      Horizontal: "Center"
+      Vertical: "Center"
+
+    Constraints:
+      Horizontal: "Left"
+      Vertical: "Center"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATES_QUOTE"
+
+    Z_Index: 32
+
+    Responsive_Behavior:
+      All_Breakpoints:
+        Width: 18px
+        Height: 18px
+
+  QUOTE_TEXT:
+
+    Component_ID: "QUOTE_TEXT"
+
+    Type: "Text"
+
+    Parent: "CERTIFICATES_QUOTE"
+
+    Content:
+      "Selalu belajar, berkembang, dan menjadi versi terbaik dari diri sendiri."
+
+    Position:
+      X: 54px
+      Y: 15px
+
+    Size:
+      Width: 530px
+      Height: 22px
+
+    Padding: 0px
+    Margin: 0px
+    Gap: 0px
+    Radius: 0px
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Fill:
+      Color: "#AFAFAF"
+
+    Typography:
+      Font_Family: "Inter"
+      Font_Size: 14px
+      Font_Weight: 400
+      Line_Height: 20px
+      Letter_Spacing: 0px
+      Text_Align: "Center"
+
+    Opacity: 88%
+
+    Effects:
+      Shadow: "None"
+
+    Blur:
+      Layer_Blur: 0px
+      Background_Blur: 0px
+
+    Rotation: 0deg
+
+    Auto_Layout:
+      Enabled: false
+
+    Alignment:
+      Horizontal: "Center"
+      Vertical: "Center"
+
+    Constraints:
+      Horizontal: "Fill container"
+      Vertical: "Center"
+
+    Layer_Hierarchy:
+      Parent: "CERTIFICATES_QUOTE"
+
+    Z_Index: 32
+
+    Responsive_Behavior:
+      Tablet:
+        Font_Size: 13px
+
+      Mobile:
+        Width: "calc(100% - 30px)"
+        Height: auto
+        Font_Size: 13px
+        Line_Height: 19px
+        Text_Align: "Left"
+
+  # =====================================================================
+  # LAYER HIERARCHY
+  # =====================================================================
+
+  COMPONENT_HIERARCHY: |
+
+    CERTIFICATES_PAGE
+    └── CERTIFICATES_OUTER_CONTAINER
+        ├── CERTIFICATES_BACKGROUND
+        │   ├── BACKGROUND_RADIAL_GLOW_LEFT
+        │   ├── BACKGROUND_RADIAL_GLOW_CENTER
+        │   ├── BACKGROUND_RADIAL_GLOW_RIGHT
+        │   ├── BACKGROUND_NOISE
+        │   ├── BACKGROUND_PARTICLE_FIELD
+        │   ├── ORNAMENT_DOT_GRID_TOP_RIGHT
+        │   ├── ORNAMENT_HEXAGON_GROUP_TOP_RIGHT
+        │   │   ├── HEXAGON_TOP_MEDIUM
+        │   │   ├── HEXAGON_TOP_LARGE
+        │   │   └── HEXAGON_TOP_SMALL
+        │   ├── ORNAMENT_HEXAGON_BOTTOM_LEFT_01
+        │   └── ORNAMENT_HEXAGON_BOTTOM_LEFT_02
+        │
+        ├── CERTIFICATES_HEADER
+        │   ├── HEADER_TOP_ORNAMENT
+        │   │   ├── HEADER_ORNAMENT_CIRCLE
+        │   │   ├── HEADER_ORNAMENT_LINE
+        │   │   └── HEADER_ORNAMENT_END_DOT
+        │   ├── CERTIFICATES_TITLE
+        │   │   ├── TITLE_MY
+        │   │   └── TITLE_CERTIFICATIONS
+        │   └── CERTIFICATES_DESCRIPTION
+        │
+        ├── CERTIFICATES_GRID
+        │   └── CERTIFICATE_CARD_MASTER × N
+        │       ├── CERTIFICATE_IMAGE_FRAME
+        │       │   ├── CERTIFICATE_IMAGE
+        │       │   └── CERTIFICATE_IMAGE_OVERLAY
+        │       └── CERTIFICATE_CARD_INFO
+        │           ├── CERTIFICATE_ORGANIZATION
+        │           ├── CERTIFICATE_CATEGORY_BADGE
+        │           └── CERTIFICATE_DATE_ROW
+        │               ├── DATE_ICON
+        │               └── DATE_TEXT
+        │
+        └── CERTIFICATES_QUOTE
+            ├── QUOTE_ICON
+            └── QUOTE_TEXT
+
+  # =====================================================================
+  # Z-INDEX MAP
+  # =====================================================================
+
+  Z_INDEX_MAP:
+
+    Page_Background: 0
+
+    Outer_Container: 10
+
+    Background_Base: 1
+
+    Background_Glows: 2
+
+    Background_Noise: 3
+
+    Background_Particles: 4
+
+    Decorative_Ornaments: 5
+
+    Header: 20
+
+    Header_Ornament: 21
+
+    Header_Title: 22
+
+    Header_Text: 23
+
+    Certificate_Grid: 30
+
+    Bottom_Quote: 31
+
+    Certificate_Card: 40
+
+    Certificate_Image: 41
+
+    Certificate_Image_Overlay: 42
+
+    Certificate_Content: 43
+
+    Certificate_Icon: 44
+
+    Hover_Layer: 50
+
+  # =====================================================================
+  # RESPONSIVE LAYOUT SUMMARY
+  # =====================================================================
+
+  RESPONSIVE_SPECIFICATION:
+
+    Wide_Desktop:
+
+      Viewport_Min: 1536px
+
+      Outer_Container:
+        Margin_X: 14px
+        Padding_X: 68px
+        Radius: 31px
+
+      Header:
+        Title_Size: 58px
+        Description_Size: 15px
+
+      Grid:
+        Columns: 4
+        Gap_X: 18px
+        Gap_Y: 16px
+
+      Card:
+        Width: 330px
+        Min_Height: 277px
+
+    Desktop:
+
+      Viewport_Range: "1280px–1535px"
+
+      Outer_Container:
+        Margin_X: 14px
+        Padding_X: 48px
+
+      Header:
+        Title_Size: 54px
+
+      Grid:
+        Columns: 4
+        Width: 100%
+
+      Card:
+        Width: 100%
+        Min_Height: 277px
+
+    Laptop:
+
+      Viewport_Range: "1024px–1279px"
+
+      Outer_Container:
+        Padding_X: 40px
+
+      Header:
+        Title_Size: 50px
+
+      Grid:
+        Columns: 3
+        Gap: 18px
+
+      Card:
+        Width: 100%
+        Height: auto
+
+    Tablet:
+
+      Viewport_Range: "768px–1023px"
+
+      Outer_Container:
+        Margin_X: 12px
+        Padding_X: 28px
+        Radius: 24px
+
+      Header:
+        Title_Size: 46px
+        Description_Size: 14px
+
+      Grid:
+        Columns: 2
+        Gap: 16px
+
+      Certificate_Image:
+        Aspect_Ratio: "1.815 / 1"
+
+      Quote:
+        Width: 80%
+
+    Mobile:
+
+      Viewport_Range: "360px–767px"
+
+      Outer_Container:
+        Margin_X: 8px
+        Padding_X: 16px
+        Padding_Top: 30px
+        Padding_Bottom: 30px
+        Radius: 20px
+
+      Header:
+        Width: 100%
+        Title_Size: "clamp(36px, 11vw, 46px)"
+        Description_Size: 14px
+        Description_Line_Height: 22px
+
+      Grid:
+        Columns: 1
+        Gap_Y: 16px
+
+      Card:
+        Width: 100%
+        Height: auto
+        Padding: 13px
+
+      Image:
+        Width: 100%
+        Height: auto
+        Aspect_Ratio: "1.815 / 1"
+
+      Quote:
+        Width: 100%
+        Text_Align: "Left"
+
+      Decorations:
+        Dot_Grid: "Hidden"
+        Bottom_Hexagons: "Hidden"
+        Top_Hexagons: "Reduced opacity"
+
+  # =====================================================================
+  # VISUAL RULES FOR AI CODE
+  # =====================================================================
+
+  VISUAL_RULES:
+
+    Background:
+
+      - "Gunakan background hitam hampir murni."
+
+      - "Warna merah hanya menjadi accent, border, partikel, dan ambient glow."
+
+      - "Jangan mengubah background utama menjadi maroon terang."
+
+      - "Noise harus sangat halus dengan opacity maksimum 4%."
+
+      - "Particle harus berada di belakang seluruh konten."
+
+    Outer_Container:
+
+      - "Container memiliki border merah tipis, bukan neon tebal."
+
+      - "Radius desktop sekitar 31px."
+
+      - "Container hampir memenuhi viewport tetapi tetap memiliki margin luar."
+
+      - "Semua elemen dekoratif harus terpotong oleh radius outer container."
+
+    Header:
+
+      - "Header selalu rata kiri dengan card pertama."
+
+      - "Ornamen garis berada di atas judul."
+
+      - "My berwarna putih."
+
+      - "Certifications memakai gradient merah."
+
+      - "Judul tidak boleh terlalu jauh dari ornamen garis."
+
+      - "Description harus terdiri dari dua baris pada desktop."
+
+    Certificate_Grid:
+
+      - "Desktop menggunakan empat card per baris."
+
+      - "Card memiliki ukuran visual yang sama."
+
+      - "Jarak antar-card sekitar 18px."
+
+      - "Baris kedua dimulai sekitar 16px setelah card baris pertama."
+
+      - "Grid tidak boleh terlalu dekat dengan outer border."
+
+    Certificate_Card:
+
+      - "Card menggunakan background hitam dengan sedikit tint merah."
+
+      - "Card border tipis dan redup."
+
+      - "Shadow utama berwarna hitam."
+
+      - "Glow merah hanya sangat halus."
+
+      - "Image memenuhi hampir seluruh lebar bagian dalam card."
+
+      - "Semua image menggunakan aspect ratio konsisten."
+
+      - "Nama organisasi maksimum satu baris pada desktop."
+
+      - "Badge berada tepat di bawah nama organisasi."
+
+      - "Tanggal berada di bagian bawah card."
+
+    Ornament:
+
+      - "Dot grid kanan atas opacity rendah."
+
+      - "Hexagon tidak boleh bersaing dengan judul atau card."
+
+      - "Hexagon selalu berada di belakang konten."
+
+      - "Partikel tidak boleh berada di atas teks."
+
+      - "Ornamen kiri bawah hanya terlihat sebagian."
+
+    Quote:
+
+      - "Quote berada di tengah bawah halaman."
+
+      - "Quote tidak boleh lebih lebar dari 620px pada desktop."
+
+      - "Border dan glow quote lebih redup daripada card."
+
+    Hover:
+
+      - "Card naik sekitar 6px."
+
+      - "Card tidak boleh berputar."
+
+      - "Image hanya zoom ringan."
+
+      - "Border merah menjadi sedikit lebih terang."
+
+      - "Hover harus terasa premium, bukan berlebihan."
+
+  # =====================================================================
+  # AI CODE IMPLEMENTATION RULES
+  # =====================================================================
+
+  AI_CODE_INSTRUCTIONS:
+
+    Component_Strategy:
+
+      - "Gunakan satu CertificateCard component reusable."
+
+      - "Render card menggunakan array certificate data."
+
+      - "Jangan menulis delapan card secara manual."
+
+      - "Semua ornamen harus menggunakan aria-hidden=true."
+
+      - "Semua ornamen harus menggunakan pointer-events-none."
+
+    Positioning:
+
+      - "Gunakan CSS Grid untuk card."
+
+      - "Jangan menggunakan absolute positioning untuk card."
+
+      - "Absolute positioning hanya digunakan untuk background dan ornaments."
+
+      - "Gunakan max-width untuk mempertahankan proporsi desktop."
+
+    Images:
+
+      - "Gunakan next/image."
+
+      - "Gunakan object-cover sebagai default."
+
+      - "Gunakan aspect-ratio 1.815/1."
+
+      - "Gunakan loading lazy kecuali card pertama."
+
+    Responsive:
+
+      - "4 columns pada desktop."
+
+      - "3 columns pada laptop."
+
+      - "2 columns pada tablet."
+
+      - "1 column pada mobile."
+
+      - "Jangan mengecilkan empat card agar tetap masuk pada mobile."
+
+    Performance:
+
+      - "Batasi particle maksimal 150 pada desktop."
+
+      - "Kurangi particle pada tablet dan mobile."
+
+      - "Gunakan CSS atau SVG untuk hexagon."
+
+      - "Jangan memakai gambar PNG besar untuk ornamen sederhana."
+
+    Accessibility:
+
+      - "Gunakan section dengan aria-labelledby."
+
+      - "Setiap gambar harus memiliki alt text."
+
+      - "Hormati prefers-reduced-motion."
+
+      - "Pastikan teks abu-abu tetap memenuhi kontras minimum."
+

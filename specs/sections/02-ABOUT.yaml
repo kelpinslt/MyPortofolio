@@ -1,0 +1,621 @@
+schema_version: '1.0'
+document_role: section_specification
+section:
+  id: about
+  order: 2
+  name: About
+  source_file: PORTFOLIO-MASTER-SOURCE.txt
+  source_line_range:
+    start: 528
+    end: 1058
+  source_line_count: 531
+  source_sha256: 969d67d61762605dbb9058777229041c60a2ad3283b9071ec7999ca24ff690e2
+  preservation_mode: exact_raw_source_embedded
+  needs_confirmation: false
+normalized_context:
+  reference_frame:
+    section_height: 840px
+  theme: Futuristic Dark Red Portfolio
+  primary_regions:
+  - main_container
+  - content
+  - photo_frame
+  - decorations
+  measurement_status: visual reverse engineering
+source_index:
+- source_key: SECTION
+  normalized_key: section
+  source_line: 534
+- source_key: CONTAINER
+  normalized_key: container
+  source_line: 544
+- source_key: BACKGROUND_EFFECT
+  normalized_key: background_effect
+  source_line: 571
+- source_key: CONTENT
+  normalized_key: content
+  source_line: 613
+- source_key: LABEL
+  normalized_key: label
+  source_line: 625
+- source_key: TITLE
+  normalized_key: title
+  source_line: 669
+- source_key: SUBTITLE
+  normalized_key: subtitle
+  source_line: 709
+- source_key: DESCRIPTION
+  normalized_key: description
+  source_line: 729
+- source_key: EMAIL_BUTTON
+  normalized_key: email_button
+  source_line: 749
+- source_key: SOCIAL
+  normalized_key: social
+  source_line: 790
+- source_key: DOWNLOAD
+  normalized_key: download
+  source_line: 808
+- source_key: PHOTO_FRAME
+  normalized_key: photo_frame
+  source_line: 832
+- source_key: PHOTO
+  normalized_key: photo
+  source_line: 860
+- source_key: PHOTO_GLOW
+  normalized_key: photo_glow
+  source_line: 880
+- source_key: DECORATION
+  normalized_key: decoration
+  source_line: 894
+- source_key: Z_INDEX
+  normalized_key: z_index
+  source_line: 961
+- source_key: INTERACTION
+  normalized_key: interaction
+  source_line: 980
+- source_key: ACCURACY_DATA
+  normalized_key: accuracy_data
+  source_line: 1024
+classification:
+  content_data: preserved in raw_specification
+  visual_data: preserved in raw_specification
+  technical_data: preserved in raw_specification
+  responsive_data: preserved in raw_specification
+  interaction_data: preserved in raw_specification
+  accessibility_data: preserved in raw_specification when present
+conflicts: []
+unclassified_notes: []
+raw_specification: |+
+  About
+  # ==========================================================
+  # ABOUT SECTION - HIGH ACCURACY SPECIFICATION
+  # Based on visual reverse engineering
+  # ==========================================================
+
+  SECTION:
+    Name: About Section
+    Theme: Futuristic Dark Red Portfolio
+    Height: 840px
+    Background: "#040404"
+
+  # ==========================================================
+  # MAIN CONTAINER
+  # ==========================================================
+
+  CONTAINER:
+
+    Position:
+      X: 52px
+      Y: 148px
+
+    Size:
+      Width: 1336px
+      Height: 675px
+
+    Background:
+      Color: "#070707"
+
+    Border:
+      Width: 1px
+      Color: rgba(255,45,45,0.25)
+
+    Radius: 38px
+
+    Shadow:
+      Blur: 150px
+      Color: rgba(255,0,0,0.06)
+
+  # ==========================================================
+  # BACKGROUND
+  # ==========================================================
+
+  BACKGROUND_EFFECT:
+
+    Noise:
+      Opacity: 4%
+
+    Vignette:
+      Opacity: 42%
+
+    Left_Red_Glow:
+
+      Position:
+        X: 140px
+        Y: 420px
+
+      Size:
+        Width: 400px
+        Height: 400px
+
+      Blur: 180px
+
+      Color:
+        rgba(255,0,0,0.04)
+
+    Right_Red_Glow:
+
+      Position:
+        X: 1120px
+        Y: 430px
+
+      Size:
+        Width: 500px
+        Height: 500px
+
+      Blur: 220px
+
+      Color:
+        rgba(255,0,0,0.08)
+
+  # ==========================================================
+  # CONTENT AREA
+  # ==========================================================
+
+  CONTENT:
+
+    Position:
+      X: 175px
+      Y: 275px
+
+    Width: 560px
+
+  # ==========================================================
+  # ABOUT LABEL
+  # ==========================================================
+
+  LABEL:
+
+    Position:
+      X: 180px
+      Y: 300px
+
+    Dot:
+
+      Size: 7px
+
+      Color: "#ff2b2b"
+
+      Glow:
+        Blur: 16px
+
+    Line:
+
+      Width: 78px
+      Height: 1px
+
+      Gradient:
+
+        Start:
+          rgba(255,0,0,0.8)
+
+        End:
+          rgba(255,0,0,0)
+
+    Text:
+
+      Content: "ABOUT ME"
+
+      Font:
+        Family: Inter
+        Size: 14px
+        Weight: 500
+        Letter_Spacing: 4px
+
+      Color: "#ff3d3d"
+
+  # ==========================================================
+  # TITLE
+  # ==========================================================
+
+  TITLE:
+
+    Position:
+      X: 180px
+      Y: 360px
+
+    Line_1:
+
+      Content: "Hi, I'm"
+
+      Font:
+        Size: 74px
+        Weight: 700
+
+      Color: "#FFFFFF"
+
+    Line_2:
+
+      Content: "Kelpinn"
+
+      Font:
+        Size: 78px
+        Weight: 800
+
+      Gradient:
+
+        Start: "#ff3a3a"
+        End: "#b00000"
+
+      Glow:
+
+        Blur: 28px
+
+        Color:
+          rgba(255,0,0,0.20)
+
+  # ==========================================================
+  # SUBTITLE
+  # ==========================================================
+
+  SUBTITLE:
+
+    Position:
+      Y: 470px
+
+    Text:
+      "Building Modern Websites"
+
+    Font:
+
+      Size: 24px
+      Weight: 400
+
+    Color:
+      "#A8A8A8"
+
+  # ==========================================================
+  # DESCRIPTION
+  # ==========================================================
+
+  DESCRIPTION:
+
+    Width: 520px
+
+    Position:
+      Y: 560px
+
+    Font:
+
+      Size: 17px
+      Weight: 300
+      Line_Height: 38px
+
+    Color:
+      "#8B8B8B"
+
+  # ==========================================================
+  # EMAIL BUTTON
+  # ==========================================================
+
+  EMAIL_BUTTON:
+
+    Position:
+      Y: 690px
+
+    Size:
+
+      Width: 190px
+      Height: 58px
+
+    Radius: 12px
+
+    Background:
+
+      Gradient:
+
+        Start:
+          "#ff2f2f"
+
+        End:
+          "#930000"
+
+    Shadow:
+
+      Blur: 45px
+
+      Color:
+        rgba(255,0,0,0.20)
+
+    Icon:
+      Size: 24px
+
+    Text:
+
+      Size: 18px
+      Weight: 500
+
+  # ==========================================================
+  # SOCIAL BUTTONS
+  # ==========================================================
+
+  SOCIAL:
+
+    Size: 58px
+
+    Radius: 12px
+
+    Gap: 16px
+
+    Background:
+      rgba(255,255,255,0.02)
+
+    Border:
+      rgba(255,255,255,0.08)
+
+  # ==========================================================
+  # DOWNLOAD CV
+  # ==========================================================
+
+  DOWNLOAD:
+
+    Position:
+      Y: 810px
+
+    Divider:
+
+      Width: 520px
+      Height: 1px
+
+      Color:
+        rgba(255,0,0,0.12)
+
+    Text:
+
+      Size: 18px
+
+      Color:
+        "#9A9A9A"
+
+  # ==========================================================
+  # PHOTO FRAME
+  # ==========================================================
+
+  PHOTO_FRAME:
+
+    Position:
+
+      X: 870px
+      Y: 225px
+
+    Size:
+
+      Width: 515px
+      Height: 640px
+
+    Radius: 32px
+
+    Background:
+      "#090909"
+
+    Border:
+
+      Width: 1px
+
+      Color:
+        rgba(255,40,40,0.28)
+
+  # ==========================================================
+  # PHOTO
+  # ==========================================================
+
+  PHOTO:
+
+    Width: 430px
+    Height: 600px
+
+    Position:
+      Bottom_Center
+
+    Lighting:
+
+      Rim_Light:
+        rgba(255,0,0,0.65)
+
+      Back_Glow:
+        rgba(255,0,0,0.20)
+
+  # ==========================================================
+  # PHOTO GLOW
+  # ==========================================================
+
+  PHOTO_GLOW:
+
+    Width: 480px
+    Height: 480px
+
+    Blur: 150px
+
+    Color:
+      rgba(255,0,0,0.18)
+
+  # ==========================================================
+  # DECORATION
+  # ==========================================================
+
+  DECORATION:
+
+    DotGrid_Left:
+
+      Position:
+        X: 740px
+        Y: 330px
+
+      Grid:
+        10x14
+
+      Size: 3px
+
+      Gap: 14px
+
+      Opacity: 22%
+
+    DotGrid_Bottom:
+
+      Position:
+        X: 770px
+        Y: 700px
+
+      Grid:
+        8x8
+
+      Opacity: 22%
+
+    Circle:
+
+      Position:
+        X: 805px
+        Y: 500px
+
+      Diameter: 170px
+
+      Border:
+        rgba(255,0,0,0.22)
+
+    Hexagon_Left:
+
+      Size: 95px
+
+      Stroke:
+        rgba(255,0,0,0.30)
+
+    Hexagon_Right:
+
+      Size: 125px
+
+      Stroke:
+        rgba(255,0,0,0.40)
+
+    Triangle:
+
+      Position:
+        Top_Right
+
+      Size: 34px
+
+      Stroke:
+        rgba(255,0,0,0.45)
+
+  # ==========================================================
+  # LAYER SYSTEM
+  # ==========================================================
+
+  Z_INDEX:
+
+    Background: 0
+    Noise: 1
+    Ambient_Glow: 2
+    Dot_Grid: 3
+    Circle: 4
+    Hexagon_Back: 5
+    Photo_Glow: 6
+    Frame: 7
+    Photo: 10
+    Hexagon_Front: 11
+    Triangle: 12
+    Content: 20
+
+  # ==========================================================
+  # PHOTO INTERACTION
+  # ==========================================================
+
+  INTERACTION:
+
+    Perspective:
+      1800px
+
+    Hover:
+
+      RotateX:
+        7deg
+
+      RotateY:
+        12deg
+
+      Scale:
+        1.03
+
+      Duration:
+        0.7s
+
+      Easing:
+        cubic-bezier(.22,.61,.36,1)
+
+    Parallax:
+
+      Glow:
+        translateZ(-40px)
+
+      DotGrid:
+        translateZ(20px)
+
+      Frame:
+        translateZ(45px)
+
+      Photo:
+        translateZ(90px)
+
+      Hexagon:
+        translateZ(120px)
+
+      Triangle:
+        translateZ(150px)
+
+
+
+  ACCURACY_DATA:
+
+    Hero_Content_Width: 42%
+    Photo_Content_Width: 58%
+
+    Photo_Frame_Opacity: 100%
+
+    Border_Opacity: 28%
+
+    Red_Ambient_Intensity: 18%
+
+    Decorative_Elements_Count:
+
+      Hexagon: 3
+      DotGrid: 2
+      Circle: 1
+      Triangle: 1
+      Ambient_Glow: 4
+
+    Photo_Alignment:
+      Bottom_Right
+
+    Photo_Look_Direction:
+      Left
+
+    Visual_Hierarchy:
+
+      Title
+      Photo
+      Subtitle
+      CTA
+      Decoration
+
+
+
+...

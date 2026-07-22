@@ -1,0 +1,226 @@
+schema_version: '1.0'
+project:
+  name: Kelpinn Portfolio
+  type: Personal Portfolio Website / Personal Developer Portfolio
+  architecture: single_page_portfolio
+  framework: Next.js 16
+  language: TypeScript
+  styling: Tailwind CSS
+  animation: Framer Motion
+  icons: Lucide React
+  particle_options:
+  - React TSParticles
+  - lightweight custom canvas
+  - lightweight CSS particles
+  font_candidates:
+  - Inter
+  - Inter Variable
+  - JetBrains Mono
+  source_type: visual_reverse_engineering_specification
+  target_visual_similarity:
+    projects: 95%
+    certificates_initial_render: 88–94%
+    certificates_after_visual_tuning: 95%+
+    skills_claim: 95–100% similarity
+  source_file: PORTFOLIO-MASTER-SOURCE.txt
+  source_line_count: 9053
+  source_sha256: 0ff30e2844aed505a144b118f4beb81451505c00ba353be19442727b8bbfd25a
+website_goals:
+- Present developer identity through a futuristic portfolio.
+- Present About information.
+- Showcase technologies and skills.
+- Showcase featured projects.
+- Showcase certificates and training.
+- Maintain a dark red futuristic visual language.
+target_audience:
+  value: null
+  needs_confirmation: true
+language:
+  content_languages_observed:
+  - English
+  - Indonesian
+  primary_language: null
+  needs_confirmation: true
+tone_and_personality:
+- Futuristic
+- Cyber Interface
+- Iron Man HUD
+- Minimalist
+- Professional
+- Elegant
+- Dark Red Futuristic
+design_principles:
+- Black or near-black surfaces remain dominant.
+- Red is used as accent, border, glow, particle, and emphasis.
+- Glow remains controlled and section-specific.
+- Decorations remain behind readable content.
+- Primary layout uses Grid or Flexbox.
+- Absolute positioning is reserved for decorative/background layers.
+- Repeated card content is data-driven and reusable.
+- Desktop coordinates are reference baselines, not universal responsive positions.
+implementation_stack:
+  required:
+  - Next.js 16
+  - TypeScript
+  - Tailwind CSS
+  - Framer Motion
+  - Lucide React
+  conditional_or_section_specific:
+  - React TSParticles
+  - lightweight custom canvas particles
+  - lightweight CSS particles
+  - next/image
+  - Google Fonts or next/font
+page_structure:
+  section_order:
+  - order: 1
+    id: hero
+    specification: ./sections/01-HERO.yaml
+    reference_frame:
+      width: 1440px
+      min_height: 100vh
+  - order: 2
+    id: about
+    specification: ./sections/02-ABOUT.yaml
+    reference_frame:
+      section_height: 840px
+  - order: 3
+    id: skills
+    specification: ./sections/03-SKILLS.yaml
+    reference_frame:
+      width: 1440px
+      height: 980px
+  - order: 4
+    id: projects
+    specification: ./sections/04-PROJECTS.yaml
+    reference_frame:
+      width: 1586px
+      height: 992px
+  - order: 5
+    id: certificates
+    specification: ./sections/05-CERTIFICATES.yaml
+    reference_frame:
+      width: 1586px
+      height: 992px
+  navigation_items_observed:
+  - About
+  - Skills
+  - Projects
+  - Contact
+  contact_section_specification_present: false
+  needs_confirmation: true
+global_behavior:
+  responsive_strategy:
+  - Use responsive constraints instead of proportionally scaling the desktop frame.
+  - Use Grid or Flexbox for main content.
+  - Reduce decorative density and particle opacity/count on smaller screens.
+  - Use section-specific mobile/tablet rules where provided.
+  motion_strategy:
+  - Use section entrance fade/up behavior where provided.
+  - Use restrained hover translation and scale.
+  - Respect prefers-reduced-motion where explicitly required.
+  accessibility:
+  - Use semantic section elements and aria-labelledby where specified.
+  - Provide alt text for images.
+  - Decorative elements must be aria-hidden.
+  - Decorative elements must not intercept pointer events.
+  - Maintain minimum contrast for muted text.
+  - Respect prefers-reduced-motion.
+  performance:
+  - Limit particle count on desktop where specified.
+  - Reduce particles on tablet and mobile.
+  - Use CSS or SVG for simple hexagons.
+  - Avoid large PNG files for simple ornaments.
+  - Use lazy image loading except where the section explicitly prioritizes the first image.
+content_rules:
+  projects:
+    component_strategy: single reusable ProjectCard
+    data_strategy: data array
+    manual_duplicate_cards_forbidden: true
+  certificates:
+    component_strategy: single reusable CertificateCard
+    data_strategy: data array
+    manual_duplicate_cards_forbidden: true
+seo:
+  specified: false
+  needs_confirmation: true
+integrations:
+  specified: []
+  needs_confirmation: true
+state_management:
+  specified: false
+  needs_confirmation: true
+source_of_truth_priority:
+- section_specific_specification
+- raw_specification
+- master_specification
+- design_token_candidates
+- reference_image_validation
+conflicts:
+- topic: desktop_reference_width
+  value_a: 1440px
+  sources_a:
+  - hero
+  - skills
+  value_b: 1586px
+  sources_b:
+  - projects
+  - certificates
+  explanation: Different section references were reverse engineered from different viewport sizes.
+  needs_confirmation: false
+- topic: dominant_background
+  value_a:
+  - '#111111'
+  - '#040404'
+  sources_a:
+  - hero
+  - about
+  - skills
+  value_b:
+  - '#050505'
+  - '#020202'
+  - '#050303'
+  sources_b:
+  - projects
+  - certificates
+  explanation: Background values vary by section and should remain scoped unless one global value is required.
+  needs_confirmation: true
+- topic: primary_red
+  value_a:
+  - '#EF4444'
+  - '#ff2d2d'
+  sources_a:
+  - hero
+  - skills
+  value_b:
+  - '#EF2B2B'
+  - '#EF2027'
+  sources_b:
+  - projects
+  - certificates
+  explanation: Multiple red accents are explicitly present.
+  needs_confirmation: true
+- topic: outer_container_radius
+  value_a: 38px
+  sources_a:
+  - about
+  - skills
+  value_b:
+  - 30px
+  - 31px
+  sources_b:
+  - projects
+  - certificates
+  explanation: Container radius differs by section.
+  needs_confirmation: false
+- topic: particle_interaction
+  value_a: mouse repulsion enabled
+  sources_a:
+  - hero
+  value_b: mouse interaction disabled
+  sources_b:
+  - projects
+  explanation: Particle behavior is section-specific.
+  needs_confirmation: false
+unclassified_data: []
+needs_confirmation: true

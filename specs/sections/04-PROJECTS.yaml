@@ -1,0 +1,3938 @@
+schema_version: '1.0'
+document_role: section_specification
+section:
+  id: projects
+  order: 4
+  name: Projects
+  source_file: PORTFOLIO-MASTER-SOURCE.txt
+  source_line_range:
+    start: 1539
+    end: 5210
+  source_line_count: 3672
+  source_sha256: b803319019b2c55aabe1871397f5a17b8314f0459a20f3a32af40b0ff548c09c
+  preservation_mode: exact_raw_source_embedded
+  needs_confirmation: false
+normalized_context:
+  reference_frame:
+    width: 1586px
+    height: 992px
+    aspect_ratio: 1.5988
+  theme: dark futuristic developer portfolio
+  implementation_stack:
+    framework: Next.js 16
+    language: TypeScript
+    styling: Tailwind CSS
+    animation: Framer Motion
+    icons: Lucide React
+    particles: React TSParticles or lightweight custom canvas
+  component_strategy: Reusable data-driven components
+  target_similarity: 95%
+source_index:
+- source_key: PROJECT
+  normalized_key: project
+  source_line: 1550
+- source_key: REFERENCE_FRAME
+  normalized_key: reference_frame
+  source_line: 1591
+- source_key: FRAME
+  normalized_key: frame
+  source_line: 1621
+- source_key: COLOR_TOKENS
+  normalized_key: color_tokens
+  source_line: 1703
+- source_key: TYPOGRAPHY_TOKENS
+  normalized_key: typography_tokens
+  source_line: 1761
+- source_key: SPACING_TOKENS
+  normalized_key: spacing_tokens
+  source_line: 1839
+- source_key: RADIUS_TOKENS
+  normalized_key: radius_tokens
+  source_line: 1865
+- source_key: SHADOW_TOKENS
+  normalized_key: shadow_tokens
+  source_line: 1881
+- source_key: BLUR_TOKENS
+  normalized_key: blur_tokens
+  source_line: 1918
+- source_key: Z_INDEX_TOKENS
+  normalized_key: z_index_tokens
+  source_line: 1928
+- source_key: PROJECTS_BACKGROUND
+  normalized_key: projects_background
+  source_line: 1964
+- source_key: BACKGROUND_BASE
+  normalized_key: background_base
+  source_line: 2020
+- source_key: BACKGROUND_RADIAL_GLOW_TOP
+  normalized_key: background_radial_glow_top
+  source_line: 2062
+- source_key: BACKGROUND_RADIAL_GLOW_CENTER
+  normalized_key: background_radial_glow_center
+  source_line: 2096
+- source_key: BACKGROUND_RADIAL_GLOW_BOTTOM
+  normalized_key: background_radial_glow_bottom
+  source_line: 2128
+- source_key: BACKGROUND_NOISE
+  normalized_key: background_noise
+  source_line: 2160
+- source_key: BACKGROUND_PARTICLES
+  normalized_key: background_particles
+  source_line: 2194
+- source_key: BACKGROUND_DOT_GRID_TOP_RIGHT
+  normalized_key: background_dot_grid_top_right
+  source_line: 2276
+- source_key: BACKGROUND_DOT_GRID_BOTTOM_RIGHT
+  normalized_key: background_dot_grid_bottom_right
+  source_line: 2326
+- source_key: BACKGROUND_HEXAGON_GROUP_TOP_RIGHT
+  normalized_key: background_hexagon_group_top_right
+  source_line: 2380
+- source_key: HEXAGON_TOP_MEDIUM
+  normalized_key: hexagon_top_medium
+  source_line: 2408
+- source_key: HEXAGON_TOP_LARGE
+  normalized_key: hexagon_top_large
+  source_line: 2446
+- source_key: HEXAGON_TOP_SMALL
+  normalized_key: hexagon_top_small
+  source_line: 2484
+- source_key: BACKGROUND_HEXAGON_GROUP_BOTTOM_LEFT
+  normalized_key: background_hexagon_group_bottom_left
+  source_line: 2516
+- source_key: HEXAGON_BOTTOM_SMALL
+  normalized_key: hexagon_bottom_small
+  source_line: 2540
+- source_key: HEXAGON_BOTTOM_PARTIAL
+  normalized_key: hexagon_bottom_partial
+  source_line: 2570
+- source_key: PROJECTS_OUTER_CONTAINER
+  normalized_key: projects_outer_container
+  source_line: 2604
+- source_key: PROJECTS_HEADER
+  normalized_key: projects_header
+  source_line: 2724
+- source_key: PROJECTS_SECTION_LABEL_ROW
+  normalized_key: projects_section_label_row
+  source_line: 2784
+- source_key: LABEL_CIRCLE
+  normalized_key: label_circle
+  source_line: 2846
+- source_key: LABEL_SHORT_LINE
+  normalized_key: label_short_line
+  source_line: 2896
+- source_key: LABEL_TEXT
+  normalized_key: label_text
+  source_line: 2926
+- source_key: LABEL_LONG_LINE
+  normalized_key: label_long_line
+  source_line: 2978
+- source_key: LABEL_END_DOT
+  normalized_key: label_end_dot
+  source_line: 3012
+- source_key: PROJECTS_MAIN_TITLE
+  normalized_key: projects_main_title
+  source_line: 3054
+- source_key: TITLE_FEATURED
+  normalized_key: title_featured
+  source_line: 3096
+- source_key: TITLE_PROJECTS
+  normalized_key: title_projects
+  source_line: 3140
+- source_key: PROJECTS_DESCRIPTION
+  normalized_key: projects_description
+  source_line: 3194
+- source_key: HEADER_SPACING
+  normalized_key: header_spacing
+  source_line: 3244
+- source_key: PROJECTS_GRID
+  normalized_key: projects_grid
+  source_line: 3260
+- source_key: PROJECT_CARD_MASTER
+  normalized_key: project_card_master
+  source_line: 3347
+- source_key: PROJECT_CARD_IMAGE_FRAME
+  normalized_key: project_card_image_frame
+  source_line: 3519
+- source_key: PROJECT_CARD_IMAGE
+  normalized_key: project_card_image
+  source_line: 3613
+- source_key: PROJECT_CARD_IMAGE_OVERLAY
+  normalized_key: project_card_image_overlay
+  source_line: 3657
+- source_key: PROJECT_CARD_CONTENT
+  normalized_key: project_card_content
+  source_line: 3704
+- source_key: PROJECT_CARD_TITLE
+  normalized_key: project_card_title
+  source_line: 3770
+- source_key: PROJECT_CARD_DESCRIPTION
+  normalized_key: project_card_description
+  source_line: 3818
+- source_key: PROJECT_CARD_BADGE_GROUP
+  normalized_key: project_card_badge_group
+  source_line: 3870
+- source_key: PROJECT_TECH_BADGE
+  normalized_key: project_tech_badge
+  source_line: 3930
+- source_key: PROJECT_CARD_BUTTON_GROUP
+  normalized_key: project_card_button_group
+  source_line: 4020
+- source_key: PROJECT_BUTTON_CASE_STUDY
+  normalized_key: project_button_case_study
+  source_line: 4076
+- source_key: PROJECT_BUTTON_VISIT
+  normalized_key: project_button_visit
+  source_line: 4188
+- source_key: PROJECT_CARD_STATES
+  normalized_key: project_card_states
+  source_line: 4294
+- source_key: PROJECT_BUTTON_CASE_STUDY_STATES
+  normalized_key: project_button_case_study_states
+  source_line: 4360
+- source_key: PROJECT_BUTTON_VISIT_STATES
+  normalized_key: project_button_visit_states
+  source_line: 4386
+- source_key: PROJECT_TECH_BADGE_STATES
+  normalized_key: project_tech_badge_states
+  source_line: 4408
+- source_key: PROJECT_DATA_SCHEMA
+  normalized_key: project_data_schema
+  source_line: 4429
+- source_key: LAYER_ORDER
+  normalized_key: layer_order
+  source_line: 4534
+- source_key: SECTION_ANIMATION
+  normalized_key: section_animation
+  source_line: 4580
+- source_key: HEADER_ANIMATION
+  normalized_key: header_animation
+  source_line: 4598
+- source_key: PROJECT_CARD_ANIMATION
+  normalized_key: project_card_animation
+  source_line: 4642
+- source_key: PARTICLE_ANIMATION
+  normalized_key: particle_animation
+  source_line: 4680
+- source_key: BREAKPOINTS
+  normalized_key: breakpoints
+  source_line: 4722
+- source_key: DESKTOP_WIDE
+  normalized_key: desktop_wide
+  source_line: 4736
+- source_key: DESKTOP
+  normalized_key: desktop
+  source_line: 4758
+- source_key: LAPTOP
+  normalized_key: laptop
+  source_line: 4780
+- source_key: TABLET
+  normalized_key: tablet
+  source_line: 4804
+- source_key: MOBILE
+  normalized_key: mobile
+  source_line: 4834
+- source_key: MOBILE_SMALL
+  normalized_key: mobile_small
+  source_line: 4890
+- source_key: ACCESSIBILITY
+  normalized_key: accessibility
+  source_line: 4908
+- source_key: COMPONENT_FILES
+  normalized_key: component_files
+  source_line: 4979
+- source_key: TAILWIND_REFERENCE
+  normalized_key: tailwind_reference
+  source_line: 5017
+- source_key: VALIDATION_CHECKLIST
+  normalized_key: validation_checklist
+  source_line: 5080
+- source_key: ESTIMATION_CONFIDENCE
+  normalized_key: estimation_confidence
+  source_line: 5146
+- source_key: FINAL_RULES
+  normalized_key: final_rules
+  source_line: 5182
+classification:
+  content_data: preserved in raw_specification
+  visual_data: preserved in raw_specification
+  technical_data: preserved in raw_specification
+  responsive_data: preserved in raw_specification
+  interaction_data: preserved in raw_specification
+  accessibility_data: preserved in raw_specification when present
+conflicts: []
+unclassified_notes: []
+raw_specification: |+
+  project
+
+  # ==========================================================
+  # PORTFOLIO WEBSITE DESIGN SPECIFICATION
+  # PROJECT : Kelpinn Portfolio Website
+  # SECTION : Featured Projects
+  # VERSION : 1.0
+  # MODE    : FIGMA INSPECT REVERSE ENGINEERING
+  # TARGET  : 95% VISUAL SIMILARITY
+  # ==========================================================
+
+  PROJECT:
+
+    Name: "Kelpinn Portfolio"
+
+    Type: "Personal Developer Portfolio"
+
+    Section_Name: "Featured Projects"
+
+    Section_ID: "projects"
+
+    Framework: "Next.js 16"
+
+    Language: "TypeScript"
+
+    Styling: "Tailwind CSS"
+
+    Animation: "Framer Motion"
+
+    Icons: "Lucide React"
+
+    Particle_System: "React TSParticles or lightweight custom canvas"
+
+    Font_Source: "Google Fonts or next/font"
+
+    Main_Font: "Inter"
+
+    Rendering_Mode: "Responsive Web Layout"
+
+    Component_Strategy: "Reusable data-driven components"
+
+    Similarity_Target: "95%"
+
+    Important_Note:
+      "Semua ukuran dan posisi merupakan estimasi visual berdasarkan screenshot.
+      Gunakan nilai ini sebagai baseline implementasi, kemudian lakukan visual
+      comparison dan fine tuning setelah halaman dirender."
+
+  # ==========================================================
+  # REFERENCE FRAME
+  # ==========================================================
+
+  REFERENCE_FRAME:
+
+    Source_Width: 1586px
+
+    Source_Height: 992px
+
+    Aspect_Ratio: 1.5988
+
+    Coordinate_System:
+
+      Origin_X: 0px
+
+      Origin_Y: 0px
+
+      Unit: "px"
+
+    Scaling_Behavior:
+
+      Type: "Proportional"
+
+      Reference_Viewport: "1586px desktop"
+
+      CSS_Implementation:
+        "Gunakan max-width container dan responsive grid, bukan absolute
+        positioning untuk keseluruhan layout."
+
+  # ==========================================================
+  # PAGE FRAME
+  # ==========================================================
+
+  FRAME:
+
+    Component_ID: "PROJECTS_FRAME"
+
+    Type: "Frame"
+
+    Parent: "PAGE_ROOT"
+
+    Children:
+
+      - "PROJECTS_BACKGROUND"
+
+      - "PROJECTS_OUTER_CONTAINER"
+
+    Position:
+
+      X: 0px
+
+      Y: 0px
+
+    Size:
+
+      Width: 1586px
+
+      Height: 992px
+
+      Min_Height: 992px
+
+    Fill:
+
+      Type: "Solid"
+
+      Color: "#050505"
+
+      Opacity: 100%
+
+    Auto_Layout:
+
+      Enabled: false
+
+    Constraints:
+
+      Horizontal: "Stretch"
+
+      Vertical: "Top"
+
+    Clip_Content: false
+
+    Overflow:
+
+      X: "Hidden"
+
+      Y: "Visible"
+
+    Rotation: 0deg
+
+    Opacity: 100%
+
+    Z_Index: 0
+
+    Responsive_Behavior:
+
+      Desktop:
+        Width: 100%
+        Min_Height: 100vh
+
+      Laptop:
+        Width: 100%
+        Height: auto
+
+      Tablet:
+        Width: 100%
+        Height: auto
+
+      Mobile:
+        Width: 100%
+        Height: auto
+
+  # ==========================================================
+  # DESIGN TOKENS
+  # ==========================================================
+
+  COLOR_TOKENS:
+
+    Background_Main: "#050505"
+
+    Background_Deep: "#020202"
+
+    Background_Surface: "#090909"
+
+    Background_Card: "#0B0B0B"
+
+    Background_Card_Secondary: "#101010"
+
+    Background_Button: "#0C0C0C"
+
+    Primary_Dark: "#7F1D1D"
+
+    Primary: "#B91C1C"
+
+    Primary_Bright: "#EF2B2B"
+
+    Accent: "#FF2D2D"
+
+    Accent_Hover: "#FF4343"
+
+    Accent_Soft: "rgba(239,43,43,0.12)"
+
+    Border_Section: "rgba(185,28,28,0.72)"
+
+    Border_Card: "rgba(185,28,28,0.42)"
+
+    Border_Card_Hover: "rgba(239,43,43,0.78)"
+
+    Border_Image: "rgba(185,28,28,0.22)"
+
+    Border_Badge: "rgba(185,28,28,0.62)"
+
+    Border_Button_Secondary: "rgba(255,255,255,0.22)"
+
+    Text_Primary: "#F5F5F5"
+
+    Text_Secondary: "#A3A3A3"
+
+    Text_Muted: "#777777"
+
+    Text_Red: "#FF2D2D"
+
+    White: "#FFFFFF"
+
+    Black: "#000000"
+
+    Particle_Red: "#EF2B2B"
+
+    Glow_Red: "rgba(239,43,43,0.16)"
+
+    Glow_Red_Strong: "rgba(239,43,43,0.28)"
+
+    Shadow_Black: "rgba(0,0,0,0.72)"
+
+  TYPOGRAPHY_TOKENS:
+
+    Font_Family_Primary: "Inter, sans-serif"
+
+    Font_Family_Mono: "JetBrains Mono, monospace"
+
+    Heading_Section:
+
+      Font_Size: 56px
+
+      Font_Weight: 800
+
+      Line_Height: 1.05
+
+      Letter_Spacing: -2.1px
+
+    Section_Label:
+
+      Font_Size: 15px
+
+      Font_Weight: 600
+
+      Line_Height: 20px
+
+      Letter_Spacing: 1.25px
+
+      Text_Transform: "Uppercase"
+
+    Section_Description:
+
+      Font_Size: 15px
+
+      Font_Weight: 400
+
+      Line_Height: 25px
+
+      Letter_Spacing: 0px
+
+    Card_Title:
+
+      Font_Size: 16px
+
+      Font_Weight: 650
+
+      Line_Height: 22px
+
+      Letter_Spacing: -0.25px
+
+    Card_Description:
+
+      Font_Size: 12px
+
+      Font_Weight: 400
+
+      Line_Height: 18px
+
+      Letter_Spacing: 0px
+
+    Badge_Text:
+
+      Font_Size: 10px
+
+      Font_Weight: 400
+
+      Line_Height: 14px
+
+      Letter_Spacing: 0px
+
+    Button_Text:
+
+      Font_Size: 11px
+
+      Font_Weight: 500
+
+      Line_Height: 16px
+
+      Letter_Spacing: 0px
+
+  SPACING_TOKENS:
+
+    Space_1: 4px
+
+    Space_2: 8px
+
+    Space_3: 12px
+
+    Space_4: 16px
+
+    Space_5: 20px
+
+    Space_6: 24px
+
+    Space_7: 28px
+
+    Space_8: 32px
+
+    Space_10: 40px
+
+    Space_12: 48px
+
+    Space_16: 64px
+
+    Space_20: 80px
+
+  RADIUS_TOKENS:
+
+    Radius_XS: 4px
+
+    Radius_SM: 6px
+
+    Radius_MD: 10px
+
+    Radius_LG: 16px
+
+    Radius_XL: 24px
+
+    Radius_Section: 30px
+
+    Radius_Full: 999px
+
+  SHADOW_TOKENS:
+
+    Section_Outer:
+      X: 0px
+      Y: 0px
+      Blur: 32px
+      Spread: 0px
+      Color: "rgba(239,43,43,0.05)"
+
+    Card_Default:
+      X: 0px
+      Y: 8px
+      Blur: 25px
+      Spread: 0px
+      Color: "rgba(0,0,0,0.55)"
+
+    Card_Red_Glow:
+      X: 0px
+      Y: 0px
+      Blur: 17px
+      Spread: 0px
+      Color: "rgba(239,43,43,0.09)"
+
+    Card_Hover:
+      X: 0px
+      Y: 15px
+      Blur: 36px
+      Spread: -8px
+      Color: "rgba(239,43,43,0.18)"
+
+    Button_Primary:
+      X: 0px
+      Y: 0px
+      Blur: 14px
+      Spread: 0px
+      Color: "rgba(239,43,43,0.20)"
+
+  BLUR_TOKENS:
+
+    Blur_Subtle: 8px
+
+    Blur_Medium: 24px
+
+    Blur_Large: 64px
+
+    Blur_Ambient: 120px
+
+  Z_INDEX_TOKENS:
+
+    Background: 0
+
+    Background_Gradient: 1
+
+    Background_Noise: 2
+
+    Background_Particles: 3
+
+    Background_Ornaments: 4
+
+    Background_Glow: 5
+
+    Section_Container: 10
+
+    Section_Content: 20
+
+    Project_Grid: 30
+
+    Project_Card: 40
+
+    Card_Image: 41
+
+    Card_Content: 42
+
+    Card_Badge: 43
+
+    Card_Button: 44
+
+    Hover_Overlay: 50
+
+  # ==========================================================
+  # BACKGROUND SYSTEM
+  # ==========================================================
+
+  PROJECTS_BACKGROUND:
+
+    Component_ID: "PROJECTS_BACKGROUND"
+
+    Type: "Frame"
+
+    Parent: "PROJECTS_FRAME"
+
+    Children:
+
+      - "BACKGROUND_BASE"
+
+      - "BACKGROUND_RADIAL_GLOW_TOP"
+
+      - "BACKGROUND_RADIAL_GLOW_CENTER"
+
+      - "BACKGROUND_RADIAL_GLOW_BOTTOM"
+
+      - "BACKGROUND_NOISE"
+
+      - "BACKGROUND_PARTICLES"
+
+      - "BACKGROUND_DOT_GRID_TOP_RIGHT"
+
+      - "BACKGROUND_DOT_GRID_BOTTOM_RIGHT"
+
+      - "BACKGROUND_HEXAGON_GROUP_TOP_RIGHT"
+
+      - "BACKGROUND_HEXAGON_GROUP_BOTTOM_LEFT"
+
+    Position:
+
+      X: 0px
+
+      Y: 0px
+
+    Size:
+
+      Width: 1586px
+
+      Height: 992px
+
+    Clip_Content: true
+
+    Opacity: 100%
+
+    Rotation: 0deg
+
+    Z_Index: 0
+
+    Constraints:
+
+      Horizontal: "Stretch"
+
+      Vertical: "Stretch"
+
+  BACKGROUND_BASE:
+
+    Component_ID: "BACKGROUND_BASE"
+
+    Parent: "PROJECTS_BACKGROUND"
+
+    Position:
+
+      X: 0px
+
+      Y: 0px
+
+    Size:
+
+      Width: 1586px
+
+      Height: 992px
+
+    Fill:
+
+      Type: "Linear Gradient"
+
+      Direction: "Top to Bottom"
+
+      Stops:
+
+        - Position: 0%
+          Color: "#030303"
+          Opacity: 100%
+
+        - Position: 52%
+          Color: "#070505"
+          Opacity: 100%
+
+        - Position: 100%
+          Color: "#050303"
+          Opacity: 100%
+
+    Opacity: 100%
+
+    Z_Index: 0
+
+  BACKGROUND_RADIAL_GLOW_TOP:
+
+    Component_ID: "BACKGROUND_RADIAL_GLOW_TOP"
+
+    Parent: "PROJECTS_BACKGROUND"
+
+    Position:
+
+      X: 520px
+
+      Y: 20px
+
+    Size:
+
+      Width: 620px
+
+      Height: 390px
+
+    Fill:
+
+      Type: "Radial Gradient"
+
+      Center_Color: "rgba(127,29,29,0.09)"
+
+      Edge_Color: "rgba(127,29,29,0)"
+
+    Blur: 80px
+
+    Opacity: 70%
+
+    Rotation: 0deg
+
+    Z_Index: 1
+
+  BACKGROUND_RADIAL_GLOW_CENTER:
+
+    Component_ID: "BACKGROUND_RADIAL_GLOW_CENTER"
+
+    Parent: "PROJECTS_BACKGROUND"
+
+    Position:
+
+      X: 620px
+
+      Y: 290px
+
+    Size:
+
+      Width: 470px
+
+      Height: 420px
+
+    Fill:
+
+      Type: "Radial Gradient"
+
+      Center_Color: "rgba(185,28,28,0.07)"
+
+      Edge_Color: "rgba(185,28,28,0)"
+
+    Blur: 90px
+
+    Opacity: 60%
+
+    Z_Index: 1
+
+  BACKGROUND_RADIAL_GLOW_BOTTOM:
+
+    Component_ID: "BACKGROUND_RADIAL_GLOW_BOTTOM"
+
+    Parent: "PROJECTS_BACKGROUND"
+
+    Position:
+
+      X: 970px
+
+      Y: 700px
+
+    Size:
+
+      Width: 500px
+
+      Height: 270px
+
+    Fill:
+
+      Type: "Radial Gradient"
+
+      Center_Color: "rgba(185,28,28,0.08)"
+
+      Edge_Color: "rgba(185,28,28,0)"
+
+    Blur: 100px
+
+    Opacity: 65%
+
+    Z_Index: 1
+
+  BACKGROUND_NOISE:
+
+    Component_ID: "BACKGROUND_NOISE"
+
+    Parent: "PROJECTS_BACKGROUND"
+
+    Position:
+
+      X: 0px
+
+      Y: 0px
+
+    Size:
+
+      Width: 1586px
+
+      Height: 992px
+
+    Fill:
+
+      Type: "Noise Texture"
+
+      Noise_Type: "Monochrome fine grain"
+
+      Density: 18%
+
+      Scale: 0.65
+
+    Blend_Mode: "Soft Light"
+
+    Opacity: 4%
+
+    Z_Index: 2
+
+  BACKGROUND_PARTICLES:
+
+    Component_ID: "BACKGROUND_PARTICLES"
+
+    Parent: "PROJECTS_BACKGROUND"
+
+    Position:
+
+      X: 360px
+
+      Y: 30px
+
+    Size:
+
+      Width: 1110px
+
+      Height: 900px
+
+    Particle_Settings:
+
+      Count: 130
+
+      Density_Mode: "Random sparse"
+
+      Size:
+
+        Min: 1px
+
+        Max: 3px
+
+      Color:
+
+        Primary: "#EF2B2B"
+
+        Secondary: "#7F1D1D"
+
+      Opacity:
+
+        Min: 10%
+
+        Max: 70%
+
+      Glow:
+
+        Enabled: true
+
+        Blur_Min: 2px
+
+        Blur_Max: 9px
+
+      Distribution:
+
+        Top: 30%
+
+        Center: 45%
+
+        Bottom: 25%
+
+      Movement:
+
+        Enabled: true
+
+        Speed: 0.25
+
+        Direction: "Random"
+
+        Out_Mode: "Bounce"
+
+      Mouse_Interaction:
+
+        Enabled: false
+
+    Blend_Mode: "Screen"
+
+    Opacity: 82%
+
+    Z_Index: 3
+
+  # ==========================================================
+  # DOT GRID ORNAMENTS
+  # ==========================================================
+
+  BACKGROUND_DOT_GRID_TOP_RIGHT:
+
+    Component_ID: "DOT_GRID_TOP_RIGHT"
+
+    Type: "Decoration Group"
+
+    Parent: "PROJECTS_BACKGROUND"
+
+    Position:
+
+      X: 1030px
+
+      Y: 62px
+
+    Size:
+
+      Width: 120px
+
+      Height: 130px
+
+    Grid:
+
+      Columns: 5
+
+      Rows: 6
+
+      Column_Gap: 18px
+
+      Row_Gap: 18px
+
+    Dot:
+
+      Width: 2px
+
+      Height: 2px
+
+      Radius: 999px
+
+      Fill: "#EF2B2B"
+
+      Opacity: 38%
+
+      Glow_Blur: 4px
+
+    Rotation: 0deg
+
+    Opacity: 80%
+
+    Z_Index: 4
+
+  BACKGROUND_DOT_GRID_BOTTOM_RIGHT:
+
+    Component_ID: "DOT_GRID_BOTTOM_RIGHT"
+
+    Type: "Decoration Group"
+
+    Parent: "PROJECTS_BACKGROUND"
+
+    Position:
+
+      X: 1455px
+
+      Y: 817px
+
+    Size:
+
+      Width: 92px
+
+      Height: 90px
+
+    Grid:
+
+      Columns: 4
+
+      Rows: 4
+
+      Column_Gap: 18px
+
+      Row_Gap: 18px
+
+    Dot:
+
+      Width: 2px
+
+      Height: 2px
+
+      Radius: 999px
+
+      Fill: "#EF2B2B"
+
+      Opacity: 35%
+
+      Glow_Blur: 4px
+
+    Rotation: 0deg
+
+    Opacity: 72%
+
+    Z_Index: 4
+
+  # ==========================================================
+  # HEXAGON ORNAMENTS
+  # ==========================================================
+
+  BACKGROUND_HEXAGON_GROUP_TOP_RIGHT:
+
+    Component_ID: "HEXAGON_GROUP_TOP_RIGHT"
+
+    Type: "Decoration Group"
+
+    Parent: "PROJECTS_BACKGROUND"
+
+    Position:
+
+      X: 1212px
+
+      Y: 42px
+
+    Size:
+
+      Width: 245px
+
+      Height: 170px
+
+    Children:
+
+      - "HEXAGON_TOP_MEDIUM"
+
+      - "HEXAGON_TOP_LARGE"
+
+      - "HEXAGON_TOP_SMALL"
+
+  HEXAGON_TOP_MEDIUM:
+
+    Position:
+
+      X: 34px
+
+      Y: 8px
+
+    Size:
+
+      Width: 82px
+
+      Height: 75px
+
+    Rotation: 0deg
+
+    Stroke:
+
+      Width: 1px
+
+      Position: "Center"
+
+      Color: "rgba(185,28,28,0.32)"
+
+    Fill:
+
+      Color: "transparent"
+
+    Opacity: 66%
+
+    Effects:
+
+      Glow_Blur: 7px
+
+      Glow_Color: "rgba(185,28,28,0.06)"
+
+    Z_Index: 4
+
+  HEXAGON_TOP_LARGE:
+
+    Position:
+
+      X: 112px
+
+      Y: 72px
+
+    Size:
+
+      Width: 88px
+
+      Height: 82px
+
+    Rotation: 0deg
+
+    Stroke:
+
+      Width: 1px
+
+      Position: "Center"
+
+      Color: "rgba(239,43,43,0.42)"
+
+    Fill:
+
+      Color: "transparent"
+
+    Opacity: 82%
+
+    Effects:
+
+      Glow_Blur: 9px
+
+      Glow_Color: "rgba(239,43,43,0.07)"
+
+    Z_Index: 4
+
+  HEXAGON_TOP_SMALL:
+
+    Position:
+
+      X: 12px
+
+      Y: 104px
+
+    Size:
+
+      Width: 20px
+
+      Height: 18px
+
+    Rotation: 0deg
+
+    Stroke:
+
+      Width: 1px
+
+      Position: "Center"
+
+      Color: "rgba(185,28,28,0.45)"
+
+    Fill:
+
+      Color: "transparent"
+
+    Opacity: 75%
+
+    Z_Index: 4
+
+  BACKGROUND_HEXAGON_GROUP_BOTTOM_LEFT:
+
+    Component_ID: "HEXAGON_GROUP_BOTTOM_LEFT"
+
+    Parent: "PROJECTS_BACKGROUND"
+
+    Position:
+
+      X: 28px
+
+      Y: 795px
+
+    Size:
+
+      Width: 150px
+
+      Height: 150px
+
+    Children:
+
+      - "HEXAGON_BOTTOM_SMALL"
+
+      - "HEXAGON_BOTTOM_PARTIAL"
+
+  HEXAGON_BOTTOM_SMALL:
+
+    Position:
+
+      X: 8px
+
+      Y: 0px
+
+    Size:
+
+      Width: 42px
+
+      Height: 40px
+
+    Rotation: 0deg
+
+    Stroke:
+
+      Width: 1px
+
+      Color: "rgba(185,28,28,0.34)"
+
+    Fill:
+
+      Color: "transparent"
+
+    Opacity: 68%
+
+    Z_Index: 4
+
+  HEXAGON_BOTTOM_PARTIAL:
+
+    Position:
+
+      X: 91px
+
+      Y: 104px
+
+    Size:
+
+      Width: 46px
+
+      Height: 42px
+
+    Rotation: 0deg
+
+    Stroke:
+
+      Width: 1px
+
+      Color: "rgba(185,28,28,0.23)"
+
+    Fill:
+
+      Color: "transparent"
+
+    Opacity: 54%
+
+    Z_Index: 4
+
+  # ==========================================================
+  # OUTER SECTION CONTAINER
+  # ==========================================================
+
+  PROJECTS_OUTER_CONTAINER:
+
+    Component_ID: "PROJECTS_OUTER_CONTAINER"
+
+    Type: "Frame"
+
+    Parent: "PROJECTS_FRAME"
+
+    Children:
+
+      - "PROJECTS_HEADER"
+
+      - "PROJECTS_GRID"
+
+    Position:
+
+      X: 18px
+
+      Y: 13px
+
+    Size:
+
+      Width: 1550px
+
+      Height: 966px
+
+    Min_Height: 966px
+
+    Padding:
+
+      Top: 43px
+
+      Right: 64px
+
+      Bottom: 46px
+
+      Left: 64px
+
+    Margin:
+
+      Top: 13px
+
+      Right: 18px
+
+      Bottom: 13px
+
+      Left: 18px
+
+    Auto_Layout:
+
+      Enabled: true
+
+      Direction: "Vertical"
+
+      Primary_Axis: "Start"
+
+      Counter_Axis: "Stretch"
+
+      Item_Spacing: 23px
+
+      Wrap: false
+
+    Fill:
+
+      Type: "Solid"
+
+      Color: "rgba(3,3,3,0.38)"
+
+    Background_Blur: 2px
+
+    Stroke:
+
+      Width: 1px
+
+      Position: "Inside"
+
+      Color: "rgba(185,28,28,0.70)"
+
+    Radius:
+
+      Top_Left: 30px
+
+      Top_Right: 30px
+
+      Bottom_Right: 30px
+
+      Bottom_Left: 30px
+
+    Corner_Smoothing: 0%
+
+    Shadow:
+
+      X: 0px
+
+      Y: 0px
+
+      Blur: 30px
+
+      Spread: 0px
+
+      Color: "rgba(239,43,43,0.045)"
+
+    Clip_Content: true
+
+    Opacity: 100%
+
+    Rotation: 0deg
+
+    Constraints:
+
+      Horizontal: "Stretch"
+
+      Vertical: "Top"
+
+    Z_Index: 10
+
+  # ==========================================================
+  # HEADER
+  # ==========================================================
+
+  PROJECTS_HEADER:
+
+    Component_ID: "PROJECTS_HEADER"
+
+    Type: "Frame"
+
+    Parent: "PROJECTS_OUTER_CONTAINER"
+
+    Children:
+
+      - "PROJECTS_SECTION_LABEL_ROW"
+
+      - "PROJECTS_MAIN_TITLE"
+
+      - "PROJECTS_DESCRIPTION"
+
+    Position:
+
+      X: 64px
+
+      Y: 42px
+
+    Size:
+
+      Width: 510px
+
+      Height: 155px
+
+    Padding:
+
+      Top: 0px
+
+      Right: 0px
+
+      Bottom: 0px
+
+      Left: 0px
+
+    Auto_Layout:
+
+      Enabled: true
+
+      Direction: "Vertical"
+
+      Primary_Axis: "Start"
+
+      Counter_Axis: "Start"
+
+      Item_Spacing: 12px
+
+    Constraints:
+
+      Horizontal: "Left"
+
+      Vertical: "Top"
+
+    Opacity: 100%
+
+    Z_Index: 20
+
+  PROJECTS_SECTION_LABEL_ROW:
+
+    Component_ID: "PROJECTS_SECTION_LABEL_ROW"
+
+    Type: "Frame"
+
+    Parent: "PROJECTS_HEADER"
+
+    Children:
+
+      - "LABEL_CIRCLE"
+
+      - "LABEL_SHORT_LINE"
+
+      - "LABEL_TEXT"
+
+      - "LABEL_LONG_LINE"
+
+      - "LABEL_END_DOT"
+
+    Position:
+
+      X: 0px
+
+      Y: 0px
+
+    Size:
+
+      Width: 328px
+
+      Height: 25px
+
+    Auto_Layout:
+
+      Enabled: true
+
+      Direction: "Horizontal"
+
+      Primary_Axis: "Start"
+
+      Counter_Axis: "Center"
+
+      Item_Spacing: 10px
+
+    Padding:
+
+      Top: 0px
+
+      Right: 0px
+
+      Bottom: 0px
+
+      Left: 0px
+
+    Constraints:
+
+      Horizontal: "Left"
+
+      Vertical: "Top"
+
+    Z_Index: 21
+
+  LABEL_CIRCLE:
+
+    Component_ID: "LABEL_CIRCLE"
+
+    Type: "Ellipse"
+
+    Parent: "PROJECTS_SECTION_LABEL_ROW"
+
+    Position:
+
+      X: 0px
+
+      Y: 3px
+
+    Size:
+
+      Width: 19px
+
+      Height: 19px
+
+    Fill:
+
+      Color: "#050505"
+
+    Stroke:
+
+      Width: 2px
+
+      Position: "Inside"
+
+      Color: "#EF2B2B"
+
+    Radius: 999px
+
+    Shadow:
+
+      X: 0px
+
+      Y: 0px
+
+      Blur: 8px
+
+      Spread: 0px
+
+      Color: "rgba(239,43,43,0.24)"
+
+    Opacity: 100%
+
+    Z_Index: 22
+
+  LABEL_SHORT_LINE:
+
+    Component_ID: "LABEL_SHORT_LINE"
+
+    Type: "Line"
+
+    Parent: "PROJECTS_SECTION_LABEL_ROW"
+
+    Position:
+
+      X: 19px
+
+      Y: 12px
+
+    Size:
+
+      Width: 15px
+
+      Height: 1px
+
+    Stroke:
+
+      Width: 1px
+
+      Color: "#EF2B2B"
+
+    Opacity: 88%
+
+    Z_Index: 22
+
+  LABEL_TEXT:
+
+    Component_ID: "LABEL_TEXT"
+
+    Type: "Text"
+
+    Parent: "PROJECTS_SECTION_LABEL_ROW"
+
+    Content: "SELECTED PROJECTS"
+
+    Position:
+
+      X: 43px
+
+      Y: 1px
+
+    Size:
+
+      Width: 169px
+
+      Height: 22px
+
+    Font:
+
+      Family: "Inter"
+
+      Size: 15px
+
+      Weight: 600
+
+      Line_Height: 20px
+
+      Letter_Spacing: 1.2px
+
+      Text_Transform: "Uppercase"
+
+    Fill:
+
+      Color: "#FF2D2D"
+
+    Opacity: 100%
+
+    Effects:
+
+      Text_Glow:
+        X: 0px
+        Y: 0px
+        Blur: 6px
+        Color: "rgba(239,43,43,0.12)"
+
+    Z_Index: 22
+
+  LABEL_LONG_LINE:
+
+    Component_ID: "LABEL_LONG_LINE"
+
+    Type: "Line"
+
+    Parent: "PROJECTS_SECTION_LABEL_ROW"
+
+    Position:
+
+      X: 223px
+
+      Y: 12px
+
+    Size:
+
+      Width: 92px
+
+      Height: 1px
+
+    Stroke:
+
+      Width: 1px
+
+      Gradient:
+
+        Start: "#EF2B2B"
+
+        End: "rgba(239,43,43,0.36)"
+
+    Opacity: 92%
+
+    Z_Index: 22
+
+  LABEL_END_DOT:
+
+    Component_ID: "LABEL_END_DOT"
+
+    Type: "Ellipse"
+
+    Parent: "PROJECTS_SECTION_LABEL_ROW"
+
+    Position:
+
+      X: 316px
+
+      Y: 9px
+
+    Size:
+
+      Width: 6px
+
+      Height: 6px
+
+    Radius: 999px
+
+    Fill:
+
+      Color: "#EF2B2B"
+
+    Shadow:
+
+      X: 0px
+
+      Y: 0px
+
+      Blur: 9px
+
+      Spread: 1px
+
+      Color: "rgba(239,43,43,0.50)"
+
+    Opacity: 100%
+
+    Z_Index: 22
+
+  PROJECTS_MAIN_TITLE:
+
+    Component_ID: "PROJECTS_MAIN_TITLE"
+
+    Type: "Text Group"
+
+    Parent: "PROJECTS_HEADER"
+
+    Position:
+
+      X: 0px
+
+      Y: 42px
+
+    Size:
+
+      Width: 480px
+
+      Height: 59px
+
+    Auto_Layout:
+
+      Enabled: true
+
+      Direction: "Horizontal"
+
+      Item_Spacing: 12px
+
+    Children:
+
+      - "TITLE_FEATURED"
+
+      - "TITLE_PROJECTS"
+
+    Constraints:
+
+      Horizontal: "Left"
+
+      Vertical: "Top"
+
+    Z_Index: 21
+
+  TITLE_FEATURED:
+
+    Content: "Featured"
+
+    Position:
+
+      X: 0px
+
+      Y: 0px
+
+    Size:
+
+      Width: 238px
+
+      Height: 59px
+
+    Font:
+
+      Family: "Inter"
+
+      Size: 56px
+
+      Weight: 800
+
+      Line_Height: 59px
+
+      Letter_Spacing: -2.15px
+
+    Fill:
+
+      Color: "#F5F5F5"
+
+    Effects:
+
+      Text_Shadow:
+        X: 0px
+        Y: 3px
+        Blur: 9px
+        Color: "rgba(255,255,255,0.16)"
+
+    Opacity: 100%
+
+    Z_Index: 22
+
+  TITLE_PROJECTS:
+
+    Content: "Projects"
+
+    Position:
+
+      X: 249px
+
+      Y: 0px
+
+    Size:
+
+      Width: 222px
+
+      Height: 59px
+
+    Font:
+
+      Family: "Inter"
+
+      Size: 56px
+
+      Weight: 800
+
+      Line_Height: 59px
+
+      Letter_Spacing: -2.15px
+
+    Fill:
+
+      Type: "Linear Gradient"
+
+      Direction: "Left to Right"
+
+      Stops:
+
+        - Position: 0%
+          Color: "#EF2B2B"
+
+        - Position: 100%
+          Color: "#B91C1C"
+
+    Effects:
+
+      Text_Glow:
+        X: 0px
+        Y: 0px
+        Blur: 12px
+        Color: "rgba(239,43,43,0.20)"
+
+    Opacity: 100%
+
+    Z_Index: 22
+
+  PROJECTS_DESCRIPTION:
+
+    Component_ID: "PROJECTS_DESCRIPTION"
+
+    Type: "Text"
+
+    Parent: "PROJECTS_HEADER"
+
+    Content:
+      "Berbagai project terbaik yang telah saya kembangkan
+      selama proses belajar dan eksplorasi teknologi."
+
+    Position:
+
+      X: 0px
+
+      Y: 118px
+
+    Size:
+
+      Width: 430px
+
+      Height: 49px
+
+    Font:
+
+      Family: "Inter"
+
+      Size: 15px
+
+      Weight: 400
+
+      Line_Height: 25px
+
+      Letter_Spacing: 0px
+
+    Fill:
+
+      Color: "#A3A3A3"
+
+    Text_Align: "Left"
+
+    Opacity: 92%
+
+    Z_Index: 21
+
+  # ==========================================================
+  # HEADER SPACING
+  # ==========================================================
+
+  HEADER_SPACING:
+
+    Outer_Container_Top_To_Label: 42px
+
+    Label_To_Title: 12px
+
+    Title_To_Description: 13px
+
+    Description_To_Project_Grid: 24px
+
+    Header_Left_Alignment: 64px
+
+  # ==========================================================
+  # PROJECT GRID
+  # ==========================================================
+
+  PROJECTS_GRID:
+
+    Component_ID: "PROJECTS_GRID"
+
+    Type: "Frame"
+
+    Parent: "PROJECTS_OUTER_CONTAINER"
+
+    Children:
+
+      - "PROJECT_CARD instances generated from PROJECT_CARD_MASTER"
+
+    Position:
+
+      X: 64px
+
+      Y: 221px
+
+    Size:
+
+      Width: 1422px
+
+      Height: 670px
+
+    Auto_Layout:
+
+      Enabled: true
+
+      Direction: "Horizontal"
+
+      Wrap: true
+
+      Primary_Axis: "Start"
+
+      Counter_Axis: "Start"
+
+      Column_Gap: 18px
+
+      Row_Gap: 18px
+
+    Grid:
+
+      Desktop_Columns: 4
+
+      Laptop_Columns: 3
+
+      Tablet_Columns: 2
+
+      Mobile_Columns: 1
+
+    Padding:
+
+      Top: 0px
+
+      Right: 0px
+
+      Bottom: 0px
+
+      Left: 0px
+
+    Margin:
+
+      Top: 0px
+
+      Right: 0px
+
+      Bottom: 0px
+
+      Left: 0px
+
+    Constraints:
+
+      Horizontal: "Stretch"
+
+      Vertical: "Top"
+
+    Clip_Content: false
+
+    Overflow: "Visible"
+
+    Z_Index: 30
+
+  # ==========================================================
+  # REUSABLE PROJECT CARD MASTER
+  # HANYA SATU CARD, DIGUNAKAN BERULANG DENGAN DATA ARRAY
+  # ==========================================================
+
+  PROJECT_CARD_MASTER:
+
+    Component_ID: "PROJECT_CARD_MASTER"
+
+    Type: "Component"
+
+    Usage: "Reusable"
+
+    Parent: "PROJECTS_GRID"
+
+    Instance_Count_Reference: 8
+
+    Children:
+
+      - "PROJECT_CARD_IMAGE_FRAME"
+
+      - "PROJECT_CARD_CONTENT"
+
+    Position:
+
+      X: "Generated by grid"
+
+      Y: "Generated by grid"
+
+    Size:
+
+      Width: 334px
+
+      Height: 336px
+
+    Min_Width: 290px
+
+    Max_Width: 334px
+
+    Min_Height: 336px
+
+    Padding:
+
+      Top: 9px
+
+      Right: 9px
+
+      Bottom: 13px
+
+      Left: 9px
+
+    Margin:
+
+      Top: 0px
+
+      Right: 0px
+
+      Bottom: 0px
+
+      Left: 0px
+
+    Gap: 12px
+
+    Auto_Layout:
+
+      Enabled: true
+
+      Direction: "Vertical"
+
+      Primary_Axis: "Start"
+
+      Counter_Axis: "Stretch"
+
+      Item_Spacing: 12px
+
+    Alignment:
+
+      Horizontal: "Left"
+
+      Vertical: "Top"
+
+    Fill:
+
+      Type: "Linear Gradient"
+
+      Direction: "Top to Bottom"
+
+      Stops:
+
+        - Position: 0%
+          Color: "#0E0D0D"
+
+        - Position: 100%
+          Color: "#080808"
+
+    Stroke:
+
+      Width: 1px
+
+      Position: "Inside"
+
+      Color: "rgba(185,28,28,0.43)"
+
+    Radius:
+
+      Top_Left: 14px
+
+      Top_Right: 14px
+
+      Bottom_Right: 14px
+
+      Bottom_Left: 14px
+
+    Corner_Smoothing: 0%
+
+    Shadow:
+
+      Layer_1:
+        X: 0px
+        Y: 9px
+        Blur: 24px
+        Spread: -4px
+        Color: "rgba(0,0,0,0.62)"
+
+      Layer_2:
+        X: 0px
+        Y: 0px
+        Blur: 13px
+        Spread: 0px
+        Color: "rgba(239,43,43,0.075)"
+
+    Background_Blur: 0px
+
+    Opacity: 100%
+
+    Blend_Mode: "Normal"
+
+    Rotation: 0deg
+
+    Clip_Content: true
+
+    Overflow: "Hidden"
+
+    Constraints:
+
+      Horizontal: "Fill container"
+
+      Vertical: "Hug contents"
+
+    Z_Index: 40
+
+    Responsive_Behavior:
+
+      Desktop:
+        Width: "calc((100% - 54px) / 4)"
+        Max_Width: 334px
+        Grid_Columns: 4
+
+      Laptop:
+        Width: "calc((100% - 36px) / 3)"
+        Max_Width: none
+        Grid_Columns: 3
+
+      Tablet:
+        Width: "calc((100% - 18px) / 2)"
+        Max_Width: none
+        Grid_Columns: 2
+
+      Mobile:
+        Width: 100%
+        Max_Width: none
+        Grid_Columns: 1
+
+  # ==========================================================
+  # PROJECT CARD IMAGE
+  # ==========================================================
+
+  PROJECT_CARD_IMAGE_FRAME:
+
+    Component_ID: "PROJECT_CARD_IMAGE_FRAME"
+
+    Type: "Frame"
+
+    Parent: "PROJECT_CARD_MASTER"
+
+    Children:
+
+      - "PROJECT_CARD_IMAGE"
+
+      - "PROJECT_CARD_IMAGE_OVERLAY"
+
+    Position:
+
+      X: 9px
+
+      Y: 9px
+
+    Size:
+
+      Width: 316px
+
+      Height: 138px
+
+    Aspect_Ratio: 2.289
+
+    Padding:
+
+      Top: 0px
+
+      Right: 0px
+
+      Bottom: 0px
+
+      Left: 0px
+
+    Margin:
+
+      Top: 0px
+
+      Right: 0px
+
+      Bottom: 0px
+
+      Left: 0px
+
+    Radius:
+
+      Top_Left: 9px
+
+      Top_Right: 9px
+
+      Bottom_Right: 9px
+
+      Bottom_Left: 9px
+
+    Stroke:
+
+      Width: 1px
+
+      Position: "Inside"
+
+      Color: "rgba(185,28,28,0.17)"
+
+    Fill:
+
+      Color: "#111111"
+
+    Shadow:
+
+      X: 0px
+
+      Y: 6px
+
+      Blur: 15px
+
+      Spread: -4px
+
+      Color: "rgba(0,0,0,0.66)"
+
+    Opacity: 100%
+
+    Clip_Content: true
+
+    Constraints:
+
+      Horizontal: "Stretch"
+
+      Vertical: "Top"
+
+    Z_Index: 41
+
+  PROJECT_CARD_IMAGE:
+
+    Component_ID: "PROJECT_CARD_IMAGE"
+
+    Type: "Image"
+
+    Parent: "PROJECT_CARD_IMAGE_FRAME"
+
+    Position:
+
+      X: 0px
+
+      Y: 0px
+
+    Size:
+
+      Width: 316px
+
+      Height: 138px
+
+    Image_Fit: "Cover"
+
+    Object_Position: "Center Center"
+
+    Crop_Mode: "Fill"
+
+    Radius: 9px
+
+    Opacity: 92%
+
+    Effects:
+
+      Saturation: 90%
+
+      Contrast: 105%
+
+      Brightness: 88%
+
+    Rotation: 0deg
+
+    Scale: 1
+
+    Z_Index: 41
+
+  PROJECT_CARD_IMAGE_OVERLAY:
+
+    Component_ID: "PROJECT_CARD_IMAGE_OVERLAY"
+
+    Type: "Rectangle"
+
+    Parent: "PROJECT_CARD_IMAGE_FRAME"
+
+    Position:
+
+      X: 0px
+
+      Y: 0px
+
+    Size:
+
+      Width: 316px
+
+      Height: 138px
+
+    Fill:
+
+      Type: "Linear Gradient"
+
+      Direction: "Top to Bottom"
+
+      Stops:
+
+        - Position: 0%
+          Color: "rgba(0,0,0,0)"
+
+        - Position: 78%
+          Color: "rgba(0,0,0,0.07)"
+
+        - Position: 100%
+          Color: "rgba(0,0,0,0.22)"
+
+    Opacity: 100%
+
+    Radius: 9px
+
+    Z_Index: 42
+
+  # ==========================================================
+  # PROJECT CARD CONTENT
+  # ==========================================================
+
+  PROJECT_CARD_CONTENT:
+
+    Component_ID: "PROJECT_CARD_CONTENT"
+
+    Type: "Frame"
+
+    Parent: "PROJECT_CARD_MASTER"
+
+    Children:
+
+      - "PROJECT_CARD_TITLE"
+
+      - "PROJECT_CARD_DESCRIPTION"
+
+      - "PROJECT_CARD_BADGE_GROUP"
+
+      - "PROJECT_CARD_BUTTON_GROUP"
+
+    Position:
+
+      X: 9px
+
+      Y: 159px
+
+    Size:
+
+      Width: 316px
+
+      Height: 163px
+
+    Auto_Layout:
+
+      Enabled: true
+
+      Direction: "Vertical"
+
+      Primary_Axis: "Start"
+
+      Counter_Axis: "Stretch"
+
+      Item_Spacing: 8px
+
+    Padding:
+
+      Top: 0px
+
+      Right: 8px
+
+      Bottom: 0px
+
+      Left: 8px
+
+    Alignment:
+
+      Horizontal: "Left"
+
+      Vertical: "Top"
+
+    Constraints:
+
+      Horizontal: "Stretch"
+
+      Vertical: "Hug contents"
+
+    Z_Index: 42
+
+  PROJECT_CARD_TITLE:
+
+    Component_ID: "PROJECT_CARD_TITLE"
+
+    Type: "Text"
+
+    Parent: "PROJECT_CARD_CONTENT"
+
+    Content: "{{project.title}}"
+
+    Position:
+
+      X: 8px
+
+      Y: 0px
+
+    Size:
+
+      Width: 300px
+
+      Height: 22px
+
+    Font:
+
+      Family: "Inter"
+
+      Size: 16px
+
+      Weight: 650
+
+      Line_Height: 22px
+
+      Letter_Spacing: -0.25px
+
+    Fill:
+
+      Color: "#F5F5F5"
+
+    Text_Align: "Left"
+
+    Text_Overflow: "Ellipsis"
+
+    Max_Lines: 1
+
+    Opacity: 100%
+
+    Z_Index: 42
+
+  PROJECT_CARD_DESCRIPTION:
+
+    Component_ID: "PROJECT_CARD_DESCRIPTION"
+
+    Type: "Text"
+
+    Parent: "PROJECT_CARD_CONTENT"
+
+    Content: "{{project.description}}"
+
+    Position:
+
+      X: 8px
+
+      Y: 30px
+
+    Size:
+
+      Width: 300px
+
+      Height: 45px
+
+    Font:
+
+      Family: "Inter"
+
+      Size: 12px
+
+      Weight: 400
+
+      Line_Height: 18px
+
+      Letter_Spacing: 0px
+
+    Fill:
+
+      Color: "#A3A3A3"
+
+    Text_Align: "Left"
+
+    Max_Lines: 2
+
+    Text_Overflow: "Ellipsis"
+
+    Opacity: 92%
+
+    Z_Index: 42
+
+  # ==========================================================
+  # TECHNOLOGY BADGE GROUP
+  # ==========================================================
+
+  PROJECT_CARD_BADGE_GROUP:
+
+    Component_ID: "PROJECT_CARD_BADGE_GROUP"
+
+    Type: "Frame"
+
+    Parent: "PROJECT_CARD_CONTENT"
+
+    Children:
+
+      - "PROJECT_TECH_BADGE instances"
+
+    Position:
+
+      X: 8px
+
+      Y: 83px
+
+    Size:
+
+      Width: 300px
+
+      Height: 22px
+
+    Auto_Layout:
+
+      Enabled: true
+
+      Direction: "Horizontal"
+
+      Primary_Axis: "Start"
+
+      Counter_Axis: "Center"
+
+      Wrap: false
+
+      Item_Spacing: 6px
+
+    Padding:
+
+      Top: 0px
+
+      Right: 0px
+
+      Bottom: 0px
+
+      Left: 0px
+
+    Clip_Content: false
+
+    Overflow: "Hidden"
+
+    Constraints:
+
+      Horizontal: "Stretch"
+
+      Vertical: "Hug contents"
+
+    Z_Index: 43
+
+  PROJECT_TECH_BADGE:
+
+    Component_ID: "PROJECT_TECH_BADGE"
+
+    Type: "Component"
+
+    Parent: "PROJECT_CARD_BADGE_GROUP"
+
+    Content: "{{technology}}"
+
+    Position:
+
+      X: "Generated by auto layout"
+
+      Y: 0px
+
+    Size:
+
+      Width: "Hug contents"
+
+      Min_Width: 36px
+
+      Height: 22px
+
+    Padding:
+
+      Top: 3px
+
+      Right: 8px
+
+      Bottom: 3px
+
+      Left: 8px
+
+    Gap: 0px
+
+    Radius: 4px
+
+    Fill:
+
+      Color: "rgba(20,10,10,0.82)"
+
+    Stroke:
+
+      Width: 1px
+
+      Position: "Inside"
+
+      Color: "rgba(185,28,28,0.62)"
+
+    Shadow:
+
+      X: 0px
+
+      Y: 0px
+
+      Blur: 6px
+
+      Spread: 0px
+
+      Color: "rgba(239,43,43,0.04)"
+
+    Font:
+
+      Family: "Inter"
+
+      Size: 10px
+
+      Weight: 400
+
+      Line_Height: 14px
+
+      Letter_Spacing: 0px
+
+    Text_Color: "#BDBDBD"
+
+    Opacity: 100%
+
+    Constraints:
+
+      Horizontal: "Hug contents"
+
+      Vertical: "Fixed"
+
+    Z_Index: 43
+
+  # ==========================================================
+  # BUTTON GROUP
+  # ==========================================================
+
+  PROJECT_CARD_BUTTON_GROUP:
+
+    Component_ID: "PROJECT_CARD_BUTTON_GROUP"
+
+    Type: "Frame"
+
+    Parent: "PROJECT_CARD_CONTENT"
+
+    Children:
+
+      - "PROJECT_BUTTON_CASE_STUDY"
+
+      - "PROJECT_BUTTON_VISIT"
+
+    Position:
+
+      X: 8px
+
+      Y: 119px
+
+    Size:
+
+      Width: 300px
+
+      Height: 34px
+
+    Auto_Layout:
+
+      Enabled: true
+
+      Direction: "Horizontal"
+
+      Primary_Axis: "Space Between"
+
+      Counter_Axis: "Center"
+
+      Item_Spacing: 10px
+
+    Padding:
+
+      Top: 0px
+
+      Right: 0px
+
+      Bottom: 0px
+
+      Left: 0px
+
+    Constraints:
+
+      Horizontal: "Stretch"
+
+      Vertical: "Bottom"
+
+    Z_Index: 44
+
+  PROJECT_BUTTON_CASE_STUDY:
+
+    Component_ID: "PROJECT_BUTTON_CASE_STUDY"
+
+    Type: "Button Component"
+
+    Parent: "PROJECT_CARD_BUTTON_GROUP"
+
+    Position:
+
+      X: 0px
+
+      Y: 0px
+
+    Size:
+
+      Width: 151px
+
+      Height: 34px
+
+    Padding:
+
+      Top: 8px
+
+      Right: 15px
+
+      Bottom: 8px
+
+      Left: 15px
+
+    Gap: 8px
+
+    Auto_Layout:
+
+      Enabled: true
+
+      Direction: "Horizontal"
+
+      Primary_Axis: "Center"
+
+      Counter_Axis: "Center"
+
+    Radius: 6px
+
+    Fill:
+
+      Type: "Linear Gradient"
+
+      Direction: "Top to Bottom"
+
+      Stops:
+
+        - Position: 0%
+          Color: "rgba(127,29,29,0.22)"
+
+        - Position: 100%
+          Color: "rgba(60,8,8,0.30)"
+
+    Stroke:
+
+      Width: 1px
+
+      Position: "Inside"
+
+      Color: "#C91D1D"
+
+    Shadow:
+
+      X: 0px
+
+      Y: 0px
+
+      Blur: 13px
+
+      Spread: 0px
+
+      Color: "rgba(239,43,43,0.19)"
+
+    Icon:
+
+      Name: "BookOpen"
+
+      Library: "Lucide React"
+
+      Width: 14px
+
+      Height: 14px
+
+      Stroke_Width: 2px
+
+      Color: "#FF2D2D"
+
+    Text:
+
+      Content: "View Case Study"
+
+      Font_Family: "Inter"
+
+      Font_Size: 11px
+
+      Font_Weight: 500
+
+      Line_Height: 16px
+
+      Color: "#FF2D2D"
+
+    Cursor: "Pointer"
+
+    Opacity: 100%
+
+    Z_Index: 44
+
+  PROJECT_BUTTON_VISIT:
+
+    Component_ID: "PROJECT_BUTTON_VISIT"
+
+    Type: "Button Component"
+
+    Parent: "PROJECT_CARD_BUTTON_GROUP"
+
+    Position:
+
+      X: 161px
+
+      Y: 0px
+
+    Size:
+
+      Width: 139px
+
+      Height: 34px
+
+    Padding:
+
+      Top: 8px
+
+      Right: 15px
+
+      Bottom: 8px
+
+      Left: 15px
+
+    Gap: 8px
+
+    Auto_Layout:
+
+      Enabled: true
+
+      Direction: "Horizontal"
+
+      Primary_Axis: "Center"
+
+      Counter_Axis: "Center"
+
+    Radius: 6px
+
+    Fill:
+
+      Color: "rgba(12,12,12,0.86)"
+
+    Stroke:
+
+      Width: 1px
+
+      Position: "Inside"
+
+      Color: "rgba(255,255,255,0.22)"
+
+    Shadow:
+
+      X: 0px
+
+      Y: 4px
+
+      Blur: 11px
+
+      Spread: -4px
+
+      Color: "rgba(0,0,0,0.60)"
+
+    Icon:
+
+      Name: "Globe2"
+
+      Library: "Lucide React"
+
+      Width: 14px
+
+      Height: 14px
+
+      Stroke_Width: 2px
+
+      Color: "#D4D4D4"
+
+    Text:
+
+      Content: "Visit Website"
+
+      Font_Family: "Inter"
+
+      Font_Size: 11px
+
+      Font_Weight: 500
+
+      Line_Height: 16px
+
+      Color: "#D4D4D4"
+
+    Cursor: "Pointer"
+
+    Opacity: 100%
+
+    Z_Index: 44
+
+  # ==========================================================
+  # PROJECT CARD STATES
+  # ==========================================================
+
+  PROJECT_CARD_STATES:
+
+    Default:
+
+      Translate_Y: 0px
+
+      Scale: 1
+
+      Rotation_X: 0deg
+
+      Rotation_Y: 0deg
+
+      Border_Color: "rgba(185,28,28,0.43)"
+
+      Glow_Opacity: 100%
+
+      Image_Scale: 1
+
+    Hover:
+
+      Translate_Y: -7px
+
+      Scale: 1.012
+
+      Rotation_X: 0deg
+
+      Rotation_Y: 0deg
+
+      Border_Color: "rgba(239,43,43,0.76)"
+
+      Background:
+        Start: "#120E0E"
+        End: "#090707"
+
+      Shadow:
+
+        X: 0px
+
+        Y: 16px
+
+        Blur: 35px
+
+        Spread: -9px
+
+        Color: "rgba(239,43,43,0.20)"
+
+      Image_Scale: 1.035
+
+      Image_Brightness: 96%
+
+      Image_Saturation: 100%
+
+    Focus_Visible:
+
+      Outline_Width: 2px
+
+      Outline_Color: "#EF2B2B"
+
+      Outline_Offset: 3px
+
+    Transition:
+
+      Duration: 420ms
+
+      Easing: "cubic-bezier(0.22, 1, 0.36, 1)"
+
+  PROJECT_BUTTON_CASE_STUDY_STATES:
+
+    Hover:
+
+      Translate_Y: -1px
+
+      Background: "rgba(185,28,28,0.26)"
+
+      Border_Color: "#EF2B2B"
+
+      Glow_Blur: 18px
+
+      Text_Color: "#FF4343"
+
+    Active:
+
+      Translate_Y: 0px
+
+      Scale: 0.98
+
+    Transition:
+
+      Duration: 250ms
+
+      Easing: "ease-out"
+
+  PROJECT_BUTTON_VISIT_STATES:
+
+    Hover:
+
+      Translate_Y: -1px
+
+      Background: "rgba(255,255,255,0.055)"
+
+      Border_Color: "rgba(255,255,255,0.38)"
+
+      Text_Color: "#FFFFFF"
+
+    Active:
+
+      Scale: 0.98
+
+    Transition:
+
+      Duration: 250ms
+
+      Easing: "ease-out"
+
+  PROJECT_TECH_BADGE_STATES:
+
+    Hover:
+
+      Fill: "rgba(127,29,29,0.20)"
+
+      Border_Color: "rgba(239,43,43,0.74)"
+
+      Text_Color: "#E7E7E7"
+
+    Transition:
+
+      Duration: 200ms
+
+      Easing: "ease-out"
+
+  # ==========================================================
+  # PROJECT DATA SCHEMA
+  # CARD MASTER TIDAK PERLU DIULANG
+  # ==========================================================
+
+  PROJECT_DATA_SCHEMA:
+
+    TypeScript_Interface: |
+      export interface ProjectItem {
+        id: string;
+        title: string;
+        description: string;
+        image: string;
+        technologies: string[];
+        caseStudyUrl?: string;
+        websiteUrl?: string;
+        imageAlt: string;
+        featured?: boolean;
+      }
+
+    Example_Data:
+
+      - id: "puskesmas-tandang"
+        title: "Website Puskesmas Tandang"
+        description:
+          "Sistem informasi layanan kesehatan untuk memudahkan pasien
+          dan admin dalam mengelola data dan layanan."
+        image: "/images/projects/puskesmas.webp"
+        imageAlt: "Tampilan website Puskesmas Tandang"
+        technologies:
+          - "HTML"
+          - "CSS"
+          - "JavaScript"
+          - "Laravel"
+          - "MySQL"
+        caseStudyUrl: "/projects/puskesmas-tandang"
+        websiteUrl: "https://example.com"
+        featured: true
+
+      - id: "janji-martahan-coffee"
+        title: "Janji Martahan Coffee"
+        description:
+          "Website company profile untuk kedai kopi dengan tampilan
+          modern dan pengalaman pengguna yang optimal."
+        image: "/images/projects/janji-martahan.webp"
+        imageAlt: "Tampilan website Janji Martahan Coffee"
+        technologies:
+          - "HTML"
+          - "CSS"
+          - "JavaScript"
+          - "PHP"
+        caseStudyUrl: "/projects/janji-martahan"
+        websiteUrl: "https://example.com"
+        featured: true
+
+  # ==========================================================
+  # COMPONENT HIERARCHY
+  # ==========================================================
+
+  COMPONENT_HIERARCHY: |
+
+    PROJECTS_FRAME
+    ├── PROJECTS_BACKGROUND
+    │   ├── BACKGROUND_BASE
+    │   ├── BACKGROUND_RADIAL_GLOW_TOP
+    │   ├── BACKGROUND_RADIAL_GLOW_CENTER
+    │   ├── BACKGROUND_RADIAL_GLOW_BOTTOM
+    │   ├── BACKGROUND_NOISE
+    │   ├── BACKGROUND_PARTICLES
+    │   ├── DOT_GRID_TOP_RIGHT
+    │   ├── DOT_GRID_BOTTOM_RIGHT
+    │   ├── HEXAGON_GROUP_TOP_RIGHT
+    │   │   ├── HEXAGON_TOP_MEDIUM
+    │   │   ├── HEXAGON_TOP_LARGE
+    │   │   └── HEXAGON_TOP_SMALL
+    │   └── HEXAGON_GROUP_BOTTOM_LEFT
+    │       ├── HEXAGON_BOTTOM_SMALL
+    │       └── HEXAGON_BOTTOM_PARTIAL
+    │
+    └── PROJECTS_OUTER_CONTAINER
+        ├── PROJECTS_HEADER
+        │   ├── PROJECTS_SECTION_LABEL_ROW
+        │   │   ├── LABEL_CIRCLE
+        │   │   ├── LABEL_SHORT_LINE
+        │   │   ├── LABEL_TEXT
+        │   │   ├── LABEL_LONG_LINE
+        │   │   └── LABEL_END_DOT
+        │   ├── PROJECTS_MAIN_TITLE
+        │   │   ├── TITLE_FEATURED
+        │   │   └── TITLE_PROJECTS
+        │   └── PROJECTS_DESCRIPTION
+        │
+        └── PROJECTS_GRID
+            └── PROJECT_CARD_MASTER × N
+                ├── PROJECT_CARD_IMAGE_FRAME
+                │   ├── PROJECT_CARD_IMAGE
+                │   └── PROJECT_CARD_IMAGE_OVERLAY
+                └── PROJECT_CARD_CONTENT
+                    ├── PROJECT_CARD_TITLE
+                    ├── PROJECT_CARD_DESCRIPTION
+                    ├── PROJECT_CARD_BADGE_GROUP
+                    │   └── PROJECT_TECH_BADGE × N
+                    └── PROJECT_CARD_BUTTON_GROUP
+                        ├── PROJECT_BUTTON_CASE_STUDY
+                        └── PROJECT_BUTTON_VISIT
+
+  # ==========================================================
+  # FULL LAYER ORDER
+  # ==========================================================
+
+  LAYER_ORDER:
+
+    0: "PROJECTS_FRAME"
+
+    1: "BACKGROUND_BASE"
+
+    2: "BACKGROUND_RADIAL_GLOW"
+
+    3: "BACKGROUND_NOISE"
+
+    4: "BACKGROUND_PARTICLES"
+
+    5: "BACKGROUND_DOT_GRIDS"
+
+    6: "BACKGROUND_HEXAGONS"
+
+    10: "PROJECTS_OUTER_CONTAINER"
+
+    20: "PROJECTS_HEADER"
+
+    21: "SECTION_LABEL"
+
+    22: "SECTION_TITLE"
+
+    23: "SECTION_DESCRIPTION"
+
+    30: "PROJECTS_GRID"
+
+    40: "PROJECT_CARD_MASTER"
+
+    41: "PROJECT_CARD_IMAGE"
+
+    42: "PROJECT_CARD_IMAGE_OVERLAY"
+
+    43: "PROJECT_CARD_TEXT_CONTENT"
+
+    44: "PROJECT_CARD_BADGES"
+
+    45: "PROJECT_CARD_BUTTONS"
+
+    50: "PROJECT_CARD_HOVER_STATE"
+
+  # ==========================================================
+  # SECTION ANIMATION
+  # ==========================================================
+
+  SECTION_ANIMATION:
+
+    Initial_State:
+
+      Opacity: 0
+
+      Translate_Y: 34px
+
+    Enter_State:
+
+      Opacity: 1
+
+      Translate_Y: 0px
+
+    Duration: 800ms
+
+    Easing: "cubic-bezier(0.22,1,0.36,1)"
+
+  HEADER_ANIMATION:
+
+    Label:
+
+      Initial:
+        Opacity: 0
+        Translate_X: -18px
+
+      Animate:
+        Opacity: 1
+        Translate_X: 0px
+
+      Delay: 100ms
+
+      Duration: 600ms
+
+    Title:
+
+      Initial:
+        Opacity: 0
+        Translate_Y: 24px
+
+      Animate:
+        Opacity: 1
+        Translate_Y: 0px
+
+      Delay: 180ms
+
+      Duration: 700ms
+
+    Description:
+
+      Initial:
+        Opacity: 0
+        Translate_Y: 16px
+
+      Animate:
+        Opacity: 1
+        Translate_Y: 0px
+
+      Delay: 260ms
+
+      Duration: 650ms
+
+  PROJECT_CARD_ANIMATION:
+
+    Type: "Staggered Fade Up"
+
+    Initial:
+
+      Opacity: 0
+
+      Translate_Y: 28px
+
+      Scale: 0.985
+
+    Animate:
+
+      Opacity: 1
+
+      Translate_Y: 0px
+
+      Scale: 1
+
+    Duration: 580ms
+
+    Stagger_Delay: 70ms
+
+    Easing: "cubic-bezier(0.22,1,0.36,1)"
+
+    Trigger:
+
+      Type: "Intersection Observer"
+
+      Once: true
+
+      Threshold: 0.12
+
+  # ==========================================================
+  # PARTICLE ANIMATION
+  # ==========================================================
+
+  PARTICLE_ANIMATION:
+
+    Enabled: true
+
+    Movement:
+
+      Speed: 0.25
+
+      Direction: "Random"
+
+      Straight: false
+
+      Out_Mode: "Bounce"
+
+    Twinkle:
+
+      Enabled: true
+
+      Frequency: 0.02
+
+      Opacity_Min: 0.10
+
+      Opacity_Max: 0.70
+
+    Interaction:
+
+      Hover: false
+
+      Click: false
+
+    Performance:
+
+      FPS_Limit: 40
+
+      Retina_Detect: true
+
+      Reduce_On_Mobile: true
+
+  # ==========================================================
+  # RESPONSIVE SPECIFICATION
+  # ==========================================================
+
+  BREAKPOINTS:
+
+    Mobile_SM: 360px
+
+    Mobile: 480px
+
+    Tablet: 768px
+
+    Laptop: 1024px
+
+    Desktop: 1280px
+
+    Wide: 1536px
+
+  DESKTOP_WIDE:
+
+    Viewport_Min: 1536px
+
+    Outer_Margin_X: 18px
+
+    Section_Padding_X: 64px
+
+    Section_Padding_Top: 43px
+
+    Grid_Columns: 4
+
+    Grid_Gap_X: 18px
+
+    Grid_Gap_Y: 18px
+
+    Card_Width: 334px
+
+    Card_Height: 336px
+
+    Header_Title_Size: 56px
+
+  DESKTOP:
+
+    Viewport_Range: "1280px–1535px"
+
+    Outer_Margin_X: 18px
+
+    Section_Padding_X: 48px
+
+    Section_Padding_Top: 42px
+
+    Grid_Columns: 4
+
+    Grid_Gap_X: 16px
+
+    Grid_Gap_Y: 18px
+
+    Card_Width: "Flexible"
+
+    Card_Height: 336px
+
+    Header_Title_Size: 54px
+
+  LAPTOP:
+
+    Viewport_Range: "1024px–1279px"
+
+    Outer_Margin_X: 16px
+
+    Section_Padding_X: 36px
+
+    Section_Padding_Top: 40px
+
+    Grid_Columns: 3
+
+    Grid_Gap_X: 18px
+
+    Grid_Gap_Y: 18px
+
+    Card_Width: "calc((100% - 36px) / 3)"
+
+    Card_Height: 345px
+
+    Header_Title_Size: 48px
+
+    Header_Width: 480px
+
+  TABLET:
+
+    Viewport_Range: "768px–1023px"
+
+    Outer_Margin_X: 14px
+
+    Section_Padding_X: 28px
+
+    Section_Padding_Top: 36px
+
+    Grid_Columns: 2
+
+    Grid_Gap_X: 18px
+
+    Grid_Gap_Y: 18px
+
+    Card_Width: "calc((100% - 18px) / 2)"
+
+    Card_Height: auto
+
+    Image_Height: 155px
+
+    Header_Title_Size: 44px
+
+    Header_Title_Line_Height: 48px
+
+    Header_Description_Size: 14px
+
+    Outer_Container_Radius: 26px
+
+  MOBILE:
+
+    Viewport_Range: "360px–767px"
+
+    Outer_Margin_X: 10px
+
+    Section_Padding_X: 16px
+
+    Section_Padding_Top: 30px
+
+    Section_Padding_Bottom: 30px
+
+    Grid_Columns: 1
+
+    Grid_Gap_X: 0px
+
+    Grid_Gap_Y: 16px
+
+    Card_Width: 100%
+
+    Card_Height: auto
+
+    Card_Padding: 9px
+
+    Image_Width: 100%
+
+    Image_Height: "clamp(150px, 48vw, 205px)"
+
+    Header_Title_Size: 38px
+
+    Header_Title_Line_Height: 42px
+
+    Header_Title_Wrap: true
+
+    Header_Description_Size: 14px
+
+    Header_Description_Line_Height: 22px
+
+    Header_Width: 100%
+
+    Section_Label_Size: 12px
+
+    Section_Label_Line_Width: 58px
+
+    Badge_Wrap: true
+
+    Badge_Row_Gap: 6px
+
+    Button_Group_Direction: "Horizontal"
+
+    Button_Group_Gap: 8px
+
+    Button_Width: "50%"
+
+    Outer_Container_Radius: 22px
+
+  MOBILE_SMALL:
+
+    Viewport_Max: 359px
+
+    Header_Title_Size: 34px
+
+    Section_Padding_X: 13px
+
+    Button_Group_Direction: "Vertical"
+
+    Button_Width: 100%
+
+    Card_Description_Max_Lines: 3
+
+  # ==========================================================
+  # ACCESSIBILITY
+  # ==========================================================
+
+  ACCESSIBILITY:
+
+    Section:
+
+      Semantic_Element: "section"
+
+      Aria_Labelledby: "projects-title"
+
+    Project_Grid:
+
+      Semantic_Element: "ul"
+
+      Role: "list"
+
+    Project_Card:
+
+      Semantic_Element: "li"
+
+    Project_Image:
+
+      Alt_Text: "{{project.imageAlt}}"
+
+      Lazy_Load: true
+
+      Decoding: "async"
+
+    Case_Study_Button:
+
+      Semantic_Element: "Link"
+
+      Aria_Label: "View case study for {{project.title}}"
+
+    Website_Button:
+
+      Semantic_Element: "External Link"
+
+      Aria_Label: "Visit website for {{project.title}}"
+
+      Target: "_blank"
+
+      Rel: "noopener noreferrer"
+
+    Focus:
+
+      Visible: true
+
+      Color: "#EF2B2B"
+
+      Width: 2px
+
+      Offset: 3px
+
+    Contrast:
+
+      Text_Primary_Minimum: "WCAG AA"
+
+      Button_Minimum: "WCAG AA"
+
+    Reduced_Motion:
+
+      Respect_Prefers_Reduced_Motion: true
+
+      Disable:
+        - "Card translate animation"
+        - "Particle movement"
+        - "Image scale hover"
+
+  # ==========================================================
+  # FRONTEND COMPONENT STRUCTURE
+  # ==========================================================
+
+  COMPONENT_FILES:
+
+    - Path: "components/sections/ProjectsSection.tsx"
+      Responsibility:
+        "Render full projects section, header, ornaments, and project grid."
+
+    - Path: "components/projects/ProjectGrid.tsx"
+      Responsibility:
+        "Render responsive grid from project data."
+
+    - Path: "components/projects/ProjectCard.tsx"
+      Responsibility:
+        "Reusable project card component."
+
+    - Path: "components/projects/TechnologyBadge.tsx"
+      Responsibility:
+        "Reusable technology badge."
+
+    - Path: "components/ui/SectionLabel.tsx"
+      Responsibility:
+        "Reusable section label with circle, lines, and glowing end dot."
+
+    - Path: "components/background/ProjectParticles.tsx"
+      Responsibility:
+        "Render sparse red particle field."
+
+    - Path: "components/background/HexagonDecoration.tsx"
+      Responsibility:
+        "Reusable decorative hexagon."
+
+    - Path: "data/projects.ts"
+      Responsibility:
+        "Store project item data."
+
+  # ==========================================================
+  # TAILWIND IMPLEMENTATION REFERENCE
+  # ==========================================================
+
+  TAILWIND_REFERENCE:
+
+    Section: |
+      relative overflow-hidden bg-[#050505]
+      px-[18px] py-[13px]
+
+    Outer_Container: |
+      relative mx-auto min-h-[966px] w-full
+      rounded-[30px]
+      border border-[rgba(185,28,28,0.70)]
+      bg-[rgba(3,3,3,0.38)]
+      px-16 pb-[46px] pt-[43px]
+      backdrop-blur-[2px]
+
+    Project_Grid: |
+      grid grid-cols-1 gap-[18px]
+      md:grid-cols-2
+      lg:grid-cols-3
+      xl:grid-cols-4
+
+    Project_Card: |
+      group relative overflow-hidden
+      rounded-[14px]
+      border border-[rgba(185,28,28,0.43)]
+      bg-gradient-to-b from-[#0E0D0D] to-[#080808]
+      p-[9px]
+      transition-all duration-[420ms]
+      ease-[cubic-bezier(0.22,1,0.36,1)]
+      hover:-translate-y-[7px]
+      hover:border-[rgba(239,43,43,0.76)]
+
+    Project_Image: |
+      aspect-[2.289/1] w-full overflow-hidden
+      rounded-[9px]
+      border border-[rgba(185,28,28,0.17)]
+
+    Badge: |
+      inline-flex h-[22px] items-center
+      rounded-[4px]
+      border border-[rgba(185,28,28,0.62)]
+      bg-[rgba(20,10,10,0.82)]
+      px-2 text-[10px] text-[#BDBDBD]
+
+    Primary_Button: |
+      inline-flex h-[34px] items-center justify-center gap-2
+      rounded-[6px]
+      border border-[#C91D1D]
+      bg-[rgba(127,29,29,0.22)]
+      px-[15px]
+      text-[11px] font-medium text-[#FF2D2D]
+
+    Secondary_Button: |
+      inline-flex h-[34px] items-center justify-center gap-2
+      rounded-[6px]
+      border border-white/20
+      bg-[#0C0C0C]
+      px-[15px]
+      text-[11px] font-medium text-[#D4D4D4]
+
+  # ==========================================================
+  # VISUAL VALIDATION CHECKLIST
+  # ==========================================================
+
+  VALIDATION_CHECKLIST:
+
+    Section_Frame:
+
+      - "Outer border harus berjarak sekitar 18px dari sisi viewport."
+
+      - "Radius outer container sekitar 30px."
+
+      - "Border merah tidak boleh terlalu terang."
+
+      - "Background tetap dominan hitam, bukan merah gelap."
+
+    Header:
+
+      - "Label harus sejajar dengan sisi kiri card pertama."
+
+      - "Judul Featured Projects menggunakan satu baris pada desktop."
+
+      - "Featured berwarna putih, Projects merah."
+
+      - "Description terdiri dari dua baris."
+
+    Grid:
+
+      - "Empat card per baris pada desktop lebar."
+
+      - "Jarak horizontal dan vertikal sekitar 18px."
+
+      - "Semua card memiliki lebar dan tinggi yang konsisten."
+
+    Card:
+
+      - "Screenshot memenuhi hampir seluruh lebar card."
+
+      - "Card border merah tipis dengan glow sangat halus."
+
+      - "Title tidak terlalu besar."
+
+      - "Description maksimal dua sampai tiga baris."
+
+      - "Badge harus kecil dan rapat."
+
+      - "Dua tombol berada dalam satu baris."
+
+    Decorations:
+
+      - "Hexagon kanan atas berada di belakang konten."
+
+      - "Dot grid kanan atas tidak boleh terlalu dominan."
+
+      - "Partikel merah tersebar tipis."
+
+      - "Glow merah hanya menjadi ambient light."
+
+    Hover:
+
+      - "Card naik ringan, tidak berputar berlebihan."
+
+      - "Image zoom maksimal sekitar 1.035."
+
+      - "Border menjadi lebih terang saat hover."
+
+  # ==========================================================
+  # ESTIMATION CONFIDENCE
+  # ==========================================================
+
+  ESTIMATION_CONFIDENCE:
+
+    Frame_Position: "High"
+
+    Outer_Container_Size: "High"
+
+    Header_Position: "High"
+
+    Grid_Columns: "High"
+
+    Card_Proportion: "High"
+
+    Image_Proportion: "High"
+
+    Typography_Size: "Medium-High"
+
+    Badge_Size: "Medium-High"
+
+    Border_Opacity: "Medium"
+
+    Shadow_Blur: "Medium"
+
+    Ornament_Opacity: "Medium"
+
+    Particle_Count: "Medium"
+
+    Auto_Layout: "Estimated"
+
+    Constraints: "Estimated"
+
+    Responsive_Behavior: "Designed prediction"
+
+  # ==========================================================
+  # FINAL IMPLEMENTATION RULE
+  # ==========================================================
+
+  FINAL_RULES:
+
+    - "Gunakan hanya satu ProjectCard component."
+
+    - "Semua project baru harus ditambahkan melalui data array."
+
+    - "Jangan membuat ukuran card berbeda untuk setiap project."
+
+    - "Gunakan aspect-ratio konsisten untuk seluruh screenshot."
+
+    - "Jangan memperbesar glow merah secara berlebihan."
+
+    - "Jaga card tetap bersih dan mudah dibaca."
+
+    - "Semua elemen dekorasi harus pointer-events-none."
+
+    - "Dekorasi harus berada di belakang header dan project grid."
+
+    - "Lakukan screenshot comparison pada viewport 1586 × 992."
+
+    - "Fine tuning terakhir dilakukan pada padding, gap, font size,
+      dan image crop setelah hasil pertama dirender."
+
+  # ==========================================================
+  # END OF PROJECTS SECTION SPECIFICATION
+  # ==========================================================
+
+
+
+...

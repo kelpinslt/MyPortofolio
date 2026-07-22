@@ -1,0 +1,642 @@
+schema_version: '1.0'
+document_role: section_specification
+section:
+  id: hero
+  order: 1
+  name: Hero
+  source_file: PORTFOLIO-MASTER-SOURCE.txt
+  source_line_range:
+    start: 1
+    end: 527
+  source_line_count: 527
+  source_sha256: 00c57b33711e549faf8649174f8fbd5b249110c29990d7edee02f4397c8aeeb6
+  preservation_mode: exact_raw_source_embedded
+  needs_confirmation: false
+normalized_context:
+  reference_frame:
+    width: 1440px
+    min_height: 100vh
+  theme:
+  - Futuristic
+  - Cyber Interface
+  - Iron Man HUD
+  - Minimalist
+  - Professional
+  - Elegant
+  implementation_stack:
+    framework: Next.js 16
+    styling: Tailwind CSS
+    animation: Framer Motion
+    particles: React TSParticles
+    icons: Lucide React
+  primary_components:
+  - Navbar.tsx
+  - HeroSection.tsx
+  - ParticleBackground.tsx
+  - AboutButton.tsx
+  - ScrollIndicator.tsx
+source_index:
+- source_key: PROJECT
+  normalized_key: project
+  source_line: 9
+- source_key: FRAME
+  normalized_key: frame
+  source_line: 24
+- source_key: GRID
+  normalized_key: grid
+  source_line: 35
+- source_key: COLORS
+  normalized_key: colors
+  source_line: 47
+- source_key: FONT
+  normalized_key: font
+  source_line: 73
+- source_key: TEXT_STYLE
+  normalized_key: text_style
+  source_line: 77
+- source_key: NAVBAR
+  normalized_key: navbar
+  source_line: 106
+- source_key: HERO
+  normalized_key: hero
+  source_line: 153
+- source_key: SPACING
+  normalized_key: spacing
+  source_line: 172
+- source_key: WHO_TEXT
+  normalized_key: who_text
+  source_line: 186
+- source_key: IAM_TEXT
+  normalized_key: iam_text
+  source_line: 211
+- source_key: DEVELOPER_TEXT
+  normalized_key: developer_text
+  source_line: 232
+- source_key: GLOW_DOT
+  normalized_key: glow_dot
+  source_line: 255
+- source_key: LINE
+  normalized_key: line
+  source_line: 275
+- source_key: PARTICLE
+  normalized_key: particle
+  source_line: 305
+- source_key: ABOUT_BUTTON
+  normalized_key: about_button
+  source_line: 357
+- source_key: SCROLL_INDICATOR
+  normalized_key: scroll_indicator
+  source_line: 393
+- source_key: LAYERS
+  normalized_key: layers
+  source_line: 412
+- source_key: ANIMATION
+  normalized_key: animation
+  source_line: 430
+- source_key: MOBILE
+  normalized_key: mobile
+  source_line: 472
+- source_key: COMPONENTS
+  normalized_key: components
+  source_line: 494
+- source_key: STYLE
+  normalized_key: style
+  source_line: 506
+classification:
+  content_data: preserved in raw_specification
+  visual_data: preserved in raw_specification
+  technical_data: preserved in raw_specification
+  responsive_data: preserved in raw_specification
+  interaction_data: preserved in raw_specification
+  accessibility_data: preserved in raw_specification when present
+conflicts: []
+unclassified_notes: []
+raw_specification: |+
+  (hero section)
+  # ==========================================================
+  # PORTFOLIO WEBSITE DESIGN SPECIFICATION
+  # PROJECT : Kelpinn Portfolio Website
+  # SECTION : Hero - Who I Am
+  # VERSION : 1.1
+  # ==========================================================
+
+  PROJECT:
+
+    Name: Kelpinn Portfolio
+    Type: Personal Portfolio Website
+
+    Framework: Next.js 16
+    Styling: Tailwind CSS
+    Animation: Framer Motion
+    Particle: React TSParticles
+    Icons: Lucide React
+
+  # ==========================================================
+  # FRAME
+  # ==========================================================
+
+  FRAME:
+
+    Width: 1440px
+    Min_Height: 100vh
+
+    Background: "#111111"
+
+  # ==========================================================
+  # GRID
+  # ==========================================================
+
+  GRID:
+
+    Container_Width: 1280px
+
+    Padding_X: 80px
+
+    Column_Gap: 24px
+
+  # ==========================================================
+  # COLOR TOKENS
+  # ==========================================================
+
+  COLORS:
+
+    Background: "#111111"
+
+    Surface: "#1A1A1A"
+
+    Card: "#222222"
+
+    Primary: "#7F1D1D"
+
+    Secondary: "#B91C1C"
+
+    Accent: "#EF4444"
+
+    White: "#FFFFFF"
+
+    Soft_Text: "#A1A1AA"
+
+    Muted_Text: "#71717A"
+
+    Border: "#343434"
+
+  # ==========================================================
+  # TYPOGRAPHY
+  # ==========================================================
+
+  FONT:
+
+    Family: Inter
+
+  TEXT_STYLE:
+
+    Hero_Title:
+
+      Font_Size: 92px
+      Font_Weight: 800
+
+      Line_Height: 88px
+
+      Letter_Spacing: -4%
+
+    Developer:
+
+      Font_Size: 14px
+
+      Font_Weight: 400
+
+      Letter_Spacing: 6px
+
+    Navbar:
+
+      Font_Size: 15px
+
+      Font_Weight: 400
+
+  # ==========================================================
+  # NAVBAR
+  # ==========================================================
+
+  NAVBAR:
+
+    Position:
+
+      X: Auto
+      Y: 24px
+
+    Size:
+
+      Width: 1280px
+      Height: 64px
+
+    Border:
+
+      Width: 1px
+
+      Color: "#2A2A2A"
+
+      Radius: 14px
+
+    Background:
+
+      Color: "rgba(17,17,17,0.55)"
+
+      Blur: 20px
+
+    Padding:
+
+      Left: 32px
+
+      Right: 32px
+
+    Navigation:
+
+      Gap: 52px
+
+      Items:
+
+        - About
+        - Skills
+        - Projects
+        - Contact
+
+  # ==========================================================
+  # HERO SECTION
+  # ==========================================================
+
+  HERO:
+
+    Height: 100vh
+
+    Container:
+
+      Width: 1280px
+
+      Margin: Auto
+
+    Content_Position:
+
+      X: 110px
+      Y: 190px
+
+  # ==========================================================
+  # SPACING
+  # ==========================================================
+
+  SPACING:
+
+    Navbar_To_Hero: 110px
+
+    WHO_To_IAM: 0px
+
+    IAM_To_Developer: 55px
+
+    Developer_To_Line: 18px
+
+  # ==========================================================
+  # WHO TEXT
+  # ==========================================================
+
+  WHO_TEXT:
+
+    Content: "WHO"
+
+    Position:
+
+      X: 110px
+      Y: 210px
+
+    Font:
+
+      Size: 92px
+
+      Weight: 800
+
+    Color: "#B91C1C"
+
+    Glow:
+
+      Blur: 28px
+
+  # ==========================================================
+  # I AM TEXT
+  # ==========================================================
+
+  IAM_TEXT:
+
+    Content: "I AM"
+
+    Position:
+
+      X: 110px
+      Y: 300px
+
+    Font:
+
+      Size: 92px
+
+      Weight: 800
+
+    Color: "#FFFFFF"
+
+  # ==========================================================
+  # DEVELOPER TEXT
+  # ==========================================================
+
+  DEVELOPER_TEXT:
+
+    Content: "Developer"
+
+    Position:
+
+      X: 130px
+      Y: 410px
+
+    Font:
+
+      Size: 14px
+
+      Weight: 400
+
+      Letter_Spacing: 6px
+
+    Color: "#A1A1AA"
+
+  # ==========================================================
+  # GLOW DOT
+  # ==========================================================
+
+  GLOW_DOT:
+
+    Position:
+
+      X: 110px
+      Y: 448px
+
+    Size:
+
+      Width: 10px
+      Height: 10px
+
+    Fill: "#EF4444"
+
+    Radius: 999px
+
+  # ==========================================================
+  # RED LINE
+  # ==========================================================
+
+  LINE:
+
+    Position:
+
+      X: 122px
+      Y: 452px
+
+    Size:
+
+      Width: 110px
+      Height: 2px
+
+    Gradient:
+
+      Start:
+
+        Color: "#EF4444"
+
+        Opacity: 100%
+
+      End:
+
+        Color: "#EF4444"
+
+        Opacity: 0%
+
+  # ==========================================================
+  # PARTICLE AREA
+  # ==========================================================
+
+  PARTICLE:
+
+    Area:
+
+      X: 620px
+      Y: 120px
+
+      Width: 600px
+      Height: 500px
+
+    Count: 120
+
+    Dot_Size:
+
+      Min: 2px
+      Max: 4px
+
+    Opacity:
+
+      Min: 0.25
+      Max: 0.60
+
+    Link:
+
+      Enable: true
+
+      Distance: 150px
+
+      Width: 1px
+
+      Color: "#7F1D1D"
+
+    Movement:
+
+      Speed: 0.8
+
+    Mouse:
+
+      Hover:
+
+        Enable: true
+
+        Mode: Repulse
+
+        Distance: 180px
+
+        Duration: 0.4s
+
+  # ==========================================================
+  # ABOUT BUTTON
+  # ==========================================================
+
+  ABOUT_BUTTON:
+
+    Position:
+
+      X: 920px
+      Y: 610px
+
+    Size:
+
+      Width: 150px
+      Height: 46px
+
+    Radius: 6px
+
+    Background: "#7F1D1D"
+
+    Border:
+
+      Width: 1px
+
+      Color: "#B91C1C"
+
+    Text:
+
+      Content: "About"
+
+      Size: 15px
+
+      Weight: 500
+
+      Color: "#FFFFFF"
+
+  # ==========================================================
+  # SCROLL INDICATOR
+  # ==========================================================
+
+  SCROLL_INDICATOR:
+
+    Position:
+
+      X: 690px
+      Y: 730px
+
+    Text:
+
+      Content: "SCROLL"
+
+      Size: 12px
+
+      Color: "#71717A"
+
+  # ==========================================================
+  # LAYERS
+  # ==========================================================
+
+  LAYERS:
+
+    Background: 0
+
+    Particle: 1
+
+    Hero_Content: 10
+
+    About_Button: 20
+
+    Scroll_Indicator: 30
+
+    Navbar: 100
+
+  # ==========================================================
+  # ANIMATION
+  # ==========================================================
+
+  ANIMATION:
+
+    Navbar:
+
+      Type: Fade_Down
+
+      Duration: 0.8s
+
+    WHO:
+
+      Type: Fade_Up
+
+      Delay: 0.2s
+
+    IAM:
+
+      Type: Fade_Up
+
+      Delay: 0.4s
+
+    Developer:
+
+      Type: Fade_Up
+
+      Delay: 0.6s
+
+    About_Button:
+
+      Type: Fade_Up
+
+      Delay: 0.8s
+
+    Particle:
+
+      Floating: true
+
+      Mouse_Repulsion: true
+
+  # ==========================================================
+  # RESPONSIVE
+  # ==========================================================
+
+  MOBILE:
+
+    Hero_Title:
+
+      Font_Size: 54px
+
+    Layout:
+
+      Direction: Column
+
+    Particle:
+
+      Opacity: 15%
+
+    Navbar:
+
+      Type: Hamburger
+
+  # ==========================================================
+  # COMPONENT STRUCTURE
+  # ==========================================================
+
+  COMPONENTS:
+
+    - Navbar.tsx
+    - HeroSection.tsx
+    - ParticleBackground.tsx
+    - AboutButton.tsx
+    - ScrollIndicator.tsx
+
+  # ==========================================================
+  # DESIGN CONCEPT
+  # ==========================================================
+
+  STYLE:
+
+    Theme:
+
+      - Futuristic
+      - Cyber Interface
+      - Iron Man HUD
+      - Minimalist
+      - Professional
+      - Elegant
+
+    Keywords:
+
+      - Dark Red
+      - Developer
+      - Portfolio
+      - Particle Background
+      - Interactive Cursor
+
+
+
+
+...
