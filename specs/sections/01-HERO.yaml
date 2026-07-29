@@ -1,642 +1,1258 @@
-schema_version: '1.0'
-document_role: section_specification
-section:
-  id: hero
-  order: 1
-  name: Hero
-  source_file: PORTFOLIO-MASTER-SOURCE.txt
-  source_line_range:
-    start: 1
-    end: 527
-  source_line_count: 527
-  source_sha256: 00c57b33711e549faf8649174f8fbd5b249110c29990d7edee02f4397c8aeeb6
-  preservation_mode: exact_raw_source_embedded
-  needs_confirmation: false
-normalized_context:
-  reference_frame:
-    width: 1440px
-    min_height: 100vh
-  theme:
-  - Futuristic
-  - Cyber Interface
-  - Iron Man HUD
-  - Minimalist
-  - Professional
-  - Elegant
-  implementation_stack:
-    framework: Next.js 16
-    styling: Tailwind CSS
-    animation: Framer Motion
-    particles: React TSParticles
-    icons: Lucide React
-  primary_components:
-  - Navbar.tsx
-  - HeroSection.tsx
-  - ParticleBackground.tsx
-  - AboutButton.tsx
-  - ScrollIndicator.tsx
-source_index:
-- source_key: PROJECT
-  normalized_key: project
-  source_line: 9
-- source_key: FRAME
-  normalized_key: frame
-  source_line: 24
-- source_key: GRID
-  normalized_key: grid
-  source_line: 35
-- source_key: COLORS
-  normalized_key: colors
-  source_line: 47
-- source_key: FONT
-  normalized_key: font
-  source_line: 73
-- source_key: TEXT_STYLE
-  normalized_key: text_style
-  source_line: 77
-- source_key: NAVBAR
-  normalized_key: navbar
-  source_line: 106
-- source_key: HERO
-  normalized_key: hero
-  source_line: 153
-- source_key: SPACING
-  normalized_key: spacing
-  source_line: 172
-- source_key: WHO_TEXT
-  normalized_key: who_text
-  source_line: 186
-- source_key: IAM_TEXT
-  normalized_key: iam_text
-  source_line: 211
-- source_key: DEVELOPER_TEXT
-  normalized_key: developer_text
-  source_line: 232
-- source_key: GLOW_DOT
-  normalized_key: glow_dot
-  source_line: 255
-- source_key: LINE
-  normalized_key: line
-  source_line: 275
-- source_key: PARTICLE
-  normalized_key: particle
-  source_line: 305
-- source_key: ABOUT_BUTTON
-  normalized_key: about_button
-  source_line: 357
-- source_key: SCROLL_INDICATOR
-  normalized_key: scroll_indicator
-  source_line: 393
-- source_key: LAYERS
-  normalized_key: layers
-  source_line: 412
-- source_key: ANIMATION
-  normalized_key: animation
-  source_line: 430
-- source_key: MOBILE
-  normalized_key: mobile
-  source_line: 472
-- source_key: COMPONENTS
-  normalized_key: components
-  source_line: 494
-- source_key: STYLE
-  normalized_key: style
-  source_line: 506
-classification:
-  content_data: preserved in raw_specification
-  visual_data: preserved in raw_specification
-  technical_data: preserved in raw_specification
-  responsive_data: preserved in raw_specification
-  interaction_data: preserved in raw_specification
-  accessibility_data: preserved in raw_specification when present
-conflicts: []
-unclassified_notes: []
-raw_specification: |+
-  (hero section)
-  # ==========================================================
-  # PORTFOLIO WEBSITE DESIGN SPECIFICATION
-  # PROJECT : Kelpinn Portfolio Website
-  # SECTION : Hero - Who I Am
-  # VERSION : 1.1
-  # ==========================================================
+# ==============================================================================
+# KELPINN PORTFOLIO — HERO SECTION
+# VERSION : 2.1 — FIGMA-ALIGNED + INTENTIONAL INTERACTIVE PARTICLES
+# ==============================================================================
+#
+# STATUS:
+#   - Static layout: measured from the supplied Hero reference image.
+#   - Interactive particles: intentionally preserved from the previous Hero spec.
+#   - This document does not claim to be a direct Figma Inspect export.
+#
+# MEASUREMENT METHOD:
+#   Reference image : 715 x 462 px
+#   Desktop target  : 1440 x 930 px
+#   Scale X         : 1440 / 715 = 2.013986
+#   Scale Y         : 930 / 462 = 2.012987
+#
+# IMPORTANT:
+#   Values under Reference_Pixels are direct measurements from the supplied image.
+#   Values under Desktop_1440 are normalized implementation values.
+#   Actual Figma Inspect values take priority if supplied later.
+# ==============================================================================
 
-  PROJECT:
+schema_version: "2.1"
+document_role: "section_specification"
+document_status: "implementation_ready"
 
-    Name: Kelpinn Portfolio
-    Type: Personal Portfolio Website
+SECTION:
+  ID: "hero"
+  Order: 1
+  Name: "Hero — Who I Am"
+  Component: "HeroSection"
+  Route: "/"
+  Anchor: "#hero"
 
-    Framework: Next.js 16
-    Styling: Tailwind CSS
-    Animation: Framer Motion
-    Particle: React TSParticles
-    Icons: Lucide React
+REFERENCE:
+  Image_Path: "../references/hero.png"
+  Source_Type: "Static Figma reference screenshot"
 
-  # ==========================================================
-  # FRAME
-  # ==========================================================
+  Reference_Pixels:
+    Width: 715px
+    Height: 462px
 
-  FRAME:
-
+  Desktop_1440:
     Width: 1440px
-    Min_Height: 100vh
+    Height: 930px
 
-    Background: "#111111"
+  Scale:
+    X: 2.013986
+    Y: 2.012987
 
-  # ==========================================================
-  # GRID
-  # ==========================================================
+  Measurement_Confidence:
+    Frame: "high"
+    Navbar_Bounds: "high"
+    Text_Bounds: "high"
+    About_Button_Bounds: "high"
+    Exact_Font_Metrics: "medium"
+    Exact_Color_Hex: "medium"
+    Particle_Layout: "intentional enhancement, not measured from screenshot"
 
-  GRID:
+  Rules:
+    - "Use the static reference as the source of truth for composition and hierarchy."
+    - "Do not treat estimated values as original Figma Inspect values."
+    - "Preserve the interactive particle background even though it is not visible in the static screenshot."
+    - "Do not let particles change the measured static layout."
+    - "Do not redesign, center, or fill the intentional empty space."
 
-    Container_Width: 1280px
+PROJECT:
+  Name: "Kelpinn Portfolio"
+  Type: "Personal Developer Portfolio"
 
-    Padding_X: 80px
+  Stack:
+    Framework: "Next.js 16"
+    Language: "TypeScript"
+    Styling: "Tailwind CSS + CSS custom properties"
+    Animation: "Framer Motion"
+    Particles: "React TSParticles"
+    Icons: "Lucide React"
 
-    Column_Gap: 24px
+  Theme:
+    - "Minimal dark cyber interface"
+    - "Black and deep-red palette"
+    - "Professional developer portfolio"
+    - "Large asymmetric typography"
+    - "Intentional negative space"
+    - "Subtle interactive particle enhancement"
 
-  # ==========================================================
-  # COLOR TOKENS
-  # ==========================================================
+FRAME:
+  Reference_Pixels:
+    X: 0px
+    Y: 0px
+    Width: 715px
+    Height: 462px
 
-  COLORS:
+  Desktop_1440:
+    X: 0px
+    Y: 0px
+    Width: 1440px
+    Height: 930px
 
-    Background: "#111111"
+  Runtime:
+    Width: "100%"
+    Min_Height: "100svh"
+    Position: "relative"
+    Overflow_X: "hidden"
+    Overflow_Y: "hidden"
 
-    Surface: "#1A1A1A"
+  Background:
+    Color: "#000000"
+    Image: "none"
+    Gradient: "none"
 
-    Card: "#222222"
+  Outer_Border:
+    Enabled: true
+    Width: 1px
+    Color: "#1B1B1B"
+    Position: "inside"
 
+COLORS:
+  Background:
+    Page: "#000000"
+    Navbar: "#040000"
+
+  Red:
+    Primary: "#BD1219"
+    Primary_Dark: "#670000"
+    Primary_Deep: "#440000"
+    Bright: "#EF1B24"
+    Glow_Core: "#FF1A1A"
+
+  Text:
+    Primary: "#FFFFFF"
+    Secondary: "#D4D4D8"
+    Muted: "#A1A1AA"
+    Subtle: "#71717A"
+
+  Border:
+    Navbar: "#520000"
+    Navbar_Hover: "#780000"
+
+  Particle:
     Primary: "#7F1D1D"
-
-    Secondary: "#B91C1C"
-
     Accent: "#EF4444"
+    Link: "#7F1D1D"
 
-    White: "#FFFFFF"
+TYPOGRAPHY:
+  Body:
+    Family: "Inter, Arial, sans-serif"
 
-    Soft_Text: "#A1A1AA"
+  Brand_Initial:
+    Family: "Georgia, 'Times New Roman', serif"
 
-    Muted_Text: "#71717A"
+  Hero_Title:
+    Family: "Inter, Arial, sans-serif"
+    Size_Desktop: 92px
+    Weight: 800
+    Line_Height: 0.86
+    Letter_Spacing: -3.5px
+    Transform: "uppercase"
 
-    Border: "#343434"
+  Developer_Label:
+    Family: "Inter, Arial, sans-serif"
+    Size: 14px
+    Weight: 400
+    Line_Height: 16px
+    Letter_Spacing: 6px
 
-  # ==========================================================
-  # TYPOGRAPHY
-  # ==========================================================
+  Navbar:
+    Family: "Inter, Arial, sans-serif"
+    Size: 14px
+    Weight: 400
+    Line_Height: 20px
 
-  FONT:
+LAYOUT:
+  Coordinate_Mode:
+    Desktop: "absolute reference coordinates"
+    Below_Desktop: "responsive constraints and clamp"
 
-    Family: Inter
+  Safe_Area:
+    Top: 14px
+    Right: 12px
+    Bottom: 14px
+    Left: 12px
 
-  TEXT_STYLE:
-
-    Hero_Title:
-
-      Font_Size: 92px
-      Font_Weight: 800
-
-      Line_Height: 88px
-
-      Letter_Spacing: -4%
-
-    Developer:
-
-      Font_Size: 14px
-
-      Font_Weight: 400
-
-      Letter_Spacing: 6px
-
+  Anchors:
     Navbar:
+      Horizontal: "left_and_right"
+      Vertical: "top"
 
-      Font_Size: 15px
+    Hero_Content:
+      Horizontal: "left"
+      Vertical: "top"
 
-      Font_Weight: 400
+    About_Button:
+      Horizontal: "left"
+      Vertical: "top"
 
-  # ==========================================================
-  # NAVBAR
-  # ==========================================================
+    Particle_Area:
+      Horizontal: "right"
+      Vertical: "top"
 
-  NAVBAR:
+NAVBAR:
+  Component: "Navbar"
 
+  Reference_Pixels:
     Position:
-
-      X: Auto
-      Y: 24px
+      X: 6px
+      Y: 7px
 
     Size:
+      Width: 703px
+      Height: 45px
 
-      Width: 1280px
-      Height: 64px
+  Desktop_1440:
+    Position:
+      X: 12px
+      Y: 14px
+      Left: 12px
+      Right: 12px
 
-    Border:
+    Size:
+      Width: "calc(100% - 24px)"
+      Reference_Width: 1416px
+      Height: 91px
 
-      Width: 1px
-
-      Color: "#2A2A2A"
-
-      Radius: 14px
-
-    Background:
-
-      Color: "rgba(17,17,17,0.55)"
-
-      Blur: 20px
+  Auto_Layout:
+    Direction: "horizontal"
+    Align_Items: "center"
+    Justify_Content: "space-between"
+    Wrap: false
 
     Padding:
-
-      Left: 32px
-
-      Right: 32px
-
-    Navigation:
-
-      Gap: 52px
-
-      Items:
-
-        - About
-        - Skills
-        - Projects
-        - Contact
-
-  # ==========================================================
-  # HERO SECTION
-  # ==========================================================
-
-  HERO:
-
-    Height: 100vh
-
-    Container:
-
-      Width: 1280px
-
-      Margin: Auto
-
-    Content_Position:
-
-      X: 110px
-      Y: 190px
-
-  # ==========================================================
-  # SPACING
-  # ==========================================================
-
-  SPACING:
-
-    Navbar_To_Hero: 110px
-
-    WHO_To_IAM: 0px
-
-    IAM_To_Developer: 55px
-
-    Developer_To_Line: 18px
-
-  # ==========================================================
-  # WHO TEXT
-  # ==========================================================
-
-  WHO_TEXT:
-
-    Content: "WHO"
-
-    Position:
-
-      X: 110px
-      Y: 210px
-
-    Font:
-
-      Size: 92px
-
-      Weight: 800
-
-    Color: "#B91C1C"
-
-    Glow:
-
-      Blur: 28px
-
-  # ==========================================================
-  # I AM TEXT
-  # ==========================================================
-
-  IAM_TEXT:
-
-    Content: "I AM"
-
-    Position:
-
-      X: 110px
-      Y: 300px
-
-    Font:
-
-      Size: 92px
-
-      Weight: 800
-
-    Color: "#FFFFFF"
-
-  # ==========================================================
-  # DEVELOPER TEXT
-  # ==========================================================
-
-  DEVELOPER_TEXT:
-
-    Content: "Developer"
-
-    Position:
-
-      X: 130px
-      Y: 410px
-
-    Font:
-
-      Size: 14px
-
-      Weight: 400
-
-      Letter_Spacing: 6px
-
-    Color: "#A1A1AA"
-
-  # ==========================================================
-  # GLOW DOT
-  # ==========================================================
-
-  GLOW_DOT:
-
-    Position:
-
-      X: 110px
-      Y: 448px
-
-    Size:
-
-      Width: 10px
-      Height: 10px
-
-    Fill: "#EF4444"
-
-    Radius: 999px
-
-  # ==========================================================
-  # RED LINE
-  # ==========================================================
-
-  LINE:
-
-    Position:
-
-      X: 122px
-      Y: 452px
-
-    Size:
-
-      Width: 110px
-      Height: 2px
-
-    Gradient:
-
-      Start:
-
-        Color: "#EF4444"
-
-        Opacity: 100%
-
-      End:
-
-        Color: "#EF4444"
-
-        Opacity: 0%
-
-  # ==========================================================
-  # PARTICLE AREA
-  # ==========================================================
-
-  PARTICLE:
-
-    Area:
-
-      X: 620px
-      Y: 120px
-
-      Width: 600px
-      Height: 500px
-
-    Count: 120
-
-    Dot_Size:
-
-      Min: 2px
-      Max: 4px
-
-    Opacity:
-
-      Min: 0.25
-      Max: 0.60
-
-    Link:
-
-      Enable: true
-
-      Distance: 150px
-
-      Width: 1px
-
-      Color: "#7F1D1D"
-
-    Movement:
-
-      Speed: 0.8
-
-    Mouse:
-
-      Hover:
-
-        Enable: true
-
-        Mode: Repulse
-
-        Distance: 180px
-
-        Duration: 0.4s
-
-  # ==========================================================
-  # ABOUT BUTTON
-  # ==========================================================
-
-  ABOUT_BUTTON:
-
-    Position:
-
-      X: 920px
-      Y: 610px
-
-    Size:
-
-      Width: 150px
-      Height: 46px
-
-    Radius: 6px
-
-    Background: "#7F1D1D"
+      Top: 0px
+      Right: 86px
+      Bottom: 0px
+      Left: 42px
+
+  Appearance:
+    Fill: "#040000"
+    Opacity: 1
 
     Border:
-
       Width: 1px
+      Color: "#520000"
+      Radius: 14px
+      Position: "inside"
 
-      Color: "#B91C1C"
+    Shadow:
+      Enabled: false
 
-    Text:
+    Background_Blur: 0px
 
-      Content: "About"
+  Brand:
+    Reference_Pixels:
+      Initial:
+        X: 27px
+        Y: 21px
+        Width: 18px
+        Height: 18px
 
-      Size: 15px
+      Name:
+        X: 57px
+        Y: 27px
 
-      Weight: 500
+    Desktop_1440:
+      Position:
+        X: 54px
+        Center_Y: 59px
+
+      Auto_Layout:
+        Direction: "horizontal"
+        Align_Items: "center"
+        Gap: 24px
+
+    Initial:
+      Content: "K"
+
+      Font:
+        Family: "Georgia, 'Times New Roman', serif"
+        Size: 40px
+        Weight: 700
+        Line_Height: 1
 
       Color: "#FFFFFF"
 
-  # ==========================================================
-  # SCROLL INDICATOR
-  # ==========================================================
+    Name:
+      Content: "Kelpinn"
 
-  SCROLL_INDICATOR:
+      Font:
+        Family: "Inter, Arial, sans-serif"
+        Size: 16px
+        Weight: 400
+        Line_Height: 1
 
+      Color: "#FFFFFF"
+
+  Navigation:
+    Reference_Pixels:
+      About:
+        X: 417px
+        Center_Y: 30px
+
+      Skills:
+        X: 490px
+        Center_Y: 30px
+
+      Project:
+        X: 558px
+        Center_Y: 30px
+
+      Contact:
+        X: 628px
+        Center_Y: 30px
+
+    Desktop_1440:
+      Position:
+        Right: 86px
+        Center_Y: 59px
+
+      Auto_Layout:
+        Direction: "horizontal"
+        Align_Items: "center"
+        Justify_Content: "flex-end"
+        Gap: 82px
+
+    Font:
+      Family: "Inter, Arial, sans-serif"
+      Size: 14px
+      Weight: 400
+      Line_Height: 20px
+
+    Items:
+      - ID: "about"
+        Label: "About"
+        Href: "#about"
+        Active: true
+
+      - ID: "skills"
+        Label: "Skills"
+        Href: "#skills"
+        Active: false
+
+      - ID: "project"
+        Label: "Project"
+        Href: "#projects"
+        Active: false
+
+      - ID: "contact"
+        Label: "Contact"
+        Href: "#contact"
+        Active: false
+
+    State:
+      Default:
+        Color: "#FFFFFF"
+        Opacity: 0.92
+
+      Hover:
+        Color: "#FFFFFF"
+        Opacity: 1
+
+      Focus_Visible:
+        Outline_Width: 2px
+        Outline_Color: "#BD1219"
+        Outline_Offset: 6px
+
+  Active_Indicator:
+    Enabled: true
+    Active_Item: "about"
+
+    Reference_Pixels:
+      X: 412px
+      Y: 47px
+      Width: 39px
+      Height: 2px
+
+    Desktop_1440:
+      Position: "under_active_item"
+      Bottom: -29px
+      Width: 79px
+      Height: 2px
+
+    Fill: "#BD1219"
+
+    Glow:
+      Enabled: true
+      Color: "rgba(189, 18, 25, 0.45)"
+      Blur: 8px
+
+HERO_CONTENT:
+  Z_Index: 10
+
+  Desktop_1440:
     Position:
+      X: 147px
+      Y: 268px
 
-      X: 690px
-      Y: 730px
+    Width: 360px
+    Height: 255px
+
+  Preserve:
+    - "Left-aligned asymmetric composition"
+    - "Large empty space on the right"
+    - "Exact order of text and divider"
+    - "WHO above I AM"
+    - "Glow divider above Developer label"
+
+WHO_TEXT:
+  Content: "WHO"
+
+  Reference_Pixels:
+    Visible_Bounds:
+      X: 73px
+      Y: 133px
+      Width: 127px
+      Height: 37px
+
+  Desktop_1440:
+    Position:
+      X: 147px
+      Y: 268px
+
+    Estimated_Text_Frame:
+      Width: 264px
+      Height: 78px
+
+  Font:
+    Family: "Inter, Arial, sans-serif"
+    Size: 92px
+    Weight: 800
+    Style: "normal"
+    Line_Height: 0.84
+    Letter_Spacing: -3.5px
+    Transform: "uppercase"
+
+  Color: "#BD1219"
+
+  Effects:
+    Text_Shadow: "0 0 18px rgba(189, 18, 25, 0.08)"
+
+IAM_TEXT:
+  Content: "I AM"
+
+  Reference_Pixels:
+    Visible_Bounds:
+      X: 73px
+      Y: 182px
+      Width: 108px
+      Height: 36px
+
+  Desktop_1440:
+    Position:
+      X: 147px
+      Y: 366px
+
+    Estimated_Text_Frame:
+      Width: 286px
+      Height: 79px
+
+  Font:
+    Family: "Inter, Arial, sans-serif"
+    Size: 92px
+    Weight: 800
+    Style: "italic"
+    Line_Height: 0.86
+    Letter_Spacing: -3.5px
+    Transform: "uppercase"
+
+  Color: "#FFFFFF"
+
+  Effects:
+    Text_Shadow: "none"
+
+GLOW_DIVIDER:
+  Z_Index: 12
+
+  Reference_Pixels:
+    Visual_Bounds:
+      X: 58px
+      Y: 220px
+      Width: 120px
+      Height: 25px
+
+    Core_Line:
+      X: 72px
+      Y: 232px
+      Width: 99px
+      Height: 2px
+
+  Desktop_1440:
+    Position:
+      X: 145px
+      Y: 467px
+
+    Visual_Size:
+      Width: 200px
+      Height: 20px
+
+  Dot:
+    Desktop_1440:
+      Position:
+        X: 145px
+        Center_Y: 467px
+
+      Size:
+        Width: 7px
+        Height: 7px
+
+    Fill: "#FFFFFF"
+    Radius: 999px
+
+    Glow:
+      Layers:
+        - "0 0 4px #FFFFFF"
+        - "0 0 10px #FF1A1A"
+        - "0 0 22px rgba(255, 26, 26, 0.95)"
+        - "0 0 38px rgba(189, 18, 25, 0.60)"
+
+  Line:
+    Desktop_1440:
+      Position:
+        X: 145px
+        Y: 466px
+
+      Size:
+        Width: 200px
+        Height: 2px
+
+    Fill:
+      Type: "linear-gradient"
+      Direction: "left_to_right"
+
+      Stops:
+        - Offset: "0%"
+          Color: "rgba(255, 26, 26, 1)"
+
+        - Offset: "42%"
+          Color: "rgba(189, 18, 25, 0.70)"
+
+        - Offset: "100%"
+          Color: "rgba(189, 18, 25, 0)"
+
+    Glow: "0 0 12px rgba(255, 26, 26, 0.70)"
+
+DEVELOPER_LABEL:
+  Reference_Pixels:
+    Accent_Line:
+      X: 72px
+      Y: 249px
+      Width: 1px
+      Height: 8px
 
     Text:
+      X: 84px
+      Y: 250px
+      Height: 7px
 
-      Content: "SCROLL"
+  Desktop_1440:
+    Position:
+      X: 145px
+      Y: 501px
 
-      Size: 12px
+  Auto_Layout:
+    Direction: "horizontal"
+    Align_Items: "center"
+    Gap: 22px
 
-      Color: "#71717A"
+  Accent_Line:
+    Size:
+      Width: 2px
+      Height: 16px
 
-  # ==========================================================
-  # LAYERS
-  # ==========================================================
+    Fill: "#EF1B24"
 
-  LAYERS:
+  Text:
+    Initial_Content: "Developer?"
 
-    Background: 0
+    Content_Sequence:
+      - "Developer?"
+      - "Designer?"
+      - "Mobile Developer"
 
-    Particle: 1
+    Font:
+      Family: "Inter, Arial, sans-serif"
+      Size: 14px
+      Weight: 400
+      Line_Height: 16px
+      Letter_Spacing: 6px
 
-    Hero_Content: 10
+    Color: "#D4D4D8"
 
-    About_Button: 20
+  Rotation:
+    Enabled: true
+    Loop: true
+    Initial_Index: 0
+    Interval: 3000ms
 
-    Scroll_Indicator: 30
+    Sequence:
+      - "Developer?"
+      - "Designer?"
+      - "Mobile Developer"
 
-    Navbar: 100
+    Transition:
+      Type: "fade_and_slide"
+      Duration: 350ms
+      Easing: "cubic-bezier(0.22, 1, 0.36, 1)"
 
-  # ==========================================================
-  # ANIMATION
-  # ==========================================================
+      Exit:
+        Opacity: 0
+        Translate_Y: -6px
 
-  ANIMATION:
+      Enter:
+        Opacity: 0
+        Translate_Y: 6px
+
+      Active:
+        Opacity: 1
+        Translate_Y: 0px
+
+  Layout_Stability:
+    Preserve_Container_Width: true
+    Min_Width: 280px
+    Prevent_Layout_Shift: true
+    Text_Alignment: "left"
+    Overflow: "hidden"
+
+  Behavior:
+    Pause_When_Page_Hidden: true
+    Resume_From_Current_Index: true
+    Reset_On_Reload: true
+
+  Accessibility:
+    Aria_Live: "polite"
+    Aria_Atomic: true
+
+    Reduced_Motion:
+      Disable_Slide: true
+      Preserve_Fade: true
+      Duration: 150ms
+
+PARTICLE_BACKGROUND:
+  Component: "ParticleBackground"
+  Enabled: true
+  Mandatory: true
+  Source: "intentional_enhancement"
+  Visible_In_Static_Reference: false
+
+  Intent:
+    - "Add subtle movement to the otherwise empty right side."
+    - "React to cursor movement using repulse behavior."
+    - "Preserve the minimalist composition."
+    - "Never compete visually with WHO / I AM."
+
+  Layer:
+    Z_Index: 2
+    Pointer_Events: "none"
+
+  Area:
+    Desktop_1440:
+      X: 620px
+      Y: 120px
+      Width: 700px
+      Height: 610px
+
+    Dominant_Region: "right side"
+    Overflow: "hidden"
+
+  Mask:
+    Enabled: true
+    Type: "radial_and_left_fade"
+
+    Radial:
+      Value: "radial-gradient(ellipse at 72% 45%, black 0%, black 48%, transparent 84%)"
+
+    Left_Fade:
+      Start_X: 620px
+      Full_Visibility_X: 760px
+
+  Particles:
+    Count:
+      Desktop: 120
+      Laptop: 95
+      Tablet: 65
+      Mobile: 35
+
+    Shape: "circle"
+
+    Size:
+      Min: 2px
+      Max: 4px
+
+    Colors:
+      Primary:
+        Value: "#7F1D1D"
+        Ratio: 0.78
+
+      Accent:
+        Value: "#EF4444"
+        Ratio: 0.22
+
+    Opacity:
+      Min: 0.14
+      Max: 0.48
+
+    Random: true
+
+  Links:
+    Enabled: true
+    Distance: 150px
+    Width: 1px
+    Color: "#7F1D1D"
+    Opacity: 0.20
+
+  Movement:
+    Enabled: true
+    Speed: 0.8
+    Direction: "none"
+    Random: true
+    Straight: false
+    Out_Mode: "bounce"
+
+  Mouse:
+    Hover:
+      Enabled: true
+      Mode: "repulse"
+      Distance: 180px
+      Duration: 0.4s
+      Smooth: true
+
+    Capture_Scope: "hero section"
+
+  Accessibility:
+    Decorative: true
+    Aria_Hidden: true
+
+    Reduced_Motion:
+      Disable_Movement: true
+      Disable_Mouse_Repulse: true
+      Preserve_Static_Particles: true
+      Static_Opacity: 0.18
+
+  Performance:
+    Retina_Detect: true
+    FPS_Limit: 60
+    Pause_On_Blur: true
+    Pause_Outside_Viewport: true
+
+ABOUT_BUTTON:
+  Reference_Pixels:
+    Position:
+      X: 482px
+      Y: 399px
+
+    Size:
+      Width: 94px
+      Height: 22px
+
+  Desktop_1440:
+    Position:
+      X: 971px
+      Y: 803px
+
+    Size:
+      Width: 189px
+      Height: 44px
+
+  Z_Index: 20
+
+  Auto_Layout:
+    Direction: "horizontal"
+    Align_Items: "center"
+    Justify_Content: "space-between"
+
+    Padding:
+      Top: 0px
+      Right: 24px
+      Bottom: 0px
+      Left: 34px
+
+    Gap: 20px
+
+  Appearance:
+    Fill: "#670000"
+
+    Border:
+      Width: 0px
+      Color: "transparent"
+
+    Radius: 0px
+
+  Label:
+    Content: "About"
+
+    Font:
+      Family: "Inter, Arial, sans-serif"
+      Size: 18px
+      Weight: 400
+      Line_Height: 1
+
+    Color: "#FFFFFF"
+
+  Icon:
+    Library: "Lucide React"
+    Name: "ArrowDown"
+    Size: 20px
+    Stroke_Width: 1.75
+    Color: "#FFFFFF"
+
+  Interaction:
+    Cursor: "pointer"
+
+    Hover:
+      Fill: "#7F0000"
+      Translate_Y: -2px
+      Shadow: "0 10px 28px rgba(103, 0, 0, 0.28)"
+
+    Active:
+      Translate_Y: 0px
+      Scale: 0.99
+
+    Focus_Visible:
+      Outline_Width: 2px
+      Outline_Color: "#EF4444"
+      Outline_Offset: 4px
+
+    Transition:
+      Duration: 220ms
+      Easing: "cubic-bezier(0.22, 1, 0.36, 1)"
+
+SCROLL_INDICATOR:
+  Enabled: false
+  Reason: "Not visible in the supplied final Hero reference."
+  Rule: "Do not render a SCROLL label or scroll indicator in this Hero."
+
+LAYERS:
+  Background: 0
+  Particle_Background: 2
+  Particle_Ambient_Glow: 3
+  Hero_Content: 10
+  Glow_Divider: 12
+  About_Button: 20
+  Navbar: 100
+
+ANIMATION:
+  Global:
+    Easing: "cubic-bezier(0.22, 1, 0.36, 1)"
+
+  Navbar:
+    Type: "fade_down"
+    From:
+      Opacity: 0
+      Translate_Y: -18px
+    To:
+      Opacity: 1
+      Translate_Y: 0px
+    Duration: 800ms
+    Delay: 0ms
+
+  WHO:
+    Type: "fade_up"
+    From:
+      Opacity: 0
+      Translate_Y: 24px
+    To:
+      Opacity: 1
+      Translate_Y: 0px
+    Duration: 700ms
+    Delay: 180ms
+
+  IAM:
+    Type: "fade_up"
+    From:
+      Opacity: 0
+      Translate_Y: 24px
+    To:
+      Opacity: 1
+      Translate_Y: 0px
+    Duration: 700ms
+    Delay: 320ms
+
+  Glow_Divider:
+    Type: "scale_x_and_fade"
+    Transform_Origin: "left center"
+    From:
+      Opacity: 0
+      Scale_X: 0
+    To:
+      Opacity: 1
+      Scale_X: 1
+    Duration: 650ms
+    Delay: 480ms
+
+  Developer_Label:
+    Type: "fade_right"
+    From:
+      Opacity: 0
+      Translate_X: -14px
+    To:
+      Opacity: 1
+      Translate_X: 0px
+    Duration: 600ms
+    Delay: 560ms
+
+  About_Button:
+    Type: "fade_up"
+    From:
+      Opacity: 0
+      Translate_Y: 18px
+    To:
+      Opacity: 1
+      Translate_Y: 0px
+    Duration: 650ms
+    Delay: 680ms
+
+  Reduced_Motion:
+    Respect_Prefers_Reduced_Motion: true
+    Disable_Transforms: true
+    Duration: 1ms
+
+RESPONSIVE:
+  Desktop:
+    Min_Width: 1280px
+    Coordinate_Strategy: "use normalized measured values"
 
     Navbar:
+      Left: 12px
+      Right: 12px
+      Height: 91px
 
-      Type: Fade_Down
+    Hero_Content:
+      X: 147px
+      Y: 268px
 
-      Duration: 0.8s
-
-    WHO:
-
-      Type: Fade_Up
-
-      Delay: 0.2s
-
-    IAM:
-
-      Type: Fade_Up
-
-      Delay: 0.4s
-
-    Developer:
-
-      Type: Fade_Up
-
-      Delay: 0.6s
+    Title:
+      Size: 92px
 
     About_Button:
+      X: 971px
+      Y: 803px
 
-      Type: Fade_Up
-
-      Delay: 0.8s
-
-    Particle:
-
-      Floating: true
-
-      Mouse_Repulsion: true
-
-  # ==========================================================
-  # RESPONSIVE
-  # ==========================================================
-
-  MOBILE:
-
-    Hero_Title:
-
-      Font_Size: 54px
-
-    Layout:
-
-      Direction: Column
-
-    Particle:
-
-      Opacity: 15%
+  Laptop:
+    Min_Width: 1024px
+    Max_Width: 1279px
+    Coordinate_Strategy: "proportional clamp"
 
     Navbar:
+      Left: 16px
+      Right: 16px
+      Height: 78px
+      Padding_X: 34px
+      Navigation_Gap: 52px
 
-      Type: Hamburger
+    Hero_Content:
+      X: "clamp(88px, 10vw, 128px)"
+      Y: "clamp(220px, 28vh, 260px)"
 
-  # ==========================================================
-  # COMPONENT STRUCTURE
-  # ==========================================================
+    Title:
+      Size: "clamp(76px, 7vw, 88px)"
 
-  COMPONENTS:
+    Particle_Area:
+      X: "43vw"
+      Width: "50vw"
 
-    - Navbar.tsx
-    - HeroSection.tsx
-    - ParticleBackground.tsx
-    - AboutButton.tsx
-    - ScrollIndicator.tsx
+    About_Button:
+      Right: "18vw"
+      Bottom: "9vh"
 
-  # ==========================================================
-  # DESIGN CONCEPT
-  # ==========================================================
+  Tablet:
+    Min_Width: 768px
+    Max_Width: 1023px
 
-  STYLE:
+    Navbar:
+      Left: 14px
+      Right: 14px
+      Height: 72px
+      Padding_X: 28px
+      Navigation_Gap: 34px
 
-    Theme:
+    Hero_Content:
+      X: 72px
+      Y: "clamp(200px, 26vh, 245px)"
 
-      - Futuristic
-      - Cyber Interface
-      - Iron Man HUD
-      - Minimalist
-      - Professional
-      - Elegant
+    Title:
+      Size: 72px
 
-    Keywords:
+    Particle_Area:
+      X: "40vw"
+      Y: 120px
+      Width: "56vw"
+      Opacity_Multiplier: 0.70
 
-      - Dark Red
-      - Developer
-      - Portfolio
-      - Particle Background
-      - Interactive Cursor
+    About_Button:
+      Right: 12vw
+      Bottom: 8vh
 
+  Mobile:
+    Max_Width: 767px
 
+    Frame:
+      Min_Height: "100svh"
 
+    Navbar:
+      Left: 10px
+      Right: 10px
+      Top: 10px
+      Height: 64px
+      Padding_X: 20px
+      Navigation_Type: "hamburger"
+      Show_Brand_Name: true
 
-...
+    Hero_Content:
+      X: 32px
+      Y: "clamp(170px, 23vh, 210px)"
+      Width: "calc(100% - 64px)"
+
+    WHO:
+      Size: "clamp(52px, 16vw, 68px)"
+      Letter_Spacing: -2px
+
+    IAM:
+      Size: "clamp(52px, 16vw, 68px)"
+      Letter_Spacing: -2px
+      Offset_From_WHO: 72px
+
+    Glow_Divider:
+      Offset_From_IAM: 82px
+      Line_Width: 150px
+
+    Developer_Label:
+      Offset_From_Divider: 38px
+      Text:
+        Size: 11px
+        Letter_Spacing: 4px
+
+    Particle_Area:
+      X: "25vw"
+      Y: 100px
+      Width: "75vw"
+      Height: "62vh"
+      Opacity_Multiplier: 0.48
+
+    About_Button:
+      Left: 32px
+      Right: "auto"
+      Bottom: 44px
+      Width: 170px
+      Height: 44px
+
+COMPONENTS:
+  Required:
+    - Path: "components/sections/hero/HeroSection.tsx"
+      Responsibility:
+        - "Hero semantic container"
+        - "WHO and I AM typography"
+        - "Glow divider"
+        - "Developer label"
+        - "About button"
+        - "Entrance animation orchestration"
+
+    - Path: "components/ui/Navbar.tsx"
+      Responsibility:
+        - "Brand"
+        - "Desktop navigation"
+        - "Active indicator"
+        - "Mobile hamburger navigation"
+
+    - Path: "components/decorations/ParticleBackground.tsx"
+      Responsibility:
+        - "Interactive particles"
+        - "Mouse repulse"
+        - "Reduced-motion behavior"
+        - "Particle performance controls"
+
+  Do_Not_Create:
+    - "AboutButton.tsx"
+    - "ScrollIndicator.tsx"
+    - "WhoText.tsx"
+    - "IamText.tsx"
+    - "GlowDivider.tsx"
+    - "DeveloperLabel.tsx"
+
+DATA_CONTRACT:
+  Hero:
+    Source: "data/hero.ts"
+
+    Required_Fields:
+      - "brand.initial"
+      - "brand.name"
+      - "heading.firstLine"
+      - "heading.secondLine"
+      - "roles"
+      - "roleRotationInterval"
+      - "aboutButton.label"
+      - "aboutButton.href"
+
+    Expected_Values:
+      Brand:
+        Initial: "K"
+        Name: "Kelpinn"
+
+      Heading:
+        First_Line: "WHO"
+        Second_Line: "I AM"
+
+      Roles:
+        Initial_Index: 0
+        Sequence:
+          - "Developer?"
+          - "Designer?"
+          - "Mobile Developer"
+
+      Role_Rotation_Interval: 3000
+
+      About_Button:
+        Label: "About"
+        Href: "#about"
+
+  Navigation:
+    Source: "data/navigation.ts"
+
+    Required_Items:
+      - Label: "About"
+        Href: "#about"
+
+      - Label: "Skills"
+        Href: "#skills"
+
+      - Label: "Project"
+        Href: "#projects"
+
+      - Label: "Contact"
+        Href: "#contact"
+
+ACCESSIBILITY:
+  Section:
+    Semantic_Element: "section"
+    ID: "hero"
+    Aria_Labelled_By: "hero-title"
+
+  Title:
+    Semantic_Element: "h1"
+    ID: "hero-title"
+    Reading_Order:
+      - "WHO"
+      - "I AM"
+
+  Navbar:
+    Semantic_Element: "nav"
+    Aria_Label: "Main navigation"
+
+  Particles:
+    Decorative: true
+    Aria_Hidden: true
+
+  Keyboard:
+    All_Links_Focusable: true
+    Visible_Focus_Required: true
+
+  Motion:
+    Respect_Prefers_Reduced_Motion: true
+
+PERFORMANCE:
+  No_Layout_Shift: true
+  Avoid_Unnecessary_Client_Components: true
+  Particle_Lazy_Initialize: true
+  Particle_FPS_Limit: 60
+  Pause_Particles_When_Hidden: true
+
+  Client_Components:
+    - "ParticleBackground.tsx"
+    - "Navbar.tsx only when mobile state is required"
+    - "HeroSection.tsx only when Framer Motion is used directly"
+
+AI_IMPLEMENTATION_RULES:
+  Must:
+    - "Read this entire Hero specification before modifying code."
+    - "Use the supplied reference image as the source of truth for static composition."
+    - "Preserve interactive particles as a mandatory intentional enhancement."
+    - "Keep particles subtle and dominant on the right side."
+    - "Use Reference_Pixels for auditing and Desktop_1440 for implementation."
+    - "Preserve large empty space."
+    - "Render the active About underline."
+    - "Render ArrowDown inside the About button."
+    - "Use the order WHO, I AM, glow divider, Developer label."
+    - "Use data files for text and navigation content."
+    - "Keep component structure simple."
+
+  Must_Not:
+    - "Do not remove particles because they are absent from the static screenshot."
+    - "Do not place particles over the Hero copy."
+    - "Do not render a SCROLL indicator."
+    - "Do not center the Hero copy."
+    - "Do not add a portrait, paragraph, badge, card, or extra CTA."
+    - "Do not add decorative elements that are not specified."
+    - "Do not split the Hero into trivial micro-components."
+    - "Do not hardcode text in JSX when it exists in data files."
+    - "Do not claim estimated coordinates are original Figma Inspect values."
+
+VALIDATION:
+  Desktop_1440:
+    - "Frame background is #000000."
+    - "Navbar starts at X=12px and Y=14px."
+    - "Navbar ends approximately 12px before the right edge."
+    - "Navbar reference height is 91px."
+    - "WHO starts near X=147px and Y=268px."
+    - "I AM starts near X=147px and Y=366px."
+    - "Glow divider appears immediately below I AM."
+    - "Developer label appears below the glow divider."
+    - "About button starts near X=971px and Y=803px."
+    - "About button includes ArrowDown."
+    - "About is the active navigation item."
+    - "No SCROLL label is visible."
+    - "Particles occupy the right-side negative space without obscuring content."
+
+  Responsive:
+    - "No horizontal overflow from 320px through 1440px."
+    - "Navbar becomes hamburger navigation below 768px."
+    - "Hero title remains fully visible."
+    - "About button remains reachable and does not overlap content."
+    - "Particle density and opacity decrease on smaller screens."
+
+  Interaction:
+    - "Particles smoothly repel from the pointer."
+    - "Particle movement is disabled or made static when reduced motion is requested."
+    - "Navbar links and About button have visible keyboard focus."
+    - "Role text begins with Developer?."
+    - "Role text changes every 3000ms in this order: Developer?, Designer?, Mobile Developer."
+    - "After Mobile Developer, role rotation loops back to Developer?."
+    - "Role transitions use fade_and_slide for 350ms."
+    - "Role rotation does not cause horizontal or vertical layout shift."
+
+MEASUREMENT_AUDIT:
+  Navbar:
+    Reference: "x=6, y=7, width=703, height=45"
+    Desktop_1440: "x=12, y=14, width=1416, height=91"
+
+  WHO:
+    Reference_Visible_Bounds: "x=73, y=133, width=127, height=37"
+    Desktop_1440_Position: "x=147, y=268"
+
+  IAM:
+    Reference_Visible_Bounds: "x=73, y=182, width=108, height=36"
+    Desktop_1440_Position: "x=147, y=366"
+
+  Glow_Line:
+    Reference_Core: "x=72, y=232, visual fade extends approximately to x=171"
+    Desktop_1440: "x=145, y=466, visual width approximately 200"
+
+  Developer_Label:
+    Reference: "accent x=72 y=249; text x=84 y=250"
+    Desktop_1440: "container x=145 y=501"
+
+  About_Button:
+    Reference: "x=482, y=399, width=94, height=22"
+    Desktop_1440: "x=971, y=803, width=189, height=44"
+
+  Particle:
+    Reference: "not visible in static screenshot"
+    Source: "preserved intentional enhancement from previous Hero specification"

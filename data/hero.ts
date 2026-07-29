@@ -1,4 +1,3 @@
-
 export const heroData = {
   brand: {
     initial: "K",
@@ -10,12 +9,16 @@ export const heroData = {
     secondLine: "I AM",
   },
 
-  role: "Developer",
+  roles: [
+    "Developer?",
+    "Designer?",
+    "Mobile Developer",
+  ],
+
+  roleRotationInterval: 3000,
 
   aboutButton: {
     label: "About",
     href: "#about",
   },
-
-  scrollLabel: "Scroll",
 } as const;
