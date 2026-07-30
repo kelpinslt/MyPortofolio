@@ -1,133 +1,278 @@
-# Kelpinn Portfolio Specifications — Start Here
+Kelpinn Portfolio Specifications — Start Here
 
-## Ringkasan
+Status paket
 
-Folder ini berisi hasil pemisahan non-lossy dari `PORTFOLIO-MASTER-SOURCE.txt` menjadi dokumentasi global dan lima
-spesifikasi section untuk implementasi portfolio berbasis Next.js.
+Paket ini berisi lima spesifikasi section yang telah diselaraskan dengan gambar referensi masing-masing.
 
-Sumber terdiri dari 9.054 baris dan mencakup Hero, About, Skills, Projects, serta Certificates. Setiap section
-mempertahankan teks sumbernya secara utuh di dalam properti `raw_specification`, sehingga normalisasi file tidak
-menghapus angka, instruksi, catatan, atau detail visual.
+Status: perencanaan dikunci dan siap masuk ke audit data/aset, kemudian implementasi TSX.
 
-## Tujuan website
+Section final:
 
-- Membangun personal developer portfolio bertema dark futuristic/cyber interface.
-- Menggunakan hitam sebagai permukaan dominan dan merah sebagai aksen.
-- Menampilkan Hero, About, Skills, Projects, dan Certificates sebagai satu halaman yang konsisten.
-- Menggunakan spesifikasi sebagai sumber instruksi bagi AI coding atau developer, lalu menerjemahkannya menjadi
-  komponen Next.js, TypeScript, Tailwind CSS, Framer Motion, Lucide React, dan sistem partikel yang sesuai.
-- Mendekati referensi visual melalui implementasi awal dan proses visual comparison/fine tuning.
+Hero
 
-## Daftar file
+About
 
-1. `00-START-HERE.md` — panduan membaca dan implementasi.
-2. `01-MASTER-SPEC.yaml` — metadata, struktur halaman, teknologi, aturan global, dan konflik.
-3. `02-DESIGN-TOKENS.yaml` — kandidat token global dan token scoped per section.
-4. `sections/01-HERO.yaml` — spesifikasi Hero.
-5. `sections/02-ABOUT.yaml` — spesifikasi About.
-6. `sections/03-SKILLS.yaml` — spesifikasi Skills.
-7. `sections/04-PROJECTS.yaml` — spesifikasi Projects.
-8. `sections/05-CERTIFICATES.yaml` — spesifikasi Certificates.
-9. `VALIDATION-REPORT.md` — laporan cakupan dan validasi output.
+Skills
 
-## Urutan membaca
+Projects
 
-1. Baca `01-MASTER-SPEC.yaml`.
-2. Baca `02-DESIGN-TOKENS.yaml`.
-3. Baca file section yang sedang dikerjakan.
-4. Gunakan `source_index` untuk menemukan blok penting.
-5. Perlakukan `raw_specification` sebagai sumber detail paling lengkap.
-6. Cocokkan hasil render dengan gambar referensi section apabila gambar tersedia.
+Certificates
 
-## Prioritas sumber kebenaran
+Navigasi final:
 
-Apabila terdapat konflik:
+About | Skills | Project | Certificates
 
-1. Spesifikasi khusus section untuk section yang sedang dibangun.
-2. Nilai eksplisit di `raw_specification`.
-3. Aturan global di `01-MASTER-SPEC.yaml`.
-4. Kandidat token di `02-DESIGN-TOKENS.yaml`.
-5. Gambar referensi sebagai dasar visual comparison.
-6. Jangan membuat nilai baru tanpa konfirmasi.
+Tidak ada Contact Section pada paket saat ini.
 
-Nilai visual antarsection memang berbeda. Jangan memaksa semua section menggunakan satu nilai global apabila hal itu
-merusak proporsi referensi. Gunakan token global sebagai default dan pertahankan override section yang eksplisit.
+Struktur folder
 
-## Cara memakai file section
+specs/
+├── references/
+│   ├── hero.png
+│   ├── about.png
+│   ├── skills.png
+│   ├── projects.png
+│   └── certificates.png
+├── sections/
+│   ├── 01-HERO.yaml
+│   ├── 02-ABOUT.yaml
+│   ├── 03-SKILLS.yaml
+│   ├── 04-PROJECTS.yaml
+│   └── 05-CERTIFICATES.yaml
+├── 00-START-HERE.md
+├── 01-MASTER-SPEC.yaml
+├── 02-DESIGN-TOKENS.yaml
+└── VALIDATION-REPORT.md
 
-Setiap file section memiliki:
+Nama file bersifat case-sensitive. Gunakan skills.png, bukan Skills.png.
 
-- `normalized_context`: konteks ringkas yang dapat dibaca cepat.
-- `source_index`: indeks blok utama dan nomor baris asal.
-- `raw_specification`: seluruh isi section sumber tanpa penghapusan.
-- `conflicts`: tempat konflik lokal jika ditemukan kemudian.
-- `unclassified_notes`: tempat catatan yang belum dapat dikategorikan.
+Fungsi setiap dokumen
 
-`raw_specification` sengaja disimpan sebagai YAML literal block. Ini membuat file YAML tetap valid walaupun teks sumber
-memiliki bagian YAML-like yang tidak selalu valid untuk diparse langsung.
+00-START-HERE.mdPanduan membaca, urutan kerja, serta aturan untuk AI/developer.
 
-## Urutan implementasi
+01-MASTER-SPEC.yamlStruktur global, urutan section, navigasi final, arsitektur komponen, aturan responsive, accessibility, dan performance.
 
-1. Audit konflik token global.
-2. Konfigurasi font, warna, background, breakpoint, dan motion dasar.
-3. Buat komponen dekorasi reusable: particle field, dot grid, hexagon, glow, dan noise.
-4. Implementasikan Hero.
-5. Validasi Hero pada viewport referensi.
-6. Implementasikan About dan validasi.
-7. Implementasikan Skills dan validasi.
-8. Implementasikan Projects dengan satu reusable `ProjectCard`.
-9. Implementasikan Certificates dengan satu reusable `CertificateCard`.
-10. Gabungkan semua section di `app/page.tsx`.
-11. Lakukan validasi desktop, laptop, tablet, mobile, reduced motion, accessibility, dan performance.
+02-DESIGN-TOKENS.yamlToken fallback global dan override visual masing-masing section.
 
-## Aturan penting untuk AI/developer
+sections/*.yamlSumber detail utama untuk section terkait: ukuran, posisi, warna, content contract, animation, responsive, dan aturan implementasi.
 
-- Jangan mendesain ulang atau menyederhanakan spesifikasi tanpa instruksi.
-- Jangan menggunakan absolute positioning untuk grid/card utama.
-- Absolute positioning hanya untuk lapisan latar dan ornamen.
-- Gunakan CSS Grid/Flexbox untuk layout konten.
-- Gunakan data array untuk project dan certificate card.
-- Gunakan `next/image` ketika diwajibkan oleh spesifikasi section.
-- Ornamen harus `pointer-events: none` dan `aria-hidden="true"`.
-- Hormati `prefers-reduced-motion`.
-- Pertahankan z-index agar dekorasi tidak menutupi teks.
-- Nilai X/Y adalah baseline viewport referensi, bukan posisi universal untuk semua breakpoint.
-- Jangan menganggap target similarity sebagai jaminan tanpa visual comparison.
+references/*.pngAcuan static visual comparison.
 
-## Data yang belum lengkap
+VALIDATION-REPORT.mdHasil audit konsistensi paket.
 
-- Target audiens tidak dinyatakan secara eksplisit.
-- Strategi SEO global tidak dinyatakan.
-- URL produksi, repository utama, analytics, CMS, dan integrasi eksternal tidak dinyatakan.
-- Gambar referensi dan aset produksi tidak berada di dalam teks sumber ini.
-- Beberapa section tidak memiliki breakpoint numerik lengkap.
-- Konten aktual daftar project dan certificate hanya tersedia sejauh yang tertulis pada sumber.
+Urutan membaca untuk AI
 
-## Konflik yang membutuhkan perhatian
+Baca 00-START-HERE.md.
 
-- Frame desktop memakai 1440 px pada Hero/Skills dan 1586 px pada Projects/Certificates.
-- Background global memiliki beberapa nilai: `#111111`, `#040404`, `#050505`, dan `#020202`.
-- Accent merah memiliki beberapa varian: `#EF4444`, `#ff2d2d`, `#EF2B2B`, dan `#EF2027`.
-- Ukuran section title berbeda sesuai section.
-- Radius container berbeda: 30 px, 31 px, dan 38 px.
-- Perilaku partikel Hero berbeda dari Projects/Certificates.
+Baca 01-MASTER-SPEC.yaml.
 
-Konflik tersebut tidak otomatis merupakan kesalahan; sebagian dapat menjadi override section. Konfirmasi diperlukan
-hanya jika proyek harus dipaksa memakai satu nilai global tunggal.
+Baca 02-DESIGN-TOKENS.yaml.
 
-## Checklist implementasi
+Baca YAML section yang akan dikerjakan.
 
-- [ ] Semua file dibaca sesuai urutan.
-- [ ] Token global dan override section dibedakan.
-- [ ] Hero selesai dan dibandingkan dengan referensi.
-- [ ] About selesai dan dibandingkan dengan referensi.
-- [ ] Skills selesai dan dibandingkan dengan referensi.
-- [ ] Projects memakai reusable card dan data array.
-- [ ] Certificates memakai reusable card dan data array.
-- [ ] Dekorasi berada di belakang konten.
-- [ ] Desktop reference viewport diuji.
-- [ ] Laptop, tablet, dan mobile diuji.
-- [ ] `prefers-reduced-motion` diuji.
-- [ ] Alt text dan label aksesibilitas tersedia.
-- [ ] Tidak ada clipping akibat fixed height.
-- [ ] Tidak ada nilai konflik yang dipilih tanpa dokumentasi.
+Baca data TypeScript section tersebut.
+
+Periksa gambar referensi section.
+
+Tampilkan analisis dan daftar file yang akan diubah.
+
+Implementasikan hanya setelah analisis dinyatakan benar.
+
+Prioritas sumber kebenaran
+
+Apabila ada perbedaan:
+
+Keputusan final yang sudah dikonfirmasi pengguna.
+
+YAML section yang sedang dikerjakan.
+
+Gambar referensi untuk validasi komposisi statis.
+
+File data/*.ts untuk teks, gambar produksi, dan URL.
+
+01-MASTER-SPEC.yaml.
+
+02-DESIGN-TOKENS.yaml sebagai fallback.
+
+Catatan:
+
+Gambar referensi tidak menghapus intentional enhancement yang tertulis di YAML.
+
+Particle Hero tetap wajib walaupun tidak terlihat pada screenshot statis.
+
+Nilai per section tidak boleh dipaksa menjadi satu token global.
+
+Jangan mengarang data yang belum tersedia.
+
+Frame referensi
+
+Section
+
+Gambar sumber
+
+Normalisasi/target
+
+Hero
+
+715 × 462
+
+1440 × 930
+
+About
+
+1853 × 849
+
+1440 × 660
+
+Skills
+
+499 × 325
+
+1440 × ±938
+
+Projects
+
+1586 × 992
+
+1586 × 992
+
+Certificates
+
+1586 × 992
+
+1586 × 992
+
+Koordinat desktop adalah baseline visual. Jangan menggunakan satu set koordinat tetap untuk seluruh breakpoint.
+
+Aturan arsitektur sederhana
+
+Gunakan:
+
+components/
+├── cards/
+│   ├── ProjectCard.tsx
+│   └── CertificateCard.tsx
+├── decorations/
+│   ├── ParticleBackground.tsx
+│   ├── DotGrid.tsx
+│   ├── GlowLayer.tsx
+│   ├── Hexagon.tsx
+│   └── NoiseLayer.tsx
+├── sections/
+│   ├── hero/HeroSection.tsx
+│   ├── about/AboutSection.tsx
+│   ├── skills/SkillsSection.tsx
+│   ├── projects/ProjectsSection.tsx
+│   └── certificates/CertificatesSection.tsx
+└── ui/
+    └── Navbar.tsx
+
+Jangan membuat file komponen terpisah untuk setiap project, certificate, kategori skill, judul, badge, atau dekorasi kecil.
+
+Aturan data
+
+Hero menggunakan tiga role:
+
+Developer?
+
+Designer?
+
+Mobile Developer?
+
+Pergantian role setiap 3000ms.
+
+Skills berjumlah 16 item.
+
+Projects berjumlah 8 item.
+
+Certificates berjumlah 8 item.
+
+Project dan certificate menggunakan satu reusable card dan data array.
+
+URL yang belum tersedia harus tetap null.
+
+Tombol/link yang memiliki URL null tidak boleh menjadi tautan palsu.
+
+Nama dan ekstensi file di public/images harus sama persis dengan path pada data dan YAML.
+
+Urutan implementasi
+
+Audit seluruh data/*.ts.
+
+Verifikasi seluruh aset produksi di public/images.
+
+Konfigurasi font dan global CSS dasar.
+
+Buat dekorasi reusable.
+
+Implementasikan Hero dan lakukan screenshot comparison.
+
+Implementasikan About dan validasi.
+
+Implementasikan Skills dan validasi.
+
+Implementasikan Projects menggunakan satu ProjectCard.
+
+Implementasikan Certificates menggunakan satu CertificateCard.
+
+Gabungkan seluruh section di app/page.tsx.
+
+Uji desktop, laptop, tablet, mobile, keyboard, reduced motion, dan performance.
+
+Data yang masih boleh belum lengkap
+
+Hal berikut tidak menghalangi pembuatan struktur dan tampilan:
+
+Email dan URL sosial About.
+
+Case-study URL dan website URL Projects.
+
+Credential URL Certificates.
+
+Nama ekstensi aset produksi yang belum diverifikasi.
+
+AI tidak boleh mengarang nilai tersebut.
+
+Prompt awal untuk AI coding
+
+Baca seluruh dokumen global, YAML section, data TypeScript, dan gambar referensi
+yang diberikan. Jangan mengubah kode sebelum melakukan analisis.
+
+Tampilkan:
+1. Pemahaman layout dan visual.
+2. Data dan aset yang akan digunakan.
+3. Daftar file yang akan diubah.
+4. Konflik atau data yang belum tersedia.
+5. Urutan implementasi.
+
+Gunakan section YAML sebagai kontrak implementasi dan gambar referensi untuk
+visual comparison. Jangan mengubah section lain, jangan mengarang URL atau aset,
+dan jangan membuat komponen mikro yang tidak diperlukan.
+
+Checklist sebelum implementasi TSX
+
+Semua YAML valid.
+
+Lima gambar referensi tersedia.
+
+Nama skills.png memakai huruf kecil.
+
+Navigasi final adalah About, Skills, Project, Certificates.
+
+Hero memakai Mobile Developer?.
+
+data/hero.ts dan data/navigation.ts sesuai Hero YAML.
+
+Path foto About sesuai file sebenarnya.
+
+Seluruh ikon Skills tersedia.
+
+Delapan gambar Projects tersedia.
+
+Delapan gambar Certificates tersedia.
+
+URL yang belum ada tetap null.
+
+Tidak ada placeholder.
+
+Tidak ada Contact link tanpa section.

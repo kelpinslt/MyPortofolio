@@ -8,18 +8,52 @@ export const aboutData = {
 
   subtitle: "Building Modern Websites",
 
-  description: "",
+  description: [
+    "I'm an Information Technology student in my second semester.",
+    "I love designing and building modern, user-friendly websites.",
+    "I'm always excited to learn new things and grow every day.",
+  ],
 
-  email: "",
-
-  profileImage: "/images/profile/kelpinn-profile.webp",
-
-  profileImageAlt: "Foto profil Kelpinn",
-
-  downloadCv: {
-    label: "Download CV",
-    href: "",
+  contact: {
+    email: null,
+    buttonLabel: "Email Me",
+    href: null,
+    needsConfirmation: true,
   },
 
-  socialLinks: [],
+  profileImage: {
+    src: "/images/profile/kelpinn-profile.webp",
+    alt: "Foto profil Kelpinn",
+  },
+
+  socialLinks: [
+    {
+      id: "instagram",
+      label: "Instagram",
+      icon: "Instagram",
+      href: null,
+      needsConfirmation: true,
+    },
+    {
+      id: "github",
+      label: "GitHub",
+      icon: "Github",
+      href: null,
+      needsConfirmation: true,
+    },
+    {
+      id: "linkedin",
+      label: "LinkedIn",
+      icon: "Linkedin",
+      href: null,
+      needsConfirmation: true,
+    },
+  ],
+
+  downloadCv: {
+    enabled: false,
+    label: "Download CV",
+    href: null,
+    reason: "Tidak terlihat pada referensi About final.",
+  },
 } as const;

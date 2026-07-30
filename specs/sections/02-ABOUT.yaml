@@ -1,621 +1,1436 @@
-schema_version: '1.0'
-document_role: section_specification
-section:
-  id: about
-  order: 2
-  name: About
-  source_file: PORTFOLIO-MASTER-SOURCE.txt
-  source_line_range:
-    start: 528
-    end: 1058
-  source_line_count: 531
-  source_sha256: 969d67d61762605dbb9058777229041c60a2ad3283b9071ec7999ca24ff690e2
-  preservation_mode: exact_raw_source_embedded
-  needs_confirmation: false
-normalized_context:
-  reference_frame:
-    section_height: 840px
-  theme: Futuristic Dark Red Portfolio
-  primary_regions:
-  - main_container
-  - content
-  - photo_frame
-  - decorations
-  measurement_status: visual reverse engineering
-source_index:
-- source_key: SECTION
-  normalized_key: section
-  source_line: 534
-- source_key: CONTAINER
-  normalized_key: container
-  source_line: 544
-- source_key: BACKGROUND_EFFECT
-  normalized_key: background_effect
-  source_line: 571
-- source_key: CONTENT
-  normalized_key: content
-  source_line: 613
-- source_key: LABEL
-  normalized_key: label
-  source_line: 625
-- source_key: TITLE
-  normalized_key: title
-  source_line: 669
-- source_key: SUBTITLE
-  normalized_key: subtitle
-  source_line: 709
-- source_key: DESCRIPTION
-  normalized_key: description
-  source_line: 729
-- source_key: EMAIL_BUTTON
-  normalized_key: email_button
-  source_line: 749
-- source_key: SOCIAL
-  normalized_key: social
-  source_line: 790
-- source_key: DOWNLOAD
-  normalized_key: download
-  source_line: 808
-- source_key: PHOTO_FRAME
-  normalized_key: photo_frame
-  source_line: 832
-- source_key: PHOTO
-  normalized_key: photo
-  source_line: 860
-- source_key: PHOTO_GLOW
-  normalized_key: photo_glow
-  source_line: 880
-- source_key: DECORATION
-  normalized_key: decoration
-  source_line: 894
-- source_key: Z_INDEX
-  normalized_key: z_index
-  source_line: 961
-- source_key: INTERACTION
-  normalized_key: interaction
-  source_line: 980
-- source_key: ACCURACY_DATA
-  normalized_key: accuracy_data
-  source_line: 1024
-classification:
-  content_data: preserved in raw_specification
-  visual_data: preserved in raw_specification
-  technical_data: preserved in raw_specification
-  responsive_data: preserved in raw_specification
-  interaction_data: preserved in raw_specification
-  accessibility_data: preserved in raw_specification when present
-conflicts: []
-unclassified_notes: []
-raw_specification: |+
-  About
-  # ==========================================================
-  # ABOUT SECTION - HIGH ACCURACY SPECIFICATION
-  # Based on visual reverse engineering
-  # ==========================================================
+# ==============================================================================
+# KELPINN PORTFOLIO — ABOUT SECTION
+# VERSION : 2.0 — FIGMA-ALIGNED STRUCTURE SPECIFICATION
+# ==============================================================================
+#
+# SOURCE:
+#   Static About reference image supplied in this conversation.
+#
+# REFERENCE SIZE:
+#   Width  : 1853px
+#   Height : 849px
+#
+# NORMALIZATION:
+#   Desktop target width : 1440px
+#   Scale factor         : 1440 / 1853 = 0.777118
+#   Normalized height    : approximately 660px
+#
+# IMPORTANT:
+#   - Reference_Pixels contains measurements from the supplied image.
+#   - Desktop_1440 contains proportional implementation values.
+#   - Exact Figma Inspect values override these estimates when supplied later.
+#   - Existing visual effects, decorations, parallax intent, and dark-red theme
+#     are preserved from the earlier About specification.
+# ==============================================================================
 
-  SECTION:
-    Name: About Section
-    Theme: Futuristic Dark Red Portfolio
-    Height: 840px
-    Background: "#040404"
+schema_version: "2.0"
+document_role: "section_specification"
+document_status: "implementation_ready_with_external_links_pending"
 
-  # ==========================================================
-  # MAIN CONTAINER
-  # ==========================================================
+SECTION:
+  ID: "about"
+  Order: 2
+  Name: "About"
+  Component: "AboutSection"
+  Anchor: "#about"
 
-  CONTAINER:
+REFERENCE:
+  Image_Path: "../references/about.png"
+  Source_Type: "static_figma_reference"
 
+  Reference_Pixels:
+    Width: 1853px
+    Height: 849px
+    Aspect_Ratio: 2.182568
+
+  Desktop_1440:
+    Width: 1440px
+    Proportional_Height: 660px
+
+  Scale:
+    X: 0.777118
+    Y: 0.777118
+    Method: "uniform width-based normalization"
+
+  Measurement_Status:
+    Container_Bounds: "high confidence"
+    Photo_Frame_Bounds: "high confidence"
+    Content_Positions: "high confidence"
+    Font_Metrics: "medium confidence"
+    Exact_Colors: "medium confidence"
+    Decoration_Positions: "medium confidence"
+    External_Links: "not supplied"
+
+  Rules:
+    - "Use the supplied About image as the source of truth for static composition."
+    - "Preserve the original futuristic dark-red theme."
+    - "Preserve all intentional noise, glow, dot-grid, geometry, and parallax effects."
+    - "Do not invent email, Instagram, GitHub, LinkedIn, or CV URLs."
+    - "Do not render disabled or unresolved links as active links."
+    - "Do not add a Download CV row because it is not visible in the final reference."
+    - "Keep the portrait area on the right and textual content on the left."
+
+PROJECT:
+  Name: "Kelpinn Portfolio"
+  Type: "Personal Developer Portfolio"
+
+  Stack:
+    Framework: "Next.js 16"
+    Language: "TypeScript"
+    Styling: "Tailwind CSS + CSS custom properties"
+    Motion: "Framer Motion"
+    Icons: "Lucide React"
+    Image: "next/image"
+
+  Theme:
+    Name: "Futuristic Dark Red Portfolio"
+    Keywords:
+      - "dark"
+      - "cyber"
+      - "minimal"
+      - "red glow"
+      - "professional"
+      - "asymmetric"
+      - "portrait showcase"
+
+FRAME:
+  Reference_Pixels:
+    X: 0px
+    Y: 0px
+    Width: 1853px
+    Height: 849px
+
+  Desktop_1440:
+    X: 0px
+    Y: 0px
+    Width: 1440px
+    Height: 660px
+
+  Runtime:
+    Width: "100%"
+    Min_Height: "clamp(660px, 100svh, 849px)"
+    Position: "relative"
+    Overflow_X: "hidden"
+    Overflow_Y: "hidden"
+
+  Background:
+    Base: "#191A1B"
+    Gradient:
+      Type: "radial_and_linear_composite"
+      Value:
+        - "radial-gradient(circle at 48% 45%, rgba(60,60,60,0.08), transparent 54%)"
+        - "linear-gradient(135deg, #1A1B1C 0%, #111213 100%)"
+
+TOKENS:
+  Colors:
+    Page_Background: "#191A1B"
+    Container_Background: "#202020"
+    Container_Surface: "rgba(30, 30, 30, 0.96)"
+
+    Primary_Red: "#E53135"
+    Primary_Red_Bright: "#FF3A3A"
+    Primary_Red_Dark: "#A90000"
+    Primary_Red_Deep: "#650000"
+
+    Text_Primary: "#F5F5F5"
+    Text_Secondary: "#C4C4C4"
+    Text_Muted: "#A8A8A8"
+    Text_Subtle: "#8B8B8B"
+
+    Border_Outer: "rgba(255,255,255,0.12)"
+    Border_Red: "rgba(255,45,45,0.70)"
+    Border_Social: "rgba(255,255,255,0.12)"
+
+    Glow_Red_Low: "rgba(255,0,0,0.06)"
+    Glow_Red_Medium: "rgba(255,0,0,0.18)"
+    Glow_Red_Strong: "rgba(255,0,0,0.38)"
+
+  Typography:
+    Primary_Family: "Inter, Arial, sans-serif"
+
+  Radius:
+    Main_Container: 34px
+    Photo_Frame: 16px
+    Email_Button: 12px
+    Social_Button: 12px
+    Circle: 999px
+
+  Motion:
+    Fast: 180ms
+    Normal: 350ms
+    Slow: 700ms
+    Easing: "cubic-bezier(0.22, 0.61, 0.36, 1)"
+
+MAIN_CONTAINER:
+  Reference_Pixels:
     Position:
-      X: 52px
-      Y: 148px
+      X: 88px
+      Y: 70px
 
     Size:
-      Width: 1336px
-      Height: 675px
+      Width: 1676px
+      Height: 712px
 
+  Desktop_1440:
+    Position:
+      X: 68px
+      Y: 54px
+      Left: 68px
+      Right: 68px
+
+    Size:
+      Width: "calc(100% - 136px)"
+      Reference_Width: 1303px
+      Height: 553px
+
+  Runtime:
+    Position: "relative"
+    Margin_X: "auto"
+    Overflow: "hidden"
+
+  Appearance:
     Background:
-      Color: "#070707"
+      Type: "linear-gradient"
+      Direction: "top_left_to_bottom_right"
+      Stops:
+        - Position: "0%"
+          Color: "rgba(38,38,38,0.96)"
+        - Position: "52%"
+          Color: "rgba(28,28,28,0.96)"
+        - Position: "100%"
+          Color: "rgba(22,22,22,0.98)"
 
     Border:
       Width: 1px
-      Color: rgba(255,45,45,0.25)
+      Color: "rgba(255,255,255,0.12)"
+      Radius: 34px
+      Position: "inside"
 
-    Radius: 38px
+    Bottom_Accent:
+      Enabled: true
+      Position: "bottom_left_to_center"
+      Width: "38%"
+      Height: 3px
+      Color: "#F03337"
+      Glow: "0 0 20px rgba(240,51,55,0.48)"
 
     Shadow:
-      Blur: 150px
-      Color: rgba(255,0,0,0.06)
+      Outer: "0 28px 80px rgba(0,0,0,0.42)"
+      Red_Ambient: "0 0 150px rgba(255,0,0,0.06)"
 
-  # ==========================================================
-  # BACKGROUND
-  # ==========================================================
+BACKGROUND_EFFECT:
+  Noise:
+    Enabled: true
+    Opacity: 0.04
+    Blend_Mode: "soft-light"
+    Pointer_Events: "none"
 
-  BACKGROUND_EFFECT:
+  Vignette:
+    Enabled: true
+    Opacity: 0.42
+    Value: "radial-gradient(circle at center, transparent 45%, rgba(0,0,0,0.48) 100%)"
 
-    Noise:
-      Opacity: 4%
+  Left_Red_Glow:
+    Enabled: true
 
-    Vignette:
-      Opacity: 42%
-
-    Left_Red_Glow:
-
+    Reference_Pixels:
       Position:
-        X: 140px
-        Y: 420px
-
-      Size:
-        Width: 400px
-        Height: 400px
-
-      Blur: 180px
-
-      Color:
-        rgba(255,0,0,0.04)
-
-    Right_Red_Glow:
-
-      Position:
-        X: 1120px
-        Y: 430px
-
+        X: 105px
+        Y: 250px
       Size:
         Width: 500px
-        Height: 500px
+        Height: 450px
 
-      Blur: 220px
+    Desktop_1440:
+      Position:
+        X: 82px
+        Y: 194px
+      Size:
+        Width: 389px
+        Height: 350px
 
-      Color:
-        rgba(255,0,0,0.08)
+    Blur: 180px
+    Color: "rgba(255,0,0,0.04)"
 
-  # ==========================================================
-  # CONTENT AREA
-  # ==========================================================
+  Right_Red_Glow:
+    Enabled: true
 
-  CONTENT:
+    Reference_Pixels:
+      Position:
+        X: 1060px
+        Y: 135px
+      Size:
+        Width: 650px
+        Height: 600px
 
+    Desktop_1440:
+      Position:
+        X: 824px
+        Y: 105px
+      Size:
+        Width: 505px
+        Height: 466px
+
+    Blur: 220px
+    Color: "rgba(255,0,0,0.10)"
+
+CONTENT:
+  Reference_Pixels:
     Position:
-      X: 175px
-      Y: 275px
+      X: 248px
+      Y: 174px
+    Width: 690px
 
-    Width: 560px
-
-  # ==========================================================
-  # ABOUT LABEL
-  # ==========================================================
-
-  LABEL:
-
+  Desktop_1440:
     Position:
-      X: 180px
-      Y: 300px
+      X: 193px
+      Y: 135px
+    Width: 536px
 
-    Dot:
+  Layout:
+    Direction: "vertical"
+    Align_Items: "flex-start"
+    Preserve_Absolute_Reference_Positions_On_Desktop: true
 
-      Size: 7px
+  Z_Index: 20
 
-      Color: "#ff2b2b"
+ABOUT_LABEL:
+  Content: "ABOUT ME"
 
-      Glow:
-        Blur: 16px
-
-    Line:
-
-      Width: 78px
-      Height: 1px
-
-      Gradient:
-
-        Start:
-          rgba(255,0,0,0.8)
-
-        End:
-          rgba(255,0,0,0)
-
-    Text:
-
-      Content: "ABOUT ME"
-
-      Font:
-        Family: Inter
-        Size: 14px
-        Weight: 500
-        Letter_Spacing: 4px
-
-      Color: "#ff3d3d"
-
-  # ==========================================================
-  # TITLE
-  # ==========================================================
-
-  TITLE:
-
+  Reference_Pixels:
     Position:
-      X: 180px
-      Y: 360px
+      X: 249px
+      Y: 174px
+    Estimated_Size:
+      Width: 154px
+      Height: 27px
 
-    Line_1:
-
-      Content: "Hi, I'm"
-
-      Font:
-        Size: 74px
-        Weight: 700
-
-      Color: "#FFFFFF"
-
-    Line_2:
-
-      Content: "Kelpinn"
-
-      Font:
-        Size: 78px
-        Weight: 800
-
-      Gradient:
-
-        Start: "#ff3a3a"
-        End: "#b00000"
-
-      Glow:
-
-        Blur: 28px
-
-        Color:
-          rgba(255,0,0,0.20)
-
-  # ==========================================================
-  # SUBTITLE
-  # ==========================================================
-
-  SUBTITLE:
-
+  Desktop_1440:
     Position:
-      Y: 470px
+      X: 194px
+      Y: 135px
 
-    Text:
-      "Building Modern Websites"
+  Font:
+    Family: "Inter, Arial, sans-serif"
+    Size_Reference: 27px
+    Size_Desktop_1440: 21px
+    Weight: 400
+    Line_Height: 1
+    Letter_Spacing_Reference: 3px
+    Letter_Spacing_Desktop_1440: 2.3px
+    Transform: "uppercase"
+
+  Color: "#E53135"
+
+  Important_Visual_Correction:
+    Decorative_Dot_And_Line_Before_Label:
+      Enabled: false
+      Reason: "The supplied final reference shows only the ABOUT ME text; no dot-and-line prefix is attached to the label."
+
+TITLE:
+  Layout:
+    Direction: "horizontal"
+    Align_Items: "baseline"
+    Wrap: false
+    Gap_Reference: 18px
+    Gap_Desktop_1440: 14px
+
+  Reference_Pixels:
+    Position:
+      X: 248px
+      Y: 234px
+    Estimated_Size:
+      Width: 590px
+      Height: 63px
+
+  Desktop_1440:
+    Position:
+      X: 193px
+      Y: 182px
+    Estimated_Size:
+      Width: 458px
+      Height: 49px
+
+  First_Part:
+    Content: "Hi, I'm"
 
     Font:
+      Family: "Inter, Arial, sans-serif"
+      Size_Reference: 76px
+      Size_Desktop_1440: 59px
+      Weight: 700
+      Line_Height: 0.95
+      Letter_Spacing: -2px
 
-      Size: 24px
-      Weight: 400
+    Color: "#F5F5F5"
+    Shadow: "0 2px 12px rgba(255,255,255,0.14)"
 
-    Color:
-      "#A8A8A8"
-
-  # ==========================================================
-  # DESCRIPTION
-  # ==========================================================
-
-  DESCRIPTION:
-
-    Width: 520px
-
-    Position:
-      Y: 560px
+  Highlighted_Name:
+    Content: "Kelpinn"
 
     Font:
+      Family: "Inter, Arial, sans-serif"
+      Size_Reference: 76px
+      Size_Desktop_1440: 59px
+      Weight: 800
+      Line_Height: 0.95
+      Letter_Spacing: -2px
 
-      Size: 17px
-      Weight: 300
-      Line_Height: 38px
+    Fill:
+      Type: "linear-gradient"
+      Direction: "left_to_right"
+      Stops:
+        - Position: "0%"
+          Color: "#F13B3F"
+        - Position: "65%"
+          Color: "#DE2A2F"
+        - Position: "100%"
+          Color: "#C31E23"
 
-    Color:
-      "#8B8B8B"
+    Glow: "0 0 28px rgba(255,0,0,0.20)"
 
-  # ==========================================================
-  # EMAIL BUTTON
-  # ==========================================================
+SUBTITLE:
+  Content: "Building Modern Websites"
 
-  EMAIL_BUTTON:
-
+  Reference_Pixels:
     Position:
-      Y: 690px
+      X: 249px
+      Y: 328px
+    Estimated_Size:
+      Width: 492px
+      Height: 38px
 
+  Desktop_1440:
+    Position:
+      X: 194px
+      Y: 255px
+
+  Font:
+    Family: "Inter, Arial, sans-serif"
+    Size_Reference: 40px
+    Size_Desktop_1440: 31px
+    Weight: 400
+    Line_Height: 1.1
+    Letter_Spacing: 0px
+
+  Color: "#C4C4C4"
+
+DESCRIPTION:
+  Reference_Pixels:
+    Position:
+      X: 249px
+      Y: 413px
+    Width: 700px
+    Line_Gap: 25px
+
+  Desktop_1440:
+    Position:
+      X: 194px
+      Y: 321px
+    Width: 544px
+    Line_Gap: 19px
+
+  Content:
+    - "I'm an Information Technology student in my second semester."
+    - "I love designing and building modern, user-friendly websites."
+    - "I'm always excited to learn new things and grow every day."
+
+  Font:
+    Family: "Inter, Arial, sans-serif"
+    Size_Reference: 24px
+    Size_Desktop_1440: 19px
+    Weight: 300
+    Line_Height_Reference: 46px
+    Line_Height_Desktop_1440: 36px
+    Letter_Spacing: 0px
+
+  Color: "#C0C0C0"
+
+CTA_GROUP:
+  Reference_Pixels:
+    Position:
+      X: 248px
+      Y: 575px
+    Height: 86px
+
+  Desktop_1440:
+    Position:
+      X: 193px
+      Y: 447px
+    Height: 67px
+
+  Layout:
+    Direction: "horizontal"
+    Align_Items: "center"
+    Gap:
+      Email_To_First_Social:
+        Reference: 27px
+        Desktop_1440: 21px
+      Between_Social:
+        Reference: 27px
+        Desktop_1440: 21px
+
+EMAIL_BUTTON:
+  Reference_Pixels:
+    Position:
+      X: 248px
+      Y: 575px
     Size:
+      Width: 234px
+      Height: 86px
 
-      Width: 190px
-      Height: 58px
+  Desktop_1440:
+    Position:
+      X: 193px
+      Y: 447px
+    Size:
+      Width: 182px
+      Height: 67px
 
-    Radius: 12px
+  Content:
+    Label: "Email Me"
+    Email_Address: null
+    Href: null
+    Needs_Confirmation: true
 
+  Appearance:
     Background:
+      Type: "linear-gradient"
+      Direction: "top_left_to_bottom_right"
+      Stops:
+        - Position: "0%"
+          Color: "#D83539"
+        - Position: "100%"
+          Color: "#A91D21"
 
-      Gradient:
-
-        Start:
-          "#ff2f2f"
-
-        End:
-          "#930000"
+    Border:
+      Width: 0px
+      Radius: 12px
 
     Shadow:
+      Value:
+        - "0 18px 38px rgba(179,25,30,0.28)"
+        - "0 0 28px rgba(255,0,0,0.12)"
 
-      Blur: 45px
+  Layout:
+    Direction: "horizontal"
+    Align_Items: "center"
+    Justify_Content: "center"
+    Gap_Reference: 18px
+    Gap_Desktop_1440: 14px
 
-      Color:
-        rgba(255,0,0,0.20)
+  Icon:
+    Library: "Lucide React"
+    Name: "Mail"
+    Size_Reference: 35px
+    Size_Desktop_1440: 27px
+    Stroke_Width: 1.8
+    Color: "#FFFFFF"
+
+  Text:
+    Font:
+      Family: "Inter, Arial, sans-serif"
+      Size_Reference: 26px
+      Size_Desktop_1440: 20px
+      Weight: 400
+    Color: "#FFFFFF"
+
+  Disabled_Link_Behavior:
+    When_Href_Is_Null:
+      Render_As: "button"
+      Disabled: true
+      Aria_Disabled: true
+      Cursor: "not-allowed"
+      Tooltip: "Email belum dikonfigurasi"
+
+  Interaction:
+    Enabled_When_Href_Exists: true
+    Hover:
+      Translate_Y: -2px
+      Background_End: "#BD2025"
+      Shadow: "0 20px 42px rgba(179,25,30,0.34)"
+    Active:
+      Translate_Y: 0px
+      Scale: 0.99
+    Duration: 220ms
+
+SOCIAL_BUTTONS:
+  Shared:
+    Reference_Size:
+      Width: 91px
+      Height: 86px
+
+    Desktop_1440_Size:
+      Width: 71px
+      Height: 67px
+
+    Appearance:
+      Background: "rgba(255,255,255,0.018)"
+      Border:
+        Width: 2px
+        Color: "rgba(255,255,255,0.13)"
+        Radius: 12px
+      Shadow: "inset 0 0 18px rgba(255,255,255,0.015)"
 
     Icon:
-      Size: 24px
+      Size_Reference: 36px
+      Size_Desktop_1440: 28px
+      Color: "#F2F2F2"
 
-    Text:
+    Disabled_Link_Behavior:
+      When_Href_Is_Null:
+        Render_As: "button"
+        Disabled: true
+        Aria_Disabled: true
+        Cursor: "not-allowed"
 
-      Size: 18px
-      Weight: 500
+    Interaction:
+      Enabled_When_Href_Exists: true
+      Hover:
+        Border_Color: "rgba(239,49,53,0.65)"
+        Color: "#FFFFFF"
+        Translate_Y: -2px
+        Glow: "0 0 22px rgba(239,49,53,0.15)"
+      Duration: 220ms
 
-  # ==========================================================
-  # SOCIAL BUTTONS
-  # ==========================================================
+  Items:
+    - ID: "instagram"
+      Label: "Instagram"
+      Icon: "Instagram"
+      Href: null
+      Needs_Confirmation: true
 
-  SOCIAL:
+      Reference_Pixels:
+        Position:
+          X: 509px
+          Y: 575px
 
-    Size: 58px
+      Desktop_1440:
+        Position:
+          X: 396px
+          Y: 447px
 
-    Radius: 12px
+    - ID: "github"
+      Label: "GitHub"
+      Icon: "Github"
+      Href: null
+      Needs_Confirmation: true
 
-    Gap: 16px
+      Reference_Pixels:
+        Position:
+          X: 627px
+          Y: 575px
 
-    Background:
-      rgba(255,255,255,0.02)
+      Desktop_1440:
+        Position:
+          X: 487px
+          Y: 447px
 
-    Border:
-      rgba(255,255,255,0.08)
+    - ID: "linkedin"
+      Label: "LinkedIn"
+      Icon: "Linkedin"
+      Href: null
+      Needs_Confirmation: true
 
-  # ==========================================================
-  # DOWNLOAD CV
-  # ==========================================================
+      Reference_Pixels:
+        Position:
+          X: 745px
+          Y: 575px
 
-  DOWNLOAD:
+      Desktop_1440:
+        Position:
+          X: 579px
+          Y: 447px
 
+DOWNLOAD_CV:
+  Enabled: false
+  Visible_In_Final_Reference: false
+  Label: "Download CV"
+  Href: null
+
+  Preservation_Note:
+    Previous_Specification_Had_Download_Section: true
+    Action: "Preserved as disabled planning data instead of deleting it."
+    Render_In_Final_About: false
+
+PHOTO_FRAME:
+  Reference_Pixels:
     Position:
-      Y: 810px
-
-    Divider:
-
-      Width: 520px
-      Height: 1px
-
-      Color:
-        rgba(255,0,0,0.12)
-
-    Text:
-
-      Size: 18px
-
-      Color:
-        "#9A9A9A"
-
-  # ==========================================================
-  # PHOTO FRAME
-  # ==========================================================
-
-  PHOTO_FRAME:
-
-    Position:
-
-      X: 870px
-      Y: 225px
-
+      X: 1081px
+      Y: 136px
     Size:
+      Width: 558px
+      Height: 578px
 
-      Width: 515px
-      Height: 640px
+  Desktop_1440:
+    Position:
+      X: 840px
+      Y: 106px
+    Size:
+      Width: 434px
+      Height: 449px
 
-    Radius: 32px
-
+  Appearance:
     Background:
-      "#090909"
+      Type: "linear-gradient"
+      Direction: "top_left_to_bottom_right"
+      Stops:
+        - Position: "0%"
+          Color: "rgba(50,30,31,0.78)"
+        - Position: "100%"
+          Color: "rgba(18,18,18,0.98)"
 
     Border:
+      Width: 2px
+      Color: "rgba(255,45,45,0.82)"
+      Radius: 16px
 
-      Width: 1px
+    Accent:
+      Top_Left_Brightness: true
+      Bottom_Right_Fade: true
 
-      Color:
-        rgba(255,40,40,0.28)
+    Shadow:
+      Value:
+        - "0 0 26px rgba(255,40,40,0.18)"
+        - "0 28px 65px rgba(0,0,0,0.48)"
 
-  # ==========================================================
-  # PHOTO
-  # ==========================================================
+  Overflow: "hidden"
+  Z_Index: 7
 
-  PHOTO:
+PHOTO:
+  Source: "/images/profile/kelpinn-profile.webp"
+  Alt: "Foto profil Kelpinn"
 
-    Width: 430px
-    Height: 600px
+  Asset_Status:
+    Path_Declared: true
+    File_Existence_Verified: false
+    Rule: "Verify that public/images/profile/kelpinn-profile.webp exists before implementation."
 
+  Reference_Pixels:
     Position:
-      Bottom_Center
+      Bottom: 0px
+      Horizontal: "center"
+    Estimated_Size:
+      Width: 540px
+      Height: 550px
 
-    Lighting:
+  Desktop_1440:
+    Position:
+      Bottom: 0px
+      Horizontal: "center"
+    Estimated_Size:
+      Width: 420px
+      Height: 427px
 
-      Rim_Light:
-        rgba(255,0,0,0.65)
+  Fit:
+    Object_Fit: "contain"
+    Object_Position: "center bottom"
 
-      Back_Glow:
-        rgba(255,0,0,0.20)
+  Lighting:
+    Rim_Light: "rgba(255,0,0,0.65)"
+    Back_Glow: "rgba(255,0,0,0.20)"
 
-  # ==========================================================
-  # PHOTO GLOW
-  # ==========================================================
+  Image_Requirements:
+    Preferred_Format: "webp"
+    Transparent_Background_Preferred: true
+    Preserve_Aspect_Ratio: true
+    Priority: false
 
-  PHOTO_GLOW:
+PHOTO_GLOW:
+  Enabled: true
 
-    Width: 480px
-    Height: 480px
+  Reference_Pixels:
+    Width: 520px
+    Height: 520px
 
-    Blur: 150px
+  Desktop_1440:
+    Width: 404px
+    Height: 404px
 
-    Color:
-      rgba(255,0,0,0.18)
+  Blur: 150px
+  Color: "rgba(255,0,0,0.18)"
+  Position: "behind_photo"
+  Z_Index: 6
 
-  # ==========================================================
-  # DECORATION
-  # ==========================================================
+DECORATION:
+  Preserve_All: true
+  Pointer_Events: "none"
+  Aria_Hidden: true
 
-  DECORATION:
+  Dot_Grid_Left:
+    Enabled: true
 
-    DotGrid_Left:
-
+    Reference_Pixels:
       Position:
-        X: 740px
-        Y: 330px
+        X: 128px
+        Y: 224px
+      Estimated_Size:
+        Width: 90px
+        Height: 210px
 
-      Grid:
-        10x14
-
-      Size: 3px
-
-      Gap: 14px
-
-      Opacity: 22%
-
-    DotGrid_Bottom:
-
+    Desktop_1440:
       Position:
-        X: 770px
-        Y: 700px
+        X: 99px
+        Y: 174px
+      Estimated_Size:
+        Width: 70px
+        Height: 163px
 
-      Grid:
-        8x8
+    Grid:
+      Columns: 3
+      Rows: 8
+      Dot_Size: 5px
+      Gap: 20px
+    Color: "#EF3438"
+    Opacity_Range:
+      Min: 0.25
+      Max: 0.95
 
-      Opacity: 22%
+  Dot_Grid_Center:
+    Enabled: true
 
-    Circle:
-
+    Reference_Pixels:
       Position:
-        X: 805px
-        Y: 500px
+        X: 949px
+        Y: 112px
+      Estimated_Size:
+        Width: 170px
+        Height: 520px
 
-      Diameter: 170px
-
-      Border:
-        rgba(255,0,0,0.22)
-
-    Hexagon_Left:
-
-      Size: 95px
-
-      Stroke:
-        rgba(255,0,0,0.30)
-
-    Hexagon_Right:
-
-      Size: 125px
-
-      Stroke:
-        rgba(255,0,0,0.40)
-
-    Triangle:
-
+    Desktop_1440:
       Position:
-        Top_Right
+        X: 738px
+        Y: 87px
+      Estimated_Size:
+        Width: 132px
+        Height: 404px
 
-      Size: 34px
+    Color: "rgba(239,52,56,0.28)"
+    Opacity: 0.22
 
-      Stroke:
-        rgba(255,0,0,0.45)
+  Dot_Grid_Photo_Left:
+    Enabled: true
 
-  # ==========================================================
-  # LAYER SYSTEM
-  # ==========================================================
+    Reference_Pixels:
+      Position:
+        X: 1108px
+        Y: 356px
+      Estimated_Size:
+        Width: 105px
+        Height: 95px
 
-  Z_INDEX:
+    Desktop_1440:
+      Position:
+        X: 861px
+        Y: 277px
+      Estimated_Size:
+        Width: 82px
+        Height: 74px
 
-    Background: 0
-    Noise: 1
-    Ambient_Glow: 2
-    Dot_Grid: 3
-    Circle: 4
-    Hexagon_Back: 5
-    Photo_Glow: 6
-    Frame: 7
-    Photo: 10
-    Hexagon_Front: 11
-    Triangle: 12
-    Content: 20
+    Color: "rgba(255,163,58,0.55)"
+    Opacity: 0.52
 
-  # ==========================================================
-  # PHOTO INTERACTION
-  # ==========================================================
+  Circle_Behind_Photo:
+    Enabled: true
 
-  INTERACTION:
+    Reference_Pixels:
+      Position:
+        X: 972px
+        Y: 331px
+      Diameter: 178px
 
-    Perspective:
-      1800px
+    Desktop_1440:
+      Position:
+        X: 755px
+        Y: 257px
+      Diameter: 138px
+
+    Border:
+      Width: 1px
+      Color: "rgba(255,70,70,0.18)"
+
+  Circle_Right:
+    Enabled: true
+
+    Reference_Pixels:
+      Position:
+        X: 1683px
+        Y: 324px
+      Diameter: 43px
+
+    Desktop_1440:
+      Position:
+        X: 1308px
+        Y: 252px
+      Diameter: 33px
+
+    Border:
+      Width: 1px
+      Color: "rgba(255,255,255,0.10)"
+
+  Hexagon_Right:
+    Enabled: true
+
+    Reference_Pixels:
+      Position:
+        X: 1512px
+        Y: 390px
+      Size:
+        Width: 170px
+        Height: 205px
+
+    Desktop_1440:
+      Position:
+        X: 1175px
+        Y: 303px
+      Size:
+        Width: 132px
+        Height: 159px
+
+    Stroke:
+      Width: 2px
+      Color: "rgba(255,45,45,0.60)"
+    Fill: "rgba(255,20,20,0.025)"
+    Z_Index: 11
+
+  Triangle_Top_Right:
+    Enabled: true
+
+    Reference_Pixels:
+      Position:
+        X: 1511px
+        Y: 180px
+      Size:
+        Width: 40px
+        Height: 43px
+
+    Desktop_1440:
+      Position:
+        X: 1174px
+        Y: 140px
+      Size:
+        Width: 31px
+        Height: 33px
+
+    Stroke:
+      Width: 2px
+      Color: "rgba(255,45,45,0.52)"
+    Fill: "transparent"
+    Z_Index: 12
+
+Z_INDEX:
+  Background: 0
+  Noise: 1
+  Ambient_Glow: 2
+  Dot_Grid: 3
+  Circle: 4
+  Hexagon_Back: 5
+  Photo_Glow: 6
+  Frame: 7
+  Photo: 10
+  Hexagon_Front: 11
+  Triangle: 12
+  Content: 20
+  CTA: 21
+
+INTERACTION:
+  Photo_Parallax:
+    Enabled: true
+    Perspective: 1800px
+    Pointer_Scope: "photo_frame"
 
     Hover:
+      Rotate_X: 7deg
+      Rotate_Y: 12deg
+      Scale: 1.03
+      Duration: 0.7s
+      Easing: "cubic-bezier(0.22,0.61,0.36,1)"
 
-      RotateX:
-        7deg
+    Layers:
+      Glow: "translateZ(-40px)"
+      Dot_Grid: "translateZ(20px)"
+      Frame: "translateZ(45px)"
+      Photo: "translateZ(90px)"
+      Hexagon: "translateZ(120px)"
+      Triangle: "translateZ(150px)"
 
-      RotateY:
-        12deg
+    Pointer_Leave:
+      Return_To_Neutral: true
+      Duration: 0.7s
 
-      Scale:
-        1.03
+  Reduced_Motion:
+    Respect_Prefers_Reduced_Motion: true
+    Disable_Parallax: true
+    Disable_Rotation: true
+    Preserve_Static_Glow: true
 
-      Duration:
-        0.7s
+ANIMATION:
+  Entrance:
+    Container:
+      Type: "fade"
+      Duration: 700ms
+      Delay: 0ms
 
-      Easing:
-        cubic-bezier(.22,.61,.36,1)
+    Label:
+      Type: "fade_right"
+      Duration: 550ms
+      Delay: 100ms
 
-    Parallax:
+    Title:
+      Type: "fade_up"
+      Duration: 650ms
+      Delay: 180ms
 
-      Glow:
-        translateZ(-40px)
+    Subtitle:
+      Type: "fade_up"
+      Duration: 600ms
+      Delay: 280ms
 
-      DotGrid:
-        translateZ(20px)
+    Description:
+      Type: "fade_up"
+      Duration: 600ms
+      Delay: 360ms
 
-      Frame:
-        translateZ(45px)
+    CTA:
+      Type: "fade_up"
+      Duration: 600ms
+      Delay: 440ms
 
-      Photo:
-        translateZ(90px)
+    Photo_Frame:
+      Type: "fade_left_and_scale"
+      Duration: 800ms
+      Delay: 220ms
 
-      Hexagon:
-        translateZ(120px)
+  Reduced_Motion:
+    Duration: 1ms
+    Disable_Transforms: true
 
-      Triangle:
-        translateZ(150px)
+RESPONSIVE:
+  Wide_Desktop:
+    Min_Width: 1600px
+    Strategy: "use Reference_Pixels proportionally"
 
+  Desktop:
+    Min_Width: 1280px
+    Max_Width: 1599px
 
+    Main_Container:
+      Left: "clamp(40px, 4.7vw, 68px)"
+      Right: "clamp(40px, 4.7vw, 68px)"
+      Height: "clamp(553px, 45.5vw, 712px)"
 
-  ACCURACY_DATA:
+    Content:
+      X: "14.5%"
+      Y: "19.2%"
+      Width: "42%"
 
-    Hero_Content_Width: 42%
-    Photo_Content_Width: 58%
+    Photo_Frame:
+      Right: "7.1%"
+      Top: "9.2%"
+      Width: "33.3%"
+      Height: "81.2%"
 
-    Photo_Frame_Opacity: 100%
+  Laptop:
+    Min_Width: 1024px
+    Max_Width: 1279px
 
-    Border_Opacity: 28%
+    Main_Container:
+      Left: 28px
+      Right: 28px
+      Min_Height: 610px
 
-    Red_Ambient_Intensity: 18%
+    Content:
+      X: 70px
+      Y: 110px
+      Width: "48%"
 
-    Decorative_Elements_Count:
+    Title:
+      Font_Size: "clamp(46px, 5.2vw, 58px)"
 
-      Hexagon: 3
-      DotGrid: 2
-      Circle: 1
-      Triangle: 1
-      Ambient_Glow: 4
+    Subtitle:
+      Font_Size: "clamp(24px, 2.7vw, 30px)"
 
-    Photo_Alignment:
-      Bottom_Right
+    Description:
+      Font_Size: 17px
+      Line_Height: 31px
 
-    Photo_Look_Direction:
-      Left
+    Photo_Frame:
+      Right: 45px
+      Top: 90px
+      Width: "38%"
+      Height: 450px
 
-    Visual_Hierarchy:
+    CTA:
+      Scale: 0.92
+      Transform_Origin: "left center"
 
-      Title
-      Photo
-      Subtitle
-      CTA
-      Decoration
+  Tablet:
+    Min_Width: 768px
+    Max_Width: 1023px
 
+    Main_Container:
+      Left: 20px
+      Right: 20px
+      Height: "auto"
+      Min_Height: 900px
+      Padding:
+        Top: 70px
+        Right: 48px
+        Bottom: 60px
+        Left: 48px
 
+    Layout:
+      Direction: "column"
+      Gap: 60px
 
-...
+    Content:
+      Position: "relative"
+      X: 0px
+      Y: 0px
+      Width: "100%"
+
+    Photo_Frame:
+      Position: "relative"
+      X: "auto"
+      Y: "auto"
+      Width: "min(100%, 520px)"
+      Height: 540px
+      Align_Self: "center"
+
+    CTA:
+      Wrap: true
+
+  Mobile:
+    Max_Width: 767px
+
+    Frame:
+      Min_Height: "auto"
+      Padding_Y: 24px
+
+    Main_Container:
+      Left: 10px
+      Right: 10px
+      Height: "auto"
+      Min_Height: 980px
+      Radius: 24px
+      Padding:
+        Top: 52px
+        Right: 24px
+        Bottom: 40px
+        Left: 24px
+
+    Layout:
+      Direction: "column"
+      Gap: 48px
+
+    Content:
+      Position: "relative"
+      X: 0px
+      Y: 0px
+      Width: "100%"
+
+    About_Label:
+      Font_Size: 15px
+      Letter_Spacing: 2px
+
+    Title:
+      Direction: "row"
+      Wrap: true
+      Gap: 8px
+
+      First_Part_Size: "clamp(42px, 13vw, 58px)"
+      Highlighted_Name_Size: "clamp(42px, 13vw, 58px)"
+
+    Subtitle:
+      Font_Size: "clamp(24px, 7vw, 31px)"
+      Margin_Top: 18px
+
+    Description:
+      Font_Size: 15px
+      Line_Height: 27px
+      Margin_Top: 30px
+
+    CTA:
+      Direction: "row"
+      Wrap: true
+      Gap: 12px
+      Margin_Top: 34px
+
+    Email_Button:
+      Width: "100%"
+      Height: 58px
+
+    Social_Button:
+      Width: "calc((100% - 24px) / 3)"
+      Height: 58px
+
+    Photo_Frame:
+      Position: "relative"
+      X: "auto"
+      Y: "auto"
+      Width: "100%"
+      Height: "clamp(390px, 118vw, 520px)"
+      Radius: 16px
+
+    Decoration:
+      Reduce_Opacity: true
+      Hide:
+        - "Circle_Right"
+
+COMPONENTS:
+  Required:
+    - Path: "components/sections/about/AboutSection.tsx"
+      Responsibility:
+        - "About semantic container"
+        - "Textual content"
+        - "Email CTA"
+        - "Social buttons"
+        - "Responsive orchestration"
+        - "Entrance animation"
+
+    - Path: "components/decorations/DotGrid.tsx"
+      Responsibility:
+        - "Reusable dot-grid decorations"
+
+    - Path: "components/decorations/GlowLayer.tsx"
+      Responsibility:
+        - "Ambient red glow layers"
+
+    - Path: "components/decorations/Hexagon.tsx"
+      Responsibility:
+        - "Geometric outline decorations"
+
+    - Path: "components/decorations/NoiseLayer.tsx"
+      Responsibility:
+        - "Subtle monochrome texture"
+
+  Optional:
+    - Path: "components/ui/SocialButton.tsx"
+      Create_Only_When:
+        - "The same social button is reused elsewhere."
+
+  Do_Not_Create:
+    - "AboutTitle.tsx"
+    - "AboutDescription.tsx"
+    - "AboutPhoto.tsx"
+    - "EmailButton.tsx"
+    - "Triangle.tsx"
+
+DATA_CONTRACT:
+  Source: "data/about.ts"
+
+  Required_Fields:
+    - "sectionLabel"
+    - "heading.firstLine"
+    - "heading.highlightedName"
+    - "subtitle"
+    - "description"
+    - "contact.email"
+    - "contact.buttonLabel"
+    - "contact.href"
+    - "profileImage.src"
+    - "profileImage.alt"
+    - "socialLinks"
+    - "downloadCv.enabled"
+
+  Expected_Values:
+    Section_Label: "About Me"
+
+    Heading:
+      First_Line: "Hi, I'm"
+      Highlighted_Name: "Kelpinn"
+
+    Subtitle: "Building Modern Websites"
+
+    Description:
+      - "I'm an Information Technology student in my second semester."
+      - "I love designing and building modern, user-friendly websites."
+      - "I'm always excited to learn new things and grow every day."
+
+    Contact:
+      Button_Label: "Email Me"
+      Email: null
+      Href: null
+      Needs_Confirmation: true
+
+    Profile_Image:
+      Src: "/images/profile/kelpinn-profile.webp"
+      Alt: "Foto profil Kelpinn"
+      File_Existence_Verified: false
+
+    Social_Links:
+      - ID: "instagram"
+        Icon: "Instagram"
+        Href: null
+        Needs_Confirmation: true
+      - ID: "github"
+        Icon: "Github"
+        Href: null
+        Needs_Confirmation: true
+      - ID: "linkedin"
+        Icon: "Linkedin"
+        Href: null
+        Needs_Confirmation: true
+
+    Download_CV:
+      Enabled: false
+      Href: null
+
+ACCESSIBILITY:
+  Section:
+    Semantic_Element: "section"
+    ID: "about"
+    Aria_Labelled_By: "about-title"
+
+  Label:
+    Semantic_Element: "p"
+
+  Title:
+    Semantic_Element: "h2"
+    ID: "about-title"
+
+  Profile_Image:
+    Use_Next_Image: true
+    Alt_From_Data: true
+
+  Decorative_Elements:
+    Aria_Hidden: true
+
+  External_Links:
+    Open_In_New_Tab: true
+    Rel: "noopener noreferrer"
+    Require_Descriptive_Aria_Label: true
+
+  Disabled_Links:
+    Do_Not_Render_As_Anchor: true
+
+PERFORMANCE:
+  Use_Next_Image: true
+  Image_Sizes_Attribute_Required: true
+  Avoid_Layout_Shift: true
+  Decorative_Layers_Pointer_Events_None: true
+  Disable_Parallax_On_Touch: true
+  Disable_Parallax_With_Reduced_Motion: true
+
+AI_IMPLEMENTATION_RULES:
+  Must:
+    - "Read this entire About specification before modifying code."
+    - "Use about.png as the static visual reference."
+    - "Use data/about.ts for all visible text and external destinations."
+    - "Preserve the left-text and right-photo composition."
+    - "Preserve noise, vignette, glow, dot grid, geometric decorations, and parallax."
+    - "Render exactly three description lines from the data array."
+    - "Render social buttons in this order: Instagram, GitHub, LinkedIn."
+    - "Use the declared profile image path only after verifying the asset exists."
+    - "Keep unresolved links disabled rather than inventing URLs."
+    - "Keep the implementation structure simple."
+
+  Must_Not:
+    - "Do not invent an email address."
+    - "Do not invent social profile URLs."
+    - "Do not invent a CV file path."
+    - "Do not render Download CV in the final About reference."
+    - "Do not add statistics, skill badges, cards, timelines, or extra biography text."
+    - "Do not put decorative dots or a line directly before ABOUT ME."
+    - "Do not identify the person in the reference image."
+    - "Do not split the section into unnecessary micro-components."
+
+VALIDATION:
+  Reference_1853:
+    - "Main container begins near X=88px and Y=70px."
+    - "Main container size is approximately 1676px by 712px."
+    - "ABOUT ME begins near X=249px and Y=174px."
+    - "Title begins near X=248px and Y=234px."
+    - "Subtitle begins near X=249px and Y=328px."
+    - "Description begins near X=249px and Y=413px."
+    - "Email button begins near X=248px and Y=575px."
+    - "Social order is Instagram, GitHub, LinkedIn."
+    - "Photo frame begins near X=1081px and Y=136px."
+    - "Photo frame size is approximately 558px by 578px."
+    - "No Download CV row is visible."
+
+  Desktop_1440:
+    - "Main container begins near X=68px and Y=54px."
+    - "Main container reference size is approximately 1303px by 553px."
+    - "Content begins near X=193px."
+    - "Photo frame begins near X=840px and Y=106px."
+    - "Photo frame size is approximately 434px by 449px."
+
+  Responsive:
+    - "No horizontal overflow from 320px through 1853px."
+    - "Tablet and mobile use a vertical layout."
+    - "CTA buttons wrap cleanly."
+    - "Photo remains fully visible."
+    - "Decorations do not cover readable content."
+
+  Data:
+    - "Description contains three non-empty lines."
+    - "Email and social URLs remain null until supplied."
+    - "Download CV remains disabled."
+    - "Profile image path must be verified before implementation."
+
+MEASUREMENT_AUDIT:
+  Frame:
+    Reference: "1853 x 849"
+    Desktop_1440: "1440 x approximately 660"
+
+  Main_Container:
+    Reference: "x=88, y=70, width=1676, height=712"
+    Desktop_1440: "x=68, y=54, width=1303, height=553"
+
+  Content:
+    Reference: "x approximately 248"
+    Desktop_1440: "x approximately 193"
+
+  Label:
+    Reference: "x=249, y=174"
+    Desktop_1440: "x=194, y=135"
+
+  Title:
+    Reference: "x=248, y=234"
+    Desktop_1440: "x=193, y=182"
+
+  Subtitle:
+    Reference: "x=249, y=328"
+    Desktop_1440: "x=194, y=255"
+
+  Description:
+    Reference: "x=249, y=413"
+    Desktop_1440: "x=194, y=321"
+
+  Email_Button:
+    Reference: "x=248, y=575, width=234, height=86"
+    Desktop_1440: "x=193, y=447, width=182, height=67"
+
+  Social_Buttons:
+    Reference: "Instagram x=509; GitHub x=627; LinkedIn x=745; y=575"
+    Desktop_1440: "Instagram x=396; GitHub x=487; LinkedIn x=579; y=447"
+
+  Photo_Frame:
+    Reference: "x=1081, y=136, width=558, height=578"
+    Desktop_1440: "x=840, y=106, width=434, height=449"
+
+LEGACY_PRESERVATION:
+  Preserved_From_Previous_Specification:
+    - "Futuristic Dark Red Portfolio theme"
+    - "Noise layer"
+    - "Vignette"
+    - "Left and right ambient glows"
+    - "Dot grids"
+    - "Circle decoration"
+    - "Hexagon decoration"
+    - "Triangle decoration"
+    - "Photo glow"
+    - "Layer hierarchy"
+    - "Photo perspective and parallax"
+    - "Reduced motion behavior"
+
+  Corrected_Against_Final_Reference:
+    - "Frame and container dimensions"
+    - "Text positions"
+    - "Photo-frame position and size"
+    - "CTA sizes and positions"
+    - "Removed label-prefix dot and line"
+    - "Disabled Download CV from final rendering"
+    - "Converted description into three explicit lines"
+    - "Added Instagram, GitHub, and LinkedIn data contract"

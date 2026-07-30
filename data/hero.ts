@@ -12,7 +12,7 @@ export const heroData = {
   roles: [
     "Developer?",
     "Designer?",
-    "Mobile Developer",
+    "Mobile Developer?",
   ],
 
   roleRotationInterval: 3000,

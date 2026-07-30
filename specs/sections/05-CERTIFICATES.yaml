@@ -1,4 +1,4 @@
-schema_version: '1.0'
+schema_version: '2.0'
 document_role: section_specification
 section:
   id: certificates
@@ -3625,6 +3625,230 @@ raw_specification: |+
         Text_Align: "Left"
 
   # =====================================================================
+  # DATA CONTRACT — FINAL CERTIFICATE CONTENT
+  # =====================================================================
+
+  CERTIFICATES_DATA:
+
+    Source: "data/certificates.ts"
+
+    Section_Data:
+
+      heading:
+        firstLine: "My"
+        highlightedText: "Certifications"
+
+      description:
+        - "Berbagai sertifikasi dan pelatihan yang telah saya selesaikan"
+        - "untuk meningkatkan kompetensi dan kemampuan profesional."
+
+      quote:
+        "Selalu belajar, berkembang, dan menjadi versi terbaik dari diri sendiri."
+
+    Certificate_Count: 8
+
+    Items:
+
+      - id: "pandi-domain-id"
+        organization: "Pandi Domain Id"
+        category: "Web Development"
+        issuedDate: "27 August 2024"
+        image: "/images/certificates/pandi-domain-id.webp"
+        imageAlt: "Sertifikat Junior Web Developer dari Pandi Domain Id"
+        credentialUrl: null
+
+      - id: "apple-developer-academy"
+        organization: "Apple Developer Academy"
+        category: "iOS Development"
+        issuedDate: "26 June 2024 - 31 July 2024"
+        image: "/images/certificates/apple-developer-academy.webp"
+        imageAlt: "Sertifikat iOS Developer Foundation dari Apple Developer Academy"
+        credentialUrl: null
+
+      - id: "microsoft"
+        organization: "Microsoft"
+        category: "Cloud Computing"
+        issuedDate: "20 August 2024"
+        image: "/images/certificates/microsoft.webp"
+        imageAlt: "Sertifikat Microsoft Azure Fundamentals dari Microsoft"
+        credentialUrl: null
+
+      - id: "institut-teknologi-del"
+        organization: "Institut Teknologi Del"
+        category: "Web Optimization"
+        issuedDate: "26 May 2025 - 27 May 2025"
+        image: "/images/certificates/institut-teknologi-del.webp"
+        imageAlt: "Sertifikat Web Optimization dari Institut Teknologi Del"
+        credentialUrl: null
+
+      - id: "universitas-ciputra"
+        organization: "Universitas Ciputra"
+        category: "Full Stack Development"
+        issuedDate: "14 March 2024"
+        image: "/images/certificates/universitas-ciputra.webp"
+        imageAlt: "Sertifikat Full Stack Web Development dari Universitas Ciputra"
+        credentialUrl: null
+
+      - id: "alibaba-cloud"
+        organization: "Alibaba Cloud"
+        category: "Cloud Computing"
+        issuedDate: "30 May 2024"
+        image: "/images/certificates/alibaba-cloud.webp"
+        imageAlt: "Sertifikat Alibaba Cloud Developer Associate dari Alibaba Cloud"
+        credentialUrl: null
+
+      - id: "indonesia-stock-exchange"
+        organization: "Indonesia Stock Exchange (IDX)"
+        category: "Financial Technology"
+        issuedDate: "12 January 2025"
+        image: "/images/certificates/indonesia-stock-exchange.webp"
+        imageAlt: "Sertifikat Indonesia Stock Exchange Course dari IDX"
+        credentialUrl: null
+
+      - id: "universitas-negeri-jakarta"
+        organization: "Universitas Negeri Jakarta"
+        category: "Web Programming"
+        issuedDate: "18 November 2024"
+        image: "/images/certificates/universitas-negeri-jakarta.webp"
+        imageAlt: "Sertifikat Pemrograman Web Lanjutan dari Universitas Negeri Jakarta"
+        credentialUrl: null
+
+    Expected_Order:
+      - "Pandi Domain Id"
+      - "Apple Developer Academy"
+      - "Microsoft"
+      - "Institut Teknologi Del"
+      - "Universitas Ciputra"
+      - "Alibaba Cloud"
+      - "Indonesia Stock Exchange (IDX)"
+      - "Universitas Negeri Jakarta"
+
+    TypeScript_Interface: |
+      export interface CertificateItem {
+        id: string;
+        organization: string;
+        category: string;
+        issuedDate: string;
+        image: string;
+        imageAlt: string;
+        credentialUrl: string | null;
+      }
+
+    Rendering_Rules:
+      - "Card title displays organization."
+      - "Category displays inside the red outlined badge."
+      - "issuedDate displays beside the calendar icon."
+      - "Do not display placeholder certificate names."
+      - "Do not invent credential links."
+      - "When credentialUrl is null, the card must not behave as an external link."
+
+  # =====================================================================
+  # ASSET REQUIREMENTS
+  # =====================================================================
+
+  CERTIFICATE_ASSETS:
+
+    Base_Directory: "public/images/certificates"
+
+    Planned_Files:
+      - "pandi-domain-id.webp"
+      - "apple-developer-academy.webp"
+      - "microsoft.webp"
+      - "institut-teknologi-del.webp"
+      - "universitas-ciputra.webp"
+      - "alibaba-cloud.webp"
+      - "indonesia-stock-exchange.webp"
+      - "universitas-negeri-jakarta.webp"
+
+    Allowed_Formats:
+      - ".webp"
+      - ".png"
+      - ".jpg"
+      - ".jpeg"
+
+    Verification:
+      Required_Before_Implementation: true
+      Current_Status: "not verified from the section reference image"
+      Rule:
+        "Every image path and extension in data/certificates.ts must exactly
+        match the real file inside public/images/certificates."
+
+    Image_Rules:
+      Aspect_Ratio: "1.815 / 1"
+      Object_Fit: "cover"
+      Object_Position: "center"
+      Preserve_Certificate_Readability: true
+      First_Image_Priority: true
+      Remaining_Images_Lazy_Load: true
+
+  # =====================================================================
+  # SIMPLE PROJECT COMPONENT STRUCTURE
+  # =====================================================================
+
+  COMPONENT_FILES:
+
+    Required:
+
+      - Path: "components/sections/certificates/CertificatesSection.tsx"
+        Responsibility:
+          - "Render the complete Certificates section."
+          - "Render header, grid, quote, and section-level decorations."
+          - "Read all visible content from data/certificates.ts."
+          - "Orchestrate entrance animation."
+
+      - Path: "components/cards/CertificateCard.tsx"
+        Responsibility:
+          - "Render one reusable certificate card."
+          - "Render certificate image, organization, category, and date."
+          - "Use credentialUrl only when a real URL exists."
+
+      - Path: "components/decorations/DotGrid.tsx"
+        Responsibility:
+          - "Render reusable dot-grid ornaments."
+
+      - Path: "components/decorations/GlowLayer.tsx"
+        Responsibility:
+          - "Render ambient red glows."
+
+      - Path: "components/decorations/Hexagon.tsx"
+        Responsibility:
+          - "Render reusable hexagon ornaments."
+
+      - Path: "components/decorations/NoiseLayer.tsx"
+        Responsibility:
+          - "Render subtle monochrome noise."
+
+      - Path: "components/decorations/ParticleBackground.tsx"
+        Responsibility:
+          - "Render the Certificates particle field."
+          - "Use the particle quantities and behavior defined in this specification."
+          - "Respect reduced motion and viewport visibility."
+
+      - Path: "data/certificates.ts"
+        Responsibility:
+          - "Store the section heading, description, quote, and eight certificate entries."
+
+    Optional:
+
+      - Path: "components/ui/SectionLabel.tsx"
+        Create_Only_When:
+          - "The same circle-and-line header ornament is reused by other sections."
+
+    Do_Not_Create:
+      - "CertificateGrid.tsx"
+      - "CertificateBadge.tsx"
+      - "CertificateDate.tsx"
+      - "CertificatesParticles.tsx"
+      - "PandiCertificateCard.tsx"
+      - "AppleCertificateCard.tsx"
+      - "MicrosoftCertificateCard.tsx"
+      - "DelCertificateCard.tsx"
+      - "CiputraCertificateCard.tsx"
+      - "AlibabaCertificateCard.tsx"
+      - "IdxCertificateCard.tsx"
+      - "UnjCertificateCard.tsx"
+
+  # =====================================================================
   # LAYER HIERARCHY
   # =====================================================================
 
@@ -4020,3 +4244,30 @@ raw_specification: |+
 
       - "Pastikan teks abu-abu tetap memenuhi kontras minimum."
 
+    Data:
+
+      - "Gunakan certificatesSectionData dan certificates dari data/certificates.ts."
+
+      - "Render tepat delapan certificate dengan urutan yang sudah dikunci."
+
+      - "Jangan menulis data certificate langsung di JSX."
+
+      - "Jangan mengarang credential URL."
+
+      - "Jangan menggunakan placeholder Nama Sertifikat, Nama Penerbit, atau Tanggal Terbit."
+
+      - "Jika credentialUrl null, jangan membuat card menjadi tautan palsu."
+
+    Components:
+
+      - "Gunakan CertificatesSection.tsx dan satu CertificateCard.tsx reusable."
+
+      - "Jangan membuat file komponen terpisah untuk setiap certificate."
+
+      - "Pertahankan struktur folder project yang sudah ada."
+
+    Assets:
+
+      - "Verifikasi nama dan ekstensi delapan gambar sebelum implementasi."
+
+      - "Jika file menggunakan PNG, JPG, atau JPEG, perbarui path pada data dan YAML secara bersamaan."

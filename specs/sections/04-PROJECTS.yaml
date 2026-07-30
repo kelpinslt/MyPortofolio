@@ -1,4 +1,4 @@
-schema_version: '1.0'
+schema_version: '2.0'
 document_role: section_specification
 section:
   id: projects
@@ -3161,30 +3161,48 @@ raw_specification: |+
         title: string;
         description: string;
         image: string;
-        technologies: string[];
-        caseStudyUrl?: string;
-        websiteUrl?: string;
         imageAlt: string;
-        featured?: boolean;
+        technologies: readonly string[];
+        caseStudyUrl: string | null;
+        websiteUrl: string | null;
+        featured: boolean;
       }
 
-    Example_Data:
+    Section_Data:
+
+      sectionLabel: "Selected Projects"
+
+      heading:
+        firstLine: "Featured"
+        highlightedText: "Projects"
+
+      description:
+        "Berbagai project terbaik yang telah saya kembangkan selama proses
+        belajar dan eksplorasi teknologi."
+
+      actions:
+        caseStudyLabel: "View Case Study"
+        websiteLabel: "Visit Website"
+
+    Project_Count: 8
+
+    Projects:
 
       - id: "puskesmas-tandang"
         title: "Website Puskesmas Tandang"
         description:
           "Sistem informasi layanan kesehatan untuk memudahkan pasien
           dan admin dalam mengelola data dan layanan."
-        image: "/images/projects/puskesmas.webp"
-        imageAlt: "Tampilan website Puskesmas Tandang"
+        image: "/images/projects/puskesmas-tandang.webp"
+        imageAlt: "Tampilan Website Puskesmas Tandang"
         technologies:
           - "HTML"
           - "CSS"
           - "JavaScript"
           - "Laravel"
           - "MySQL"
-        caseStudyUrl: "/projects/puskesmas-tandang"
-        websiteUrl: "https://example.com"
+        caseStudyUrl: null
+        websiteUrl: null
         featured: true
 
       - id: "janji-martahan-coffee"
@@ -3192,16 +3210,203 @@ raw_specification: |+
         description:
           "Website company profile untuk kedai kopi dengan tampilan
           modern dan pengalaman pengguna yang optimal."
-        image: "/images/projects/janji-martahan.webp"
+        image: "/images/projects/janji-martahan-coffee.webp"
         imageAlt: "Tampilan website Janji Martahan Coffee"
         technologies:
           - "HTML"
           - "CSS"
           - "JavaScript"
           - "PHP"
-        caseStudyUrl: "/projects/janji-martahan"
-        websiteUrl: "https://example.com"
+        caseStudyUrl: null
+        websiteUrl: null
         featured: true
+
+      - id: "traveltrack"
+        title: "TravelTrack"
+        description:
+          "Platform travelling untuk mencari destinasi wisata terbaik
+          dan merencanakan perjalanan dengan mudah."
+        image: "/images/projects/traveltrack.webp"
+        imageAlt: "Tampilan platform TravelTrack"
+        technologies:
+          - "HTML"
+          - "CSS"
+          - "JavaScript"
+          - "Laravel"
+          - "MySQL"
+        caseStudyUrl: null
+        websiteUrl: null
+        featured: true
+
+      - id: "dashboard-admin-template"
+        title: "Dashboard Admin Template"
+        description:
+          "Template dashboard admin modern dengan berbagai komponen UI
+          dan data visualisasi yang interaktif."
+        image: "/images/projects/dashboard-admin-template.webp"
+        imageAlt: "Tampilan Dashboard Admin Template"
+        technologies:
+          - "HTML"
+          - "CSS"
+          - "JavaScript"
+          - "Chart.js"
+        caseStudyUrl: null
+        websiteUrl: null
+        featured: true
+
+      - id: "bem-it-del"
+        title: "Website BEM IT Del"
+        description:
+          "Website organisasi mahasiswa untuk informasi kegiatan,
+          berita, dan pengelolaan data anggota."
+        image: "/images/projects/bem-it-del.webp"
+        imageAlt: "Tampilan Website BEM IT Del"
+        technologies:
+          - "HTML"
+          - "CSS"
+          - "JavaScript"
+          - "PHP"
+          - "MySQL"
+        caseStudyUrl: null
+        websiteUrl: null
+        featured: true
+
+      - id: "videnti"
+        title: "Videnti (Web & Mobile App)"
+        description:
+          "Aplikasi absensi pintar dengan fitur face recognition,
+          geolocation, dan real-time tracking untuk kehadiran."
+        image: "/images/projects/videnti.webp"
+        imageAlt: "Tampilan aplikasi Videnti versi web dan mobile"
+        technologies:
+          - "Flutter"
+          - "Dart"
+          - "Laravel"
+          - "MySQL"
+        caseStudyUrl: null
+        websiteUrl: null
+        featured: true
+
+      - id: "personal-portfolio"
+        title: "Personal Portfolio"
+        description:
+          "Website portfolio pribadi dengan desain futuristik
+          dan animasi interaktif yang modern."
+        image: "/images/projects/personal-portfolio.webp"
+        imageAlt: "Tampilan Personal Portfolio Kelpinn"
+        technologies:
+          - "Next.js"
+          - "Tailwind CSS"
+          - "Framer Motion"
+        caseStudyUrl: null
+        websiteUrl: null
+        featured: true
+
+      - id: "ecommerce-website"
+        title: "E-Commerce Website"
+        description:
+          "Website e-commerce dengan fitur keranjang, pembayaran,
+          dan manajemen produk."
+        image: "/images/projects/ecommerce-website.webp"
+        imageAlt: "Tampilan E-Commerce Website"
+        technologies:
+          - "React"
+          - "Node.js"
+          - "Express"
+          - "MongoDB"
+        caseStudyUrl: null
+        websiteUrl: null
+        featured: true
+
+    Link_Behavior:
+
+      When_Case_Study_URL_Is_Null:
+        Render_As: "button"
+        Disabled: true
+        Aria_Disabled: true
+        Tooltip: "Case study belum tersedia"
+
+      When_Website_URL_Is_Null:
+        Render_As: "button"
+        Disabled: true
+        Aria_Disabled: true
+        Tooltip: "Website belum tersedia"
+
+      Rule:
+        "Jangan membuat URL contoh atau tautan palsu. Aktifkan tombol hanya
+        setelah URL asli ditambahkan ke data/projects.ts."
+
+  DATA_CONTRACT:
+
+    Source: "data/projects.ts"
+
+    Required_Exports:
+      - "projectsSectionData"
+      - "projects"
+
+    Required_Section_Fields:
+      - "sectionLabel"
+      - "heading.firstLine"
+      - "heading.highlightedText"
+      - "description"
+      - "actions.caseStudyLabel"
+      - "actions.websiteLabel"
+
+    Required_Project_Fields:
+      - "id"
+      - "title"
+      - "description"
+      - "image"
+      - "imageAlt"
+      - "technologies"
+      - "caseStudyUrl"
+      - "websiteUrl"
+      - "featured"
+
+    Expected_Project_Count: 8
+
+    Expected_Order:
+      - "Website Puskesmas Tandang"
+      - "Janji Martahan Coffee"
+      - "TravelTrack"
+      - "Dashboard Admin Template"
+      - "Website BEM IT Del"
+      - "Videnti (Web & Mobile App)"
+      - "Personal Portfolio"
+      - "E-Commerce Website"
+
+  ASSET_REQUIREMENTS:
+
+    Base_Directory: "public/images/projects"
+
+    Planned_Files:
+      - "puskesmas-tandang.webp"
+      - "janji-martahan-coffee.webp"
+      - "traveltrack.webp"
+      - "dashboard-admin-template.webp"
+      - "bem-it-del.webp"
+      - "videnti.webp"
+      - "personal-portfolio.webp"
+      - "ecommerce-website.webp"
+
+    Verification:
+      Required_Before_Implementation: true
+      Current_Status: "not verified from the supplied design screenshot"
+      Rule:
+        "Nama file dan ekstensi pada data/projects.ts harus sama persis
+        dengan file nyata di public/images/projects."
+
+    Allowed_Formats:
+      - ".webp"
+      - ".png"
+      - ".jpg"
+      - ".jpeg"
+
+    Image_Rules:
+      Consistent_Aspect_Ratio: 2.289
+      Object_Fit: "cover"
+      Object_Position: "center"
+      Preserve_Visual_Crop: true
 
   # ==========================================================
   # COMPONENT HIERARCHY
@@ -3705,37 +3910,65 @@ raw_specification: |+
 
   COMPONENT_FILES:
 
-    - Path: "components/sections/ProjectsSection.tsx"
-      Responsibility:
-        "Render full projects section, header, ornaments, and project grid."
+    Required:
 
-    - Path: "components/projects/ProjectGrid.tsx"
-      Responsibility:
-        "Render responsive grid from project data."
+      - Path: "components/sections/projects/ProjectsSection.tsx"
+        Responsibility:
+          - "Render the complete Projects section."
+          - "Render header, project grid, and section-level decorations."
+          - "Read visible content from data/projects.ts."
+          - "Orchestrate section and card entrance animations."
 
-    - Path: "components/projects/ProjectCard.tsx"
-      Responsibility:
-        "Reusable project card component."
+      - Path: "components/cards/ProjectCard.tsx"
+        Responsibility:
+          - "Render one reusable project card."
+          - "Render image, title, description, technology badges, and actions."
+          - "Render disabled action buttons when URLs are null."
 
-    - Path: "components/projects/TechnologyBadge.tsx"
-      Responsibility:
-        "Reusable technology badge."
+      - Path: "components/decorations/DotGrid.tsx"
+        Responsibility:
+          - "Render reusable dot-grid ornaments."
 
-    - Path: "components/ui/SectionLabel.tsx"
-      Responsibility:
-        "Reusable section label with circle, lines, and glowing end dot."
+      - Path: "components/decorations/GlowLayer.tsx"
+        Responsibility:
+          - "Render radial ambient glows."
 
-    - Path: "components/background/ProjectParticles.tsx"
-      Responsibility:
-        "Render sparse red particle field."
+      - Path: "components/decorations/Hexagon.tsx"
+        Responsibility:
+          - "Render reusable hexagon decorations."
 
-    - Path: "components/background/HexagonDecoration.tsx"
-      Responsibility:
-        "Reusable decorative hexagon."
+      - Path: "components/decorations/NoiseLayer.tsx"
+        Responsibility:
+          - "Render subtle monochrome noise."
 
-    - Path: "data/projects.ts"
-      Responsibility:
-        "Store project item data."
+      - Path: "components/decorations/ParticleBackground.tsx"
+        Responsibility:
+          - "Render sparse red particles using the Projects particle settings."
+          - "Respect reduced motion and pause outside the viewport."
+
+      - Path: "data/projects.ts"
+        Responsibility:
+          - "Store Projects header content and all eight project entries."
+
+    Optional:
+
+      - Path: "components/ui/SectionLabel.tsx"
+        Create_Only_When:
+          - "The same section-label ornament is reused by several sections."
+
+    Do_Not_Create:
+      - "components/projects/ProjectGrid.tsx"
+      - "components/projects/TechnologyBadge.tsx"
+      - "components/background/ProjectParticles.tsx"
+      - "components/background/HexagonDecoration.tsx"
+      - "PuskesmasCard.tsx"
+      - "CoffeeCard.tsx"
+      - "TravelTrackCard.tsx"
+      - "DashboardCard.tsx"
+      - "BemCard.tsx"
+      - "VidentiCard.tsx"
+      - "PortfolioCard.tsx"
+      - "EcommerceCard.tsx"
 
   # ==========================================================
   # TAILWIND IMPLEMENTATION REFERENCE
@@ -3910,6 +4143,8 @@ raw_specification: |+
 
     - "Gunakan hanya satu ProjectCard component."
 
+    - "Render tepat delapan project dengan urutan yang ditentukan data."
+
     - "Semua project baru harus ditambahkan melalui data array."
 
     - "Jangan membuat ukuran card berbeda untuk setiap project."
@@ -3924,6 +4159,16 @@ raw_specification: |+
 
     - "Dekorasi harus berada di belakang header dan project grid."
 
+    - "Jangan mengarang case study URL atau website URL."
+
+    - "Saat URL bernilai null, tombol tetap terlihat tetapi harus disabled."
+
+    - "Verifikasi semua nama file gambar di public/images/projects."
+
+    - "Gunakan data/projects.ts untuk seluruh teks, teknologi, gambar, dan link."
+
+    - "Jangan membuat komponen terpisah untuk masing-masing project."
+
     - "Lakukan screenshot comparison pada viewport 1586 × 992."
 
     - "Fine tuning terakhir dilakukan pada padding, gap, font size,
@@ -3932,7 +4177,3 @@ raw_specification: |+
   # ==========================================================
   # END OF PROJECTS SECTION SPECIFICATION
   # ==========================================================
-
-
-
-...

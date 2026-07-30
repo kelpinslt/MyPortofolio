@@ -1,581 +1,1276 @@
-schema_version: '1.0'
-document_role: section_specification
-section:
-  id: skills
-  order: 3
-  name: Skills
-  source_file: PORTFOLIO-MASTER-SOURCE.txt
-  source_line_range:
-    start: 1059
-    end: 1538
-  source_line_count: 480
-  source_sha256: 70ac10cf716a988a8afe3721a46b556c0d19b33f56067bf0e8eeecc1042d8d27
-  preservation_mode: exact_raw_source_embedded
-  needs_confirmation: false
-normalized_context:
-  reference_frame:
-    width: 1440px
-    height: 980px
-  theme: Dark Red Futuristic
-  section_type: Technology Showcase
-  primary_regions:
-  - header
-  - frontend
-  - backend
-  - tools
-  - other_skills
-source_index:
-- source_key: SECTION
-  normalized_key: section
-  source_line: 1066
-- source_key: FRAME
-  normalized_key: frame
-  source_line: 1076
-- source_key: CONTAINER
-  normalized_key: container
-  source_line: 1087
-- source_key: BACKGROUND
-  normalized_key: background
-  source_line: 1117
-- source_key: HEADER
-  normalized_key: header
-  source_line: 1135
-- source_key: TITLE
-  normalized_key: title
-  source_line: 1171
-- source_key: DESCRIPTION
-  normalized_key: description
-  source_line: 1203
-- source_key: GRID
-  normalized_key: grid
-  source_line: 1226
-- source_key: CARD
-  normalized_key: card
-  source_line: 1237
-- source_key: FRONTEND
-  normalized_key: frontend
-  source_line: 1260
-- source_key: BACKEND
-  normalized_key: backend
-  source_line: 1277
-- source_key: TOOLS
-  normalized_key: tools
-  source_line: 1294
-- source_key: OTHER
-  normalized_key: other
-  source_line: 1311
-- source_key: TECH_CARD
-  normalized_key: tech_card
-  source_line: 1328
-- source_key: ICONS
-  normalized_key: icons
-  source_line: 1360
-- source_key: COLORS
-  normalized_key: colors
-  source_line: 1402
-- source_key: DECORATION
-  normalized_key: decoration
-  source_line: 1432
-- source_key: Z_INDEX
-  normalized_key: z_index
-  source_line: 1473
-- source_key: ANIMATION
-  normalized_key: animation
-  source_line: 1487
-- source_key: TABLET
-  normalized_key: tablet
-  source_line: 1517
-- source_key: MOBILE
-  normalized_key: mobile
-  source_line: 1525
-classification:
-  content_data: preserved in raw_specification
-  visual_data: preserved in raw_specification
-  technical_data: preserved in raw_specification
-  responsive_data: preserved in raw_specification
-  interaction_data: preserved in raw_specification
-  accessibility_data: preserved in raw_specification when present
-conflicts: []
-unclassified_notes: []
-raw_specification: |+
-  Skill
-  # ==========================================================
-  # SKILLS SECTION SPECIFICATION
-  # VERSION : HIGH ACCURACY (95-100% SIMILARITY)
-  # THEME : Futuristic Cyberpunk Developer Portfolio
-  # ==========================================================
+# ==============================================================================
+# KELPINN PORTFOLIO — SKILLS SECTION
+# VERSION : 2.0 — FIGMA-ALIGNED STRUCTURE SPECIFICATION
+# ==============================================================================
+#
+# STATIC REFERENCE:
+#   Image size  : 499 x 325 px
+#   Target width: 1440 px
+#   Scale       : 1440 / 499 = 2.885772
+#   Target height based on the same scale: approximately 938 px
+#
+# IMPORTANT:
+#   - Reference_Pixels contains measurements taken from the supplied image.
+#   - Desktop_1440 contains proportional implementation values.
+#   - Exact Figma Inspect values override visual estimates when supplied later.
+#   - The original dark-red futuristic theme, ambient particles, noise, dot grids,
+#     hexagons, glow, hover effects, animation intent, and responsive behavior
+#     are preserved.
+# ==============================================================================
 
-  SECTION:
+schema_version: "2.0"
+document_role: "section_specification"
+document_status: "implementation_ready_with_asset_paths_to_verify"
 
-    Name: Skills Section
-    Type: Technology Showcase
-    Theme: Dark Red Futuristic
+SECTION:
+  ID: "skills"
+  Order: 3
+  Name: "Skills"
+  Component: "SkillsSection"
+  Anchor: "#skills"
+  Type: "Technology Showcase"
 
-  # ==========================================================
-  # FRAME
-  # ==========================================================
+REFERENCE:
+  Image_Path: "../references/skills.png"
+  Source_Type: "static_figma_reference"
 
-  FRAME:
+  Reference_Pixels:
+    Width: 499px
+    Height: 325px
+    Aspect_Ratio: 1.535385
 
+  Desktop_1440:
     Width: 1440px
-    Height: 980px
+    Proportional_Height: 938px
 
+  Scale:
+    X: 2.885772
+    Y: 2.885772
+    Method: "uniform width-based normalization"
+
+  Measurement_Confidence:
+    Frame: "high"
+    Card_Grid: "high"
+    Technology_Count: "high"
+    Text_Content: "high"
+    Internal_Tile_Bounds: "medium"
+    Font_Metrics: "medium"
+    Exact_Color_Hex: "medium"
+    Decorative_Detail: "medium"
+
+  Rules:
+    - "Use skills.png as the source of truth for static composition."
+    - "Preserve the four-card asymmetric grid."
+    - "Preserve the technology and skill order visible in the reference."
+    - "Preserve the dark-red cyberpunk visual language."
+    - "Do not remove ambient particles or decorations merely because they are subtle."
+    - "Do not invent additional technologies."
+    - "Do not omit the four Other Skills items."
+    - "Verify local icon filenames before implementation."
+
+PROJECT:
+  Name: "Kelpinn Portfolio"
+  Type: "Personal Developer Portfolio"
+
+  Stack:
+    Framework: "Next.js 16"
+    Language: "TypeScript"
+    Styling: "Tailwind CSS + CSS custom properties"
+    Motion: "Framer Motion"
+    Images: "next/image or standard img for SVG assets"
+    Icons: "Local SVG assets plus an implementation-resolved symbol set"
+
+  Theme:
+    Name: "Dark Red Futuristic"
+    Keywords:
+      - "cyberpunk"
+      - "technology showcase"
+      - "black surface"
+      - "red border"
+      - "soft red glow"
+      - "geometric decorations"
+      - "subtle particles"
+
+FRAME:
+  Reference_Pixels:
+    X: 0px
+    Y: 0px
+    Width: 499px
+    Height: 325px
+
+  Desktop_1440:
+    X: 0px
+    Y: 0px
+    Width: 1440px
+    Height: 938px
+
+  Runtime:
+    Width: "100%"
+    Min_Height: "clamp(820px, 65.14vw, 938px)"
+    Position: "relative"
+    Overflow_X: "hidden"
+    Overflow_Y: "hidden"
+
+  Background:
+    Base: "#040404"
+    Gradient:
+      Type: "composite"
+      Value:
+        - "radial-gradient(circle at 18% 32%, rgba(255,0,0,0.035), transparent 34%)"
+        - "radial-gradient(circle at 82% 44%, rgba(255,0,0,0.03), transparent 32%)"
+        - "linear-gradient(180deg, #030303 0%, #050303 100%)"
+
+TOKENS:
+  Colors:
     Background: "#040404"
+    Surface: "#080808"
+    Card: "#090909"
+    Tech_Tile: "#101010"
 
-  # ==========================================================
-  # MAIN CONTAINER
-  # ==========================================================
+    Primary: "#FF2D2D"
+    Primary_Bright: "#FF3A3A"
+    Secondary: "#B30000"
+    Deep_Red: "#5A0808"
 
-  CONTAINER:
+    Border_Outer: "rgba(255,40,40,0.55)"
+    Border_Card: "rgba(255,50,50,0.34)"
+    Border_Tile: "rgba(255,255,255,0.055)"
 
+    Text: "#FFFFFF"
+    Soft_Text: "#A0A0A0"
+    Tile_Text: "#D8D8D8"
+    Description_Text: "#8F8F8F"
+
+    Glow_Low: "rgba(255,0,0,0.05)"
+    Glow_Medium: "rgba(255,0,0,0.15)"
+    Glow_Strong: "rgba(255,0,0,0.32)"
+
+  Typography:
+    Family: "Inter, Arial, sans-serif"
+
+  Radius:
+    Outer_Container: 38px
+    Category_Card: 24px
+    Technology_Tile: 14px
+    Circle: 999px
+
+  Motion:
+    Fast: 180ms
+    Normal: 350ms
+    Slow: 500ms
+    Entrance: 1000ms
+    Easing: "cubic-bezier(0.22, 0.61, 0.36, 1)"
+
+MAIN_CONTAINER:
+  Reference_Pixels:
     Position:
-      X: 55px
-      Y: 110px
+      X: 4px
+      Y: 1px
 
     Size:
-      Width: 1330px
-      Height: 820px
+      Width: 491px
+      Height: 304px
 
-    Radius: 38px
+  Desktop_1440:
+    Position:
+      X: 12px
+      Y: 3px
+      Left: 12px
+      Right: 12px
 
+    Size:
+      Width: "calc(100% - 24px)"
+      Reference_Width: 1417px
+      Height: 877px
+
+  Runtime:
+    Position: "relative"
+    Overflow: "hidden"
+
+  Appearance:
     Background:
-      "#080808"
+      Type: "linear-gradient"
+      Direction: "top_left_to_bottom_right"
+      Stops:
+        - Position: "0%"
+          Color: "rgba(8,8,8,0.98)"
+        - Position: "55%"
+          Color: "rgba(5,5,5,0.99)"
+        - Position: "100%"
+          Color: "rgba(3,3,3,1)"
 
     Border:
-
       Width: 1px
-      Color: rgba(255,40,40,0.18)
+      Color: "rgba(255,40,40,0.55)"
+      Radius: 38px
+      Position: "inside"
 
     Shadow:
+      Outer: "0 28px 90px rgba(0,0,0,0.55)"
+      Red_Glow: "0 0 150px rgba(255,0,0,0.06)"
 
-      Glow:
-        Blur: 150px
-        Color: rgba(255,0,0,0.06)
+BACKGROUND:
+  Noise:
+    Enabled: true
+    Opacity: 0.05
+    Blend_Mode: "soft-light"
+    Pointer_Events: "none"
 
-  # ==========================================================
-  # BACKGROUND EFFECT
-  # ==========================================================
+  Vignette:
+    Enabled: true
+    Opacity: 0.12
 
-  BACKGROUND:
+  Radial_Glow_Left:
+    Enabled: true
+    Color: "rgba(255,0,0,0.04)"
+    Position: "left_center"
+    Blur: 150px
 
-    Noise:
-      Opacity: 5%
+  Radial_Glow_Right:
+    Enabled: true
+    Color: "rgba(255,0,0,0.03)"
+    Position: "right_center"
+    Blur: 160px
 
-    Vignette:
-      Opacity: 12%
+HEADER:
+  Alignment: "center"
+  Z_Index: 20
 
-    Radial_Glow_Left:
-      rgba(255,0,0,0.04)
-
-    Radial_Glow_Right:
-      rgba(255,0,0,0.03)
-
-  # ==========================================================
-  # TITLE AREA
-  # ==========================================================
-
-  HEADER:
-
+  Reference_Pixels:
     Position:
-      Y: 90px
+      X: 125px
+      Y: 7px
 
-    Label:
+    Size:
+      Width: 250px
+      Height: 62px
 
-      Text: "MY SKILLS"
+  Desktop_1440:
+    Position:
+      X: 361px
+      Y: 20px
 
-      Font:
-        Size: 15px
-        Weight: 500
-        Letter_Spacing: 4px
+    Size:
+      Width: 722px
+      Height: 179px
 
-      Color:
-        "#ff3434"
+  LABEL:
+    Content: "MY SKILLS"
 
-      Decorative_Line:
+    Reference_Pixels:
+      Center_X: 249px
+      Y: 8px
 
-        Width: 120px
-        Height: 1px
+    Desktop_1440:
+      Center_X: 720px
+      Y: 23px
 
-        Color:
-          rgba(255,0,0,0.5)
+    Font:
+      Family: "Inter, Arial, sans-serif"
+      Size_Reference: 7px
+      Size_Desktop_1440: 20px
+      Weight: 600
+      Line_Height: 1
+      Letter_Spacing_Reference: 1px
+      Letter_Spacing_Desktop_1440: 3px
+      Transform: "uppercase"
 
-      Dot:
+    Color: "#FF3434"
 
-        Size: 8px
+    Decorative_Line_Left:
+      Enabled: true
+      Width_Reference: 53px
+      Width_Desktop_1440: 153px
+      Height: 1px
+      Color: "rgba(255,0,0,0.50)"
+      End_Dot:
+        Enabled: true
+        Size_Reference: 2px
+        Size_Desktop_1440: 6px
+        Glow: "0 0 12px rgba(255,45,45,0.85)"
 
-        Glow:
-          Blur: 20px
-
-  # ==========================================================
-  # MAIN TITLE
-  # ==========================================================
+    Decorative_Line_Right:
+      Enabled: true
+      Width_Reference: 53px
+      Width_Desktop_1440: 153px
+      Height: 1px
+      Color: "rgba(255,0,0,0.50)"
+      Start_Dot:
+        Enabled: true
+        Size_Reference: 2px
+        Size_Desktop_1440: 6px
+        Glow: "0 0 12px rgba(255,45,45,0.85)"
 
   TITLE:
+    Layout:
+      Direction: "horizontal"
+      Align_Items: "baseline"
+      Justify_Content: "center"
+      Gap_Reference: 4px
+      Gap_Desktop_1440: 12px
+      Wrap: false
 
-    Line:
+    Reference_Pixels:
+      Position:
+        X: 137px
+        Y: 24px
+      Estimated_Size:
+        Width: 226px
+        Height: 25px
 
-      Content:
-        Technologies I Work With
+    Desktop_1440:
+      Position:
+        X: 395px
+        Y: 69px
+      Estimated_Size:
+        Width: 652px
+        Height: 72px
 
-    Font:
+    First_Part:
+      Content: "Technologies"
 
-      Size: 74px
-      Weight: 800
+      Font:
+        Family: "Inter, Arial, sans-serif"
+        Size_Reference: 22px
+        Size_Desktop_1440: 64px
+        Weight: 800
+        Line_Height: 1
+        Letter_Spacing: -1.5px
 
-    Color:
+      Color: "#FFFFFF"
+      Glow: "0 0 16px rgba(255,255,255,0.10)"
 
-      White:
-        "#ffffff"
+    Highlighted_Part:
+      Content: "I Work With"
 
-      Accent:
-        "#ff3131"
+      Font:
+        Family: "Inter, Arial, sans-serif"
+        Size_Reference: 22px
+        Size_Desktop_1440: 64px
+        Weight: 800
+        Line_Height: 1
+        Letter_Spacing: -1.5px
 
-    Glow:
-
-      Blur:
-        30px
-
-      Opacity:
-        0.12
-
-  # ==========================================================
-  # DESCRIPTION
-  # ==========================================================
+      Color: "#FF3131"
+      Glow: "0 0 30px rgba(255,0,0,0.12)"
 
   DESCRIPTION:
+    Content: "These are the technologies and tools I use to build modern, responsive, and user-friendly websites."
 
-    Width:
-      720px
+    Reference_Pixels:
+      Position:
+        X: 168px
+        Y: 53px
+      Width: 164px
+      Height: 16px
+
+    Desktop_1440:
+      Position:
+        X: 485px
+        Y: 153px
+      Width: 473px
+      Height: 46px
 
     Font:
+      Family: "Inter, Arial, sans-serif"
+      Size_Reference: 6px
+      Size_Desktop_1440: 17px
+      Weight: 300
+      Line_Height_Reference: 8px
+      Line_Height_Desktop_1440: 23px
+      Letter_Spacing: 0px
+      Align: "center"
 
+    Color: "#A0A0A0"
+
+GRID:
+  Reference_Pixels:
+    Position:
+      X: 14px
+      Y: 79px
+
+    Size:
+      Width: 462px
+      Height: 215px
+
+    Column_Gap: 8px
+    Row_Gap: 7px
+
+  Desktop_1440:
+    Position:
+      X: 40px
+      Y: 228px
+
+    Size:
+      Width: 1334px
+      Height: 620px
+
+    Column_Gap: 23px
+    Row_Gap: 20px
+
+  CSS_Grid:
+    Columns: "minmax(0, 1.35fr) minmax(0, 1fr)"
+    Rows: "minmax(0, 1fr) minmax(0, 1.08fr)"
+    Areas:
+      - '"frontend backend"'
+      - '"tools other"'
+
+  Alignment:
+    Horizontal: "stretch"
+    Vertical: "stretch"
+
+CATEGORY_CARD:
+  Shared:
+    Position: "relative"
+    Overflow: "hidden"
+
+    Appearance:
+      Background:
+        Type: "linear-gradient"
+        Direction: "top_to_bottom"
+        Stops:
+          - Position: "0%"
+            Color: "rgba(13,10,10,0.97)"
+          - Position: "100%"
+            Color: "rgba(6,6,6,0.99)"
+
+      Border:
+        Width: 1px
+        Color: "rgba(255,50,50,0.34)"
+        Radius: 24px
+
+      Shadow:
+        Value:
+          - "0 18px 42px rgba(0,0,0,0.40)"
+          - "0 0 34px rgba(255,0,0,0.05)"
+
+    Header:
+      Height_Reference: 28px
+      Height_Desktop_1440: 81px
+      Padding_X_Reference: 12px
+      Padding_X_Desktop_1440: 35px
+      Border_Bottom:
+        Width: 1px
+        Color: "rgba(255,255,255,0.04)"
+
+      Icon_Color: "#FF3434"
+      Title_Color: "#FF3434"
+
+      Title_Font:
+        Family: "Inter, Arial, sans-serif"
+        Size_Reference: 8px
+        Size_Desktop_1440: 23px
+        Weight: 600
+        Transform: "uppercase"
+
+      Active_Line:
+        Enabled: true
+        Width_Reference: 42px
+        Width_Desktop_1440: 121px
+        Height: 2px
+        Color: "#FF2D2D"
+        Glow: "0 0 12px rgba(255,45,45,0.45)"
+
+  Frontend:
+    Grid_Area: "frontend"
+
+    Reference_Pixels:
+      Position:
+        X: 14px
+        Y: 79px
       Size:
-        24px
+        Width: 260px
+        Height: 100px
 
-      Weight:
-        300
+    Desktop_1440:
+      Position:
+        X: 40px
+        Y: 228px
+      Size:
+        Width: 750px
+        Height: 289px
 
-      Line_Height:
-        42px
+    Title: "FRONTEND"
+    Icon_Key: "code"
+    Item_Columns: 5
+    Item_Count: 5
 
-    Color:
-      "#a0a0a0"
+  Backend:
+    Grid_Area: "backend"
 
-  # ==========================================================
-  # SECTION GRID
-  # ==========================================================
+    Reference_Pixels:
+      Position:
+        X: 282px
+        Y: 79px
+      Size:
+        Width: 194px
+        Height: 100px
 
-  GRID:
+    Desktop_1440:
+      Position:
+        X: 814px
+        Y: 228px
+      Size:
+        Width: 560px
+        Height: 289px
 
-    Columns: 2
+    Title: "BACKEND"
+    Icon_Key: "server"
+    Item_Columns: 3
+    Item_Count: 3
 
-    Gap:
-      36px
+  Tools:
+    Grid_Area: "tools"
 
-  # ==========================================================
-  # CARD SYSTEM
-  # ==========================================================
+    Reference_Pixels:
+      Position:
+        X: 14px
+        Y: 186px
+      Size:
+        Width: 194px
+        Height: 108px
 
-  CARD:
+    Desktop_1440:
+      Position:
+        X: 40px
+        Y: 537px
+      Size:
+        Width: 560px
+        Height: 312px
 
-    Radius:
-      28px
+    Title: "TOOLS & DESIGN"
+    Icon_Key: "pen-tool"
+    Item_Columns: 4
+    Item_Count: 4
 
-    Background:
-      "#090909"
+  Other:
+    Grid_Area: "other"
 
-    Border:
-      rgba(255,50,50,0.18)
+    Reference_Pixels:
+      Position:
+        X: 214px
+        Y: 186px
+      Size:
+        Width: 262px
+        Height: 108px
 
-    Shadow:
+    Desktop_1440:
+      Position:
+        X: 618px
+        Y: 537px
+      Size:
+        Width: 756px
+        Height: 312px
 
-      Blur:
-        90px
+    Title: "OTHER SKILLS"
+    Icon_Key: "sparkles"
+    Item_Columns: 4
+    Item_Count: 4
 
-      Color:
-        rgba(255,0,0,0.05)
+TECHNOLOGY_TILE:
+  Shared:
+    Position: "relative"
+    Text_Align: "center"
 
-  # ==========================================================
-  # FRONTEND CARD
-  # ==========================================================
+    Appearance:
+      Background: "rgba(255,255,255,0.018)"
+      Border:
+        Width: 1px
+        Color: "rgba(255,255,255,0.055)"
+        Radius: 14px
+      Shadow: "inset 0 0 20px rgba(255,255,255,0.012)"
 
-  FRONTEND:
+    Layout:
+      Direction: "vertical"
+      Align_Items: "center"
+      Justify_Content: "center"
 
-    Position:
-      Left_Top
+    Status_Dot:
+      Enabled: true
+      Position: "bottom_center"
+      Size_Reference: 4px
+      Size_Desktop_1440: 12px
+      Color: "#FF2D2D"
+      Glow: "0 0 14px rgba(255,45,45,0.85)"
 
-    Size:
-
-      Width:
-        760px
-
-      Height:
-        320px
-
-  # ==========================================================
-  # BACKEND CARD
-  # ==========================================================
-
-  BACKEND:
-
-    Position:
-      Right_Top
-
-    Size:
-
-      Width:
-        520px
-
-      Height:
-        320px
-
-  # ==========================================================
-  # TOOLS CARD
-  # ==========================================================
-
-  TOOLS:
-
-    Position:
-      Left_Bottom
-
-    Size:
-
-      Width:
-        520px
-
-      Height:
-        320px
-
-  # ==========================================================
-  # OTHER SKILLS CARD
-  # ==========================================================
-
-  OTHER:
-
-    Position:
-      Right_Bottom
-
-    Size:
-
-      Width:
-        760px
-
-      Height:
-        320px
-
-  # ==========================================================
-  # TECHNOLOGY ITEM
-  # ==========================================================
-
-  TECH_CARD:
-
-    Width:
-      145px
-
-    Height:
-      180px
-
-    Radius:
-      18px
-
-    Background:
-      rgba(255,255,255,0.02)
-
-    Border:
-      rgba(255,255,255,0.05)
+    Label:
+      Font:
+        Family: "Inter, Arial, sans-serif"
+        Size_Reference: 7px
+        Size_Desktop_1440: 20px
+        Weight: 400
+        Line_Height: 1.1
+      Color: "#D8D8D8"
 
     Hover:
+      Translate_Y: -8px
+      Scale: 1.03
+      Border_Color: "rgba(255,50,50,0.48)"
+      Glow: "0 0 34px rgba(255,0,0,0.15)"
+      Duration: 500ms
 
-      TranslateY:
-        -10px
-
-      Scale:
-        1.04
-
-      Glow:
-        rgba(255,0,0,0.15)
-
-  # ==========================================================
-  # ICON SIZE
-  # ==========================================================
-
-  ICONS:
-
-    HTML:
-      68px
-
-    CSS:
-      68px
-
-    JavaScript:
-      66px
-
-    React:
-      72px
-
-    Next:
-      68px
-
-    Laravel:
-      70px
-
-    PHP:
-      72px
-
-    MySQL:
-      72px
-
-    Figma:
-      62px
-
-    Git:
-      62px
-
-    VSCode:
-      70px
-
-    Pixellab:
-      62px
-
-  # ==========================================================
-  # COLOR SYSTEM
-  # ==========================================================
-
-  COLORS:
-
-    Background:
-      "#040404"
-
-    Surface:
-      "#090909"
-
-    Card:
-      "#111111"
-
-    Primary:
-      "#ff2d2d"
-
-    Secondary:
-      "#b30000"
-
-    Border:
-      rgba(255,50,50,0.18)
-
-    Text:
-      "#ffffff"
-
-    Soft_Text:
-      "#9f9f9f"
-
-  # ==========================================================
-  # DECORATION
-  # ==========================================================
-
-  DECORATION:
-
-    Dot_Grid_Left:
-
-      Grid:
-        10x8
-
-      Opacity:
-        20%
-
-    Dot_Grid_Right:
-
-      Grid:
-        9x8
-
-      Opacity:
-        18%
-
-    Hexagon:
-
-      Small:
-        80px
-
-      Medium:
-        120px
-
-      Stroke:
-        rgba(255,0,0,0.35)
-
-    Ambient_Particles:
-
-      Count:
-        35
-
-      Opacity:
-        25%
-
-  # ==========================================================
-  # LAYER SYSTEM
-  # ==========================================================
-
-  Z_INDEX:
-
-    Background: 0
-    Noise: 1
-    Decoration_Back: 2
-    Glow: 3
-    Cards: 10
-    Icons: 20
-    Hover_Glow: 30
-
-  # ==========================================================
-  # INTERACTION
-  # ==========================================================
-
-  ANIMATION:
-
-    Section:
-
-      FadeUp:
-        1s
-
-    Card:
-
-      Hover:
-        translateY(-8px)
-
-        Scale:
-          1.03
-
-        Duration:
-          0.5s
-
+  Standard_Technology:
     Icon:
+      Object_Fit: "contain"
+      Max_Width: "70%"
+      Max_Height: "54%"
 
-      Floating:
-        true
-
-        Duration:
-          infinite
-
-  # ==========================================================
-  # RESPONSIVE
-  # ==========================================================
-
-  TABLET:
-
-    Layout:
-      Column
-
-    Card_Width:
-      100%
-
-  MOBILE:
-
-    Layout:
-      Single Column
+  Other_Skill:
+    Icon_Color: "#FF3434"
+    Icon_Size_Reference: 28px
+    Icon_Size_Desktop_1440: 81px
 
     Title:
-      48px
+      Font_Size_Reference: 7px
+      Font_Size_Desktop_1440: 20px
+      Weight: 500
+      Color: "#F2F2F2"
 
-    Tech_Card:
-      120px
+    Description:
+      Font_Size_Reference: 5px
+      Font_Size_Desktop_1440: 14px
+      Weight: 300
+      Line_Height_Reference: 7px
+      Line_Height_Desktop_1440: 20px
+      Color: "#8F8F8F"
 
+SKILL_CONTENT:
+  Section_Label: "My Skills"
 
+  Heading:
+    First_Line: "Technologies"
+    Highlighted_Text: "I Work With"
 
+  Description: "These are the technologies and tools I use to build modern, responsive, and user-friendly websites."
 
-...
+  Categories:
+    - ID: "frontend"
+      Title: "Frontend"
+      Icon_Key: "code"
+
+    - ID: "backend"
+      Title: "Backend"
+      Icon_Key: "server"
+
+    - ID: "tools"
+      Title: "Tools & Design"
+      Icon_Key: "pen-tool"
+
+    - ID: "other"
+      Title: "Other Skills"
+      Icon_Key: "sparkles"
+
+  Items:
+    Frontend:
+      - ID: "html5"
+        Name: "HTML5"
+        Icon_Path: "/images/skills/html.svg"
+
+      - ID: "css3"
+        Name: "CSS3"
+        Icon_Path: "/images/skills/css.svg"
+
+      - ID: "javascript"
+        Name: "JavaScript"
+        Icon_Path: "/images/skills/javascript.svg"
+
+      - ID: "react"
+        Name: "React.js"
+        Icon_Path: "/images/skills/react.svg"
+
+      - ID: "nextjs"
+        Name: "Next.js"
+        Icon_Path: "/images/skills/nextjs.svg"
+
+    Backend:
+      - ID: "laravel"
+        Name: "Laravel"
+        Icon_Path: "/images/skills/laravel.svg"
+
+      - ID: "php"
+        Name: "PHP"
+        Icon_Path: "/images/skills/php.svg"
+
+      - ID: "mysql"
+        Name: "MySQL"
+        Icon_Path: "/images/skills/mysql.svg"
+
+    Tools:
+      - ID: "figma"
+        Name: "Figma"
+        Icon_Path: "/images/skills/figma.svg"
+
+      - ID: "git"
+        Name: "Git"
+        Icon_Path: "/images/skills/git.svg"
+
+      - ID: "vscode"
+        Name: "VS Code"
+        Icon_Path: "/images/skills/vscode.svg"
+
+      - ID: "pixellab"
+        Name: "PixelLab"
+        Icon_Path: "/images/skills/pixellab.svg"
+
+    Other:
+      - ID: "responsive-design"
+        Name: "Responsive Design"
+        Icon_Key: "responsive-design"
+        Description: "Merancang website yang responsif di berbagai perangkat."
+
+      - ID: "performance-optimization"
+        Name: "Performance Optimization"
+        Icon_Key: "performance-optimization"
+        Description: "Mengoptimalkan kecepatan dan performa website agar lebih baik."
+
+      - ID: "clean-code"
+        Name: "Clean Code"
+        Icon_Key: "clean-code"
+        Description: "Menulis kode yang rapi, terstruktur, dan mudah dirawat."
+
+      - ID: "problem-solving"
+        Name: "Problem Solving"
+        Icon_Key: "problem-solving"
+        Description: "Mampu menganalisis masalah dan mencari solusi yang efektif."
+
+ASSET_REQUIREMENTS:
+  Base_Directory: "public/images/skills"
+
+  Local_Icon_Files:
+    - "html.svg"
+    - "css.svg"
+    - "javascript.svg"
+    - "react.svg"
+    - "nextjs.svg"
+    - "laravel.svg"
+    - "php.svg"
+    - "mysql.svg"
+    - "figma.svg"
+    - "git.svg"
+    - "vscode.svg"
+    - "pixellab.svg"
+
+  Verification:
+    Required_Before_Implementation: true
+    Current_Status: "not verified from the supplied screenshot"
+    Rule: "Every icon path in data/skills.ts must exactly match the real filename and extension."
+
+  Other_Skill_Symbols:
+    Source: "implementation-resolved icon set"
+    Keys:
+      - "responsive-design"
+      - "performance-optimization"
+      - "clean-code"
+      - "problem-solving"
+    Rule: "Resolve these keys to available icons during TSX implementation without changing the data meaning."
+
+DECORATION:
+  Pointer_Events: "none"
+  Aria_Hidden: true
+
+  Dot_Grid_Left:
+    Enabled: true
+    Grid:
+      Columns: 10
+      Rows: 8
+    Opacity: 0.20
+    Color: "rgba(255,45,45,0.60)"
+    Position: "top_left"
+
+  Dot_Grid_Right:
+    Enabled: true
+    Grid:
+      Columns: 9
+      Rows: 8
+    Opacity: 0.18
+    Color: "rgba(255,45,45,0.55)"
+    Position: "bottom_right"
+
+  Hexagons:
+    Enabled: true
+
+    Left:
+      Count: 2
+      Sizes_Reference:
+        - 48px
+        - 30px
+      Sizes_Desktop_1440:
+        - 139px
+        - 87px
+      Stroke: "rgba(255,0,0,0.35)"
+
+    Right:
+      Count: 2
+      Sizes_Reference:
+        - 44px
+        - 25px
+      Sizes_Desktop_1440:
+        - 127px
+        - 72px
+      Stroke: "rgba(255,0,0,0.35)"
+
+  Ambient_Particles:
+    Enabled: true
+    Count: 35
+    Opacity: 0.25
+    Color_Distribution:
+      Primary: "#FF2D2D"
+      Secondary: "#8E1111"
+    Size:
+      Min: 1px
+      Max: 3px
+    Movement:
+      Enabled: true
+      Speed: 0.25
+      Random: true
+
+  Bottom_Circuit:
+    Enabled: true
+    Position: "bottom"
+    Color: "rgba(255,45,45,0.30)"
+    Center_Glow:
+      Enabled: true
+      Color: "#FF3A3A"
+      Blur: 22px
+
+Z_INDEX:
+  Background: 0
+  Noise: 1
+  Decoration_Back: 2
+  Glow: 3
+  Cards: 10
+  Card_Header: 12
+  Icons: 20
+  Content: 22
+  Hover_Glow: 30
+
+ANIMATION:
+  Section:
+    Entrance:
+      Type: "fade_up"
+      Duration: 1000ms
+      Easing: "cubic-bezier(0.22,0.61,0.36,1)"
+
+  Category_Cards:
+    Entrance:
+      Type: "fade_up"
+      Stagger: 100ms
+      Duration: 650ms
+
+    Hover:
+      Translate_Y: -8px
+      Scale: 1.03
+      Duration: 500ms
+
+  Technology_Tiles:
+    Entrance:
+      Type: "fade_up"
+      Stagger: 45ms
+      Duration: 450ms
+
+    Icon_Floating:
+      Enabled: true
+      Distance: 4px
+      Duration: 3200ms
+      Direction: "alternate"
+      Delay_Strategy: "index_stagger"
+
+  Reduced_Motion:
+    Respect_Prefers_Reduced_Motion: true
+    Disable_Floating: true
+    Disable_Scale: true
+    Disable_Translate: true
+    Entrance_Duration: 1ms
+
+RESPONSIVE:
+  Desktop:
+    Min_Width: 1280px
+    Strategy: "use Desktop_1440 proportional values"
+
+    Grid:
+      Columns: "1.35fr 1fr"
+      Areas:
+        - '"frontend backend"'
+        - '"tools other"'
+
+  Laptop:
+    Min_Width: 1024px
+    Max_Width: 1279px
+
+    Frame:
+      Min_Height: 940px
+
+    Main_Container:
+      Left: 20px
+      Right: 20px
+      Height: "auto"
+      Padding:
+        Top: 64px
+        Right: 34px
+        Bottom: 66px
+        Left: 34px
+
+    Header:
+      Title_Size: "clamp(48px, 5.4vw, 62px)"
+      Description_Width: 540px
+
+    Grid:
+      Columns: "1.2fr 1fr"
+      Gap: 20px
+
+    Category_Card:
+      Min_Height: 290px
+
+  Tablet:
+    Min_Width: 768px
+    Max_Width: 1023px
+
+    Frame:
+      Min_Height: "auto"
+      Padding_Y: 24px
+
+    Main_Container:
+      Left: 16px
+      Right: 16px
+      Height: "auto"
+      Padding:
+        Top: 60px
+        Right: 26px
+        Bottom: 56px
+        Left: 26px
+
+    Header:
+      Title_Size: "clamp(44px, 7vw, 58px)"
+      Description_Width: "min(100%, 560px)"
+
+    Grid:
+      Columns: 1
+      Areas:
+        - '"frontend"'
+        - '"backend"'
+        - '"tools"'
+        - '"other"'
+      Gap: 20px
+
+    Item_Columns:
+      Frontend: 5
+      Backend: 3
+      Tools: 4
+      Other: 2
+
+  Mobile:
+    Max_Width: 767px
+
+    Frame:
+      Min_Height: "auto"
+      Padding_Y: 16px
+
+    Main_Container:
+      Left: 8px
+      Right: 8px
+      Height: "auto"
+      Radius: 24px
+      Padding:
+        Top: 48px
+        Right: 16px
+        Bottom: 44px
+        Left: 16px
+
+    Header:
+      Label_Size: 14px
+      Title:
+        Direction: "column"
+        Gap: 2px
+        First_Part_Size: "clamp(36px, 11vw, 48px)"
+        Highlighted_Part_Size: "clamp(36px, 11vw, 48px)"
+      Description:
+        Font_Size: 14px
+        Line_Height: 22px
+        Width: "100%"
+
+    Grid:
+      Columns: 1
+      Gap: 16px
+
+    Category_Card:
+      Radius: 18px
+      Height: "auto"
+      Padding_Bottom: 16px
+
+    Item_Columns:
+      Frontend: 2
+      Backend: 2
+      Tools: 2
+      Other: 1
+
+    Technology_Tile:
+      Min_Height: 150px
+
+    Other_Skill_Tile:
+      Min_Height: 170px
+
+    Decoration:
+      Reduce_Opacity: true
+      Hide:
+        - "Hexagons.Left.Second"
+        - "Hexagons.Right.Second"
+
+COMPONENTS:
+  Required:
+    - Path: "components/sections/skills/SkillsSection.tsx"
+      Responsibility:
+        - "Skills section semantic container"
+        - "Header and description"
+        - "Category-card grid"
+        - "Technology and other-skill rendering"
+        - "Responsive layout"
+        - "Entrance orchestration"
+
+    - Path: "components/decorations/DotGrid.tsx"
+      Responsibility:
+        - "Dot-grid decorations"
+
+    - Path: "components/decorations/GlowLayer.tsx"
+      Responsibility:
+        - "Ambient glow layers"
+
+    - Path: "components/decorations/Hexagon.tsx"
+      Responsibility:
+        - "Hexagon decorations"
+
+    - Path: "components/decorations/NoiseLayer.tsx"
+      Responsibility:
+        - "Noise texture"
+
+  Optional:
+    - Path: "components/cards/SkillCard.tsx"
+      Create_Only_When:
+        - "The item markup is reused and the component remains simple."
+
+  Do_Not_Create:
+    - "FrontendCard.tsx"
+    - "BackendCard.tsx"
+    - "ToolsCard.tsx"
+    - "OtherSkillsCard.tsx"
+    - "SkillHeader.tsx"
+    - "TechnologyIcon.tsx"
+
+DATA_CONTRACT:
+  Source: "data/skills.ts"
+
+  Required_Exports:
+    - "skillsSectionData"
+    - "skills"
+
+  Required_Section_Fields:
+    - "sectionLabel"
+    - "heading.firstLine"
+    - "heading.highlightedText"
+    - "description"
+    - "categories"
+
+  Required_Item_Fields:
+    - "id"
+    - "name"
+    - "category"
+    - "icon"
+
+  Expected_Counts:
+    Frontend: 5
+    Backend: 3
+    Tools: 4
+    Other: 4
+    Total: 16
+
+  Expected_Order:
+    Frontend:
+      - "HTML5"
+      - "CSS3"
+      - "JavaScript"
+      - "React.js"
+      - "Next.js"
+
+    Backend:
+      - "Laravel"
+      - "PHP"
+      - "MySQL"
+
+    Tools:
+      - "Figma"
+      - "Git"
+      - "VS Code"
+      - "PixelLab"
+
+    Other:
+      - "Responsive Design"
+      - "Performance Optimization"
+      - "Clean Code"
+      - "Problem Solving"
+
+ACCESSIBILITY:
+  Section:
+    Semantic_Element: "section"
+    ID: "skills"
+    Aria_Labelled_By: "skills-title"
+
+  Title:
+    Semantic_Element: "h2"
+    ID: "skills-title"
+
+  Category:
+    Semantic_Element: "article"
+    Heading_Level: "h3"
+
+  Technology_List:
+    Semantic_Element: "ul"
+
+  Technology_Item:
+    Semantic_Element: "li"
+
+  Decorative_Elements:
+    Aria_Hidden: true
+
+  Image_Icons:
+    Alt_From_Data: true
+
+  Motion:
+    Respect_Prefers_Reduced_Motion: true
+
+PERFORMANCE:
+  Avoid_Layout_Shift: true
+  Reserve_Icon_Space: true
+  Decorative_Layers_Pointer_Events_None: true
+  Pause_Ambient_Particles_When_Hidden: true
+  Disable_Ambient_Movement_With_Reduced_Motion: true
+  Avoid_Unnecessary_Client_Components: true
+
+AI_IMPLEMENTATION_RULES:
+  Must:
+    - "Read this entire Skills specification before modifying code."
+    - "Use skills.png as the static visual reference."
+    - "Use data/skills.ts for all visible skills content."
+    - "Preserve the four-card asymmetric grid."
+    - "Render exactly 16 items."
+    - "Render 5 Frontend, 3 Backend, 4 Tools & Design, and 4 Other Skills items."
+    - "Preserve item order inside every category."
+    - "Preserve the category titles shown in the reference."
+    - "Keep ambient particles subtle."
+    - "Keep all local asset paths centralized in data/skills.ts."
+    - "Verify every SVG filename before implementation."
+    - "Keep component structure simple."
+
+  Must_Not:
+    - "Do not use data/about.ts inside the Skills section."
+    - "Do not omit React.js, Next.js, Laravel, PHP, MySQL, Figma, Git, VS Code, PixelLab, or the Other Skills items."
+    - "Do not invent percentages, experience levels, progress bars, or skill ratings."
+    - "Do not convert the layout into one uniform card."
+    - "Do not remove Other Skills descriptions."
+    - "Do not add technologies not visible in the reference."
+    - "Do not split each category into its own component file."
+    - "Do not claim estimated measurements are original Figma Inspect values."
+
+VALIDATION:
+  Reference_499:
+    - "MY SKILLS is centered near the top."
+    - "The heading reads Technologies I Work With."
+    - "The description appears in two centered lines."
+    - "Frontend card begins near X=14px and Y=79px."
+    - "Backend card begins near X=282px and Y=79px."
+    - "Tools & Design begins near X=14px and Y=186px."
+    - "Other Skills begins near X=214px and Y=186px."
+    - "Frontend contains exactly five items."
+    - "Backend contains exactly three items."
+    - "Tools & Design contains exactly four items."
+    - "Other Skills contains exactly four items."
+    - "Every standard technology tile displays a red status dot."
+    - "Bottom circuit ornament and center glow are visible."
+
+  Desktop_1440:
+    - "Frame height is approximately 938px."
+    - "Frontend card begins near X=40px and Y=228px."
+    - "Backend card begins near X=814px and Y=228px."
+    - "Tools & Design begins near X=40px and Y=537px."
+    - "Other Skills begins near X=618px and Y=537px."
+    - "The grid remains asymmetric rather than equal-width."
+
+  Responsive:
+    - "No horizontal overflow from 320px through 1440px."
+    - "Tablet uses one category card per row."
+    - "Mobile uses one category card per row."
+    - "Technology tiles remain readable."
+    - "Other Skill descriptions do not overflow."
+    - "Decorations never cover text."
+
+  Data:
+    - "skillsSectionData contains non-empty header content."
+    - "skills contains exactly 16 items."
+    - "All categories use valid category IDs."
+    - "All image icon paths begin with /images/skills/."
+    - "All Other Skills items contain descriptions."
+
+MEASUREMENT_AUDIT:
+  Frame:
+    Reference: "499 x 325"
+    Desktop_1440: "1440 x approximately 938"
+
+  Main_Container:
+    Reference: "x=4, y=1, width=491, height=304"
+    Desktop_1440: "x=12, y=3, width approximately 1417, height approximately 877"
+
+  Header:
+    Label_Reference: "center x approximately 249, y approximately 8"
+    Title_Reference: "x approximately 137, y approximately 24"
+    Description_Reference: "x approximately 168, y approximately 53"
+
+  Grid:
+    Reference: "x=14, y=79, width=462, height=215"
+    Desktop_1440: "x=40, y=228, width=1334, height=620"
+
+  Frontend:
+    Reference: "x=14, y=79, width=260, height=100"
+    Desktop_1440: "x=40, y=228, width=750, height=289"
+
+  Backend:
+    Reference: "x=282, y=79, width=194, height=100"
+    Desktop_1440: "x=814, y=228, width=560, height=289"
+
+  Tools:
+    Reference: "x=14, y=186, width=194, height=108"
+    Desktop_1440: "x=40, y=537, width=560, height=312"
+
+  Other:
+    Reference: "x=214, y=186, width=262, height=108"
+    Desktop_1440: "x=618, y=537, width=756, height=312"
+
+LEGACY_PRESERVATION:
+  Preserved_From_Previous_Specification:
+    - "Dark Red Futuristic theme"
+    - "1440px desktop target width"
+    - "Noise"
+    - "Vignette"
+    - "Left and right radial glow"
+    - "Four-card category system"
+    - "Frontend, Backend, Tools, and Other categories"
+    - "Technology tile hover translate and scale"
+    - "Dot grids"
+    - "Hexagons"
+    - "35 ambient particles"
+    - "Layer hierarchy"
+    - "Section entrance animation"
+    - "Card hover animation"
+    - "Floating icon intent"
+    - "Tablet and mobile stacking"
+
+  Corrected_Against_Final_Reference:
+    - "Reference frame changed from an assumed 1440x980 source to measured 499x325."
+    - "Normalized desktop height set to approximately 938px."
+    - "Container aligned close to the frame edges."
+    - "Header centered and measured."
+    - "Asymmetric card positions and widths recorded."
+    - "Frontend item count set to five."
+    - "Backend item count set to three."
+    - "Tools item count set to four."
+    - "Other Skills item count set to four."
+    - "All visible technology names added."
+    - "All four Other Skills descriptions added."
+    - "Category and item ordering locked."

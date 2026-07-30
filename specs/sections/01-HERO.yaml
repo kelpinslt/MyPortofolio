@@ -1,6 +1,6 @@
 # ==============================================================================
 # KELPINN PORTFOLIO — HERO SECTION
-# VERSION : 2.1 — FIGMA-ALIGNED + INTENTIONAL INTERACTIVE PARTICLES
+# VERSION : 2.2 — FIGMA-ALIGNED + CERTIFICATES NAVIGATION + ROLE ROTATION
 # ==============================================================================
 #
 # STATUS:
@@ -63,6 +63,8 @@ REFERENCE:
     - "Preserve the interactive particle background even though it is not visible in the static screenshot."
     - "Do not let particles change the measured static layout."
     - "Do not redesign, center, or fill the intentional empty space."
+    - "Synchronize Hero navigation with the actual portfolio sections: About, Skills, Project, and Certificates."
+    - "Certificates intentionally replaces Contact from the static Hero screenshot because Certificates is an existing section specification while Contact is not."
 
 PROJECT:
   Name: "Kelpinn Portfolio"
@@ -307,9 +309,17 @@ NAVBAR:
         X: 558px
         Center_Y: 30px
 
-      Contact:
+      Contact_In_Static_Reference:
         X: 628px
         Center_Y: 30px
+        Included_In_Final_Navigation: false
+
+      Certificates_Final:
+        X: 628px
+        Center_Y: 30px
+        Estimated_Width: 80px
+        Position_Source: "Reuses the fourth navigation slot from the static reference"
+        Included_In_Final_Navigation: true
 
     Desktop_1440:
       Position:
@@ -320,7 +330,10 @@ NAVBAR:
         Direction: "horizontal"
         Align_Items: "center"
         Justify_Content: "flex-end"
-        Gap: 82px
+        Gap: 100px
+        Placement_Mode: "measured_anchor_approximation"
+        Preserve_Right_Edge: true
+        Right_Edge: 1354px
 
     Font:
       Family: "Inter, Arial, sans-serif"
@@ -344,9 +357,9 @@ NAVBAR:
         Href: "#projects"
         Active: false
 
-      - ID: "contact"
-        Label: "Contact"
-        Href: "#contact"
+      - ID: "certificates"
+        Label: "Certificates"
+        Href: "#certificates"
         Active: false
 
     State:
@@ -577,7 +590,7 @@ DEVELOPER_LABEL:
     Content_Sequence:
       - "Developer?"
       - "Designer?"
-      - "Mobile Developer"
+      - "Mobile Developer?"
 
     Font:
       Family: "Inter, Arial, sans-serif"
@@ -597,7 +610,7 @@ DEVELOPER_LABEL:
     Sequence:
       - "Developer?"
       - "Designer?"
-      - "Mobile Developer"
+      - "Mobile Developer?"
 
     Transition:
       Type: "fade_and_slide"
@@ -1106,7 +1119,7 @@ DATA_CONTRACT:
         Sequence:
           - "Developer?"
           - "Designer?"
-          - "Mobile Developer"
+          - "Mobile Developer?"
 
       Role_Rotation_Interval: 3000
 
@@ -1127,8 +1140,8 @@ DATA_CONTRACT:
       - Label: "Project"
         Href: "#projects"
 
-      - Label: "Contact"
-        Href: "#contact"
+      - Label: "Certificates"
+        Href: "#certificates"
 
 ACCESSIBILITY:
   Section:
@@ -1182,6 +1195,8 @@ AI_IMPLEMENTATION_RULES:
     - "Render ArrowDown inside the About button."
     - "Use the order WHO, I AM, glow divider, Developer label."
     - "Use data files for text and navigation content."
+    - "Render the final navigation in this order: About, Skills, Project, Certificates."
+    - "Use #certificates as the Certificates navigation target."
     - "Keep component structure simple."
 
   Must_Not:
@@ -1193,6 +1208,8 @@ AI_IMPLEMENTATION_RULES:
     - "Do not add decorative elements that are not specified."
     - "Do not split the Hero into trivial micro-components."
     - "Do not hardcode text in JSX when it exists in data files."
+    - "Do not restore Contact unless a Contact section specification is added later."
+    - "Do not remove Certificates because it is absent from the static Hero screenshot."
     - "Do not claim estimated coordinates are original Figma Inspect values."
 
 VALIDATION:
@@ -1208,6 +1225,9 @@ VALIDATION:
     - "About button starts near X=971px and Y=803px."
     - "About button includes ArrowDown."
     - "About is the active navigation item."
+    - "Navbar order is About, Skills, Project, Certificates."
+    - "Certificates links to #certificates."
+    - "The longer Certificates label remains inside the Navbar boundary."
     - "No SCROLL label is visible."
     - "Particles occupy the right-side negative space without obscuring content."
 
@@ -1232,6 +1252,21 @@ MEASUREMENT_AUDIT:
   Navbar:
     Reference: "x=6, y=7, width=703, height=45"
     Desktop_1440: "x=12, y=14, width=1416, height=91"
+
+  Navigation:
+    Static_Reference_Items: "About, Skills, Project, Contact"
+    Final_Implementation_Items: "About, Skills, Project, Certificates"
+    Reason: "Certificates is section order 5 in the portfolio specs; no Contact section specification is currently present."
+    Preserved_Fourth_Slot_Reference: "x=628px, center_y=30px"
+    Desktop_Gap: "100px, recalibrated only for the longer Certificates label"
+    Unchanged:
+      - "Navbar bounds"
+      - "Navbar colors"
+      - "Navbar border"
+      - "Navbar radius"
+      - "Navbar typography"
+      - "Brand position and styling"
+      - "Active About indicator"
 
   WHO:
     Reference_Visible_Bounds: "x=73, y=133, width=127, height=37"

@@ -1,27 +1,22 @@
-export interface NavigationItem {
-  label: string;
-  href: string;
-}
-
-export const navigationItems: NavigationItem[] = [
+export const navigationItems = [
   {
+    id: "about",
     label: "About",
     href: "#about",
   },
   {
+    id: "skills",
     label: "Skills",
     href: "#skills",
   },
   {
-    label: "Projects",
+    id: "projects",
+    label: "Project",
     href: "#projects",
   },
   {
+    id: "certificates",
     label: "Certificates",
     href: "#certificates",
   },
-  {
-    label: "Contact",
-    href: "#contact",
-  },
-];
+] as const;

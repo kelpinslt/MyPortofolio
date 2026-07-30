@@ -22,7 +22,6 @@ export function HeroSection() {
           </ul>
         </nav>
       </header>
-
       {/* Isi utama Hero */}
       <div>
         <h1 id="hero-title">
@@ -30,7 +29,7 @@ export function HeroSection() {
           <span>{heroData.heading.secondLine}</span>
         </h1>
 
-        <p>{heroData.role}</p>
+        <p>{heroData.roles[0]}</p>
       </div>
 
       {/* Tombol About */}

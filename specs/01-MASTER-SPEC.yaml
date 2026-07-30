@@ -1,226 +1,310 @@
-schema_version: '1.0'
+schema_version: "2.0"
+document_role: "master_specification"
+document_status: "planning_locked_ready_for_implementation"
+
 project:
-  name: Kelpinn Portfolio
-  type: Personal Portfolio Website / Personal Developer Portfolio
-  architecture: single_page_portfolio
-  framework: Next.js 16
-  language: TypeScript
-  styling: Tailwind CSS
-  animation: Framer Motion
-  icons: Lucide React
-  particle_options:
-  - React TSParticles
-  - lightweight custom canvas
-  - lightweight CSS particles
-  font_candidates:
-  - Inter
-  - Inter Variable
-  - JetBrains Mono
-  source_type: visual_reverse_engineering_specification
-  target_visual_similarity:
-    projects: 95%
-    certificates_initial_render: 88–94%
-    certificates_after_visual_tuning: 95%+
-    skills_claim: 95–100% similarity
-  source_file: PORTFOLIO-MASTER-SOURCE.txt
-  source_line_count: 9053
-  source_sha256: 0ff30e2844aed505a144b118f4beb81451505c00ba353be19442727b8bbfd25a
+  name: "Kelpinn Portfolio"
+  type: "Personal Developer Portfolio"
+  architecture: "single_page_portfolio"
+
+  framework: "Next.js 16"
+  language: "TypeScript"
+  styling: "Tailwind CSS"
+  animation: "Framer Motion"
+  icons: "Lucide React"
+  image_component: "next/image"
+
+  particle_strategy:
+    preferred:
+      - "React TSParticles"
+      - "lightweight custom canvas"
+      - "lightweight CSS particles"
+    rule: "Use the simplest implementation that satisfies each section specification."
+
+  fonts:
+    primary: "Inter Variable, Inter, Arial, sans-serif"
+    hero_brand_initial: "Georgia, 'Times New Roman', serif"
+    optional_section_override: "JetBrains Mono, monospace"
+
+  source_type:
+    - "visual_reverse_engineering_specification"
+    - "section_specific_implementation_contract"
+    - "reference_image_validation"
+
+  legacy_source:
+    file: "PORTFOLIO-MASTER-SOURCE.txt"
+    source_line_count: 9053
+    source_sha256: "0ff30e2844aed505a144b118f4beb81451505c00ba353be19442727b8bbfd25a"
+    note: "Legacy provenance is retained; final section files contain the implementation-ready decisions."
+
 website_goals:
-- Present developer identity through a futuristic portfolio.
-- Present About information.
-- Showcase technologies and skills.
-- Showcase featured projects.
-- Showcase certificates and training.
-- Maintain a dark red futuristic visual language.
-target_audience:
-  value: null
-  needs_confirmation: true
-language:
-  content_languages_observed:
-  - English
-  - Indonesian
-  primary_language: null
-  needs_confirmation: true
-tone_and_personality:
-- Futuristic
-- Cyber Interface
-- Iron Man HUD
-- Minimalist
-- Professional
-- Elegant
-- Dark Red Futuristic
-design_principles:
-- Black or near-black surfaces remain dominant.
-- Red is used as accent, border, glow, particle, and emphasis.
-- Glow remains controlled and section-specific.
-- Decorations remain behind readable content.
-- Primary layout uses Grid or Flexbox.
-- Absolute positioning is reserved for decorative/background layers.
-- Repeated card content is data-driven and reusable.
-- Desktop coordinates are reference baselines, not universal responsive positions.
-implementation_stack:
-  required:
-  - Next.js 16
-  - TypeScript
-  - Tailwind CSS
-  - Framer Motion
-  - Lucide React
-  conditional_or_section_specific:
-  - React TSParticles
-  - lightweight custom canvas particles
-  - lightweight CSS particles
-  - next/image
-  - Google Fonts or next/font
+  - "Present Kelpinn's developer identity through a futuristic dark-red portfolio."
+  - "Present About information and contact/social actions."
+  - "Showcase technologies and supporting skills."
+  - "Showcase eight featured projects."
+  - "Showcase eight certificates and training records."
+  - "Maintain controlled red glow, dark surfaces, and readable content."
+  - "Remain responsive, accessible, and performant."
+
+content_language:
+  strategy: "mixed_language_as_defined_by_section_data"
+  english_usage:
+    - "section labels"
+    - "headings"
+    - "technology names"
+    - "button labels"
+  indonesian_usage:
+    - "project descriptions"
+    - "certificate description and quote"
+    - "supporting content where explicitly defined"
+  rule: "Do not translate visible content unless the user explicitly requests it."
+
+navigation:
+  final_items:
+    - id: "about"
+      label: "About"
+      href: "#about"
+
+    - id: "skills"
+      label: "Skills"
+      href: "#skills"
+
+    - id: "projects"
+      label: "Project"
+      href: "#projects"
+
+    - id: "certificates"
+      label: "Certificates"
+      href: "#certificates"
+
+  active_initial_item: "about"
+  contact_section_present: false
+
+  rules:
+    - "Do not restore Contact unless a Contact specification is added later."
+    - "Certificates is part of the final navigation."
+    - "Navigation order must match this master specification and data/navigation.ts."
+
 page_structure:
   section_order:
-  - order: 1
-    id: hero
-    specification: ./sections/01-HERO.yaml
-    reference_frame:
-      width: 1440px
-      min_height: 100vh
-  - order: 2
-    id: about
-    specification: ./sections/02-ABOUT.yaml
-    reference_frame:
-      section_height: 840px
-  - order: 3
-    id: skills
-    specification: ./sections/03-SKILLS.yaml
-    reference_frame:
-      width: 1440px
-      height: 980px
-  - order: 4
-    id: projects
-    specification: ./sections/04-PROJECTS.yaml
-    reference_frame:
-      width: 1586px
-      height: 992px
-  - order: 5
-    id: certificates
-    specification: ./sections/05-CERTIFICATES.yaml
-    reference_frame:
-      width: 1586px
-      height: 992px
-  navigation_items_observed:
-  - About
-  - Skills
-  - Projects
-  - Contact
-  contact_section_specification_present: false
-  needs_confirmation: true
+    - order: 1
+      id: "hero"
+      specification: "./sections/01-HERO.yaml"
+      reference_image: "./references/hero.png"
+      source_reference_frame:
+        width: 715px
+        height: 462px
+      normalized_desktop_frame:
+        width: 1440px
+        height: 930px
+
+    - order: 2
+      id: "about"
+      specification: "./sections/02-ABOUT.yaml"
+      reference_image: "./references/about.png"
+      source_reference_frame:
+        width: 1853px
+        height: 849px
+      normalized_desktop_frame:
+        width: 1440px
+        height: 660px
+
+    - order: 3
+      id: "skills"
+      specification: "./sections/03-SKILLS.yaml"
+      reference_image: "./references/skills.png"
+      source_reference_frame:
+        width: 499px
+        height: 325px
+      normalized_desktop_frame:
+        width: 1440px
+        height: 938px
+
+    - order: 4
+      id: "projects"
+      specification: "./sections/04-PROJECTS.yaml"
+      reference_image: "./references/projects.png"
+      source_reference_frame:
+        width: 1586px
+        height: 992px
+
+    - order: 5
+      id: "certificates"
+      specification: "./sections/05-CERTIFICATES.yaml"
+      reference_image: "./references/certificates.png"
+      source_reference_frame:
+        width: 1586px
+        height: 992px
+
+source_of_truth_priority:
+  - "user_confirmed_final_decisions"
+  - "section_specific_specification"
+  - "section_reference_image_for_static_visual_validation"
+  - "matching_data_typescript_file_for_content_assets_and_urls"
+  - "master_specification"
+  - "design_tokens_global_fallbacks"
+
+conflict_resolution:
+  rules:
+    - "Section-specific values override global fallback tokens."
+    - "Reference images validate composition; they do not remove documented intentional enhancements."
+    - "Interactive particles explicitly documented in a section must be preserved."
+    - "Never invent URLs, email addresses, image paths, or content."
+    - "When a production asset path differs from the planned path, update both the data file and the matching section YAML."
+    - "Desktop coordinates are reference baselines, not fixed positions for all viewports."
+
 global_behavior:
   responsive_strategy:
-  - Use responsive constraints instead of proportionally scaling the desktop frame.
-  - Use Grid or Flexbox for main content.
-  - Reduce decorative density and particle opacity/count on smaller screens.
-  - Use section-specific mobile/tablet rules where provided.
+    - "Use CSS Grid or Flexbox for primary content."
+    - "Use absolute positioning only for background layers and decorative ornaments."
+    - "Use section-specific desktop measurements as visual baselines."
+    - "Use section-specific laptop, tablet, and mobile rules."
+    - "Reduce decoration density, particle count, and particle opacity on smaller screens."
+    - "Avoid fixed heights that cause clipping when content wraps."
+
   motion_strategy:
-  - Use section entrance fade/up behavior where provided.
-  - Use restrained hover translation and scale.
-  - Respect prefers-reduced-motion where explicitly required.
+    - "Use restrained entrance and hover animation."
+    - "Do not use excessive rotation, glow, or scaling."
+    - "Respect prefers-reduced-motion."
+    - "Pause particle movement outside the viewport or while the page is hidden when specified."
+
   accessibility:
-  - Use semantic section elements and aria-labelledby where specified.
-  - Provide alt text for images.
-  - Decorative elements must be aria-hidden.
-  - Decorative elements must not intercept pointer events.
-  - Maintain minimum contrast for muted text.
-  - Respect prefers-reduced-motion.
+    - "Use semantic section elements with aria-labelledby."
+    - "Use meaningful heading hierarchy."
+    - "Provide alt text from data files."
+    - "Set decorative elements to aria-hidden=true."
+    - "Set decorative layers to pointer-events:none."
+    - "Provide visible keyboard focus."
+    - "Do not render unresolved destinations as active links."
+
   performance:
-  - Limit particle count on desktop where specified.
-  - Reduce particles on tablet and mobile.
-  - Use CSS or SVG for simple hexagons.
-  - Avoid large PNG files for simple ornaments.
-  - Use lazy image loading except where the section explicitly prioritizes the first image.
-content_rules:
+    - "Use next/image where required by a section specification."
+    - "Reserve image dimensions to avoid layout shift."
+    - "Lazy-load non-priority images."
+    - "Use CSS or SVG for simple geometric ornaments."
+    - "Limit particles according to each section specification."
+    - "Avoid unnecessary client components."
+
+component_architecture:
+  sections:
+    - "components/sections/hero/HeroSection.tsx"
+    - "components/sections/about/AboutSection.tsx"
+    - "components/sections/skills/SkillsSection.tsx"
+    - "components/sections/projects/ProjectsSection.tsx"
+    - "components/sections/certificates/CertificatesSection.tsx"
+
+  reusable_cards:
+    - "components/cards/ProjectCard.tsx"
+    - "components/cards/CertificateCard.tsx"
+
+  shared_decorations:
+    - "components/decorations/ParticleBackground.tsx"
+    - "components/decorations/DotGrid.tsx"
+    - "components/decorations/GlowLayer.tsx"
+    - "components/decorations/Hexagon.tsx"
+    - "components/decorations/NoiseLayer.tsx"
+
+  shared_ui:
+    - "components/ui/Navbar.tsx"
+
+  simplicity_rules:
+    - "Do not create one component file per project, certificate, category, title fragment, or small decorative label."
+    - "Create an optional shared component only when markup is genuinely reused."
+    - "Repeated content must be rendered from data arrays."
+
+data_contracts:
+  hero:
+    source: "../data/hero.ts"
+    required:
+      - "brand"
+      - "heading"
+      - "roles"
+      - "roleRotationInterval"
+      - "aboutButton"
+
+  navigation:
+    source: "../data/navigation.ts"
+    expected_count: 4
+
+  about:
+    source: "../data/about.ts"
+    unresolved_allowed:
+      - "contact email and mailto URL"
+      - "Instagram URL"
+      - "GitHub URL"
+      - "LinkedIn URL"
+
+  skills:
+    source: "../data/skills.ts"
+    expected_count: 16
+
   projects:
-    component_strategy: single reusable ProjectCard
-    data_strategy: data array
-    manual_duplicate_cards_forbidden: true
+    source: "../data/projects.ts"
+    expected_count: 8
+    unresolved_allowed:
+      - "caseStudyUrl"
+      - "websiteUrl"
+
   certificates:
-    component_strategy: single reusable CertificateCard
-    data_strategy: data array
-    manual_duplicate_cards_forbidden: true
-seo:
-  specified: false
-  needs_confirmation: true
-integrations:
-  specified: []
-  needs_confirmation: true
-state_management:
-  specified: false
-  needs_confirmation: true
-source_of_truth_priority:
-- section_specific_specification
-- raw_specification
-- master_specification
-- design_token_candidates
-- reference_image_validation
-conflicts:
-- topic: desktop_reference_width
-  value_a: 1440px
-  sources_a:
-  - hero
-  - skills
-  value_b: 1586px
-  sources_b:
-  - projects
-  - certificates
-  explanation: Different section references were reverse engineered from different viewport sizes.
-  needs_confirmation: false
-- topic: dominant_background
-  value_a:
-  - '#111111'
-  - '#040404'
-  sources_a:
-  - hero
-  - about
-  - skills
-  value_b:
-  - '#050505'
-  - '#020202'
-  - '#050303'
-  sources_b:
-  - projects
-  - certificates
-  explanation: Background values vary by section and should remain scoped unless one global value is required.
-  needs_confirmation: true
-- topic: primary_red
-  value_a:
-  - '#EF4444'
-  - '#ff2d2d'
-  sources_a:
-  - hero
-  - skills
-  value_b:
-  - '#EF2B2B'
-  - '#EF2027'
-  sources_b:
-  - projects
-  - certificates
-  explanation: Multiple red accents are explicitly present.
-  needs_confirmation: true
-- topic: outer_container_radius
-  value_a: 38px
-  sources_a:
-  - about
-  - skills
-  value_b:
-  - 30px
-  - 31px
-  sources_b:
-  - projects
-  - certificates
-  explanation: Container radius differs by section.
-  needs_confirmation: false
-- topic: particle_interaction
-  value_a: mouse repulsion enabled
-  sources_a:
-  - hero
-  value_b: mouse interaction disabled
-  sources_b:
-  - projects
-  explanation: Particle behavior is section-specific.
-  needs_confirmation: false
-unclassified_data: []
-needs_confirmation: true
+    source: "../data/certificates.ts"
+    expected_count: 8
+    unresolved_allowed:
+      - "credentialUrl"
+
+implementation_readiness:
+  blocking_issues: []
+
+  non_blocking_inputs_to_verify:
+    - "Production image filenames and extensions in public/images."
+    - "About email and social profile URLs."
+    - "Project case-study and live-website URLs."
+    - "Certificate credential URLs."
+
+  status: "Ready for data-and-asset audit, then TSX implementation."
+
+resolved_section_variations:
+  desktop_reference_width:
+    status: "intentional"
+    explanation: "Sections were reverse engineered from different source image sizes."
+
+  background_colors:
+    status: "intentional_section_overrides"
+
+  red_accents:
+    status: "intentional_section_overrides"
+
+  container_radius:
+    status: "intentional_section_overrides"
+
+  title_sizes:
+    status: "intentional_role_and_section_variations"
+
+  particle_interaction:
+    status: "intentional_section_behavior"
+    examples:
+      hero: "mouse repulsion enabled"
+      projects: "mouse interaction disabled"
+      certificates: "section-specific particle field"
+
+validation:
+  required_viewports:
+    - 360px
+    - 480px
+    - 768px
+    - 1024px
+    - 1280px
+    - 1440px
+    - 1536px
+    - 1586px
+
+  required_checks:
+    - "Reference image comparison."
+    - "No horizontal overflow."
+    - "No content clipping."
+    - "Reduced-motion behavior."
+    - "Keyboard focus."
+    - "Alt text."
+    - "Particle performance."
+    - "Production asset path validation."
+
+needs_confirmation: false

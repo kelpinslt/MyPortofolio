@@ -1,213 +1,39 @@
-schema_version: '1.0'
+schema_version: "2.0"
+document_role: "design_token_specification"
+document_status: "global_fallbacks_locked_section_overrides_preserved"
+
 token_policy:
-  strategy: section_scoped_candidates_with_global_defaults_pending_confirmation
+  strategy: "global_fallbacks_plus_explicit_section_overrides"
+
   rules:
-  - Do not collapse conflicting values into one token without confirmation.
-  - Use section-specific values when an explicit value exists.
-  - Use a global token only when the source values are compatible.
-  - All source details remain preserved in each section raw_specification.
-font_families:
-  primary_candidates:
-  - value: Inter
-    sources:
-    - hero
-    - about
-    - projects
-  - value: Inter Variable, Inter, sans-serif
-    sources:
-    - certificates
-  mono_candidates:
-  - value: JetBrains Mono, monospace
-    sources:
-    - projects
-  needs_confirmation: true
-colors:
-  background_by_section:
-    hero:
-      background: '#111111'
-      surface: '#1A1A1A'
-      card: '#222222'
-    about:
-      section: '#040404'
-      container: '#070707'
-      photo_frame: '#090909'
-    skills:
-      background: '#040404'
-      surface: '#090909'
-      card: '#111111'
-    projects:
-      background_main: '#050505'
-      background_deep: '#020202'
-      background_surface: '#090909'
-      background_card: '#0B0B0B'
-      background_card_secondary: '#101010'
-      background_button: '#0C0C0C'
-    certificates:
-      page_background: '#020202'
-      section_background: '#050303'
-      section_surface: rgba(4, 3, 3, 0.82)
-      card_background_start: '#0B0909'
-      card_background_end: '#060606'
-  red_by_section:
-    hero:
-      primary: '#7F1D1D'
-      secondary: '#B91C1C'
-      accent: '#EF4444'
-    about:
-      label_dot: '#ff2b2b'
-      label_text: '#ff3d3d'
-      title_gradient_start: '#ff3a3a'
-      title_gradient_end: '#b00000'
-    skills:
-      primary: '#ff2d2d'
-      secondary: '#b30000'
-    projects:
-      primary_dark: '#7F1D1D'
-      primary: '#B91C1C'
-      primary_bright: '#EF2B2B'
-      accent: '#FF2D2D'
-      accent_hover: '#FF4343'
-    certificates:
-      primary_red: '#EF2027'
-      primary_red_bright: '#FF2A31'
-      primary_red_dark: '#7F1015'
-      primary_red_deep: '#3B070A'
-  text_by_section:
-    hero:
-      white: '#FFFFFF'
-      soft_text: '#A1A1AA'
-      muted_text: '#71717A'
-    about:
-      primary: '#FFFFFF'
-      subtitle: '#A8A8A8'
-      description: '#8B8B8B'
-      download: '#9A9A9A'
-    skills:
-      primary: '#ffffff'
-      soft_text: '#9f9f9f'
-    projects:
-      primary: '#F5F5F5'
-      secondary: '#A3A3A3'
-      muted: '#777777'
-      red: '#FF2D2D'
-    certificates:
-      primary: '#F5F5F5'
-      secondary: '#B3B3B3'
-      muted: '#8A8A8A'
-  needs_confirmation: true
-typography:
-  hero:
-    hero_title:
-      font_size: 92px
-      font_weight: 800
-      line_height: 88px
-      letter_spacing: -4%
-    developer:
-      font_size: 14px
-      font_weight: 400
-      letter_spacing: 6px
-    navbar:
-      font_size: 15px
-      font_weight: 400
-    mobile_hero_title: 54px
-  about:
-    label:
-      font_family: Inter
-      font_size: 14px
-      font_weight: 500
-      letter_spacing: 4px
-    title_line_1:
-      font_size: 74px
-      font_weight: 700
-    title_line_2:
-      font_size: 78px
-      font_weight: 800
-    subtitle:
-      font_size: 24px
-      font_weight: 400
-    description:
-      font_size: 17px
-      font_weight: 300
-      line_height: 38px
-  skills:
-    label:
-      font_size: 15px
-      font_weight: 500
-      letter_spacing: 4px
-    title:
-      font_size: 74px
-      font_weight: 800
-    description:
-      font_size: 24px
-      font_weight: 300
-      line_height: 42px
-    mobile_title: 48px
-  projects:
-    font_family_primary: Inter, sans-serif
-    font_family_mono: JetBrains Mono, monospace
-    heading_section:
-      font_size: 56px
-      font_weight: 800
-      line_height: 1.05
-      letter_spacing: -2.1px
-    section_label:
-      font_size: 15px
-      font_weight: 600
-      line_height: 20px
-      letter_spacing: 1.25px
-      text_transform: Uppercase
-    section_description:
-      font_size: 15px
-      font_weight: 400
-      line_height: 25px
-    card_title:
-      font_size: 16px
-      font_weight: 650
-      line_height: 22px
-      letter_spacing: -0.25px
-    card_description:
-      font_size: 12px
-      font_weight: 400
-      line_height: 18px
-    badge_text:
-      font_size: 10px
-      font_weight: 400
-      line_height: 14px
-    button_text:
-      font_size: 11px
-      font_weight: 500
-      line_height: 16px
-  certificates:
-    font_family_primary: Inter Variable, Inter, sans-serif
-    font_family_secondary: Inter, sans-serif
-    page_title:
-      font_size: 58px
-      font_weight: 800
-      line_height: 64px
-      letter_spacing: -2.4px
-    description:
-      font_size: 15px
-      font_weight: 400
-      line_height: 25px
-    card_title:
-      font_size: 17px
-      font_weight: 500
-      line_height: 22px
-      letter_spacing: -0.2px
-    badge_text:
-      font_size: 11px
-      font_weight: 400
-      line_height: 16px
-    date_text:
-      font_size: 12px
-      font_weight: 400
-      line_height: 18px
-    quote_text:
-      font_size: 14px
-      font_weight: 400
-      line_height: 20px
-spacing:
-  projects_scale:
+    - "Global tokens are fallbacks, not replacements for explicit section values."
+    - "Section YAML always wins when it declares an explicit visual value."
+    - "Intentional differences between sections are not unresolved conflicts."
+    - "Do not merge visually different reds, backgrounds, radii, or title sizes into one forced value."
+    - "Detailed measurements remain in the five section specifications."
+
+global_defaults:
+  font_families:
+    primary: "Inter Variable, Inter, Arial, sans-serif"
+    mono_optional: "JetBrains Mono, monospace"
+    hero_brand_initial: "Georgia, 'Times New Roman', serif"
+
+  colors:
+    page_fallback: "#020202"
+    surface_fallback: "#080808"
+    card_fallback: "#0B0B0B"
+
+    text_primary: "#F5F5F5"
+    text_secondary: "#A3A3A3"
+    text_muted: "#8A8A8A"
+
+    red_primary_fallback: "#EF2B2B"
+    red_dark_fallback: "#7F1015"
+    red_bright_fallback: "#FF2D2D"
+
+    transparent: "transparent"
+
+  spacing_scale:
     space_1: 4px
     space_2: 8px
     space_3: 12px
@@ -220,147 +46,309 @@ spacing:
     space_12: 48px
     space_16: 64px
     space_20: 80px
-  certificates:
-    section_padding_x: 68px
-    section_padding_top: 54px
-    header_to_grid: 29px
-    grid_column_gap: 18px
-    grid_row_gap: 16px
-    card_padding_x: 18px
-    card_padding_top: 14px
-    card_padding_bottom: 14px
-  section_specific_values_remain_in_section_files: true
-radius:
-  hero:
-    navbar: 14px
-    about_button: 6px
-    glow_dot: 999px
-  about:
-    container: 38px
-    email_button: 12px
-    social_button: 12px
-    photo_frame: 32px
-  skills:
-    container: 38px
-    card: 28px
-    tech_card: 18px
-  projects:
-    xs: 4px
-    sm: 6px
-    md: 10px
-    lg: 16px
-    xl: 24px
-    section: 30px
-    full: 999px
-  certificates:
-    outer_container: 31px
-    certificate_card: 14px
-    certificate_image: 10px
-    badge: 5px
-    quote_box: 14px
-    circle: 999px
-effects:
-  projects:
-    section_outer: 0 0 32px 0 rgba(239,43,43,0.05)
-    card_default: 0 8px 25px 0 rgba(0,0,0,0.55)
-    card_red_glow: 0 0 17px 0 rgba(239,43,43,0.09)
-    card_hover: 0 15px 36px -8px rgba(239,43,43,0.18)
-    button_primary: 0 0 14px 0 rgba(239,43,43,0.20)
-  certificates:
-    outer_glow: 0 0 26px 0 rgba(239,32,39,0.055)
-    card_shadow: 0 8px 24px -5px rgba(0,0,0,0.72)
-    card_red_glow: 0 0 15px 0 rgba(239,32,39,0.065)
-    title_white_glow: 0 3px 9px 0 rgba(255,255,255,0.18)
-    title_red_glow: 0 0 16px 0 rgba(239,32,39,0.25)
-  section_specific_values_remain_in_section_files: true
-blur:
-  projects:
-    subtle: 8px
-    medium: 24px
-    large: 64px
-    ambient: 120px
-  about_and_skills:
-    values_are_section_specific: true
-    source_reference:
-    - ./sections/02-ABOUT.yaml
-    - ./sections/03-SKILLS.yaml
-breakpoints:
-  mobile_sm: 360px
-  mobile: 480px
-  tablet: 768px
-  laptop: 1024px
-  desktop: 1280px
-  wide: 1536px
-  sources:
-  - projects
-  - certificates
-z_index:
-  global_pattern:
-    background: 0
-    background_effects: 1–5
+
+  breakpoints:
+    mobile_sm: 360px
+    mobile: 480px
+    tablet: 768px
+    laptop: 1024px
+    desktop: 1280px
+    wide: 1536px
+
+  z_index_pattern:
+    page_background: 0
+    background_effects: "1-5"
     section_container: 10
-    section_content: 20
+    section_content: "20-23"
     grids: 30
     cards: 40
-    card_children: 41–44
-    hover_overlay: 50
+    card_children: "41-45"
+    hover_layer: 50
     navbar: 100
-  section_overrides:
-    hero: ./sections/01-HERO.yaml
-    about: ./sections/02-ABOUT.yaml
-    skills: ./sections/03-SKILLS.yaml
-    projects: ./sections/04-PROJECTS.yaml
-    certificates: ./sections/05-CERTIFICATES.yaml
-motion:
+
+  motion:
+    easing_primary: "cubic-bezier(0.22, 1, 0.36, 1)"
+    easing_secondary: "cubic-bezier(0.22, 0.61, 0.36, 1)"
+    fast: 180ms
+    normal: 350ms
+    slow: 700ms
+    respect_reduced_motion: true
+
+  accessibility:
+    visible_focus_width: 2px
+    decorative_aria_hidden: true
+    decorative_pointer_events: "none"
+
+section_overrides:
   hero:
-    navbar_duration: 0.8s
-    who_delay: 0.2s
-    iam_delay: 0.4s
-    developer_delay: 0.6s
-    about_button_delay: 0.8s
+    source: "./sections/01-HERO.yaml"
+
+    colors:
+      page: "#000000"
+      navbar: "#040000"
+      red_primary: "#BD1219"
+      red_dark: "#670000"
+      red_deep: "#440000"
+      red_bright: "#EF1B24"
+      red_glow_core: "#FF1A1A"
+      text_primary: "#FFFFFF"
+      text_secondary: "#D4D4D8"
+      text_muted: "#A1A1AA"
+
+    typography:
+      hero_title_size: 92px
+      hero_title_weight: 800
+      hero_title_line_height: 0.86
+      hero_title_letter_spacing: -3.5px
+      developer_size: 14px
+      developer_letter_spacing: 6px
+      navbar_size: 14px
+      brand_initial_size: 40px
+      brand_name_size: 16px
+
+    radius:
+      navbar: 14px
+      about_button: 0px
+      glow_dot: 999px
+
+    motion:
+      navbar_duration: 800ms
+      who_delay: 180ms
+      iam_delay: 320ms
+      developer_delay: 560ms
+      about_button_delay: 680ms
+      role_interval: 3000ms
+      role_transition: 350ms
+
+    particles:
+      mandatory: true
+      desktop_count: 120
+      hover_mode: "repulse"
+      hover_distance: 180px
+
   about:
-    photo_hover_duration: 0.7s
-    photo_hover_easing: cubic-bezier(.22,.61,.36,1)
+    source: "./sections/02-ABOUT.yaml"
+
+    colors:
+      frame_background: "#191A1B"
+      container_background: "#202020"
+      container_surface: "rgba(30, 30, 30, 0.96)"
+      primary_red: "#E53135"
+      primary_red_bright: "#FF3A3A"
+      primary_red_dark: "#A90000"
+      primary_red_deep: "#650000"
+      text_primary: "#F5F5F5"
+      text_secondary: "#C4C4C4"
+      text_muted: "#A8A8A8"
+
+    typography:
+      label_size: 21px
+      title_size: 59px
+      subtitle_size: 31px
+      description_size: 19px
+      description_line_height: 36px
+
+    radius:
+      main_container: 34px
+      photo_frame: 16px
+      email_button: 12px
+      social_button: 12px
+
+    motion:
+      photo_parallax_duration: 700ms
+      photo_parallax_easing: "cubic-bezier(0.22, 0.61, 0.36, 1)"
+
   skills:
-    section_fade_up: 1s
-    card_hover_duration: 0.5s
-    icon_floating: true
+    source: "./sections/03-SKILLS.yaml"
+
+    colors:
+      background: "#040404"
+      surface: "#080808"
+      category_card: "#090909"
+      technology_tile: "#101010"
+      primary_red: "#FF2D2D"
+      secondary_red: "#B30000"
+      text_primary: "#FFFFFF"
+      text_soft: "#A0A0A0"
+
+    typography:
+      label_size: 20px
+      title_size: 64px
+      description_size: 17px
+      description_line_height: 23px
+      category_title_size: 23px
+      technology_label_size: 20px
+
+    radius:
+      outer_container: 38px
+      category_card: 24px
+      technology_tile: 14px
+
+    motion:
+      section_entrance: 1000ms
+      category_hover: 500ms
+      icon_floating: true
+
+    particles:
+      desktop_count: 35
+      speed: 0.25
+
   projects:
-    section_duration: 800ms
-    card_duration: 580ms
-    stagger_delay: 70ms
-    easing: cubic-bezier(0.22,1,0.36,1)
+    source: "./sections/04-PROJECTS.yaml"
+
+    colors:
+      background_main: "#050505"
+      background_deep: "#020202"
+      background_surface: "#090909"
+      card_start: "#0E0D0D"
+      card_end: "#080808"
+      button_background: "#0C0C0C"
+      primary_dark: "#7F1D1D"
+      primary: "#B91C1C"
+      primary_bright: "#EF2B2B"
+      accent: "#FF2D2D"
+      accent_hover: "#FF4343"
+      text_primary: "#F5F5F5"
+      text_secondary: "#A3A3A3"
+
+    typography:
+      heading_size: 56px
+      heading_weight: 800
+      heading_line_height: 1.05
+      heading_letter_spacing: -2.15px
+      section_label_size: 15px
+      description_size: 15px
+      description_line_height: 25px
+      card_title_size: 16px
+      card_description_size: 12px
+      badge_size: 10px
+      button_size: 11px
+
+    radius:
+      outer_container: 30px
+      project_card: 14px
+      image: 9px
+      badge: 4px
+      primary_button: 6px
+      full: 999px
+
+    effects:
+      section_outer: "0 0 32px rgba(239,43,43,0.05)"
+      card_default: "0 8px 25px rgba(0,0,0,0.55)"
+      card_red_glow: "0 0 17px rgba(239,43,43,0.09)"
+      card_hover: "0 15px 36px -8px rgba(239,43,43,0.18)"
+
+    motion:
+      section_duration: 800ms
+      card_duration: 580ms
+      stagger_delay: 70ms
+
+    particles:
+      mouse_interaction: false
+      fps_limit: 40
+      reduce_on_mobile: true
+
   certificates:
-    card_transition_duration: 380ms
-    card_transition_easing: cubic-bezier(0.22, 1, 0.36, 1)
-conflicts:
-- token: background_main
-  values:
-  - '#111111'
-  - '#040404'
-  - '#050505'
-  - '#020202'
-  needs_confirmation: true
-- token: accent_primary
-  values:
-  - '#EF4444'
-  - '#ff2d2d'
-  - '#EF2B2B'
-  - '#EF2027'
-  needs_confirmation: true
-- token: section_radius
-  values:
-  - 30px
-  - 31px
-  - 38px
-  needs_confirmation: true
-- token: section_title_size
-  values:
-  - 56px
-  - 58px
-  - 74px
-  - 78px
-  - 92px
-  explanation: These values represent different title roles and section-specific display sizes.
-  needs_confirmation: false
-needs_confirmation: true
+    source: "./sections/05-CERTIFICATES.yaml"
+
+    colors:
+      page_background: "#020202"
+      section_background: "#050303"
+      section_surface: "rgba(4, 3, 3, 0.82)"
+      card_start: "#0B0909"
+      card_end: "#060606"
+      primary_red: "#EF2027"
+      primary_red_bright: "#FF2A31"
+      primary_red_dark: "#7F1015"
+      primary_red_deep: "#3B070A"
+      text_primary: "#F5F5F5"
+      text_secondary: "#B3B3B3"
+      text_muted: "#8A8A8A"
+
+    typography:
+      page_title_size: 58px
+      page_title_weight: 800
+      page_title_line_height: 64px
+      page_title_letter_spacing: -2.4px
+      description_size: 15px
+      description_line_height: 25px
+      card_title_size: 17px
+      badge_size: 11px
+      date_size: 12px
+      quote_size: 14px
+
+    spacing:
+      section_padding_x: 68px
+      section_padding_top: 54px
+      header_to_grid: 29px
+      grid_column_gap: 18px
+      grid_row_gap: 16px
+      card_padding_x: 18px
+      card_padding_top: 14px
+      card_padding_bottom: 14px
+
+    radius:
+      outer_container: 31px
+      certificate_card: 14px
+      certificate_image: 10px
+      badge: 5px
+      quote_box: 14px
+      circle: 999px
+
+    effects:
+      outer_glow: "0 0 26px rgba(239,32,39,0.055)"
+      card_shadow: "0 8px 24px -5px rgba(0,0,0,0.72)"
+      card_red_glow: "0 0 15px rgba(239,32,39,0.065)"
+      title_white_glow: "0 3px 9px rgba(255,255,255,0.18)"
+      title_red_glow: "0 0 16px rgba(239,32,39,0.25)"
+
+    motion:
+      card_transition_duration: 380ms
+      card_transition_easing: "cubic-bezier(0.22, 1, 0.36, 1)"
+
+    particles:
+      desktop_count: 150
+      laptop_count: 110
+      tablet_count: 75
+      mobile_count: 35
+
+resolved_variations:
+  background:
+    values:
+      - "#000000"
+      - "#191A1B"
+      - "#040404"
+      - "#050505"
+      - "#020202"
+    resolution: "intentional_section_overrides"
+
+  primary_red:
+    values:
+      - "#BD1219"
+      - "#E53135"
+      - "#FF2D2D"
+      - "#EF2B2B"
+      - "#EF2027"
+    resolution: "intentional_section_overrides"
+
+  outer_container_radius:
+    values:
+      - 14px
+      - 30px
+      - 31px
+      - 34px
+      - 38px
+    resolution: "intentional_component_and_section_variations"
+
+  section_title_size:
+    values:
+      - 58px
+      - 59px
+      - 64px
+      - 92px
+    resolution: "intentional_title_role_variations"
+
+  particle_interaction:
+    resolution: "section_specific_behavior"
+
+needs_confirmation: false
