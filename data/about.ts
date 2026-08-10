@@ -22,8 +22,8 @@ export const aboutData = {
   },
 
   profileImage: {
-    src: "/images/profile/kelpinn-profile.webp",
-    alt: "Foto profil Kelpinn",
+    src: null,
+    alt: null,
   },
 
   socialLinks: [

@@ -1,0 +1,13 @@
+public\images\projects\puskesmas.jpg
+public\images\skills\css.png
+public\images\skills\figma.png
+public\images\skills\git.png
+public\images\skills\html.png
+public\images\skills\javascript.png
+public\images\skills\laravel.png
+public\images\skills\mysql.png
+public\images\skills\nextjs.png
+public\images\skills\php.png
+public\images\skills\pixellab.png
+public\images\skills\react.png
+public\images\skills\vscode.png

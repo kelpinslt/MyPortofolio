@@ -3,8 +3,8 @@ export interface CertificateItem {
   organization: string;
   category: string;
   issuedDate: string;
-  image: string;
-  imageAlt: string;
+  image: string | null;
+  imageAlt: string | null;
   credentialUrl: string | null;
 }
 
@@ -29,8 +29,8 @@ export const certificates: readonly CertificateItem[] = [
     organization: "Pandi Domain Id",
     category: "Web Development",
     issuedDate: "27 August 2024",
-    image: "/images/certificates/pandi-domain-id.webp",
-    imageAlt: "Sertifikat Junior Web Developer dari Pandi Domain Id",
+    image: null,
+    imageAlt: null,
     credentialUrl: null,
   },
   {
@@ -38,8 +38,8 @@ export const certificates: readonly CertificateItem[] = [
     organization: "Apple Developer Academy",
     category: "iOS Development",
     issuedDate: "26 June 2024 - 31 July 2024",
-    image: "/images/certificates/apple-developer-academy.webp",
-    imageAlt: "Sertifikat iOS Developer Foundation dari Apple Developer Academy",
+    image: null,
+    imageAlt: null,
     credentialUrl: null,
   },
   {
@@ -47,8 +47,8 @@ export const certificates: readonly CertificateItem[] = [
     organization: "Microsoft",
     category: "Cloud Computing",
     issuedDate: "20 August 2024",
-    image: "/images/certificates/microsoft.webp",
-    imageAlt: "Sertifikat Microsoft Azure Fundamentals dari Microsoft",
+    image: null,
+    imageAlt: null,
     credentialUrl: null,
   },
   {
@@ -56,8 +56,8 @@ export const certificates: readonly CertificateItem[] = [
     organization: "Institut Teknologi Del",
     category: "Web Optimization",
     issuedDate: "26 May 2025 - 27 May 2025",
-    image: "/images/certificates/institut-teknologi-del.webp",
-    imageAlt: "Sertifikat Web Optimization dari Institut Teknologi Del",
+    image: null,
+    imageAlt: null,
     credentialUrl: null,
   },
   {
@@ -65,8 +65,8 @@ export const certificates: readonly CertificateItem[] = [
     organization: "Universitas Ciputra",
     category: "Full Stack Development",
     issuedDate: "14 March 2024",
-    image: "/images/certificates/universitas-ciputra.webp",
-    imageAlt: "Sertifikat Full Stack Web Development dari Universitas Ciputra",
+    image: null,
+    imageAlt: null,
     credentialUrl: null,
   },
   {
@@ -74,8 +74,8 @@ export const certificates: readonly CertificateItem[] = [
     organization: "Alibaba Cloud",
     category: "Cloud Computing",
     issuedDate: "30 May 2024",
-    image: "/images/certificates/alibaba-cloud.webp",
-    imageAlt: "Sertifikat Alibaba Cloud Developer Associate dari Alibaba Cloud",
+    image: null,
+    imageAlt: null,
     credentialUrl: null,
   },
   {
@@ -83,8 +83,8 @@ export const certificates: readonly CertificateItem[] = [
     organization: "Indonesia Stock Exchange (IDX)",
     category: "Financial Technology",
     issuedDate: "12 January 2025",
-    image: "/images/certificates/indonesia-stock-exchange.webp",
-    imageAlt: "Sertifikat Indonesia Stock Exchange Course dari IDX",
+    image: null,
+    imageAlt: null,
     credentialUrl: null,
   },
   {
@@ -92,8 +92,8 @@ export const certificates: readonly CertificateItem[] = [
     organization: "Universitas Negeri Jakarta",
     category: "Web Programming",
     issuedDate: "18 November 2024",
-    image: "/images/certificates/universitas-negeri-jakarta.webp",
-    imageAlt: "Sertifikat Pemrograman Web Lanjutan dari Universitas Negeri Jakarta",
+    image: null,
+    imageAlt: null,
     credentialUrl: null,
   },
 ];

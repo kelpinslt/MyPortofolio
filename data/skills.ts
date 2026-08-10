@@ -72,7 +72,7 @@ export const skills: SkillItem[] = [
     category: "frontend",
     icon: {
       type: "image",
-      src: "/images/skills/html.svg",
+      src: "/images/skills/html.png",
       alt: "Logo HTML5",
     },
   },
@@ -82,7 +82,7 @@ export const skills: SkillItem[] = [
     category: "frontend",
     icon: {
       type: "image",
-      src: "/images/skills/css.svg",
+      src: "/images/skills/css.png",
       alt: "Logo CSS3",
     },
   },
@@ -92,7 +92,7 @@ export const skills: SkillItem[] = [
     category: "frontend",
     icon: {
       type: "image",
-      src: "/images/skills/javascript.svg",
+      src: "/images/skills/javascript.png",
       alt: "Logo JavaScript",
     },
   },
@@ -102,7 +102,7 @@ export const skills: SkillItem[] = [
     category: "frontend",
     icon: {
       type: "image",
-      src: "/images/skills/react.svg",
+      src: "/images/skills/react.png",
       alt: "Logo React.js",
     },
   },
@@ -112,7 +112,7 @@ export const skills: SkillItem[] = [
     category: "frontend",
     icon: {
       type: "image",
-      src: "/images/skills/nextjs.svg",
+      src: "/images/skills/nextjs.png",
       alt: "Logo Next.js",
     },
   },
@@ -122,7 +122,7 @@ export const skills: SkillItem[] = [
     category: "backend",
     icon: {
       type: "image",
-      src: "/images/skills/laravel.svg",
+      src: "/images/skills/laravel.png",
       alt: "Logo Laravel",
     },
   },
@@ -132,7 +132,7 @@ export const skills: SkillItem[] = [
     category: "backend",
     icon: {
       type: "image",
-      src: "/images/skills/php.svg",
+      src: "/images/skills/php.png",
       alt: "Logo PHP",
     },
   },
@@ -142,7 +142,7 @@ export const skills: SkillItem[] = [
     category: "backend",
     icon: {
       type: "image",
-      src: "/images/skills/mysql.svg",
+      src: "/images/skills/mysql.png",
       alt: "Logo MySQL",
     },
   },
@@ -152,7 +152,7 @@ export const skills: SkillItem[] = [
     category: "tools",
     icon: {
       type: "image",
-      src: "/images/skills/figma.svg",
+      src: "/images/skills/figma.png",
       alt: "Logo Figma",
     },
   },
@@ -162,7 +162,7 @@ export const skills: SkillItem[] = [
     category: "tools",
     icon: {
       type: "image",
-      src: "/images/skills/git.svg",
+      src: "/images/skills/git.png",
       alt: "Logo Git",
     },
   },
@@ -172,7 +172,7 @@ export const skills: SkillItem[] = [
     category: "tools",
     icon: {
       type: "image",
-      src: "/images/skills/vscode.svg",
+      src: "/images/skills/vscode.png",
       alt: "Logo Visual Studio Code",
     },
   },
@@ -182,7 +182,7 @@ export const skills: SkillItem[] = [
     category: "tools",
     icon: {
       type: "image",
-      src: "/images/skills/pixellab.svg",
+      src: "/images/skills/pixellab.png",
       alt: "Logo PixelLab",
     },
   },
